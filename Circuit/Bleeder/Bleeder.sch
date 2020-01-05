@@ -1,0 +1,354 @@
+EESchema Schematic File Version 4
+LIBS:Bleeder-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5DCFD35F
+P 5350 1700
+F 0 "R1" H 5420 1746 50  0000 L CNN
+F 1 "20K" H 5420 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 5280 1700 50  0001 C CNN
+F 3 "~" H 5350 1700 50  0001 C CNN
+	1    5350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DCFD755
+P 5350 2050
+F 0 "D1" V 5389 1933 50  0000 R CNN
+F 1 "LED" V 5298 1933 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5350 2050 50  0001 C CNN
+F 3 "~" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DCFF331
+P 5350 3200
+F 0 "R3" H 5420 3246 50  0000 L CNN
+F 1 "20K" H 5420 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 5280 3200 50  0001 C CNN
+F 3 "~" H 5350 3200 50  0001 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DCFF66D
+P 5350 4300
+F 0 "R4" H 5420 4346 50  0000 L CNN
+F 1 "20K" H 5420 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 5280 4300 50  0001 C CNN
+F 3 "~" H 5350 4300 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DD00467
+P 5350 2450
+F 0 "D2" V 5297 2528 50  0000 L CNN
+F 1 "LED" V 5388 2528 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5350 2450 50  0001 C CNN
+F 3 "~" H 5350 2450 50  0001 C CNN
+	1    5350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5DD00B86
+P 5350 3950
+F 0 "D4" V 5297 4028 50  0000 L CNN
+F 1 "LED" V 5388 4028 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5350 3950 50  0001 C CNN
+F 3 "~" H 5350 3950 50  0001 C CNN
+	1    5350 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DD16D00
+P 6000 3200
+F 0 "#PWR0101" H 6000 2950 50  0001 C CNN
+F 1 "GND" H 6005 3027 50  0000 C CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3200 6000 3000
+Wire Wire Line
+	5350 1500 5350 1550
+Wire Wire Line
+	5350 1900 5350 1850
+Wire Wire Line
+	5350 2650 5350 2600
+Wire Wire Line
+	5350 3000 5350 2950
+Connection ~ 5350 3000
+Wire Wire Line
+	5350 3050 5350 3000
+Wire Wire Line
+	5350 3400 5350 3350
+Wire Wire Line
+	5350 4100 5350 4150
+Wire Wire Line
+	5350 4500 5350 4450
+$Comp
+L Device:R R2
+U 1 1 5DCFECC7
+P 5350 2800
+F 0 "R2" H 5420 2846 50  0000 L CNN
+F 1 "20K" H 5420 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 5280 2800 50  0001 C CNN
+F 3 "~" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DCFF0E0
+P 6650 1700
+F 0 "R5" H 6720 1746 50  0000 L CNN
+F 1 "20K" H 6720 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6580 1700 50  0001 C CNN
+F 3 "~" H 6650 1700 50  0001 C CNN
+	1    6650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5DD00DA5
+P 6650 2050
+F 0 "D5" V 6689 1933 50  0000 R CNN
+F 1 "LED" V 6598 1933 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 2050 50  0001 C CNN
+F 3 "~" H 6650 2050 50  0001 C CNN
+	1    6650 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 1900 6650 1850
+$Comp
+L Device:R R6
+U 1 1 5DCFF906
+P 6650 2800
+F 0 "R6" H 6720 2846 50  0000 L CNN
+F 1 "20K" H 6720 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6580 2800 50  0001 C CNN
+F 3 "~" H 6650 2800 50  0001 C CNN
+	1    6650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5DD01268
+P 6650 2450
+F 0 "D6" V 6689 2333 50  0000 R CNN
+F 1 "LED" V 6598 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 2450 50  0001 C CNN
+F 3 "~" H 6650 2450 50  0001 C CNN
+	1    6650 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 2650 6650 2600
+$Comp
+L Device:LED D7
+U 1 1 5DD01587
+P 6650 3550
+F 0 "D7" V 6689 3433 50  0000 R CNN
+F 1 "LED" V 6598 3433 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 3550 50  0001 C CNN
+F 3 "~" H 6650 3550 50  0001 C CNN
+	1    6650 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 3400 6650 3350
+$Comp
+L Device:LED D8
+U 1 1 5DD01B39
+P 6650 3950
+F 0 "D8" V 6689 3833 50  0000 R CNN
+F 1 "LED" V 6598 3833 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 3950 50  0001 C CNN
+F 3 "~" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 4150 6650 4100
+Wire Wire Line
+	6650 4500 6650 4450
+$Comp
+L Device:R R8
+U 1 1 5DD000D2
+P 6650 4300
+F 0 "R8" H 6720 4346 50  0000 L CNN
+F 1 "20K" H 6720 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6580 4300 50  0001 C CNN
+F 3 "~" H 6650 4300 50  0001 C CNN
+	1    6650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1550 6650 1500
+Wire Wire Line
+	6650 2950 6650 3000
+Wire Wire Line
+	6650 3050 6650 3000
+Connection ~ 6650 3000
+Wire Wire Line
+	5350 1500 6650 1500
+Wire Wire Line
+	5350 2200 5350 2250
+Wire Wire Line
+	6650 2200 6650 2250
+Wire Wire Line
+	5350 4500 6650 4500
+Wire Wire Line
+	5350 3700 5350 3750
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5DDEE47B
+P 5950 2000
+F 0 "J1" V 6012 1812 50  0000 R CNN
+F 1 "Signal 1/3" V 6103 1812 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5950 2000 50  0001 C CNN
+F 3 "~" H 5950 2000 50  0001 C CNN
+	1    5950 2000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5350 2250 5950 2250
+Wire Wire Line
+	5950 2250 5950 2200
+Connection ~ 5350 2250
+Wire Wire Line
+	5350 2250 5350 2300
+Wire Wire Line
+	6050 2200 6050 2250
+Connection ~ 6650 2250
+Wire Wire Line
+	6650 2250 6650 2300
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5DDF2153
+P 5950 3500
+F 0 "J2" V 6012 3312 50  0000 R CNN
+F 1 "Signal 2/4" V 6103 3312 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5950 3500 50  0001 C CNN
+F 3 "~" H 5950 3500 50  0001 C CNN
+	1    5950 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5950 3700 5950 3750
+Connection ~ 5350 3750
+Wire Wire Line
+	5350 3750 5350 3800
+Wire Wire Line
+	6050 3700 6050 3750
+Wire Wire Line
+	6650 3700 6650 3750
+Connection ~ 6650 3750
+Wire Wire Line
+	6650 3750 6650 3800
+$Comp
+L Device:LED D3
+U 1 1 5DD0097D
+P 5350 3550
+F 0 "D3" V 5389 3433 50  0000 R CNN
+F 1 "LED" V 5298 3433 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5350 3550 50  0001 C CNN
+F 3 "~" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5DDF66ED
+P 7800 3000
+F 0 "J3" H 7718 2675 50  0000 C CNN
+F 1 "Power" H 7718 2766 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 7800 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7600 1500 7600 2900
+Wire Wire Line
+	7600 3100 7600 4500
+Connection ~ 6000 3000
+Wire Wire Line
+	5350 3000 6000 3000
+Connection ~ 6650 1500
+Connection ~ 6650 4500
+Wire Wire Line
+	5950 3750 5350 3750
+Wire Wire Line
+	6050 2250 6650 2250
+Wire Wire Line
+	6050 3750 6650 3750
+Wire Wire Line
+	6000 3000 6650 3000
+Wire Wire Line
+	6650 3000 7600 3000
+Wire Wire Line
+	6650 1500 7600 1500
+Wire Wire Line
+	6650 4500 7600 4500
+$Comp
+L power:+VDC #PWR0102
+U 1 1 5DE25214
+P 7600 1500
+F 0 "#PWR0102" H 7600 1400 50  0001 C CNN
+F 1 "+VDC" H 7600 1775 50  0000 C CNN
+F 2 "" H 7600 1500 50  0001 C CNN
+F 3 "" H 7600 1500 50  0001 C CNN
+	1    7600 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 1500
+$Comp
+L power:-VDC #PWR0103
+U 1 1 5DE25B4D
+P 7600 4500
+F 0 "#PWR0103" H 7600 4400 50  0001 C CNN
+F 1 "-VDC" H 7600 4775 50  0000 C CNN
+F 2 "" H 7600 4500 50  0001 C CNN
+F 3 "" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	-1   0    0    1   
+$EndComp
+Connection ~ 7600 4500
+$Comp
+L Device:R R7
+U 1 1 5DCFFBA1
+P 6650 3200
+F 0 "R7" H 6720 3246 50  0000 L CNN
+F 1 "20K" H 6720 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6580 3200 50  0001 C CNN
+F 3 "~" H 6650 3200 50  0001 C CNN
+	1    6650 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
