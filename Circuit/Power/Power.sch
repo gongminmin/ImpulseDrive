@@ -103,7 +103,7 @@ U 1 1 5E0D9319
 P 6750 4450
 F 0 "T2" H 6750 4831 50  0000 C CNN
 F 1 "6:200" H 6750 4740 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_Breve_TEZ-22x24" H 6750 4450 50  0001 C CNN
+F 2 "Transformer_THT:Transformer_Generic_EE25_8Pin" H 6750 4450 50  0001 C CNN
 F 3 "~" H 6750 4450 50  0001 C CNN
 	1    6750 4450
 	1    0    0    -1  
@@ -193,12 +193,12 @@ Wire Wire Line
 Wire Wire Line
 	7050 4250 8000 4250
 $Comp
-L Device:Transformer_SP_1S T1
+L Device:Transformer_SP_1S_2 T1
 U 1 1 5E0C56BF
 P 4800 3650
 F 0 "T1" H 4800 4050 50  0000 C CNN
 F 1 "4+4:8" H 4800 3950 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_Breve_TEZ-22x24" H 4800 3650 50  0001 C CNN
+F 2 "Transformer_THT:Transformer_Generic_EE25_8Pin" H 4800 3650 50  0001 C CNN
 F 3 "~" H 4800 3650 50  0001 C CNN
 	1    4800 3650
 	1    0    0    -1  
