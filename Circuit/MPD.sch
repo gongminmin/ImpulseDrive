@@ -30,8 +30,6 @@ $EndSheet
 Wire Wire Line
 	4650 2550 4350 2550
 Wire Wire Line
-	4650 2650 4250 2650
-Wire Wire Line
 	4650 2750 4450 2750
 Wire Wire Line
 	6250 2650 9200 2650
@@ -113,25 +111,13 @@ F0 "Nozzle" 50
 F1 "Nozzle/Nozzle.sch" 50
 F2 "NozzleAnode" I L 10100 3350 50 
 F3 "NozzleCathode" I L 10100 3450 50 
-F4 "ControlSignal" I L 10100 2900 50 
-F5 "ControlPower+" I L 10100 2800 50 
-F6 "ControlPowerGND" I L 10100 3000 50 
+F4 "CoilPower+" I L 10100 2800 50 
+F5 "CoilControl" I L 10100 2900 50 
 $EndSheet
-Wire Wire Line
-	9650 2000 9650 2800
-Connection ~ 8600 2000
-Wire Wire Line
-	9450 2100 9450 3000
-Connection ~ 8700 2100
-Wire Wire Line
-	4250 1900 9550 1900
 Wire Wire Line
 	9550 1900 9550 2900
 Wire Wire Line
 	9550 2900 10100 2900
-Connection ~ 4250 2650
-Wire Wire Line
-	4250 2650 3750 2650
 Wire Wire Line
 	8900 5050 8500 5050
 Wire Wire Line
@@ -140,10 +126,6 @@ Wire Wire Line
 	8800 5250 8500 5250
 Wire Wire Line
 	8600 2000 4350 2000
-Wire Wire Line
-	8600 2000 9650 2000
-Wire Wire Line
-	8700 2100 9450 2100
 Wire Wire Line
 	6900 1200 3900 1200
 Wire Wire Line
@@ -225,10 +207,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 1300 8900 1300
 Wire Wire Line
-	9450 3000 10100 3000
-Wire Wire Line
-	9650 2800 10100 2800
-Wire Wire Line
 	9000 3450 10100 3450
 Connection ~ 9000 3450
 Wire Wire Line
@@ -269,7 +247,7 @@ F 3 "" H 550 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  2900 550  2900
+	800  2900 700  2900
 Wire Wire Line
 	550  2900 550  2850
 Wire Wire Line
@@ -278,8 +256,6 @@ Wire Wire Line
 	550  3000 550  3050
 Wire Wire Line
 	4350 2550 3750 2550
-Wire Wire Line
-	4250 2650 4250 1900
 $Sheet
 S 2050 2350 1700 1300
 U 5E1058DB
@@ -295,6 +271,7 @@ F8 "StarterPower-" I R 3750 3050 50
 F9 "+12VPulseIn" I L 2050 2850 50 
 F10 "0Vin" I L 2050 2950 50 
 F11 "-12VPulseIn" I L 2050 3050 50 
+F12 "CoilControl" I L 2050 2550 50 
 $EndSheet
 Wire Wire Line
 	1700 2850 2050 2850
@@ -302,4 +279,23 @@ Wire Wire Line
 	1700 2950 2050 2950
 Wire Wire Line
 	1700 3050 2050 3050
+Wire Wire Line
+	3750 2650 4650 2650
+Wire Wire Line
+	1900 1900 9550 1900
+Wire Wire Line
+	700  2900 700  1800
+Wire Wire Line
+	700  1800 9650 1800
+Wire Wire Line
+	9650 2800 10100 2800
+Wire Wire Line
+	9650 1800 9650 2800
+Connection ~ 700  2900
+Wire Wire Line
+	700  2900 550  2900
+Wire Wire Line
+	2050 2550 1900 2550
+Wire Wire Line
+	1900 1900 1900 2550
 $EndSCHEMATC

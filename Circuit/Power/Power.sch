@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 3 8
 Title "Power Module"
 Date "2020-01-07"
 Rev "1"
@@ -17,28 +17,22 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x03 J1
 U 1 1 5E0D69DC
-P 3000 4350
-F 0 "J1" H 3000 4700 50  0000 C CNN
-F 1 "+-12V Pulse in" H 3000 4600 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 3000 4350 50  0001 C CNN
-F 3 "~" H 3000 4350 50  0001 C CNN
-	1    3000 4350
+P 2500 4350
+F 0 "J1" H 2500 4700 50  0000 C CNN
+F 1 "+-12V Pulse in" H 2500 4600 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 2500 4350 50  0001 C CNN
+F 3 "~" H 2500 4350 50  0001 C CNN
+	1    2500 4350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4250 3500 4250
+	2700 4250 3000 4250
 Wire Wire Line
-	3500 4250 3500 4150
+	3000 4250 3000 4150
 Wire Wire Line
-	3500 4150 3750 4150
+	2700 4450 2900 4450
 Wire Wire Line
-	3200 4450 3400 4450
-Wire Wire Line
-	3500 4450 3500 4550
-Wire Wire Line
-	3500 4550 3750 4550
-Wire Wire Line
-	3750 4350 3450 4350
+	3000 4450 3000 4550
 $Comp
 L Diode:1N4007 D4
 U 1 1 5E0E862E
@@ -87,14 +81,14 @@ Connection ~ 6800 5150
 Wire Wire Line
 	6800 5150 6800 5050
 $Comp
-L Connector:Screw_Terminal_01x02 J2
+L Connector:Screw_Terminal_01x03 J2
 U 1 1 5E0F4C5B
-P 6350 4350
-F 0 "J2" H 6430 4392 50  0000 L CNN
-F 1 "To Starter" H 6430 4301 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6350 4350 50  0001 C CNN
-F 3 "~" H 6350 4350 50  0001 C CNN
-	1    6350 4350
+P 8200 4050
+F 0 "J2" H 8280 4092 50  0000 L CNN
+F 1 "To Starter & Coil" H 8280 4001 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 8200 4050 50  0001 C CNN
+F 3 "~" H 8200 4050 50  0001 C CNN
+	1    8200 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -247,9 +241,9 @@ Wire Wire Line
 Connection ~ 8100 5250
 Wire Wire Line
 	8100 5250 8050 5250
-Text HLabel 6150 4550 2    50   Input ~ 0
+Text HLabel 8150 3550 2    50   Input ~ 0
 StarterPower+
-Text HLabel 6150 4650 2    50   Input ~ 0
+Text HLabel 8150 3650 2    50   Input ~ 0
 StarterPower-
 Wire Wire Line
 	8000 4650 8200 4650
@@ -261,39 +255,35 @@ Connection ~ 4800 4150
 Wire Wire Line
 	4550 4550 4800 4550
 Wire Wire Line
-	5950 4550 5950 4450
-Wire Wire Line
 	4800 4550 4800 5350
 Wire Wire Line
 	4800 5350 5800 5350
 Connection ~ 4800 4550
-Wire Wire Line
-	4800 4550 5950 4550
-Text HLabel 3200 3650 0    50   Input ~ 0
+Text HLabel 2700 3650 0    50   Input ~ 0
 +12VPulseIn
-Text HLabel 3200 3750 0    50   Input ~ 0
+Text HLabel 2700 3750 0    50   Input ~ 0
 0Vin
-Text HLabel 3200 3850 0    50   Input ~ 0
+Text HLabel 2700 3850 0    50   Input ~ 0
 -12VPulseIn
 Wire Wire Line
-	3200 3650 3500 3650
+	2700 3650 3000 3650
 Wire Wire Line
-	3500 3650 3500 4150
-Connection ~ 3500 4150
+	3000 3650 3000 4150
+Connection ~ 3000 4150
 Wire Wire Line
-	3200 3750 3450 3750
+	2700 3750 2950 3750
 Wire Wire Line
-	3450 3750 3450 4350
-Connection ~ 3450 4350
+	2950 3750 2950 4350
+Connection ~ 2950 4350
 Wire Wire Line
-	3450 4350 3200 4350
+	2950 4350 2700 4350
 Wire Wire Line
-	3400 3850 3400 4450
+	2900 3850 2900 4450
 Wire Wire Line
-	3200 3850 3400 3850
-Connection ~ 3400 4450
+	2700 3850 2900 3850
+Connection ~ 2900 4450
 Wire Wire Line
-	3400 4450 3500 4450
+	2900 4450 3000 4450
 $Comp
 L Isolator:PC817 U1
 U 1 1 5E1D4E24
@@ -470,29 +460,11 @@ Wire Wire Line
 Wire Wire Line
 	5200 3600 5750 3600
 Wire Wire Line
-	5400 4150 6900 4150
-Wire Wire Line
 	6900 4150 6900 3600
 Wire Wire Line
 	6900 3600 6650 3600
 Wire Wire Line
 	5400 4150 5400 4800
-Wire Wire Line
-	5950 4450 6150 4450
-Wire Wire Line
-	6150 4550 6100 4550
-Wire Wire Line
-	6100 4550 6100 4350
-Wire Wire Line
-	5000 4350 6100 4350
-Connection ~ 6100 4350
-Wire Wire Line
-	6100 4350 6150 4350
-Wire Wire Line
-	6150 4650 5950 4650
-Wire Wire Line
-	5950 4650 5950 4550
-Connection ~ 5950 4550
 Wire Wire Line
 	4100 3600 3950 3600
 Wire Wire Line
@@ -533,10 +505,10 @@ Connection ~ 5400 3750
 Wire Wire Line
 	5400 3750 6200 3750
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0101
 U 1 1 5E1DC302
 P 7850 2800
-F 0 "#PWR?" H 7850 2650 50  0001 C CNN
+F 0 "#PWR0101" H 7850 2650 50  0001 C CNN
 F 1 "+12V" H 7865 2973 50  0000 C CNN
 F 2 "" H 7850 2800 50  0001 C CNN
 F 3 "" H 7850 2800 50  0001 C CNN
@@ -575,10 +547,10 @@ Wire Wire Line
 Wire Wire Line
 	6650 2900 7850 2900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E430CE7
 P 5400 3850
-F 0 "#PWR?" H 5400 3600 50  0001 C CNN
+F 0 "#PWR0103" H 5400 3600 50  0001 C CNN
 F 1 "GND" H 5405 3677 50  0000 C CNN
 F 2 "" H 5400 3850 50  0001 C CNN
 F 3 "" H 5400 3850 50  0001 C CNN
@@ -607,4 +579,80 @@ Wire Wire Line
 Wire Wire Line
 	5400 2900 5950 2900
 Connection ~ 5400 2900
+Wire Wire Line
+	3000 4150 3750 4150
+Wire Wire Line
+	2950 4350 3750 4350
+Wire Wire Line
+	3000 4550 3750 4550
+$Comp
+L Device:Q_NMOS_GDS Q5
+U 1 1 5E24CE92
+P 3350 3500
+F 0 "Q5" V 3601 3500 50  0000 C CNN
+F 1 "IRFP250NPBF" V 3692 3500 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 3550 3600 50  0001 C CNN
+F 3 "~" H 3350 3500 50  0001 C CNN
+	1    3350 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3550 3600 3800 3600
+Wire Wire Line
+	3800 3600 3800 3750
+Wire Wire Line
+	3800 3750 4550 3750
+Connection ~ 4550 3750
+Wire Wire Line
+	4300 3250 3350 3250
+Wire Wire Line
+	3350 3250 3350 3300
+Connection ~ 4300 3250
+Wire Wire Line
+	3150 3600 3100 3600
+Text HLabel 8150 3750 2    50   Input ~ 0
+CoilControl
+Wire Wire Line
+	3100 3600 3100 4650
+Wire Wire Line
+	6050 4650 6050 4550
+Wire Wire Line
+	4800 4450 4800 4550
+Wire Wire Line
+	5400 4150 6900 4150
+Wire Wire Line
+	7800 4450 7800 4050
+Wire Wire Line
+	7800 4050 8000 4050
+Wire Wire Line
+	7900 4550 7900 4150
+Wire Wire Line
+	7900 4150 8000 4150
+Wire Wire Line
+	6050 4550 7900 4550
+Wire Wire Line
+	7700 4350 7700 3950
+Wire Wire Line
+	7700 3950 8000 3950
+Wire Wire Line
+	5000 4350 7700 4350
+Wire Wire Line
+	4800 4450 7800 4450
+Wire Wire Line
+	3100 4650 6050 4650
+Wire Wire Line
+	7700 3550 7700 3950
+Connection ~ 7700 3950
+Wire Wire Line
+	7800 3650 7800 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7700 3550 8150 3550
+Wire Wire Line
+	7800 3650 8150 3650
+Wire Wire Line
+	8150 3750 7900 3750
+Wire Wire Line
+	7900 3750 7900 4150
+Connection ~ 7900 4150
 $EndSCHEMATC
