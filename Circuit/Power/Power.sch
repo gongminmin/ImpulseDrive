@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 1 1
 Title "Power Module"
 Date "2020-01-07"
 Rev "1"
@@ -103,7 +103,7 @@ U 1 1 5E0D9319
 P 6100 5150
 F 0 "T2" H 6100 5531 50  0000 C CNN
 F 1 "6:200" H 6100 5440 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_Generic_EE25_8Pin" H 6100 5150 50  0001 C CNN
+F 2 "Power:Transformer_Generic_EE25_8Pin" H 6100 5150 50  0001 C CNN
 F 3 "~" H 6100 5150 50  0001 C CNN
 	1    6100 5150
 	1    0    0    -1  
@@ -174,7 +174,7 @@ U 1 1 5E0C56BF
 P 4150 4350
 F 0 "T1" H 4150 4750 50  0000 C CNN
 F 1 "4+4:8" H 4150 4650 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_Generic_EE25_8Pin" H 4150 4350 50  0001 C CNN
+F 2 "Power:Transformer_Generic_EE25_8Pin" H 4150 4350 50  0001 C CNN
 F 3 "~" H 4150 4350 50  0001 C CNN
 	1    4150 4350
 	1    0    0    -1  
