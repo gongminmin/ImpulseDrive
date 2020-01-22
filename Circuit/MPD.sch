@@ -268,10 +268,10 @@ F5 "CapacitorPower+" I R 3750 3350 50
 F6 "CapacitorPower-" I R 3750 3450 50 
 F7 "StarterPower+" I R 3750 2950 50 
 F8 "StarterPower-" I R 3750 3050 50 
-F9 "+12VPulseIn" I L 2050 2850 50 
-F10 "0Vin" I L 2050 2950 50 
-F11 "-12VPulseIn" I L 2050 3050 50 
-F12 "CoilControl" I L 2050 2550 50 
+F9 "CoilControl" I L 2050 2550 50 
+F10 "AC+In" I L 2050 2850 50 
+F11 "AC0In" I L 2050 2950 50 
+F12 "AC-In" I L 2050 3050 50 
 $EndSheet
 Wire Wire Line
 	1700 2850 2050 2850
