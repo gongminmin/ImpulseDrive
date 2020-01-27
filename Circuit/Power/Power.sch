@@ -91,12 +91,12 @@ Wire Wire Line
 Wire Wire Line
 	5550 5050 5700 5050
 $Comp
-L Device:Transformer_SP_1S_2 T1
+L Device:Transformer_SP_1S T1
 U 1 1 5E0C56BF
 P 4150 4350
 F 0 "T1" H 4150 4750 50  0000 C CNN
-F 1 "3+3:6" H 4150 4650 50  0000 C CNN
-F 2 "Power:Transformer_Generic_EE25_8Pin" H 4150 4350 50  0001 C CNN
+F 1 "7+7:14" H 4150 4650 50  0000 C CNN
+F 2 "Power:Transformer_Toroid_5Pin" H 4150 4350 50  0001 C CNN
 F 3 "~" H 4150 4350 50  0001 C CNN
 	1    4150 4350
 	1    0    0    -1  
