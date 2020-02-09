@@ -34,13 +34,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 2650 9200 2650
 Wire Wire Line
-	6250 2750 9300 2750
-Wire Wire Line
 	9100 4000 8500 4000
 Wire Wire Line
 	9200 4100 8500 4100
-Wire Wire Line
-	9300 4200 8500 4200
 Wire Wire Line
 	6900 3950 6750 3950
 Wire Wire Line
@@ -65,26 +61,16 @@ Wire Wire Line
 Connection ~ 4450 2750
 Wire Wire Line
 	4450 2750 3750 2750
-Wire Wire Line
-	4650 2850 4550 2850
-Wire Wire Line
-	4550 2850 4550 2200
-Wire Wire Line
-	4550 2200 8800 2200
-Wire Wire Line
-	8800 2200 8800 3900
 $Sheet
 S 4650 2350 1600 700 
 U 5E0FF92E
 F0 "Control" 50
 F1 "Control/Control.sch" 50
 F2 "ControlSignal" I L 4650 2650 50 
-F3 "ControlGND" I L 4650 2750 50 
-F4 "CapacitorSignal+" I R 6250 2550 50 
-F5 "CapacitorSignal-" I R 6250 2750 50 
-F6 "CapacitorSignalGND" I R 6250 2650 50 
-F7 "ControlPower-" I L 4650 2850 50 
-F8 "ControlPower+" I L 4650 2550 50 
+F3 "ControlPower+" I L 4650 2550 50 
+F4 "ControlPowerGND" I L 4650 2750 50 
+F5 "CapacitorSignal1" I R 6250 2550 50 
+F6 "CapacitorSignal2" I R 6250 2650 50 
 $EndSheet
 $Sheet
 S 6900 1050 1550 400 
@@ -131,8 +117,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 1300 6900 1300
 Wire Wire Line
-	9300 2750 9300 4200
-Wire Wire Line
 	6250 2550 9100 2550
 Wire Wire Line
 	9200 2650 9200 4100
@@ -169,31 +153,8 @@ Wire Wire Line
 	8500 3700 8600 3700
 Wire Wire Line
 	8600 3700 8600 2000
-$Sheet
-S 6900 3200 1600 1200
-U 5E106C20
-F0 "CapacitorBank" 50
-F1 "MiniCapacitorBank/MiniCapacitorBank.sch" 50
-F2 "ControlPower+" I R 8500 3700 50 
-F3 "ControlPowerGND" I R 8500 3800 50 
-F4 "ControlPower-" I R 8500 3900 50 
-F5 "ControlSignal+" I R 8500 4000 50 
-F6 "ControlSignalGND" I R 8500 4100 50 
-F7 "ControlSignal-" I R 8500 4200 50 
-F8 "PowerIn+" I L 6900 3350 50 
-F9 "PowerIn-" I L 6900 3450 50 
-F10 "BleederSignal1" I L 6900 3950 50 
-F11 "BleederSignal2" I L 6900 4050 50 
-F12 "BleederSignal3" I L 6900 4150 50 
-F13 "BleederSignal4" I L 6900 4250 50 
-F14 "PowerOut+" I R 8500 3350 50 
-F15 "PowerOut-" I R 8500 3450 50 
-F16 "BleederCenter" I L 6900 3850 50 
-$EndSheet
 Wire Wire Line
 	8500 3800 8700 3800
-Wire Wire Line
-	8500 3900 8800 3900
 Wire Wire Line
 	6900 5050 6750 5050
 Wire Wire Line
@@ -298,4 +259,23 @@ Wire Wire Line
 	2050 2550 1900 2550
 Wire Wire Line
 	1900 1900 1900 2550
+$Sheet
+S 6900 3200 1600 1200
+U 5E106C20
+F0 "CapacitorBank" 50
+F1 "MiniCapacitorBank/MiniCapacitorBank.sch" 50
+F2 "ControlPower+" I R 8500 3700 50 
+F3 "ControlPowerGND" I R 8500 3800 50 
+F4 "PowerIn+" I L 6900 3350 50 
+F5 "PowerIn-" I L 6900 3450 50 
+F6 "BleederSignal1" I L 6900 3950 50 
+F7 "BleederSignal2" I L 6900 4050 50 
+F8 "BleederSignal3" I L 6900 4150 50 
+F9 "BleederSignal4" I L 6900 4250 50 
+F10 "PowerOut+" I R 8500 3350 50 
+F11 "PowerOut-" I R 8500 3450 50 
+F12 "BleederCenter" I L 6900 3850 50 
+F13 "ControlSignal1" I R 8500 4000 50 
+F14 "ControlSignal2" I R 8500 4100 50 
+$EndSheet
 $EndSCHEMATC

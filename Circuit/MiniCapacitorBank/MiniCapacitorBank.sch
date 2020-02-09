@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:MPD-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 1 8
 Title "Mini Capacitor Bank"
 Date "2020-01-07"
 Rev "1"
@@ -340,14 +341,14 @@ Connection ~ 5850 1500
 Connection ~ 5850 4500
 Connection ~ 8300 3000
 $Comp
-L Connector:Conn_01x03_Male J2
+L Connector:Conn_01x04_Male J2
 U 1 1 5DD38980
-P 10100 3000
-F 0 "J2" H 10072 3024 50  0000 R CNN
-F 1 "To Control" H 10072 2933 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10100 3000 50  0001 C CNN
-F 3 "~" H 10100 3000 50  0001 C CNN
-	1    10100 3000
+P 10300 2950
+F 0 "J2" H 10272 2974 50  0000 R CNN
+F 1 "To Control" H 10272 2883 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10300 2950 50  0001 C CNN
+F 3 "~" H 10300 2950 50  0001 C CNN
+	1    10300 2950
 	-1   0    0    -1  
 $EndComp
 Connection ~ 5300 4500
@@ -629,8 +630,6 @@ F 3 "http://www.qsl.net/wa1ion/vactrol/vactrol.pdf" H 8700 3000 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	9500 2850 9350 2850
-Wire Wire Line
 	8300 3150 8350 3150
 Wire Wire Line
 	8300 3000 8300 3150
@@ -655,13 +654,6 @@ F 3 "~" H 8000 2100 50  0001 C CNN
 	1    8000 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 3150 9000 3150
-Connection ~ 9500 2850
-Wire Wire Line
-	9500 2400 9500 2500
-Wire Wire Line
-	9400 2650 9400 2400
 $Comp
 L Device:R R11
 U 1 1 5E12C0F1
@@ -676,22 +668,14 @@ $EndComp
 $Comp
 L Device:R R12
 U 1 1 5E148B18
-P 9200 3150
-F 0 "R12" V 8993 3150 50  0000 C CNN
-F 1 "4.7K" V 9084 3150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9130 3150 50  0001 C CNN
-F 3 "~" H 9200 3150 50  0001 C CNN
-	1    9200 3150
+P 9200 3350
+F 0 "R12" V 8993 3350 50  0000 C CNN
+F 1 "4.7K" V 9084 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9130 3350 50  0001 C CNN
+F 3 "~" H 9200 3350 50  0001 C CNN
+	1    9200 3350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9800 3250 9800 3100
-Wire Wire Line
-	9900 2900 9800 2900
-Wire Wire Line
-	9800 2750 9800 2900
-Wire Wire Line
-	9900 3100 9800 3100
 Connection ~ 7800 1500
 Wire Wire Line
 	7800 1500 8300 1500
@@ -717,19 +701,6 @@ Wire Wire Line
 	8300 2250 8300 2650
 Wire Wire Line
 	8300 1500 8300 1950
-$Comp
-L Connector:Conn_01x03_Male J8
-U 1 1 5E0F9E76
-P 9500 2200
-F 0 "J8" V 9562 2012 50  0000 R CNN
-F 1 "+-12V" V 9653 2012 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9500 2200 50  0001 C CNN
-F 3 "~" H 9500 2200 50  0001 C CNN
-	1    9500 2200
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	9600 2400 9600 2600
 Wire Wire Line
 	9050 2850 9000 2850
 $Comp
@@ -743,33 +714,11 @@ F 3 "http://www.qsl.net/wa1ion/vactrol/vactrol.pdf" H 8700 2500 50  0001 C CNN
 	1    8650 2750
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	9000 2750 9000 2850
 Connection ~ 9000 2850
 Wire Wire Line
 	9000 2850 8950 2850
 Wire Wire Line
-	8950 2650 9000 2650
-Wire Wire Line
-	9350 3150 9500 3150
-Wire Wire Line
-	9000 3250 9000 3150
-Connection ~ 9000 3150
-Wire Wire Line
-	9000 3150 9050 3150
-Wire Wire Line
-	8950 3350 9600 3350
-Wire Wire Line
-	9500 2850 9500 3000
-Wire Wire Line
-	9500 3000 9700 3000
-Connection ~ 9500 3000
-Wire Wire Line
-	9500 3000 9500 3150
-Wire Wire Line
-	9000 2750 9750 2750
-Wire Wire Line
-	9000 3250 9650 3250
+	8950 3350 9000 3350
 Text HLabel 2150 1500 0    50   Input ~ 0
 PowerIn+
 Text HLabel 2150 4500 0    50   Input ~ 0
@@ -780,62 +729,12 @@ Wire Wire Line
 	2150 1500 2550 1500
 Text HLabel 10100 2150 2    50   Input ~ 0
 ControlPower+
-Text HLabel 10100 2250 2    50   Input ~ 0
+Text HLabel 10100 2450 2    50   Input ~ 0
 ControlPowerGND
+Text HLabel 10100 2250 2    50   Input ~ 0
+ControlSignal1
 Text HLabel 10100 2350 2    50   Input ~ 0
-ControlPower-
-Wire Wire Line
-	10100 2150 9000 2150
-Wire Wire Line
-	9000 2150 9000 2650
-Connection ~ 9000 2650
-Wire Wire Line
-	9000 2650 9400 2650
-Wire Wire Line
-	10100 2250 9900 2250
-Wire Wire Line
-	9900 2250 9900 2500
-Wire Wire Line
-	9900 2500 9500 2500
-Connection ~ 9500 2500
-Wire Wire Line
-	9500 2500 9500 2850
-Wire Wire Line
-	10100 2350 10000 2350
-Wire Wire Line
-	10000 2350 10000 2600
-Wire Wire Line
-	10000 2600 9600 2600
-Connection ~ 9600 2600
-Wire Wire Line
-	9600 2600 9600 3350
-Text HLabel 10100 3400 2    50   Input ~ 0
-ControlSignal+
-Text HLabel 10100 3500 2    50   Input ~ 0
-ControlSignalGND
-Text HLabel 10100 3600 2    50   Input ~ 0
-ControlSignal-
-Wire Wire Line
-	10100 3400 9750 3400
-Wire Wire Line
-	9750 3400 9750 2750
-Connection ~ 9750 2750
-Wire Wire Line
-	9750 2750 9800 2750
-Wire Wire Line
-	10100 3500 9700 3500
-Wire Wire Line
-	9700 3500 9700 3000
-Connection ~ 9700 3000
-Wire Wire Line
-	9700 3000 9900 3000
-Wire Wire Line
-	10100 3600 9650 3600
-Wire Wire Line
-	9650 3600 9650 3250
-Connection ~ 9650 3250
-Wire Wire Line
-	9650 3250 9800 3250
+ControlSignal2
 Text HLabel 5100 2400 0    50   Input ~ 0
 BleederSignal1
 Text HLabel 5100 3900 0    50   Input ~ 0
@@ -888,4 +787,62 @@ Text HLabel 3500 3000 0    50   Input ~ 0
 BleederCenter
 Wire Wire Line
 	3500 3000 3900 3000
+Wire Wire Line
+	10050 2650 10050 2850
+Connection ~ 9000 3350
+Wire Wire Line
+	9000 3350 9050 3350
+Wire Wire Line
+	8950 2650 9400 2650
+Wire Wire Line
+	10100 2150 9400 2150
+Wire Wire Line
+	9400 2150 9400 2650
+Connection ~ 9400 2650
+Wire Wire Line
+	9400 2650 9400 3150
+Wire Wire Line
+	9400 3150 8950 3150
+Wire Wire Line
+	9500 2250 10100 2250
+Wire Wire Line
+	10100 2350 9600 2350
+Wire Wire Line
+	10100 2450 9700 2450
+Wire Wire Line
+	9700 2450 9700 2850
+Wire Wire Line
+	9000 2950 9000 2850
+Wire Wire Line
+	9000 2950 9500 2950
+Connection ~ 9500 2950
+Wire Wire Line
+	9500 2250 9500 2950
+Wire Wire Line
+	10100 2850 10050 2850
+Wire Wire Line
+	9400 2650 10050 2650
+Wire Wire Line
+	9500 2950 10100 2950
+Wire Wire Line
+	9700 3150 10100 3150
+Wire Wire Line
+	9000 3050 9600 3050
+Wire Wire Line
+	9000 3050 9000 3350
+Wire Wire Line
+	9600 2350 9600 3050
+Connection ~ 9600 3050
+Wire Wire Line
+	9600 3050 10100 3050
+Wire Wire Line
+	9350 3350 9700 3350
+Wire Wire Line
+	9700 3350 9700 3150
+Connection ~ 9700 3150
+Wire Wire Line
+	9350 2850 9700 2850
+Connection ~ 9700 2850
+Wire Wire Line
+	9700 2850 9700 3150
 $EndSCHEMATC
