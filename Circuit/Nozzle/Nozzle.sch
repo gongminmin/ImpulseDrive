@@ -101,7 +101,7 @@ Wire Wire Line
 Text HLabel 1900 2000 0    50   Input ~ 0
 CoilPower+
 Text HLabel 1900 2100 0    50   Input ~ 0
-CoilControl
+CoilPower-
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E16FFC4

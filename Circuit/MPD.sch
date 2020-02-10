@@ -98,7 +98,7 @@ F1 "Nozzle/Nozzle.sch" 50
 F2 "NozzleAnode" I L 10100 3350 50 
 F3 "NozzleCathode" I L 10100 3450 50 
 F4 "CoilPower+" I L 10100 2800 50 
-F5 "CoilControl" I L 10100 2900 50 
+F5 "CoilPower-" I L 10100 2900 50 
 $EndSheet
 Wire Wire Line
 	9550 1900 9550 2900
@@ -188,33 +188,31 @@ $EndSheet
 $Comp
 L power:+12V #PWR?
 U 1 1 5E1BE42B
-P 550 2850
-F 0 "#PWR?" H 550 2700 50  0001 C CNN
-F 1 "+12V" H 565 3023 50  0000 C CNN
-F 2 "" H 550 2850 50  0001 C CNN
-F 3 "" H 550 2850 50  0001 C CNN
-	1    550  2850
+P 500 2850
+F 0 "#PWR?" H 500 2700 50  0001 C CNN
+F 1 "+12V" H 515 3023 50  0000 C CNN
+F 2 "" H 500 2850 50  0001 C CNN
+F 3 "" H 500 2850 50  0001 C CNN
+	1    500  2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E1BEA51
-P 550 3050
-F 0 "#PWR?" H 550 2800 50  0001 C CNN
-F 1 "GND" H 555 2877 50  0000 C CNN
-F 2 "" H 550 3050 50  0001 C CNN
-F 3 "" H 550 3050 50  0001 C CNN
-	1    550  3050
+P 500 3050
+F 0 "#PWR?" H 500 2800 50  0001 C CNN
+F 1 "GND" H 505 2877 50  0000 C CNN
+F 2 "" H 500 3050 50  0001 C CNN
+F 3 "" H 500 3050 50  0001 C CNN
+	1    500  3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  2900 700  2900
+	500  2900 500  2850
 Wire Wire Line
-	550  2900 550  2850
+	800  3000 600  3000
 Wire Wire Line
-	800  3000 550  3000
-Wire Wire Line
-	550  3000 550  3050
+	500  3000 500  3050
 Wire Wire Line
 	4350 2550 3750 2550
 $Sheet
@@ -229,10 +227,13 @@ F5 "CapacitorPower+" I R 3750 3350 50
 F6 "CapacitorPower-" I R 3750 3450 50 
 F7 "StarterPower+" I R 3750 2950 50 
 F8 "StarterPower-" I R 3750 3050 50 
-F9 "CoilControl" I L 2050 2550 50 
-F10 "AC+In" I L 2050 2850 50 
-F11 "AC0In" I L 2050 2950 50 
-F12 "AC-In" I L 2050 3050 50 
+F9 "AC+In" I L 2050 2850 50 
+F10 "AC0In" I L 2050 2950 50 
+F11 "AC-In" I L 2050 3050 50 
+F12 "Coil-" I L 2050 2550 50 
+F13 "Coil+" I L 2050 2450 50 
+F14 "DC+In" I L 2050 3400 50 
+F15 "DC-In" I L 2050 3500 50 
 $EndSheet
 Wire Wire Line
 	1700 2850 2050 2850
@@ -243,22 +244,11 @@ Wire Wire Line
 Wire Wire Line
 	3750 2650 4650 2650
 Wire Wire Line
-	1900 1900 9550 1900
-Wire Wire Line
-	700  2900 700  1800
-Wire Wire Line
-	700  1800 9650 1800
-Wire Wire Line
 	9650 2800 10100 2800
 Wire Wire Line
 	9650 1800 9650 2800
-Connection ~ 700  2900
 Wire Wire Line
-	700  2900 550  2900
-Wire Wire Line
-	2050 2550 1900 2550
-Wire Wire Line
-	1900 1900 1900 2550
+	1800 1900 1800 2550
 $Sheet
 S 6900 3200 1600 1200
 U 5E106C20
@@ -278,4 +268,30 @@ F12 "BleederCenter" I L 6900 3850 50
 F13 "ControlSignal1" I R 8500 4000 50 
 F14 "ControlSignal2" I R 8500 4100 50 
 $EndSheet
+Wire Wire Line
+	1800 1900 9550 1900
+Wire Wire Line
+	1800 2550 2050 2550
+Wire Wire Line
+	2050 2450 1900 2450
+Wire Wire Line
+	1900 2450 1900 1800
+Wire Wire Line
+	1900 1800 9650 1800
+Wire Wire Line
+	2050 3400 700  3400
+Wire Wire Line
+	700  3400 700  2900
+Connection ~ 700  2900
+Wire Wire Line
+	700  2900 800  2900
+Wire Wire Line
+	600  3000 600  3500
+Wire Wire Line
+	600  3500 2050 3500
+Wire Wire Line
+	500  2900 700  2900
+Wire Wire Line
+	500  3000 600  3000
+Connection ~ 600  3000
 $EndSCHEMATC
