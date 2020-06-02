@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Power-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 9
 Title "ZVS"
 Date "2020-01-10"
 Rev "1"
@@ -25,14 +26,14 @@ F 3 "~" H 3100 3500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J2
+L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E1CE78D
-P 8000 3500
-F 0 "J2" H 8080 3542 50  0000 L CNN
-F 1 "+-12V Pulse out" H 8080 3451 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 8000 3500 50  0001 C CNN
-F 3 "~" H 8000 3500 50  0001 C CNN
-	1    8000 3500
+P 9150 3300
+F 0 "J2" H 9230 3342 50  0000 L CNN
+F 1 "12V AC out" H 9230 3251 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9150 3300 50  0001 C CNN
+F 3 "~" H 9150 3300 50  0001 C CNN
+	1    9150 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -220,17 +221,11 @@ Wire Wire Line
 	6500 3150 6500 3300
 Wire Wire Line
 	6500 3150 7100 3150
-Wire Wire Line
-	7600 3150 7600 3400
-Wire Wire Line
-	7600 3400 7800 3400
 Connection ~ 6500 3150
 Wire Wire Line
 	4300 2750 7400 2750
 Wire Wire Line
-	7400 2750 7400 3500
-Wire Wire Line
-	7400 3500 7750 3500
+	7400 2750 7400 3350
 Wire Wire Line
 	6500 4300 6500 4000
 Wire Wire Line
@@ -253,10 +248,6 @@ Wire Wire Line
 	6500 4850 6500 4700
 Wire Wire Line
 	6500 4850 7100 4850
-Wire Wire Line
-	7600 4850 7600 3600
-Wire Wire Line
-	7600 3600 7700 3600
 Connection ~ 6500 4850
 $Comp
 L Device:C C1
@@ -273,41 +264,20 @@ Wire Wire Line
 	7100 3850 7100 3150
 Connection ~ 7100 3150
 Wire Wire Line
-	7100 3150 7600 3150
-Wire Wire Line
 	7100 4150 7100 4850
 Connection ~ 7100 4850
 Wire Wire Line
 	7100 4850 7600 4850
-Text HLabel 7600 2250 0    50   Input ~ 0
-Output+1
-Text HLabel 7600 2350 0    50   Input ~ 0
-Output0
-Text HLabel 7600 2450 0    50   Input ~ 0
-Output+2
+Text HLabel 8500 2600 0    50   Input ~ 0
+ACOutput+
+Text HLabel 8500 2750 0    50   Input ~ 0
+ACOutput-
 Wire Wire Line
-	7600 2250 7800 2250
-Wire Wire Line
-	7800 2250 7800 3400
-Connection ~ 7800 3400
-Wire Wire Line
-	7600 2350 7750 2350
-Wire Wire Line
-	7750 2350 7750 3500
-Connection ~ 7750 3500
-Wire Wire Line
-	7750 3500 7800 3500
-Wire Wire Line
-	7600 2450 7700 2450
-Wire Wire Line
-	7700 2450 7700 3600
-Connection ~ 7700 3600
-Wire Wire Line
-	7700 3600 7800 3600
+	8500 2750 8650 2750
 Text HLabel 3300 2800 0    50   Input ~ 0
-Input+
-Text HLabel 3300 2900 0    50   Input ~ 0
-Input-
+DCInput+
+Text HLabel 3300 2950 0    50   Input ~ 0
+DCInput-
 Wire Wire Line
 	3300 2800 3550 2800
 Wire Wire Line
@@ -318,8 +288,49 @@ Wire Wire Line
 Wire Wire Line
 	3300 3600 3450 3600
 Wire Wire Line
-	3300 2900 3450 2900
-Wire Wire Line
-	3450 2900 3450 3600
+	3300 2950 3450 2950
 Connection ~ 3450 3600
+Wire Wire Line
+	8950 3300 8800 3300
+Wire Wire Line
+	8800 3300 8800 3150
+Wire Wire Line
+	8800 3400 8950 3400
+Wire Wire Line
+	7400 3350 7800 3350
+$Comp
+L Device:Transformer_SP_1S T1
+U 1 1 5ED4C2DF
+P 8200 3350
+F 0 "T1" H 8200 3731 50  0000 C CNN
+F 1 "7+7:14" H 8200 3640 50  0000 C CNN
+F 2 "Power:Transformer_Toroid_5Pin" H 8200 3350 50  0001 C CNN
+F 3 "" H 8200 3350 50  0001 C CNN
+	1    8200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3400 8800 3550
+Wire Wire Line
+	8600 3550 8650 3550
+Connection ~ 8650 3550
+Wire Wire Line
+	8650 3550 8800 3550
+Wire Wire Line
+	8800 3150 8800 2600
+Connection ~ 8800 3150
+Wire Wire Line
+	8500 2600 8800 2600
+Wire Wire Line
+	8600 3150 8800 3150
+Wire Wire Line
+	7800 3550 7600 3550
+Wire Wire Line
+	7600 3550 7600 4850
+Wire Wire Line
+	7100 3150 7800 3150
+Wire Wire Line
+	3450 2950 3450 3600
+Wire Wire Line
+	8650 2750 8650 3550
 $EndSCHEMATC
