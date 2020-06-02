@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MPD-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,26 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4000 3200 3700 3200
-Wire Wire Line
-	4000 3400 3800 3400
-Wire Wire Line
-	5600 3300 8550 3300
-Wire Wire Line
-	8450 4750 7850 4750
-Wire Wire Line
-	8550 4850 7850 4850
-Wire Wire Line
-	3700 2650 3700 3200
-Connection ~ 3700 3200
-Wire Wire Line
-	3800 3400 3800 2750
-Wire Wire Line
-	3800 2750 8050 2750
-Connection ~ 3800 3400
-Wire Wire Line
-	3800 3400 3100 3400
 $Sheet
 S 4000 3000 1600 700 
 U 5E0FF92E
@@ -68,19 +47,9 @@ $EndSheet
 Wire Wire Line
 	8900 3600 9450 3600
 Wire Wire Line
-	7950 2650 3700 2650
-Wire Wire Line
-	5600 3200 8450 3200
-Wire Wire Line
 	3100 4050 6250 4050
 Wire Wire Line
 	3100 4150 6250 4150
-Wire Wire Line
-	7850 4050 8250 4050
-Wire Wire Line
-	7850 4400 7950 4400
-Wire Wire Line
-	7850 4500 8050 4500
 Wire Wire Line
 	7800 1850 9150 1850
 Wire Wire Line
@@ -88,25 +57,9 @@ Wire Wire Line
 Wire Wire Line
 	9150 4050 9450 4050
 Wire Wire Line
-	3700 3200 3100 3200
-Wire Wire Line
 	3100 3300 4000 3300
 Wire Wire Line
 	9000 3500 9450 3500
-$Sheet
-S 6250 3850 1600 1200
-U 5E106C20
-F0 "CapacitorBank" 50
-F1 "CapacitorBank/CapacitorBank.sch" 50
-F2 "ControlPower+" I R 7850 4400 50 
-F3 "ControlPowerGND" I R 7850 4500 50 
-F4 "PowerOut+" I R 7850 4050 50 
-F5 "PowerOut-" I R 7850 4150 50 
-F6 "ControlSignal1" I R 7850 4750 50 
-F7 "ControlSignal2" I R 7850 4850 50 
-F8 "ACPowerIn+" I L 6250 4050 50 
-F9 "ACPowerIn-" I L 6250 4150 50 
-$EndSheet
 Wire Wire Line
 	1150 2550 8900 2550
 Wire Wire Line
@@ -117,8 +70,6 @@ Wire Wire Line
 	8900 2550 8900 3600
 Wire Wire Line
 	9000 2450 9000 3500
-Wire Wire Line
-	8250 1950 8250 4050
 $Sheet
 S 1400 3000 1700 1300
 U 5E1058DB
@@ -155,13 +106,57 @@ Wire Wire Line
 Wire Wire Line
 	850  1950 850  4150
 Wire Wire Line
-	7850 4150 9450 4150
+	3100 3200 3750 3200
 Wire Wire Line
-	8450 3200 8450 4750
+	3100 3400 3650 3400
+Connection ~ 3750 3200
 Wire Wire Line
-	8550 3300 8550 4850
+	3750 3200 4000 3200
+Connection ~ 3650 3400
 Wire Wire Line
-	7950 2650 7950 4400
+	3650 3400 4000 3400
 Wire Wire Line
-	8050 2750 8050 4500
+	3750 3200 3750 4400
+Wire Wire Line
+	3650 3400 3650 4500
+$Sheet
+S 6250 3500 1600 1200
+U 5E106C20
+F0 "CapacitorBank" 50
+F1 "CapacitorBank/CapacitorBank.sch" 50
+F2 "ControlPower+" I L 6250 4400 50 
+F3 "ControlPowerGND" I L 6250 4500 50 
+F4 "PowerOut+" I R 7850 3700 50 
+F5 "PowerOut-" I R 7850 3800 50 
+F6 "ControlSignal1" I L 6250 3700 50 
+F7 "ControlSignal2" I L 6250 3800 50 
+F8 "ACPowerIn+" I L 6250 4050 50 
+F9 "ACPowerIn-" I L 6250 4150 50 
+$EndSheet
+Wire Wire Line
+	3650 4500 6250 4500
+Wire Wire Line
+	6250 4400 3750 4400
+Wire Wire Line
+	6250 3700 5950 3700
+Wire Wire Line
+	5950 3700 5950 3200
+Wire Wire Line
+	5600 3200 5950 3200
+Wire Wire Line
+	6250 3800 5850 3800
+Wire Wire Line
+	5850 3800 5850 3300
+Wire Wire Line
+	5600 3300 5850 3300
+Wire Wire Line
+	7850 3700 8250 3700
+Wire Wire Line
+	8250 1950 8250 3700
+Wire Wire Line
+	7850 3800 8250 3800
+Wire Wire Line
+	8250 3800 8250 4150
+Wire Wire Line
+	8250 4150 9450 4150
 $EndSCHEMATC
