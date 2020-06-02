@@ -49,6 +49,8 @@ TODO.
 
 The power module converts 12V DC to 2-way 12V AC. One for starter, and one for charging capacitor bank.
 
+See also [Power Module](PowerModule.md)
+
 ### Control
 
 The control module collect the signals from other modules, then decides when to turn on starter, capacitor bank, propellant injector, or electromagnet.
