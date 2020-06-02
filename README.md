@@ -13,6 +13,8 @@ In Star Trek universe, impulse drive is a propulsion system of spacecrafts for i
 
 We'd like to make it easy to implement, so people can build it as a hobby project.
 
+NOTE: Please turn on git LFS when cloning this project.
+
 ## Method
 
 There are many different engine designs for spacecraft propulsion, check [wikipedia](https://en.wikipedia.org/wiki/Spacecraft_propulsion#Table_of_methods) for a list. The only one design among them that fits these requirements is magnetoplasmadynamic thruster, a.k.a, MPDT or MPD thruster. More details in [MPD](Doc/Mpd.md).

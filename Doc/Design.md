@@ -41,7 +41,7 @@ The propulsion system is running in cycles. Each cycle takes steps below.
 
 ## Modules
 
-The system is composed of several modules. 
+The system is composed of several modules.
 
 TODO.
 
