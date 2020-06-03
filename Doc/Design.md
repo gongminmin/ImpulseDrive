@@ -55,6 +55,8 @@ See also [Power Module](PowerModule.md)
 
 The control module collect the signals from other modules, then decides when to turn on starter, capacitor bank, propellant injector, or electromagnet.
 
+See also [Control Module](ControlModule.md)
+
 ### Starter
 
 The starter transformed 12V AC to 10kV high frequency DC to ionize the propellant. It's very similar to a spark gap tesla coil.
@@ -67,7 +69,7 @@ The 12V AC from power module is transformed to +400V and -400V, and charge a bun
 
 The nozzle contains a hollow cathode, a large piece of anode, and a electromagnet around it.
 
-### Propellant injector
+### Propellant Injector
 
 A air compressor injects the propellant (air) to the nozzle.
 

@@ -24,7 +24,7 @@ It's also a finished board that can be found online. The output of this board is
 
 ## Power Switch
 
-The DC from power source and AC from ZVS driver are separated into multiple channels. One to capacitor bank, one to starter, and one to electromagnet coil. When capacitor bank channel is on, other two ones are switched off.
+The DC from power source and AC from ZVS driver are separated into multiple channels. One to capacitor bank, one to starter, and one to electromagnet coil. When the ControlSignal is low level, the capacitor bank channel is on, other two ones are switched off.
 
 ![Power Switch Circuit](Img/PowerSwitchCircuit.png)
 
