@@ -1,0 +1,285 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5ED70353
+P 4350 3150
+F 0 "D1" V 4297 3228 50  0000 L CNN
+F 1 "LED" V 4388 3228 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 4350 3150 50  0001 C CNN
+F 3 "~" H 4350 3150 50  0001 C CNN
+	1    4350 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5ED709AA
+P 4650 3150
+F 0 "D2" V 4689 3033 50  0000 R CNN
+F 1 "LED" V 4598 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 4650 3150 50  0001 C CNN
+F 3 "~" H 4650 3150 50  0001 C CNN
+	1    4650 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5ED71251
+P 5500 3150
+F 0 "D3" V 5447 3228 50  0000 L CNN
+F 1 "LED" V 5538 3228 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5500 3150 50  0001 C CNN
+F 3 "~" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5ED7125B
+P 5800 3150
+F 0 "D4" V 5839 3033 50  0000 R CNN
+F 1 "LED" V 5748 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5800 3150 50  0001 C CNN
+F 3 "~" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5ED72882
+P 4350 2600
+F 0 "R1" H 4420 2646 50  0000 L CNN
+F 1 "2K2" H 4420 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4280 2600 50  0001 C CNN
+F 3 "~" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ED72E86
+P 5500 2600
+F 0 "R2" H 5570 2646 50  0000 L CNN
+F 1 "2K2" H 5570 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5430 2600 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5ED73328
+P 6650 2600
+F 0 "R3" H 6720 2646 50  0000 L CNN
+F 1 "2K2" H 6720 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6580 2600 50  0001 C CNN
+F 3 "~" H 6650 2600 50  0001 C CNN
+	1    6650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5ED73772
+P 4350 2000
+F 0 "J3" V 4314 1812 50  0000 R CNN
+F 1 "As Starter" V 4223 1812 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 2000 50  0001 C CNN
+F 3 "~" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5ED7458F
+P 5500 2000
+F 0 "J4" V 5464 1812 50  0000 R CNN
+F 1 "As Capacitor" V 5373 1812 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 2000 50  0001 C CNN
+F 3 "~" H 5500 2000 50  0001 C CNN
+	1    5500 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5ED74BB3
+P 6650 2000
+F 0 "J5" V 6614 1812 50  0000 R CNN
+F 1 "As Coil" V 6523 1812 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6650 2000 50  0001 C CNN
+F 3 "~" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5ED753BB
+P 3000 2700
+F 0 "J2" H 2972 2724 50  0000 R CNN
+F 1 "As Control" H 2972 2633 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3000 2700 50  0001 C CNN
+F 3 "~" H 3000 2700 50  0001 C CNN
+	1    3000 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3450 1750 3450
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5ED7868B
+P 1050 2650
+F 0 "J1" H 968 2867 50  0000 C CNN
+F 1 "12V Power" H 968 2776 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 2650 50  0001 C CNN
+F 3 "~" H 1050 2650 50  0001 C CNN
+	1    1050 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1950 1350 2650
+Wire Wire Line
+	1350 2650 1250 2650
+Wire Wire Line
+	1250 2750 1350 2750
+Wire Wire Line
+	1350 2750 1350 3450
+Wire Wire Line
+	1350 3450 1750 3450
+Connection ~ 1750 3450
+Wire Wire Line
+	1350 1950 1750 1950
+Connection ~ 1750 1950
+Wire Wire Line
+	1750 1950 2700 1950
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5ED80B64
+P 2100 2700
+F 0 "SW1" H 2100 2375 50  0000 C CNN
+F 1 "SW_SPDT" H 2100 2466 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 2100 2700 50  0001 C CNN
+F 3 "~" H 2100 2700 50  0001 C CNN
+	1    2100 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 2600 1900 2600
+Wire Wire Line
+	1750 1950 1750 2600
+Wire Wire Line
+	1750 2800 1900 2800
+Wire Wire Line
+	1750 2800 1750 3450
+Wire Wire Line
+	2300 2700 2800 2700
+Wire Wire Line
+	2700 2600 2800 2600
+Wire Wire Line
+	2700 1950 2700 2600
+Wire Wire Line
+	2700 2800 2800 2800
+Wire Wire Line
+	2700 2800 2700 3450
+Wire Wire Line
+	4350 2200 4350 2450
+Wire Wire Line
+	4350 2750 4350 2850
+Wire Wire Line
+	4650 3000 4650 2850
+Wire Wire Line
+	4650 2850 4350 2850
+Connection ~ 4350 2850
+Wire Wire Line
+	4350 2850 4350 3000
+Wire Wire Line
+	4350 3300 4350 3450
+Wire Wire Line
+	4350 3450 4650 3450
+Wire Wire Line
+	4650 3450 4650 3300
+Wire Wire Line
+	4450 2200 4450 2350
+Wire Wire Line
+	4450 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 3450
+Wire Wire Line
+	5000 3450 4650 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	5500 2200 5500 2450
+Wire Wire Line
+	5500 2750 5500 2850
+Wire Wire Line
+	5500 3300 5500 3450
+Wire Wire Line
+	5500 3450 5800 3450
+Wire Wire Line
+	5800 3450 5800 3300
+Wire Wire Line
+	5500 2850 5800 2850
+Wire Wire Line
+	5800 2850 5800 3000
+Connection ~ 5500 2850
+Wire Wire Line
+	5500 2850 5500 3000
+Wire Wire Line
+	5600 2200 5600 2350
+Wire Wire Line
+	5600 2350 6150 2350
+Wire Wire Line
+	6150 2350 6150 3450
+Wire Wire Line
+	6150 3450 5800 3450
+Connection ~ 5800 3450
+Wire Wire Line
+	6650 2200 6650 2450
+Wire Wire Line
+	6650 2750 6650 3000
+Wire Wire Line
+	6650 3300 6650 3450
+Wire Wire Line
+	6650 3450 7000 3450
+Wire Wire Line
+	7000 3450 7000 2350
+Wire Wire Line
+	7000 2350 6750 2350
+Wire Wire Line
+	6750 2350 6750 2200
+$Comp
+L Device:LED D5
+U 1 1 5ED8A3D4
+P 6650 3150
+F 0 "D5" V 6689 3033 50  0000 R CNN
+F 1 "LED" V 6598 3033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 3150 50  0001 C CNN
+F 3 "~" H 6650 3150 50  0001 C CNN
+	1    6650 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED7293C
+P 1750 3650
+F 0 "#PWR?" H 1750 3400 50  0001 C CNN
+F 1 "GND" H 1755 3477 50  0000 C CNN
+F 2 "" H 1750 3650 50  0001 C CNN
+F 3 "" H 1750 3650 50  0001 C CNN
+	1    1750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3650 1750 3450
+$EndSCHEMATC
