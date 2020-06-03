@@ -4,13 +4,29 @@ To make MPD thruster pratical enough, we need to solve [drawbacks of MPD thruste
 
 ## Improvements
 
-### Power source
+### Power Source
 
 To ionize the propellant, the power voltage needs to be around 10kV. To generate large enough Lorentz force, the electric current need at least 40A. However, a 400kW power source is not easy to get.
 
-To solve this, we can borrow a concept from welding machines. A starter provides 10kV high frequency AC to ionize some part of the medium. An ion path is created from one electrode to another during the ionization phase. This path completes a high voltage capacitor bank, which provides a extreme current.
+To solve this, we can borrow a concept from welding machines. A starter provides 10kV high frequency AC to ionize some part of the medium. An ion path is created from one electrode to another during the ionization phase. This path closes a high voltage capacitor bank circuit, which then pumps a high current to the medium to generate much more ion. One bonus is that AC is much easier to ionize medium than DC, it reduces the power requirement of the starter.
 
-In this way, we needs a power source to provide extreme voltage but low current, and a power source to provide extreme current but relatively low voltage. The power requirement are reduced much.
+In this way, we needs a power source to provide extreme voltage but low current, and a power source to provide high current but relatively low voltage. The power requirement are reduced much.
+
+### Parallel or Series
+
+Now we have 2 power sources, one extreme voltage AC from starter and one high current DC from capacitor bank. But how to connect them together? We have 2 choices, parallel and series.
+
+The first way is put starter and capacitor bank in parallel. However, to prevent the capacitor bank be damaged by the extreme voltage, and to prevent the starter to be damaged by the high current, they need some kinds of isolation.
+
+One straight forward thought is put a RC filter or LC filter between capacitor bank and the nozzle, and a unpolarized capacitor between starter and nozzle. DC can go through RC filter or LC filter, but AC is blocked. Meanwhile AC can go through the unpolarized capacitor, but DC is blocked.
+
+However, RC filter doesn't work for our scenario, because it limites the DC current from capacitor bank. LC filter is OK, but to survive under high current, the inductor must be a hugh one. It'll become super expensive and super heavy.
+
+The left choice is connect them in series. There are 2 issues to do this. First, the high current needs to go through starter. Second, the extreme AC can't go through polarized capacitor.
+
+To solve the first issue, we need a isolation transformer. The primary coil is wrapped by thin wire, and secondary coil is wrapped by very thick wire. They have same turns. In this way, the voltage from primary side can be transformed to secondary coil with the same voltage. Meanwhile high current can go through its secondary coil without damaging the coil or starter.
+
+The nature of the second issue is because AC keeps changing its direction, but polarized capacitor can't handle voltage with a inverted direction. We can solve it by using unpolarized capacitor, but normally the unpolarized capacitor is much smaller than the polarized ones. Or we can connect 2 polarized capacitors back to back to construct a unpolarized capacitor. This connection reduce both the voltage and the capacity of capacitors to half. It means we need much more capacitors to achieve the capacity we want. A much simpler way to solve this issue is just recifier the AC from starter to pulsed DC. The current direction is not changing in this case, it can be connected to capacitor bank in series.
 
 ### Propellant
 
@@ -32,18 +48,19 @@ The hollow conduit cathod also act as a cooling system. When the cold propellant
 
 The propulsion system is running in cycles. Each cycle takes steps below.
 
-1. The power starts charging the capacitor bank
-1. When the capacitor bank is full, turn on the inject system to push propellant into the nozzle
-1. Turn on the starter to generate a ion path inside the nozzle. The ion path completes the circuit of the capacitor bank
-1. The capacitor bank discharge generates much more ion
-1. Turn on the electromagnet for applying a magnetic field to push the ion particles out
-1. Finish discharing the capacitor bank, return to step 1
+![Modules](Img/Modules.png)
+
+1. The power starts charging the capacitor bank,
+1. When the capacitor bank is full, signals are sent to control module,
+1. Turn on the inject system to push propellant into the nozzle,
+1. Turn on the starter to generate a ion path inside the nozzle,
+1. The capacitor bank starts discharging, which generates much more ion,
+1. Turn on the electromagnet for applying a magnetic field to push the ion particles out,
+1. Finish discharing the capacitor bank, return to step 1.
 
 ## Modules
 
 The system is composed of several modules.
-
-TODO.
 
 ### Power
 

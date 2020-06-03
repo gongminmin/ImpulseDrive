@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4000 3000 1600 700 
+S 4000 3000 1600 600 
 U 5E0FF92E
 F0 "Control" 50
 F1 "Control/Control.sch" 50
@@ -48,9 +48,9 @@ $EndSheet
 Wire Wire Line
 	8900 3600 9450 3600
 Wire Wire Line
-	3100 4050 6250 4050
+	3100 4400 6250 4400
 Wire Wire Line
-	3100 4150 6250 4150
+	3100 4500 6250 4500
 Wire Wire Line
 	7800 1850 9150 1850
 Wire Wire Line
@@ -72,15 +72,15 @@ Wire Wire Line
 Wire Wire Line
 	9000 2450 9000 3500
 $Sheet
-S 1400 3000 1700 1300
+S 1400 3000 1700 1700
 U 5E1058DB
 F0 "Power" 50
 F1 "Power/Power.sch" 50
 F2 "ControlPower" I R 3100 3200 50 
 F3 "ControlSignal" I R 3100 3300 50 
 F4 "ControlGND" I R 3100 3400 50 
-F5 "CapacitorPower+" I R 3100 4050 50 
-F6 "CapacitorPower-" I R 3100 4150 50 
+F5 "CapacitorPower+" I R 3100 4400 50 
+F6 "CapacitorPower-" I R 3100 4500 50 
 F7 "StarterPower+" I L 1400 4050 50 
 F8 "StarterPower-" I L 1400 4150 50 
 F9 "CoilPower-" I L 1400 3300 50 
@@ -117,47 +117,29 @@ Connection ~ 3650 3400
 Wire Wire Line
 	3650 3400 4000 3400
 Wire Wire Line
-	3750 3200 3750 4400
+	3750 3200 3750 3800
 Wire Wire Line
-	3650 3400 3650 4500
+	3650 3400 3650 3900
 $Sheet
-S 6250 3500 1600 1200
+S 6250 3000 1600 1700
 U 5E106C20
 F0 "CapacitorBank" 50
 F1 "CapacitorBank/CapacitorBank.sch" 50
-F2 "ControlPower+" I L 6250 4400 50 
-F3 "ControlPowerGND" I L 6250 4500 50 
-F4 "PowerOut+" I R 7850 3700 50 
-F5 "PowerOut-" I R 7850 3800 50 
-F6 "ControlSignal1" I L 6250 3700 50 
-F7 "ControlSignal2" I L 6250 3800 50 
-F8 "ACPowerIn+" I L 6250 4050 50 
-F9 "ACPowerIn-" I L 6250 4150 50 
+F2 "ControlPower+" I L 6250 3800 50 
+F3 "ControlPowerGND" I L 6250 3900 50 
+F4 "PowerOut+" I R 7850 3200 50 
+F5 "PowerOut-" I R 7850 3300 50 
+F6 "ControlSignal1" I L 6250 3200 50 
+F7 "ControlSignal2" I L 6250 3300 50 
+F8 "ACPowerIn+" I L 6250 4400 50 
+F9 "ACPowerIn-" I L 6250 4500 50 
 $EndSheet
 Wire Wire Line
-	3650 4500 6250 4500
+	6250 3800 3750 3800
 Wire Wire Line
-	6250 4400 3750 4400
+	7850 3200 8250 3200
 Wire Wire Line
-	6250 3700 5950 3700
-Wire Wire Line
-	5950 3700 5950 3200
-Wire Wire Line
-	5600 3200 5950 3200
-Wire Wire Line
-	6250 3800 5850 3800
-Wire Wire Line
-	5850 3800 5850 3300
-Wire Wire Line
-	5600 3300 5850 3300
-Wire Wire Line
-	7850 3700 8250 3700
-Wire Wire Line
-	8250 1950 8250 3700
-Wire Wire Line
-	7850 3800 8250 3800
-Wire Wire Line
-	8250 3800 8250 4150
+	8250 1950 8250 3200
 Wire Wire Line
 	8250 4150 9450 4150
 $Comp
@@ -183,4 +165,14 @@ Wire Wire Line
 Connection ~ 8900 3050
 Wire Wire Line
 	8900 3050 8900 3600
+Wire Wire Line
+	5600 3200 6250 3200
+Wire Wire Line
+	5600 3300 6250 3300
+Wire Wire Line
+	3650 3900 6250 3900
+Wire Wire Line
+	7850 3300 8250 3300
+Wire Wire Line
+	8250 3300 8250 4150
 $EndSCHEMATC
