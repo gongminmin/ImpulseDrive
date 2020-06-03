@@ -44,6 +44,10 @@ To overcome the high ionization energy, we need to utilize [hollow cathode effec
 
 The hollow conduit cathod also act as a cooling system. When the cold propellant go through the conduit, it cools down the cathode. Same conduit cooling system can be applied to anode as well.
 
+### Continuous or Pulse
+
+TODO
+
 ## Sequence
 
 The propulsion system is running in cycles. Each cycle takes steps below.
@@ -89,6 +93,8 @@ The nozzle contains a hollow cathode, a large piece of anode, and a electromagne
 ### Propellant Injector
 
 A air compressor injects the propellant (air) to the nozzle.
+
+See also [Propellant Injector](PropellantInjector.md)
 
 ## References
 
