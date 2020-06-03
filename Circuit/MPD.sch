@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MPD-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -67,7 +68,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 1850 9150 4050
 Wire Wire Line
-	8900 2550 8900 3600
+	8900 2550 8900 3050
 Wire Wire Line
 	9000 2450 9000 3500
 $Sheet
@@ -159,4 +160,27 @@ Wire Wire Line
 	8250 3800 8250 4150
 Wire Wire Line
 	8250 4150 9450 4150
+$Comp
+L Motor:Fan M1
+U 1 1 5ED70E12
+P 9950 2800
+F 0 "M1" H 10108 2896 50  0000 L CNN
+F 1 "Propellant Injector" H 10108 2805 50  0000 L CNN
+F 2 "" H 9950 2810 50  0001 C CNN
+F 3 "~" H 9950 2810 50  0001 C CNN
+	1    9950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2450 9950 2450
+Wire Wire Line
+	9950 2450 9950 2500
+Connection ~ 9000 2450
+Wire Wire Line
+	9950 3000 9950 3050
+Wire Wire Line
+	9950 3050 8900 3050
+Connection ~ 8900 3050
+Wire Wire Line
+	8900 3050 8900 3600
 $EndSCHEMATC
