@@ -28,6 +28,7 @@ The principle of our design, and a detailed introduction of modules are in [Desi
 ## Directories
 
 * Circuit folder is the electric design of the system. The files can be open by [KiCad](https://kicad-pcb.org/)
+* 3DModel folder is the 3D model design of some components. It's in [Blender](https://www.blender.org/) format.
 * Doc folder contians some documents
 
 ## License

@@ -90,6 +90,8 @@ The 12V AC from power module is transformed to +400V and -400V, and charge a bun
 
 The nozzle contains a hollow cathode, a large piece of anode, and a electromagnet around it.
 
+See also [Nozzle](Nozzle.md)
+
 ### Propellant Injector
 
 A air compressor injects the propellant (air) to the nozzle.
