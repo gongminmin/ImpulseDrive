@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-In Star Trek universe, impulse drive is a propulsion system of spacecrafts for interplanetary travel. This project is trying to design a real world impulse drive. The basic characteristics of this engine are
+In Star Trek universe, impulse drive is a propulsion system of spacecrafts for interplanetary travel. This project is trying to design a real-world impulse drive. The basic characteristics of this engine are
 
 * Electric propulsion
 * Large thrust
@@ -29,7 +29,7 @@ The principle of our design, and a detailed introduction of modules are in [Desi
 
 * Circuit folder is the electric design of the system. The files can be open by [KiCad](https://kicad-pcb.org/)
 * 3DModel folder is the 3D model design of some components. It's in [Blender](https://www.blender.org/) format.
-* Doc folder contians some documents
+* Doc folder contains some documents
 
 ## License
 

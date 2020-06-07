@@ -1,12 +1,12 @@
 # Nozzle
 
-Nozzle is the place where the ion particles are generated and accelerated. Unlike chemical rocket engines, We don't need to handle high pressure and high temperature.
+Nozzle is the place where the ion particles are generated and accelerated. Unlike chemical rocket engines, we don't need to handle high pressure and high temperature.
 
 There are 3 major components in the nozzle, anode, cathode, and a electromagnet coil.
 
 ## Anode
 
-It's a 1-inch to 3/4-inch cooper coupling, with a stainless steel clamp around it to secure the wires.
+It's a 1-inch to 3/4-inch cooper coupling, with a stainless-steel clamp around it to secure the wires.
 
 ![Anode](Img/AnodePhoto.jpg)
 
@@ -24,7 +24,7 @@ The electromagnet is a low current coil. Build a coil from scratch takes time, s
 
 ## Case
 
-All there components are installed into a case. Here is a 3D model of it. It can be contructed by 3D printing or cardboard.
+All these components are installed into a case. Here is a 3D model of it. It can be contructed by 3D printing or cardboard.
 
 ![Nozzle Case](Img/NozzleCase.jpg)
 

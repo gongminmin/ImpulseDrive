@@ -4,7 +4,7 @@ The power module contains 3 parts. They'll be explained below.
 
 ## DC Power Source
 
-The first part is a 12V DC power source. Currently a ATX power supply unit from an old computer is used. Along with a board to turn the power unit on and off. It's easy to find these pieces online. It'll be replaced by a 12V battery in the future.
+The first part is a 12V DC power source. Currently an ATX power supply unit from an old computer is used. Along with a board to turn the power unit on and off. It's easy to find these pieces online. It'll be replaced by a 12V battery in the future.
 
 ![PSU Photo](Img/PsuPhoto.jpg)
 
@@ -28,7 +28,7 @@ The DC from power source and AC from ZVS driver are separated into multiple chan
 
 ![Power Switch Circuit](Img/PowerSwitchCircuit.png)
 
-Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as a AC solid state switch. The output to electromagnet coil is DC, just one MOSFET is enough.
+Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as an AC solid state switch. The output to electromagnet coil is DC, just one MOSFET is enough.
 
 The circuit is hand soldered on a prototyping board.
 

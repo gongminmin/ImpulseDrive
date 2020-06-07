@@ -1,7 +1,7 @@
 
 # Magnetoplasmadynamic Thruster
 
-A MPD thruster is a electric propulsion without moving parts. It could produce 100N level of thrust, much larger than ion thruster (0.1N), arcjet (<10N), pulsed plasma thruster (0.1N), etc. The specific impulse and exhaust velocity are extremely high.
+A MPD thruster is an electric propulsion without moving parts. It could produce 100N level of thrust, much larger than ion thruster (0.1N), arcjet (<10N), pulsed plasma thruster (0.1N), etc. The specific impulse and exhaust velocity are extremely high.
 
 ## Principle
 
@@ -13,13 +13,13 @@ Due to the power level limitation, we focus on applied fields MPD thruster.
 
 ## Drawbacks
 
-Of course MPD thruster is not perfect. To make it pratical, we need to confront its drawbacks.
+Of course, MPD thruster is not perfect. To make it pratical, we need to confront its drawbacks.
 
 * Super high watts power source. For ionize propellant, extreme voltage is required. For generats high Lorentz force, high current is required. If naivelly takes one power source to provide both extreme voltage and high current, it sounds bad. you don't have a nuclear power, right?
 
 * Propellant to use. A good propellant for MPD needs to have a low ionization energy and high mass. Various propellants such as xenon, neon, argon, and lithium have been used, with lithium generally being the best performer. However, these propellants are expensive.
 
-* Electrode erosion. High current arc damages the electrode. It dramatically reduce the lifespan of nozzle.
+* Electrode erosion. High current arc damages the electrode. It dramatically reduces the lifespan of nozzle.
 
 ## References
 
