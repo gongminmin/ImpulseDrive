@@ -88,6 +88,8 @@ See also [Starter Module](StarterModule.md)
 
 The 12V AC from power module is transformed to +400V and -400V, and charge a bunch of capacitors.
 
+See also [Capacitor Bank Module](CapacitorBankModule.md)
+
 ### Nozzle
 
 The nozzle contains a hollow cathode, a large piece of anode, and a electromagnet around it.
