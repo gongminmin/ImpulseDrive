@@ -1,4 +1,3 @@
-
 # Magnetoplasmadynamic Thruster
 
 A MPD thruster is an electric propulsion without moving parts. It could produce 100N level of thrust, much larger than ion thruster (0.1N), arcjet (<10N), pulsed plasma thruster (0.1N), etc. The specific impulse and exhaust velocity are extremely high.

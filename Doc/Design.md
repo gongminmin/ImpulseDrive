@@ -48,7 +48,7 @@ The hollow conduit cathode also acts as a cooling system. When the cold propella
 
 TODO
 
-## Sequence
+## Operation Cycle
 
 The propulsion system is running in cycles. Each cycle takes steps below.
 
@@ -80,7 +80,9 @@ See also [Control Module](ControlModule.md)
 
 ### Starter
 
-The starter transformed 12V AC to 10kV high frequency DC to ionize the propellant. It's very similar to a spark gap tesla coil.
+The starter transformed 12V AC to 10kV high frequency pulsed DC to ionize the propellant. It's very similar to a spark gap Tesla coil.
+
+See also [Starter Module](StarterModule.md)
 
 ### Capacitor Bank
 
