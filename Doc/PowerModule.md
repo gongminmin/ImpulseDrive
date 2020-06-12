@@ -16,7 +16,7 @@ A ZVS driver is a circuit that can oscillate a large amount of DC power with ver
 
 ![ZVS Circuit](Img/ZvsCircuit.png)
 
-It's also a finished board that can be found online. The output of this board is connected to a 4+4:8 toroid transformer, so that the oscillate can keep running meanwhile pumpping the power to the successor circuit.
+It's also a finished board that can be found online. The output of this board is connected to a 4+4:8 toroid transformer, so that the oscillate can keep running meanwhile pumpping the power to the successor circuit. The core of a toroid transformer is a FT240-61 Ferrite core.
 
 ![ZVS Photo](Img/ZvsPhoto.jpg)
 
