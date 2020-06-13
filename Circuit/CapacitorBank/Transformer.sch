@@ -199,13 +199,13 @@ ACPowerIn-
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5ED54BE3
-P 3200 3300
-F 0 "J1" H 3280 3292 50  0000 L CNN
-F 1 "AC Power In" H 3280 3201 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3200 3300 50  0001 C CNN
-F 3 "~" H 3200 3300 50  0001 C CNN
-	1    3200 3300
-	-1   0    0    -1  
+P 3200 3400
+F 0 "J1" H 3280 3392 50  0000 L CNN
+F 1 "AC Power In" H 3280 3301 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3200 3400 50  0001 C CNN
+F 3 "~" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3700 3150 3700 3300
