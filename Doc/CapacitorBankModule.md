@@ -22,16 +22,36 @@ The 450V capacitor is expensive, during the experiment, we start with a mini cap
 
 Let's calculate the output current amperes from this capacitor bank. The definition of Farad is:
 
-`F = A * s / V`
+`C = A * s / V`
 
-where *F* is capacitance in farad, *A* is output current in ampere, *s* is discharging time in second, *V* is capacitor's voltage. From this equation, we can derive the equation of calculating the output current,
+where *C* is capacitance in farad, *A* is output current in ampere, *s* is discharging time in second, *V* is capacitor's voltage. From this equation, we can derive the equation of calculating the output current,
 
-`A = F * V / s`
+`A = C * V / s`
 
 The capacitor bank has a capacitance of 330uF, at 800V, and the discharging time is between 4ms and 10ms. Here we take the average time 7ms. Put these numbers in, we have,
 
 `A = 0.00033 * 800 / 0.007 = 37.7`
 
 This capacitor bank's output current is 37.7A.
+
+The discharge time via bleeder can also be diverged from this equation.
+
+`C = A * s / V`
+
+`s = C * V / A`
+
+`s = C * R`, because `R = V / A`
+
+When R is 1MΩ, the time is
+
+`s = 0.00033 * 1,000,000 = 330`
+
+, which is about 5.5 minutes.
+
+When R is 13.3KΩ, the time is
+
+`s = 0.00033 * 13,333 = 4.40`
+
+Note that it assumes the voltage doesn't change during the discharging. For reality, we need to multiply the time by at least 10.
 
 **Status**: Small-scale board done, need experiments with other components, 50%.
