@@ -16,6 +16,8 @@ To maximize the hollow cathode effect, we need a long and thin metal tube. One c
 
 ![Cathode](Img/CathodePhoto.jpg)
 
+**CAUSION**: Don't touch any electrode before capacitor bank finish discharging. The voltage and current are lethal.
+
 ## Electromagnet
 
 The electromagnet is a low current coil. Build a coil from scratch takes time, so we bought a car air conditioner compressor clutch coil. Its size and magnetic intensity fit our scenario.

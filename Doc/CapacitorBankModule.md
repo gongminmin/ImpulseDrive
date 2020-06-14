@@ -14,6 +14,8 @@ The third part is a quick capacitor bleeder. Although in previous circuit, we ha
 
 ![Capacitor Bank Circuit](Img/QuickBleederCircuit.png)
 
+**CAUSION**: The capacitors needs a while to finish discharging by bleeders. Don't touch the leads during or after operating.
+
 The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses 50V capacitors. Also, the transformer part needs to be modified to output ±45V DC. This implementation follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank. The optocouplers are not in this board.
 
 ![Capacitor Bank Photo](Img/CapacitorBankPhoto.jpg)

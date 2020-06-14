@@ -25,6 +25,10 @@ Our design is based on MPDT, with several significant improvements.
 
 The principle of our design, and a detailed introduction of modules are in [Design](Doc/Design.md)
 
+## Disclaimer
+
+MPD thruster is operated by **LETHALLY** high voltage and current. If you don't have enough knowledge and experiences on high voltage electric, please keep extreme cautions on insulation.
+
 ## Directories
 
 * Circuit folder is the electric design of the system. The files can be open by [KiCad](https://kicad-pcb.org/)

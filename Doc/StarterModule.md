@@ -30,6 +30,8 @@ This module is still in experiment. Need more time to finish it.
 
 TODO: Assembled module photo
 
+**CAUSION**: Everything after the flyback transformer are in ~10kV. Keep distance with them even after shut this module down. The capacitors may still charge. When operating, the spark gap can be loud and hot. Very careful about the metal parts.
+
 **Status**: Experiment-in-progress, 30%.
 
 Due to the spark gap, this module is very noisy, and looks dangerous. An improvement is borrowing the design of a solid-state Tesla coil (SSTC), dual resonant solid-state Tesla coil (DRSSTC) to be exact.
