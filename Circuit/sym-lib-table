@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name CustomizedTransformer)(type Legacy)(uri ${KIPRJMOD}/CapacitorBank/CustomizedTransformer.lib)(options "")(descr ""))
+  (lib (name CustomizedFlybackTransformer)(type Legacy)(uri ${KIPRJMOD}/Starter/CustomizedFlybackTransformer.lib)(options "")(descr ""))
 )

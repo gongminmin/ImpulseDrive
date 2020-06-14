@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CustomizedTransformer:FlybackTransformer T1
+L CustomizedFlybackTransformer:FlybackTransformer T1
 U 1 1 5E11478B
 P 3150 2950
 F 0 "T1" H 3150 3331 50  0000 C CNN
@@ -181,40 +181,21 @@ $EndComp
 $Comp
 L Device:D D1
 U 1 1 5E37141E
-P 6950 2750
-F 0 "D1" H 6950 2534 50  0000 C CNN
-F 1 "2CL2FM" H 6950 2625 50  0000 C CNN
-F 2 "Diode_THT:D_P600_R-6_P12.70mm_Horizontal" H 6950 2750 50  0001 C CNN
-F 3 "~" H 6950 2750 50  0001 C CNN
-	1    6950 2750
+P 6950 2500
+F 0 "D1" H 6950 2284 50  0000 C CNN
+F 1 "2CL2FM" H 6950 2375 50  0000 C CNN
+F 2 "Diode_THT:D_P600_R-6_P20.00mm_Horizontal" H 6950 2500 50  0001 C CNN
+F 3 "~" H 6950 2500 50  0001 C CNN
+	1    6950 2500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6650 2750 6800 2750
+	6650 2750 6750 2750
 Wire Wire Line
-	7250 2750 7100 2750
-Wire Wire Line
-	6650 3150 6800 3150
-$Comp
-L Device:D D2
-U 1 1 5E45599B
-P 6950 3150
-F 0 "D2" H 6950 2934 50  0000 C CNN
-F 1 "2CL2FM" H 6950 3025 50  0000 C CNN
-F 2 "Diode_THT:D_P600_R-6_P12.70mm_Horizontal" H 6950 3150 50  0001 C CNN
-F 3 "~" H 6950 3150 50  0001 C CNN
-	1    6950 3150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7100 3150 7250 3150
-Wire Wire Line
-	7250 3150 7250 2750
+	6650 3150 6750 3150
 Wire Wire Line
 	7250 2750 7450 2750
 Connection ~ 7250 2750
-Wire Wire Line
-	6650 2950 7350 2950
 Wire Wire Line
 	7350 2950 7350 3150
 Wire Wire Line
@@ -295,4 +276,46 @@ Wire Wire Line
 	5600 3400 5700 3400
 Wire Wire Line
 	4750 3400 5300 3400
+$Comp
+L Device:D D2
+U 1 1 5E45599B
+P 6950 3400
+F 0 "D2" H 6950 3184 50  0000 C CNN
+F 1 "2CL2FM" H 6950 3275 50  0000 C CNN
+F 2 "Diode_THT:D_P600_R-6_P20.00mm_Horizontal" H 6950 3400 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+	1    6950 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 2950 6800 2950
+Wire Wire Line
+	6750 2750 6750 2500
+Wire Wire Line
+	6750 2500 6800 2500
+Wire Wire Line
+	7100 2500 7250 2500
+Wire Wire Line
+	7250 2500 7250 2750
+Wire Wire Line
+	6750 3150 6750 3400
+Wire Wire Line
+	6750 3400 6800 3400
+Wire Wire Line
+	7100 3400 7250 3400
+Wire Wire Line
+	7250 2750 7250 3400
+$Comp
+L Device:R R4
+U 1 1 5EE60399
+P 6950 2950
+F 0 "R4" V 6743 2950 50  0000 C CNN
+F 1 "1Ω/10W" V 6834 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0922_L20.0mm_D9.0mm_P25.40mm_Horizontal" V 6880 2950 50  0001 C CNN
+F 3 "~" H 6950 2950 50  0001 C CNN
+	1    6950 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 2950 7350 2950
 $EndSCHEMATC
