@@ -96,7 +96,7 @@ U 1 1 5ED73772
 P 4350 2000
 F 0 "J3" V 4314 1812 50  0000 R CNN
 F 1 "As Starter" V 4223 1812 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 2000 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 4350 2000 50  0001 C CNN
 F 3 "~" H 4350 2000 50  0001 C CNN
 	1    4350 2000
 	0    -1   -1   0   
@@ -107,7 +107,7 @@ U 1 1 5ED7458F
 P 5500 2000
 F 0 "J4" V 5464 1812 50  0000 R CNN
 F 1 "As Capacitor" V 5373 1812 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 2000 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 5500 2000 50  0001 C CNN
 F 3 "~" H 5500 2000 50  0001 C CNN
 	1    5500 2000
 	0    -1   -1   0   
@@ -118,7 +118,7 @@ U 1 1 5ED74BB3
 P 6650 2000
 F 0 "J5" V 6614 1812 50  0000 R CNN
 F 1 "As Coil" V 6523 1812 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6650 2000 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 6650 2000 50  0001 C CNN
 F 3 "~" H 6650 2000 50  0001 C CNN
 	1    6650 2000
 	0    -1   -1   0   
@@ -142,7 +142,7 @@ U 1 1 5ED7868B
 P 1050 2650
 F 0 "J1" H 968 2867 50  0000 C CNN
 F 1 "12V Power" H 968 2776 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 2650 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 1050 2650 50  0001 C CNN
 F 3 "~" H 1050 2650 50  0001 C CNN
 	1    1050 2650
 	-1   0    0    -1  
