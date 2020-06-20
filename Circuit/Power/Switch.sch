@@ -603,9 +603,9 @@ Wire Wire Line
 Wire Wire Line
 	7250 1550 7250 1750
 Text HLabel 4150 1550 0    50   Input ~ 0
-ControlGND
+ControlPower-
 Text HLabel 7350 1550 2    50   Input ~ 0
-ControlPower
+ControlPower+
 Wire Wire Line
 	4250 1750 4250 1550
 Wire Wire Line

@@ -32,12 +32,12 @@ F1 "MiniCapacitorBank.sch" 50
 F2 "PowerIn+" I L 4800 3150 50 
 F3 "PowerIn-" I L 4800 3250 50 
 F4 "ControlPower+" I L 4800 2350 50 
-F5 "ControlPowerGND" I L 4800 2650 50 
-F6 "ControlSignal1" I L 4800 2450 50 
-F7 "ControlSignal2" I L 4800 2550 50 
-F8 "PowerOut+" I R 6250 2350 50 
-F9 "PowerOut-" I R 6250 2450 50 
-F10 "BleederCenter" I R 6250 3400 50 
+F5 "ControlSignal1" I L 4800 2450 50 
+F6 "ControlSignal2" I L 4800 2550 50 
+F7 "PowerOut+" I R 6250 2350 50 
+F8 "PowerOut-" I R 6250 2450 50 
+F9 "BleederCenter" I R 6250 3400 50 
+F10 "ControlPower-" I L 4800 2650 50 
 $EndSheet
 $Sheet
 S 6950 2900 1250 600 
@@ -63,7 +63,7 @@ ControlSignal1
 Text HLabel 4200 2550 0    50   Input ~ 0
 ControlSignal2
 Text HLabel 4200 2650 0    50   Input ~ 0
-ControlPowerGND
+ControlPower-
 Wire Wire Line
 	4200 2350 4800 2350
 Wire Wire Line

@@ -465,10 +465,10 @@ Connection ~ 8100 3400
 Wire Wire Line
 	8100 3400 8450 3400
 $Comp
-L Connector:Conn_01x02_Male J5
+L Connector:Conn_01x02_Male J4
 U 1 1 5DD7D99A
 P 8300 2900
-F 0 "J5" H 8272 2782 50  0000 R CNN
+F 0 "J4" H 8272 2782 50  0000 R CNN
 F 1 "Force on SW" H 8272 2873 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8300 2900 50  0001 C CNN
 F 3 "~" H 8300 2900 50  0001 C CNN
@@ -541,23 +541,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5DCDBBC2
-P 1450 3000
-F 0 "J1" H 1558 3281 50  0000 C CNN
-F 1 "Signal" H 1558 3190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 3000 50  0001 C CNN
-F 3 "~" H 1450 3000 50  0001 C CNN
-	1    1450 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J3
-U 1 1 5DF6D71C
-P 1100 3000
-F 0 "J3" H 1208 3281 50  0000 C CNN
-F 1 "Power" H 1208 3190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 3000 50  0001 C CNN
-F 3 "~" H 1100 3000 50  0001 C CNN
-	1    1100 3000
+P 1550 3000
+F 0 "J1" H 1658 3281 50  0000 C CNN
+F 1 "Signal" H 1658 3190 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1550 3000 50  0001 C CNN
+F 3 "~" H 1550 3000 50  0001 C CNN
+	1    1550 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -578,10 +567,6 @@ Wire Wire Line
 Connection ~ 7850 3400
 Wire Wire Line
 	7050 2700 7050 4000
-Wire Wire Line
-	1300 3100 1300 4800
-Wire Wire Line
-	1300 1400 1300 3000
 Wire Wire Line
 	2350 4600 2350 4800
 Wire Wire Line
@@ -640,8 +625,6 @@ Connection ~ 4750 4800
 Wire Wire Line
 	4750 4800 6350 4800
 Wire Wire Line
-	1300 1400 3200 1400
-Wire Wire Line
 	2350 3550 2350 4300
 Connection ~ 3850 3550
 Wire Wire Line
@@ -653,11 +636,11 @@ Wire Wire Line
 Wire Wire Line
 	9750 1800 9750 2550
 Wire Wire Line
-	10500 2250 10500 1400
+	10500 2250 10500 1950
 Wire Wire Line
 	10550 2250 10500 2250
 Wire Wire Line
-	10500 2450 10500 3400
+	10500 2450 10500 2750
 Wire Wire Line
 	10550 2450 10500 2450
 $Comp
@@ -678,28 +661,16 @@ Wire Wire Line
 	8450 3400 9150 3400
 Wire Wire Line
 	9150 3400 9750 3400
-Text HLabel 1150 1400 0    50   Input ~ 0
+Text HLabel 10400 1950 0    50   Input ~ 0
 ControlPower+
-Text HLabel 1150 4800 0    50   Input ~ 0
-ControlPowerGND
-Wire Wire Line
-	1150 4800 1300 4800
-Connection ~ 1300 4800
-Wire Wire Line
-	1300 1400 1150 1400
-Connection ~ 1300 1400
-Text HLabel 10100 2750 2    50   Input ~ 0
+Text HLabel 10400 2750 0    50   Input ~ 0
+ControlPower-
+Text HLabel 10400 2550 0    50   Input ~ 0
 ControlSignal
-Wire Wire Line
-	10100 2750 9950 2750
-Wire Wire Line
-	9950 2750 9950 2350
 Text HLabel 1900 3000 2    50   Input ~ 0
 CapacitorSignal1
 Text HLabel 1900 3100 2    50   Input ~ 0
 CapacitorSignal2
-Wire Wire Line
-	1300 4800 2350 4800
 Wire Wire Line
 	1800 1900 1800 3000
 Wire Wire Line
@@ -708,12 +679,6 @@ Wire Wire Line
 	1800 3100 1800 3550
 Wire Wire Line
 	1800 3100 1900 3100
-Wire Wire Line
-	1800 3000 1650 3000
-Connection ~ 1800 3000
-Wire Wire Line
-	1650 3100 1800 3100
-Connection ~ 1800 3100
 Connection ~ 2650 4800
 Wire Wire Line
 	2650 4800 3200 4800
@@ -761,9 +726,48 @@ Wire Wire Line
 	7450 2700 7550 2700
 Wire Wire Line
 	9750 1400 10500 1400
-Connection ~ 9950 2350
 Wire Wire Line
-	9950 2350 9650 2350
+	1300 4800 2350 4800
 Wire Wire Line
-	9950 2350 10550 2350
+	1300 1400 3200 1400
+Wire Wire Line
+	1300 1400 1300 2800
+Wire Wire Line
+	1300 3200 1300 4800
+$Comp
+L Device:Battery BT1
+U 1 1 5EEDCD06
+P 1300 3000
+F 0 "BT1" H 1050 3050 50  0000 L CNN
+F 1 "12V Battery" H 750 2950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1300 3060 50  0001 C CNN
+F 3 "~" V 1300 3060 50  0001 C CNN
+	1    1300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3000 1800 3000
+Connection ~ 1800 3000
+Wire Wire Line
+	1750 3100 1800 3100
+Connection ~ 1800 3100
+Wire Wire Line
+	10400 1950 10500 1950
+Connection ~ 10500 1950
+Wire Wire Line
+	10500 1950 10500 1400
+Wire Wire Line
+	10400 2750 10500 2750
+Connection ~ 10500 2750
+Wire Wire Line
+	10500 2750 10500 3400
+Wire Wire Line
+	9650 2350 10450 2350
+Wire Wire Line
+	10400 2550 10450 2550
+Wire Wire Line
+	10450 2550 10450 2350
+Connection ~ 10450 2350
+Wire Wire Line
+	10450 2350 10550 2350
 $EndSCHEMATC

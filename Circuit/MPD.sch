@@ -21,9 +21,9 @@ F0 "Control" 50
 F1 "Control/Control.sch" 50
 F2 "ControlSignal" I L 4000 3300 50 
 F3 "ControlPower+" I L 4000 3200 50 
-F4 "ControlPowerGND" I L 4000 3400 50 
-F5 "CapacitorSignal1" I R 5600 3200 50 
-F6 "CapacitorSignal2" I R 5600 3300 50 
+F4 "CapacitorSignal1" I R 5600 3200 50 
+F5 "CapacitorSignal2" I R 5600 3300 50 
+F6 "ControlPower-" I L 4000 3400 50 
 $EndSheet
 $Sheet
 S 8450 3300 1100 1050
@@ -40,15 +40,15 @@ S 1700 3000 1700 1700
 U 5E1058DB
 F0 "Power" 50
 F1 "Power/Power.sch" 50
-F2 "ControlPower" I R 3400 3200 50 
-F3 "ControlSignal" I R 3400 3300 50 
-F4 "ControlGND" I R 3400 3400 50 
-F5 "CapacitorPower+" I R 3400 4400 50 
-F6 "CapacitorPower-" I R 3400 4500 50 
-F7 "StarterPower+" I L 1700 3200 50 
-F8 "StarterPower-" I L 1700 3300 50 
-F9 "CoilPower-" I L 1700 4150 50 
-F10 "CoilPower+" I L 1700 4050 50 
+F2 "ControlSignal" I R 3400 3300 50 
+F3 "CapacitorPower+" I R 3400 4400 50 
+F4 "CapacitorPower-" I R 3400 4500 50 
+F5 "StarterPower+" I L 1700 3200 50 
+F6 "StarterPower-" I L 1700 3300 50 
+F7 "CoilPower-" I L 1700 4150 50 
+F8 "CoilPower+" I L 1700 4050 50 
+F9 "ControlPower+" I R 3400 3200 50 
+F10 "ControlPower-" I R 3400 3400 50 
 $EndSheet
 Wire Wire Line
 	1550 3200 1700 3200
@@ -70,13 +70,13 @@ U 5E106C20
 F0 "CapacitorBank" 50
 F1 "CapacitorBank/CapacitorBank.sch" 50
 F2 "ControlPower+" I L 6150 3800 50 
-F3 "ControlPowerGND" I L 6150 3900 50 
-F4 "PowerOut+" I R 7750 3500 50 
-F5 "PowerOut-" I R 7750 3600 50 
-F6 "ControlSignal1" I L 6150 3200 50 
-F7 "ControlSignal2" I L 6150 3300 50 
-F8 "ACPowerIn+" I L 6150 4400 50 
-F9 "ACPowerIn-" I L 6150 4500 50 
+F3 "PowerOut+" I R 7750 3500 50 
+F4 "PowerOut-" I R 7750 3600 50 
+F5 "ControlSignal1" I L 6150 3200 50 
+F6 "ControlSignal2" I L 6150 3300 50 
+F7 "ACPowerIn+" I L 6150 4400 50 
+F8 "ACPowerIn-" I L 6150 4500 50 
+F9 "ControlPower-" I L 6150 3900 50 
 $EndSheet
 Wire Wire Line
 	6150 3800 3750 3800

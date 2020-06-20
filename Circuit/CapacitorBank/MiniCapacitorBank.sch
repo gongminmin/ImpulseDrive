@@ -302,7 +302,7 @@ ControlSignal2
 Text HLabel 9000 2250 2    50   Input ~ 0
 ControlSignal1
 Text HLabel 9000 2450 2    50   Input ~ 0
-ControlPowerGND
+ControlPower-
 Text HLabel 9000 2150 2    50   Input ~ 0
 ControlPower+
 Wire Wire Line

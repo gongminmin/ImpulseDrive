@@ -29,19 +29,19 @@ S 6400 2450 2550 1500
 U 5ED68B19
 F0 "Switch" 50
 F1 "Switch.sch" 50
-F2 "ControlPower" I L 6400 2600 50 
-F3 "CapacitorPower+" I R 8950 3150 50 
-F4 "ControlSignal" I L 6400 2700 50 
-F5 "ControlGND" I L 6400 2800 50 
-F6 "CoilPower-" I R 8950 3800 50 
-F7 "CoilPower+" I R 8950 3700 50 
-F8 "CapacitorPower-" I R 8950 3250 50 
-F9 "PowerDC+In" I L 6400 3700 50 
-F10 "PowerDC-In" I L 6400 3800 50 
-F11 "PowerAC-In" I L 6400 3250 50 
-F12 "PowerAC+In" I L 6400 3150 50 
-F13 "StarterPower-" I R 8950 2700 50 
-F14 "StarterPower+" I R 8950 2600 50 
+F2 "CapacitorPower+" I R 8950 3150 50 
+F3 "ControlSignal" I L 6400 2700 50 
+F4 "CoilPower-" I R 8950 3800 50 
+F5 "CoilPower+" I R 8950 3700 50 
+F6 "CapacitorPower-" I R 8950 3250 50 
+F7 "PowerDC+In" I L 6400 3700 50 
+F8 "PowerDC-In" I L 6400 3800 50 
+F9 "PowerAC-In" I L 6400 3250 50 
+F10 "PowerAC+In" I L 6400 3150 50 
+F11 "StarterPower-" I R 8950 2700 50 
+F12 "StarterPower+" I R 8950 2600 50 
+F13 "ControlPower-" I L 6400 2800 50 
+F14 "ControlPower+" I L 6400 2600 50 
 $EndSheet
 $Comp
 L Device:Battery BT1
@@ -113,13 +113,13 @@ Wire Wire Line
 Wire Wire Line
 	8950 3800 9550 3800
 Text HLabel 6000 2600 0    50   Input ~ 0
-ControlPower
+ControlPower+
 Wire Wire Line
 	6400 2600 6000 2600
 Text HLabel 6000 2700 0    50   Input ~ 0
 ControlSignal
 Text HLabel 6000 2800 0    50   Input ~ 0
-ControlGND
+ControlPower-
 Wire Wire Line
 	6400 2700 6000 2700
 Wire Wire Line

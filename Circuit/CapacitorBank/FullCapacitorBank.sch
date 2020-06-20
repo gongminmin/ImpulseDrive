@@ -428,7 +428,7 @@ ControlSignal1
 Text HLabel 10200 1900 2    50   Input ~ 0
 ControlSignal2
 Text HLabel 10200 2000 2    50   Input ~ 0
-ControlPowerGND
+ControlPower-
 Wire Wire Line
 	9800 1700 9800 2450
 Wire Wire Line
