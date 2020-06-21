@@ -56,4 +56,10 @@ When R is 13.3KΩ, the time is
 
 Note that it assumes the voltage doesn't change during the discharging. For reality, we need to multiply the time by at least 10.
 
+With the same equation, we can estimate the capacitor bank's charging time. The ZVS module is about 60W when its input voltage is 12V. For this capacitor bank, the maximum charging current is 60W / 800V = 0.075A.
+
+`s = C * V / A = 0.00033 * 800 / 0.075 = 3.52`
+
+So it takes at least 3.52 seconds to charge the capacitor bank.
+
 **Status**: Small-scale board done, need experiments with other components, 50%.
