@@ -476,7 +476,7 @@ L Connector:Screw_Terminal_01x01 J4
 U 1 1 5ED9AEB0
 P 8250 3000
 F 0 "J4" H 8330 3042 50  0000 L CNN
-F 1 "Output+" H 8330 2951 50  0000 L CNN
+F 1 "BleederCenter" H 8330 2951 50  0000 L CNN
 F 2 "Connector:Banana_Jack_1Pin" H 8250 3000 50  0001 C CNN
 F 3 "~" H 8250 3000 50  0001 C CNN
 	1    8250 3000
