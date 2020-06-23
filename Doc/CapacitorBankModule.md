@@ -2,11 +2,11 @@
 
 As the name suggested, the capacitor bank store energy in multiple capacitors, and enable to discharge all energy into the nozzle in a very short time period.
 
-This module has 3 parts. The first one is a transformer circuit. It takes 12V AC as input, and converts it to ±400V DC.
+This module has 4 parts. The first one is a transformer circuit. It takes 12V AC as input, and converts it to ±400V DC.
 
 ![Capacitor Bank Circuit](Img/CapacitorBankTransformerCircuit.png)
 
-The second part is the capacitor bank itself. The core component is 4  capacitors for welding machine, 330uF at 450V. They are connected together to form a capacitor with 330uF at 900V. In charging phase, a small current from J1 charges these capacitors, it takes seconds to finish charging. In discharging phase, the energy stores in them are discharged to J3 and J5 in less than 10 milliseconds with a high current.
+The second part is the capacitor bank itself. The core component is 4 capacitors for welding machine, 330uF at 450V. They are connected together to form a capacitor with 330uF at 900V. In charging phase, a small current from J1 charges these capacitors, it takes seconds to finish charging. In discharging phase, the energy stores in them are discharged to J3 and J5 in less than 10 milliseconds with a high current.
 
 ![Capacitor Bank Circuit](Img/CapacitorBankCircuit.png)
 
@@ -14,11 +14,15 @@ The third part is a quick capacitor bleeder. Although in previous circuit, we ha
 
 ![Capacitor Bank Circuit](Img/QuickBleederCircuit.png)
 
-**CAUSION**: The capacitors needs a while to finish discharging by bleeders. Don't touch the leads during or after operating.
+**CAUSION**: The capacitors need a while to finish discharging by bleeders. Don't touch the leads during or after operating.
 
-The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses 50V capacitors. Also, the transformer part needs to be modified to output ±45V DC. This implementation follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank. The optocouplers are not in this board.
+The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses 50V capacitors. Also, the transformer part needs to be modified to output ±45V DC. This implementation follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank.
 
 ![Capacitor Bank Photo](Img/CapacitorBankPhoto.jpg)
+
+The last part is a voltage sensing circuit. It takes the low voltage signals from capacitor bank's linear divider, amplifies them to high enough currents to drive vactrols. Then the isolated signals are passed to control module. The voltage sensing circuit has its own power source.
+
+![Voltage Sensing Circuit](Img/VoltageSensingCircuit.png)
 
 ## Calculations
 
@@ -60,6 +64,6 @@ With the same equation, we can estimate the capacitor bank's charging time. The 
 
 `s = C * V / A = 0.00033 * 800 / 0.075 = 3.52`
 
-So it takes at least 3.52 seconds to charge the capacitor bank.
+So, it takes at least 3.52 seconds to charge the capacitor bank.
 
 **Status**: Small-scale board done, need experiments with other components, 50%.
