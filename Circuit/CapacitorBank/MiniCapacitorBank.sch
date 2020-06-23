@@ -231,9 +231,9 @@ $EndComp
 Wire Wire Line
 	5150 4500 4600 4500
 Connection ~ 5150 4500
-Text HLabel 6500 4500 2    50   Input ~ 0
+Text HLabel 6600 4350 2    50   Input ~ 0
 PowerOut-
-Text HLabel 6500 1500 2    50   Input ~ 0
+Text HLabel 6600 1650 2    50   Input ~ 0
 PowerOut+
 Connection ~ 5750 4500
 Connection ~ 5750 1500
@@ -261,8 +261,6 @@ BleederCenter
 Wire Wire Line
 	6150 2550 6300 2550
 Wire Wire Line
-	6300 2550 6300 3000
-Wire Wire Line
 	3950 1500 4600 1500
 Connection ~ 3950 1500
 Connection ~ 4600 1500
@@ -271,7 +269,7 @@ Wire Wire Line
 Connection ~ 3950 4500
 Connection ~ 4600 4500
 Wire Wire Line
-	6400 3100 6400 4500
+	6400 3100 6400 4350
 Wire Wire Line
 	5750 1500 6400 1500
 Wire Wire Line
@@ -280,13 +278,187 @@ Connection ~ 6300 3000
 Wire Wire Line
 	6450 2900 6400 2900
 Wire Wire Line
-	6400 2900 6400 1500
+	6400 2900 6400 1650
 Wire Wire Line
 	6450 3100 6400 3100
-Wire Wire Line
-	6500 1500 6400 1500
 Connection ~ 6400 1500
-Wire Wire Line
-	6500 4500 6400 4500
 Connection ~ 6400 4500
+$Comp
+L Device:R R5
+U 1 1 5EF1A29A
+P 7400 1700
+F 0 "R5" H 7470 1746 50  0000 L CNN
+F 1 "1M" H 7470 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 1700 50  0001 C CNN
+F 3 "~" H 7400 1700 50  0001 C CNN
+	1    7400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5EF1AD31
+P 7400 2050
+F 0 "R6" H 7470 2096 50  0000 L CNN
+F 1 "300K" H 7470 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 2050 50  0001 C CNN
+F 3 "~" H 7400 2050 50  0001 C CNN
+	1    7400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5EF1B4BE
+P 7400 2400
+F 0 "R7" H 7470 2446 50  0000 L CNN
+F 1 "100K" H 7470 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 2400 50  0001 C CNN
+F 3 "~" H 7400 2400 50  0001 C CNN
+	1    7400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5EF1BD15
+P 7400 2750
+F 0 "R8" H 7470 2796 50  0000 L CNN
+F 1 "100K" H 7470 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 2750 50  0001 C CNN
+F 3 "~" H 7400 2750 50  0001 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5EF1D4E8
+P 7400 4300
+F 0 "R12" H 7470 4346 50  0000 L CNN
+F 1 "1M" H 7470 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 4300 50  0001 C CNN
+F 3 "~" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5EF1D4F2
+P 7400 3950
+F 0 "R11" H 7470 3996 50  0000 L CNN
+F 1 "300K" H 7470 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 3950 50  0001 C CNN
+F 3 "~" H 7400 3950 50  0001 C CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5EF1D4FC
+P 7400 3600
+F 0 "R10" H 7470 3646 50  0000 L CNN
+F 1 "100K" H 7470 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 3600 50  0001 C CNN
+F 3 "~" H 7400 3600 50  0001 C CNN
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5EF1D506
+P 7400 3250
+F 0 "R9" H 7470 3296 50  0000 L CNN
+F 1 "100K" H 7470 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 3250 50  0001 C CNN
+F 3 "~" H 7400 3250 50  0001 C CNN
+	1    7400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1850 7400 1900
+Wire Wire Line
+	7400 2200 7400 2250
+Wire Wire Line
+	7400 2550 7400 2600
+Wire Wire Line
+	7400 2900 7400 3000
+Wire Wire Line
+	7400 3400 7400 3450
+Wire Wire Line
+	7400 3750 7400 3800
+Wire Wire Line
+	7400 4100 7400 4150
+Wire Wire Line
+	7400 4500 7400 4450
+Wire Wire Line
+	6600 4350 6400 4350
+Wire Wire Line
+	6400 4500 7400 4500
+Connection ~ 6400 4350
+Wire Wire Line
+	6400 4350 6400 4500
+Wire Wire Line
+	6600 1650 6400 1650
+Connection ~ 6400 1650
+Wire Wire Line
+	6400 1650 6400 1500
+Wire Wire Line
+	7400 1500 7400 1550
+Wire Wire Line
+	6400 1500 7400 1500
+Wire Wire Line
+	7400 3000 7150 3000
+Wire Wire Line
+	7150 3000 7150 2700
+Connection ~ 7400 3000
+Wire Wire Line
+	7400 3000 7400 3100
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5EF2DD62
+P 8050 3000
+F 0 "J3" H 8050 3200 50  0000 C CNN
+F 1 "To Voltage Sensing" H 8350 3300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8050 3000 50  0001 C CNN
+F 3 "~" H 8050 3000 50  0001 C CNN
+	1    8050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3000 7700 3000
+Wire Wire Line
+	7700 3000 7700 3400
+Wire Wire Line
+	7700 3400 7400 3400
+Connection ~ 7400 3400
+Wire Wire Line
+	7400 3750 7800 3750
+Wire Wire Line
+	7800 3750 7800 3100
+Wire Wire Line
+	7800 3100 7850 3100
+Connection ~ 7400 3750
+Wire Wire Line
+	7850 2900 7700 2900
+Wire Wire Line
+	7700 2900 7700 2600
+Wire Wire Line
+	7700 2600 7400 2600
+Connection ~ 7400 2600
+Text HLabel 7150 2600 0    50   Input ~ 0
+Sensor9V
+Wire Wire Line
+	7150 2700 6300 2700
+Connection ~ 6300 2700
+Wire Wire Line
+	6300 2700 6300 3000
+Wire Wire Line
+	6300 2550 6300 2700
+Wire Wire Line
+	7150 2600 7400 2600
+Text HLabel 7150 3400 0    50   Input ~ 0
+Sensor3V
+Wire Wire Line
+	7150 3400 7400 3400
+Text HLabel 7150 3750 0    50   Input ~ 0
+Sensor0V
+Wire Wire Line
+	7150 3750 7400 3750
 $EndSCHEMATC
