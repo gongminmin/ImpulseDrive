@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Power-cache
+LIBS:ZVS-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 1 1
 Title "ZVS"
 Date "2020-01-10"
 Rev "1"
@@ -303,7 +303,7 @@ L Device:Transformer_SP_1S T1
 U 1 1 5ED4C2DF
 P 8200 3350
 F 0 "T1" H 8200 3731 50  0000 C CNN
-F 1 "4+4:8" H 8200 3640 50  0000 C CNN
+F 1 "5+5:10" H 8200 3640 50  0000 C CNN
 F 2 "Power:Transformer_Toroid_5Pin" H 8200 3350 50  0001 C CNN
 F 3 "" H 8200 3350 50  0001 C CNN
 	1    8200 3350

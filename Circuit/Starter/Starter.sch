@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L CustomizedFlybackTransformer:FlybackTransformer T1
 U 1 1 5E11478B
-P 3150 2950
-F 0 "T1" H 3150 3331 50  0000 C CNN
-F 1 "BSH12-N406L 8:6400" H 3150 3240 50  0000 C CNN
-F 2 "Power:FlybackTransformer_BSH12-N406L" H 3150 2950 50  0001 C CNN
-F 3 "~" H 3150 2950 50  0001 C CNN
-	1    3150 2950
+P 3450 2950
+F 0 "T1" H 3450 3331 50  0000 C CNN
+F 1 "BSH12-N406L 8:6400" H 3450 3240 50  0000 C CNN
+F 2 "Power:FlybackTransformer_BSH12-N406L" H 3450 2950 50  0001 C CNN
+F 3 "~" H 3450 2950 50  0001 C CNN
+	1    3450 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -39,24 +39,24 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E116D06
-P 2150 3000
-F 0 "J1" H 2068 3217 50  0000 C CNN
-F 1 "From Power" H 2068 3126 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2150 3000 50  0001 C CNN
-F 3 "~" H 2150 3000 50  0001 C CNN
-	1    2150 3000
+P 2450 3000
+F 0 "J1" H 2368 3217 50  0000 C CNN
+F 1 "From Power" H 2368 3126 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2450 3000 50  0001 C CNN
+F 3 "~" H 2450 3000 50  0001 C CNN
+	1    2450 3000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2350 2900 2550 2900
+	2650 2900 2850 2900
 Wire Wire Line
-	2650 2900 2650 2750
+	2950 2900 2950 2750
 Wire Wire Line
-	2650 2750 2750 2750
+	2950 2750 3050 2750
 Wire Wire Line
-	2650 3000 2650 3150
+	2950 3000 2950 3150
 Wire Wire Line
-	2650 3150 2750 3150
+	2950 3150 3050 3150
 $Comp
 L Connector:Screw_Terminal_01x01 J2
 U 1 1 5E11806A
@@ -83,17 +83,17 @@ Wire Wire Line
 	8250 2750 8450 2750
 Wire Wire Line
 	8250 3150 8450 3150
-Text HLabel 2450 2500 0    50   Input ~ 0
+Text HLabel 2750 2500 0    50   Input ~ 0
 PowerIn+
-Text HLabel 2450 3350 0    50   Input ~ 0
+Text HLabel 2750 3350 0    50   Input ~ 0
 PowerIn-
 Wire Wire Line
-	2550 2500 2550 2900
-Connection ~ 2550 2900
+	2850 2500 2850 2900
+Connection ~ 2850 2900
 Wire Wire Line
-	2550 2900 2650 2900
+	2850 2900 2950 2900
 Wire Wire Line
-	2550 3000 2550 3350
+	2850 3000 2850 3350
 Text HLabel 8350 2500 0    50   Input ~ 0
 Output+
 Text HLabel 8350 3400 0    50   Input ~ 0
@@ -111,39 +111,33 @@ Wire Wire Line
 $Comp
 L Device:C C1
 U 1 1 5E314EF1
-P 4100 2750
-F 0 "C1" H 4215 2796 50  0000 L CNN
-F 1 "10nF/8kV" H 4215 2705 50  0000 L CNN
-F 2 "Power:C_Axial_L50.0mm_D23.0mm_P55.0mm_Horizontal" H 4138 2600 50  0001 C CNN
-F 3 "~" H 4100 2750 50  0001 C CNN
-	1    4100 2750
-	1    0    0    -1  
+P 4500 2750
+F 0 "C1" H 4615 2796 50  0000 L CNN
+F 1 "10nF/8kV" H 4615 2705 50  0000 L CNN
+F 2 "Power:C_Axial_L50.0mm_D23.0mm_P55.0mm_Horizontal" H 4538 2600 50  0001 C CNN
+F 3 "~" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5E315B45
-P 4100 3150
-F 0 "C2" H 4215 3196 50  0000 L CNN
-F 1 "10nF/8kV" H 4215 3105 50  0000 L CNN
-F 2 "Power:C_Axial_L50.0mm_D23.0mm_P55.0mm_Horizontal" H 4138 3000 50  0001 C CNN
-F 3 "~" H 4100 3150 50  0001 C CNN
-	1    4100 3150
-	1    0    0    -1  
+P 4500 3150
+F 0 "C2" H 4615 3196 50  0000 L CNN
+F 1 "10nF/8kV" H 4615 3105 50  0000 L CNN
+F 2 "Power:C_Axial_L50.0mm_D23.0mm_P55.0mm_Horizontal" H 4538 3000 50  0001 C CNN
+F 3 "~" H 4500 3150 50  0001 C CNN
+	1    4500 3150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2900 4100 2950
+	3950 2750 3950 2500
 Wire Wire Line
-	3850 2750 3850 2500
+	4500 2500 4500 2600
 Wire Wire Line
-	3850 2500 4100 2500
+	3950 3150 3950 3400
 Wire Wire Line
-	4100 2500 4100 2600
-Wire Wire Line
-	3850 3150 3850 3400
-Wire Wire Line
-	3850 3400 4100 3400
-Wire Wire Line
-	4100 3400 4100 3300
+	4500 3400 4500 3300
 $Comp
 L Device:SPARK_GAP E1
 U 1 1 5E31D455
@@ -200,27 +194,17 @@ Wire Wire Line
 	7350 2950 7350 3150
 Wire Wire Line
 	7350 3150 7450 3150
+Connection ~ 2850 3000
 Wire Wire Line
-	3550 2750 3850 2750
+	2850 3000 2950 3000
 Wire Wire Line
-	3550 3150 3850 3150
-Connection ~ 2550 3000
-Wire Wire Line
-	2550 3000 2650 3000
-Wire Wire Line
-	2350 3000 2550 3000
+	2650 3000 2850 3000
 Wire Wire Line
 	5850 3150 5700 3150
 Wire Wire Line
-	2450 2500 2550 2500
+	2750 2500 2850 2500
 Wire Wire Line
-	2450 3350 2550 3350
-Connection ~ 4100 2500
-Connection ~ 4100 3400
-Wire Wire Line
-	4100 2500 4750 2500
-Wire Wire Line
-	4100 3400 4750 3400
+	2750 3350 2850 3350
 $Comp
 L Device:R R1
 U 1 1 5EE46289
@@ -245,22 +229,10 @@ F 3 "~" H 4750 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 2600 4750 2500
-Connection ~ 4750 2500
 Wire Wire Line
 	4750 2500 5000 2500
 Wire Wire Line
-	4750 2900 4750 2950
-Wire Wire Line
 	4750 3300 4750 3400
-Connection ~ 4750 3400
-Wire Wire Line
-	4750 2950 4100 2950
-Connection ~ 4750 2950
-Wire Wire Line
-	4750 2950 4750 3000
-Connection ~ 4100 2950
-Wire Wire Line
-	4100 2950 4100 3000
 $Comp
 L Device:R R3
 U 1 1 5EE4A385
@@ -318,4 +290,58 @@ F 3 "~" H 6950 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 2950 7350 2950
+$Comp
+L Device:L L1
+U 1 1 5EF7CB92
+P 4200 2500
+F 0 "L1" V 4390 2500 50  0000 C CNN
+F 1 "10uH" V 4299 2500 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Horizontal_D9.5mm_P15.00mm_Diameter10-5mm_Amidon-T37" H 4200 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2500 4050 2500
+Wire Wire Line
+	3950 3400 4050 3400
+Wire Wire Line
+	4350 2500 4500 2500
+$Comp
+L Device:L L2
+U 1 1 5EF88EB8
+P 4200 3400
+F 0 "L2" V 4390 3400 50  0000 C CNN
+F 1 "10uH" V 4299 3400 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Horizontal_D9.5mm_P15.00mm_Diameter10-5mm_Amidon-T37" H 4200 3400 50  0001 C CNN
+F 3 "~" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 3400 4500 3400
+Wire Wire Line
+	3950 2750 3850 2750
+Wire Wire Line
+	3850 3150 3950 3150
+Wire Wire Line
+	4750 2900 4750 2950
+Wire Wire Line
+	4500 2900 4500 2950
+Wire Wire Line
+	4750 2500 4500 2500
+Connection ~ 4750 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4750 2950 4500 2950
+Connection ~ 4750 2950
+Wire Wire Line
+	4750 2950 4750 3000
+Connection ~ 4500 2950
+Wire Wire Line
+	4500 2950 4500 3000
+Wire Wire Line
+	4750 3400 4500 3400
+Connection ~ 4750 3400
+Connection ~ 4500 3400
 $EndSCHEMATC

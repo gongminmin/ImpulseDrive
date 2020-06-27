@@ -159,13 +159,9 @@ Wire Wire Line
 Connection ~ 6900 3350
 Wire Wire Line
 	6900 3350 6900 3450
-Wire Wire Line
-	6800 4050 6800 3550
 Connection ~ 5500 3550
 Wire Wire Line
-	5500 3550 5500 4050
-Wire Wire Line
-	5500 4050 6800 4050
+	5500 3550 5500 3950
 Wire Wire Line
 	4750 3250 4850 3250
 Wire Wire Line
@@ -182,7 +178,7 @@ L CustomizedTransformer:Transformer_1P_2S_2 T1
 U 1 1 5E0D9319
 P 4350 3350
 F 0 "T1" H 4350 3900 50  0000 C CNN
-F 1 "6:200" H 4350 3800 50  0000 C CNN
+F 1 "6:150" H 4350 3800 50  0000 C CNN
 F 2 "Power:Transformer_Generic_EE25_8Pin" H 4350 3350 50  0001 C CNN
 F 3 "~" H 4350 3350 50  0001 C CNN
 	1    4350 3350
@@ -233,4 +229,8 @@ Wire Wire Line
 	6800 3050 6800 3550
 Wire Wire Line
 	6900 2900 6900 3350
+Wire Wire Line
+	5500 3950 6800 3950
+Wire Wire Line
+	6800 3950 6800 3550
 $EndSCHEMATC
