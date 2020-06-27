@@ -26,6 +26,8 @@ In the next step, the output of T2's secondary coil is rectified to pulsed DC, a
 
 T2's primary and secondary coils have same wire gauge, AWG 22. T3's primary coil is in AWG 22, and its secondary coil is in AWG 18 or thicker to allow high current from capacitor bank to pass through.
 
+Other components are for safeness. L1 and L2 are filtering out high frequency resonate from LC circuit damage T1. R1 and R2 are bleeder resistors for C1 and C2. R3 and R4 are limiting the induced current in the circuit.
+
 This module is still in experiment. Need more time to finish it.
 
 TODO: Assembled module photo
