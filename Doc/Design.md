@@ -52,43 +52,43 @@ TODO
 
 The propulsion system is running in cycles. Each cycle takes steps below.
 
-![Modules](Img/Modules.png)
+![Subsystems](Img/Subsystems.png)
 
 1. The power starts charging the capacitor bank,
-1. When the capacitor bank is full, signals are sent to control module,
+1. When the capacitor bank is full, signals are sent to control subsystem,
 1. Turn on the inject system to push propellant into the nozzle,
 1. Turn on the starter to generate an ion path inside the nozzle,
 1. The capacitor bank starts discharging, which generates much more ion,
 1. Turn on the electromagnet for applying a magnetic field to push the ion particles out,
 1. Finish discharging the capacitor bank, return to step 1.
 
-## Modules
+## Subsystems
 
-The system is composed of several modules.
+The system is composed of several subsystems.
 
 ### Power
 
-The power module converts 12V DC to 2-way 12V AC. One for starter, and one for charging capacitor bank.
+The power subsystem converts 12V DC to 2-way 12V AC. One for starter, and one for charging capacitor bank.
 
-See also [Power Module](PowerModule.md)
+See also [Power Subsystem](PowerSubsystem.md)
 
 ### Control
 
-The control module collects the signals from other modules, then decides when to turn on starter, capacitor bank, propellant injector, or electromagnet.
+The control subsystem collects the signals from other subsystems, then decides when to turn on starter, capacitor bank, propellant injector, or electromagnet.
 
-See also [Control Module](ControlModule.md)
+See also [Control Subsystem](ControlSubsystem.md)
 
 ### Starter
 
 The starter transformed 12V AC to 10kV high frequency pulsed DC to ionize the propellant. It's very similar to a spark gap Tesla coil.
 
-See also [Starter Module](StarterModule.md)
+See also [Starter Subsystem](StarterSubsystem.md)
 
 ### Capacitor Bank
 
-The 12V AC from power module is transformed to +400V and -400V, and charge a bunch of capacitors.
+The 12V AC from power subsystem is converted to high voltage DC, and charge a bunch of capacitors.
 
-See also [Capacitor Bank Module](CapacitorBankModule.md)
+See also [Capacitor Bank Subsystem](CapacitorBankSubsystem.md)
 
 ### Nozzle
 

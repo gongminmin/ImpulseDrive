@@ -1,6 +1,6 @@
-# Starter Module
+# Starter Subsystem
 
-The starter module is used to start an arc in the nozzle. The input is 12V AC, and outputs pulsed DC at around 10kV.
+The starter subsystem is used to start an arc in the nozzle. The input is 12V AC, and outputs pulsed DC at around 10kV.
 
 ![Starter Circuit](Img/StarterCircuit.png)
 
@@ -28,12 +28,14 @@ T2's primary and secondary coils have same wire gauge, AWG 22. T3's primary coil
 
 Other components are for safeness. L1 and L2 are filtering out high frequency resonate from LC circuit damage T1. R1 and R2 are bleeder resistors for C1 and C2. R3 and R4 are limiting the induced current in the circuit.
 
-This module is still in experiment. Need more time to finish it.
+This subsystem is still in experiment. Need more time to finish it.
 
-TODO: Assembled module photo
+TODO: Assembled subsystem photo
 
-**CAUSION**: Everything after the flyback transformer are in ~10kV. Keep distance with them even after shut this module down. The capacitors may still charge. When operating, the spark gap can be loud and hot. Very careful about the metal parts.
+**CAUSION**: Everything after the flyback transformer are in ~10kV. Keep distance with them even after shut this subsystem down. The capacitors may still charge. When operating, the spark gap can be loud and hot. Very careful about the metal parts.
 
 **Status**: Experiment-in-progress, 30%.
+
+## Alternative Design
 
 Due to the spark gap, this module is very noisy, and looks dangerous. An improvement is borrowing the design of a solid-state Tesla coil (SSTC), dual resonant solid-state Tesla coil (DRSSTC) to be exact.

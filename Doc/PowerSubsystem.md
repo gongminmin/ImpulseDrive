@@ -1,10 +1,10 @@
-# Power Module
+# Power Subsystem
 
-The power module contains 3 parts. They'll be explained below.
+The power subsystem contains 3 modules. They'll be explained below.
 
 ## DC Power Source
 
-The first part is a 12V DC power source. Currently an ATX power supply unit from an old computer is used. Along with a board to turn the power unit on and off. It's easy to find these pieces online. It'll be replaced by a 12V battery in the future.
+The first module is a 12V DC power source. Currently an ATX power supply unit from an old computer is used. Along with a board to turn the power unit on and off. It's easy to find these pieces online. It'll be replaced by a 12V battery in the future.
 
 ![PSU Photo](Img/PsuPhoto.jpg)
 
