@@ -2,11 +2,15 @@
 
 As the name suggested, the capacitor bank store energy in multiple capacitors, and enable to discharge all energy into the nozzle in a very short time period. This subsystem has 4 modules.
 
+The high voltage capacitors are expensive. During the experiment, we first implement a mini version of some modules in this subsystem. The working voltage of the full size version is 848V, but the mini version's is 68V.
+
 ## Converter
 
 The first one is a converter circuit. The transformer T1 takes 12V AC as input, transforms it to 300V AC. Then a 1-stage Cockcroft–Walton generator bring the voltage up to 848V DC (`2 * peak voltage = 2 * 300 * sqrt(2) = 848`). T1 is a homemade transformer based on EE25 core. Its primary coil is 6 turns with 24 AWG magnet wire, the inductance is ~27uH to match the power subsystem's secondary coil. And its secondary coil is 150 turns with 32 AWG magnet wire.
 
 ![Converter Circuit](Img/CapacitorBankConverterCircuit.png)
+
+The mini converter doesn't have a transformer. It's a 2-stage Cockcroft–Walton generator, which brings 12V AC up to ~68V DC.
 
 ## Capacitor Bank
 
@@ -14,11 +18,7 @@ The second module is the capacitor bank itself. The core component is 4 capacito
 
 ![Capacitor Bank Circuit](Img/CapacitorBankCircuit.png)
 
-### Low Voltage Approximation
-
-The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses the same 330uF capacitors, but the voltage rating is 50V. In this case, we need a different converter module. A 2-stage Cockcroft–Walton generator is a good choice. It brings 12V AC up to ~68V DC.
-
-This implementated board below follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank.
+In the mini version, capacitors are the same 330uF, but their voltage ratings are 50V. This implementated board below follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank.
 
 ![Capacitor Bank Photo](Img/CapacitorBankPhoto.jpg)
 
@@ -30,11 +30,15 @@ The third module is a quick capacitor bleeder. Although in previous circuit, we 
 
 **CAUSION**: The capacitors need a while to finish discharging by bleeders. Don't touch the leads during or after operating.
 
+Also, a mini quick bleeder is designed for mini capacitor bank.
+
 ## Voltage Sensing
 
 The last module is a voltage sensing circuit. It takes the low voltage signals from capacitor bank's linear divider, amplifies them to high enough currents to drive vactrols. Then the isolated signals are passed to control subsystem. The voltage sensing circuit has its own power source.
 
 ![Voltage Sensing Circuit](Img/VoltageSensingCircuit.png)
+
+Either full capacitor bank or mini capacitor bank has a voltage divider to get 0V, 3V, and 9V signals out. So, the same voltage sensing module is compatible to both of them.
 
 ## Calculations
 
