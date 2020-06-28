@@ -17,8 +17,8 @@ $EndDescr
 $Sheet
 S 2600 2900 1450 600 
 U 5ED5BB2D
-F0 "Transformer" 50
-F1 "Transformer.sch" 50
+F0 "Converter" 50
+F1 "Converter.sch" 50
 F2 "CapacitorPower+" I R 4050 3150 50 
 F3 "CapacitorPower-" I R 4050 3250 50 
 F4 "ACPowerIn+" I L 2600 3150 50 

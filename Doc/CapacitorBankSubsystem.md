@@ -6,7 +6,7 @@ As the name suggested, the capacitor bank store energy in multiple capacitors, a
 
 The first one is a converter circuit. The transformer T1 takes 12V AC as input, transforms it to 300V AC. Then a 1-stage Cockcroft–Walton generator bring the voltage up to 848V DC (`2 * peak voltage = 2 * 300 * sqrt(2) = 848`). T1 is a homemade transformer based on EE25 core. Its primary coil is 6 turns with 24 AWG magnet wire, the inductance is ~27uH to match the power subsystem's secondary coil. And its secondary coil is 150 turns with 32 AWG magnet wire.
 
-![Capacitor Bank Circuit](Img/CapacitorBankTransformerCircuit.png)
+![Converter Circuit](Img/CapacitorBankConverterCircuit.png)
 
 ## Capacitor Bank
 
@@ -16,7 +16,9 @@ The second module is the capacitor bank itself. The core component is 4 capacito
 
 ### Low Voltage Approximation
 
-The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses the same 330uF capacitors, but the voltage rating is 50V. In this case, the transformer is skipped. The 12V AC is directly connected to the Cockcroft–Walton generator. It takes 12V AC and output ~34V DC. This implementation follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank.
+The 450V capacitor is expensive, during the experiment, we start with a mini capacitor bank, which uses the same 330uF capacitors, but the voltage rating is 50V. In this case, we need a different converter module. A 2-stage Cockcroft–Walton generator is a good choice. It brings 12V AC up to ~68V DC.
+
+This implementated board below follows an early design. Two polarized capacitors are connected back to back to construct one unpolarized capacitor, and flyback diodes are connected in parallel with capacitors. It allows AC to pass through the capacitor bank.
 
 ![Capacitor Bank Photo](Img/CapacitorBankPhoto.jpg)
 
@@ -58,17 +60,17 @@ The discharge time via bleeder can also be diverged from this equation.
 
 `s = C * R`, because `R = V / A`
 
-When R is 1MΩ, the time is
+In the capacitor bank module, the R is 1MΩ, the discharging time is
 
 `s = 0.00033 * 1,000,000 = 330`
 
 , which is about 5.5 minutes.
 
-When R is 13.3KΩ, the time is
+In the quick bleeder module, a 20KΩ resistor and a 43KΩ resistor are connected in parallel, gives us a 13.65KΩ resistor. It dischargs C1 and C3. So, the discharging time is
 
-`s = 0.00033 * 13,333 = 4.40`
+`s = 0.00033 * 2 * 13,650 = 9.00`
 
-Note that it assumes the voltage doesn't change during the discharging. For reality, we need to multiply the time by at least 10.
+**CAUSION**: This equation assumes the discharging voltage is always in the capacitor's peak voltage. For reality, the voltage drops during the discharging process. It increases the discharging time. For safey reason, we need to multiply the time by **at least 10**.
 
 With the same equation, we can estimate the capacitor bank's charging time. The ZVS module is about 60W when its input voltage is 12V. For this capacitor bank, the maximum charging current is 60W / 848V = 0.07A.
 
