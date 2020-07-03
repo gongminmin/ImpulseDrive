@@ -24,7 +24,7 @@ When the spark gap is jumped, it closes the circuit and the capacitors and the p
 
 In the next step, the output of T2's secondary coil is rectified to pulsed DC, and transformed by T3 to the output ends. **QUESTION**: Can D1 and D2 hold the current?
 
-T2's primary and secondary coils have same wire gauge, AWG 22. T3's primary coil is in AWG 22, and its secondary coil is in AWG 18 or thicker to allow high current from capacitor bank to pass through.
+T2 and T3 are both air-core transformers. T2's primary and secondary coils have the same wire gauge, 22 AWG. T3's primary coil is in 22 AWG, and its secondary coil is in 18 AWG or thicker to allow high current from capacitor bank to pass through.
 
 Other components are for safeness. L1 and L2 are filtering out high frequency resonate from LC circuit damage T1. R1 and R2 are bleeder resistors for C1 and C2. R3 and R4 are limiting the induced current in the circuit.
 

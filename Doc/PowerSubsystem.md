@@ -16,7 +16,7 @@ A ZVS driver is a circuit that can oscillate a large amount of DC power with ver
 
 ![ZVS Circuit](Img/ZvsCircuit.png)
 
-It's also a finished board that can be found online. The output of this board is connected to a 5+5:10 homemade toroid transformer. It doesn't change the voltage, but isolate the two sides. On the primary coil side, the ZVS can keep oscillating. Meanwhile on the secondary coil side, it pumps the power to the successor circuit. The transformer is made from a FT240-61 ferrite core. Each of its coil has a inductance of 27uH.
+It's also a finished board that can be found online. The output of this board is connected to a 5+5:10 homemade toroid transformer. It doesn't change the voltage, but isolate the two sides. On the primary coil side, the ZVS can keep oscillating. Meanwhile on the secondary coil side, it pumps the power to the successor circuit. The transformer is made by wrapping 18 AWG wires on a FT240-61 ferrite core. Each of its coil has a inductance of 28uH.
 
 ![ZVS Photo](Img/ZvsPhoto.jpg)
 
@@ -42,10 +42,10 @@ The resonant frequency of ZVS driver is detemined by its LC circuit.
 
 L is the primary coil of T1. It's measured as 27uH. And C here is 0.66uF. Put them into the equation, we have,
 
-`f = 1 / (2 * PI * sqrt(0.000027 * 0.00000066)) = 37.7 kHz`
+`f = 1 / (2 * PI * sqrt(0.000028 * 0.00000066)) = 37.0 kHz`
 
 The impedance of the L is,
 
-`X = 2 * PI * f * L = 2 * PI * 37700 * 0.000027 = 6.39 Ω`
+`X = 2 * PI * f * L = 2 * PI * 37000 * 0.000028 = 6.5 Ω`
 
 **Status**: Done.
