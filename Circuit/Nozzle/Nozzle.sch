@@ -19,11 +19,11 @@ NozzleAnode
 Text HLabel 4550 2050 0    50   Input ~ 0
 NozzleCathode
 $Comp
-L Diode:1N4001 D1
+L Diode:1N4007 D1
 U 1 1 5E1F8212
 P 2950 2350
 F 0 "D1" H 2950 2134 50  0000 C CNN
-F 1 "1N4001" H 2950 2225 50  0000 C CNN
+F 1 "1N4007" H 2950 2225 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2950 2175 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2950 2350 50  0001 C CNN
 	1    2950 2350

@@ -108,29 +108,12 @@ Connection ~ 6500 3250
 Wire Wire Line
 	6500 3250 6500 3300
 Wire Wire Line
-	6500 2900 6500 3100
-Wire Wire Line
 	6900 3600 6700 3600
 Wire Wire Line
 	4100 3600 3950 3600
 Wire Wire Line
-	4800 2900 4800 3100
-Wire Wire Line
 	4800 2800 4800 2900
 Connection ~ 4800 2900
-Wire Wire Line
-	4800 2900 5000 2900
-$Comp
-L Device:R R3
-U 1 1 5E23BD53
-P 5150 2900
-F 0 "R3" V 4943 2900 50  0000 C CNN
-F 1 "10K" V 5034 2900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 2900 50  0001 C CNN
-F 3 "~" H 5150 2900 50  0001 C CNN
-	1    5150 2900
-	0    1    1    0   
-$EndComp
 Connection ~ 4550 3600
 Wire Wire Line
 	4550 3600 4500 3600
@@ -186,68 +169,6 @@ F 3 "~" H 6150 2900 50  0001 C CNN
 	1    6150 2900
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R8
-U 1 1 5E2BF316
-P 6150 3100
-F 0 "R8" V 5943 3100 50  0000 C CNN
-F 1 "3K3" V 6034 3100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 3100 50  0001 C CNN
-F 3 "~" H 6150 3100 50  0001 C CNN
-	1    6150 3100
-	0    1    1    0   
-$EndComp
-Connection ~ 6500 3100
-Wire Wire Line
-	6500 3100 6500 3250
-$Comp
-L Device:R R7
-U 1 1 5E2C696C
-P 5150 3100
-F 0 "R7" V 4943 3100 50  0000 C CNN
-F 1 "3K3" V 5034 3100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 3100 50  0001 C CNN
-F 3 "~" H 5150 3100 50  0001 C CNN
-	1    5150 3100
-	0    1    1    0   
-$EndComp
-Connection ~ 5650 2900
-Wire Wire Line
-	5300 2900 5650 2900
-$Comp
-L Device:LED D2
-U 1 1 5E2CCF35
-P 5850 3100
-F 0 "D2" H 5843 3316 50  0000 C CNN
-F 1 "Charge" H 5843 3225 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5850 3100 50  0001 C CNN
-F 3 "~" H 5850 3100 50  0001 C CNN
-	1    5850 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 2900 5650 3100
-$Comp
-L Device:LED D1
-U 1 1 5E2D5064
-P 5450 3100
-F 0 "D1" H 5443 2845 50  0000 C CNN
-F 1 "Discharge" H 5443 2936 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5450 3100 50  0001 C CNN
-F 3 "~" H 5450 3100 50  0001 C CNN
-	1    5450 3100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5000 3100 4800 3100
-Connection ~ 4800 3100
-Wire Wire Line
-	5600 3100 5650 3100
-Connection ~ 5650 3100
-Wire Wire Line
-	5650 3100 5650 3250
-Wire Wire Line
-	5700 3100 5650 3100
 Wire Wire Line
 	5650 2900 6000 2900
 Wire Wire Line
@@ -297,8 +218,6 @@ Wire Wire Line
 	3150 3600 3050 3600
 Text HLabel 6750 4300 0    50   Input ~ 0
 CapacitorPower-
-Wire Wire Line
-	6300 3100 6500 3100
 Wire Wire Line
 	6300 2900 6500 2900
 Wire Wire Line
@@ -391,17 +310,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 2450 7200 2450
 Connection ~ 6700 2450
-Wire Wire Line
-	4800 3100 4300 3100
-Connection ~ 4300 3100
-Wire Wire Line
-	4300 3100 3350 3100
-Wire Wire Line
-	4800 3100 4800 3300
-Wire Wire Line
-	4300 3100 4300 3300
-Wire Wire Line
-	3350 3100 3350 3300
 Wire Wire Line
 	3150 2450 5000 2450
 $Comp
@@ -639,4 +547,35 @@ Wire Wire Line
 	4250 1550 5650 1550
 Wire Wire Line
 	4600 1750 4800 1750
+Wire Wire Line
+	5650 2900 5650 3250
+Wire Wire Line
+	6500 2900 6500 3250
+Connection ~ 5650 2900
+Wire Wire Line
+	4800 2900 5000 2900
+Wire Wire Line
+	5300 2900 5650 2900
+$Comp
+L Device:R R3
+U 1 1 5E23BD53
+P 5150 2900
+F 0 "R3" V 4943 2900 50  0000 C CNN
+F 1 "10K" V 5034 2900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 2900 4300 2900
+Wire Wire Line
+	4300 2900 3350 2900
+Connection ~ 4300 2900
+Wire Wire Line
+	3350 2900 3350 3300
+Wire Wire Line
+	4800 2900 4800 3300
+Wire Wire Line
+	4300 2900 4300 3300
 $EndSCHEMATC
