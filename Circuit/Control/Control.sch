@@ -465,18 +465,18 @@ Connection ~ 8100 3400
 Wire Wire Line
 	8100 3400 8450 3400
 $Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5DD7D99A
-P 8300 2900
-F 0 "J4" H 8272 2782 50  0000 R CNN
-F 1 "Force on SW" H 8272 2873 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8300 2900 50  0001 C CNN
-F 3 "~" H 8300 2900 50  0001 C CNN
-	1    8300 2900
-	-1   0    0    -1  
+L Switch:SW_Push SW1
+U 1 1 5F0CBBA0
+P 8100 3100
+F 0 "SW1" V 8054 3248 50  0000 L CNN
+F 1 "Force on" V 8145 3248 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3300 50  0001 C CNN
+F 3 "~" H 8100 3300 50  0001 C CNN
+	1    8100 3100
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8100 3000 8100 3400
+	8100 3300 8100 3400
 $Comp
 L Diode:1N4148 D1
 U 1 1 5DC8A8B0
