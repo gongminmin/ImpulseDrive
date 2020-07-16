@@ -17,13 +17,13 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E1CDF5C
-P 3100 3500
-F 0 "J1" H 3018 3717 50  0000 C CNN
-F 1 "12V DC in" H 3018 3626 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3100 3500 50  0001 C CNN
-F 3 "~" H 3100 3500 50  0001 C CNN
-	1    3100 3500
-	-1   0    0    -1  
+P 3100 3600
+F 0 "J1" H 3018 3817 50  0000 C CNN
+F 1 "12V DC in" H 3018 3726 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3100 3600 50  0001 C CNN
+F 3 "~" H 3100 3600 50  0001 C CNN
+	1    3100 3600
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
@@ -42,7 +42,7 @@ U 1 1 5E1CFA42
 P 4150 2750
 F 0 "L1" V 4340 2750 50  0000 C CNN
 F 1 "100uH" V 4249 2750 50  0000 C CNN
-F 2 "" H 4150 2750 50  0001 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 4150 2750 50  0001 C CNN
 F 3 "~" H 4150 2750 50  0001 C CNN
 	1    4150 2750
 	0    -1   -1   0   
@@ -127,7 +127,7 @@ U 1 1 5E1D41CF
 P 5000 3750
 F 0 "Z1" V 4954 3829 50  0000 L CNN
 F 1 "1N4742" V 5045 3829 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5000 3575 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5000 3575 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5000 3750 50  0001 C CNN
 	1    5000 3750
 	0    1    1    0   
@@ -138,7 +138,7 @@ U 1 1 5E1D4F81
 P 5000 4250
 F 0 "Z2" V 5046 4171 50  0000 R CNN
 F 1 "1N4742" V 4955 4171 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5000 4075 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5000 4075 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5000 4250 50  0001 C CNN
 	1    5000 4250
 	0    -1   -1   0   
@@ -190,10 +190,10 @@ F 3 "~" H 6400 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q?
+L Device:Q_NMOS_DGS Q2
 U 1 1 5E1D9964
 P 6400 4500
-F 0 "Q?" H 6606 4454 50  0000 L CNN
+F 0 "Q2" H 6606 4454 50  0000 L CNN
 F 1 "IRFP250" H 6606 4545 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-3P-3_Vertical" H 6600 4600 50  0001 C CNN
 F 3 "~" H 6400 4500 50  0001 C CNN
@@ -220,7 +220,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 3150 6500 3300
 Wire Wire Line
-	6500 3150 7100 3150
+	6500 3150 6950 3150
 Connection ~ 6500 3150
 Wire Wire Line
 	4300 2750 7400 2750
@@ -247,27 +247,12 @@ Wire Wire Line
 Wire Wire Line
 	6500 4850 6500 4700
 Wire Wire Line
-	6500 4850 7100 4850
+	6500 4850 6950 4850
 Connection ~ 6500 4850
-$Comp
-L Device:C C1
-U 1 1 5E1E1F71
-P 7100 4000
-F 0 "C1" H 7215 4046 50  0000 L CNN
-F 1 "MKP 0.66uF" H 7215 3955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L10.3mm_W4.5mm_P7.50mm_MKS4" H 7138 3850 50  0001 C CNN
-F 3 "~" H 7100 4000 50  0001 C CNN
-	1    7100 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7100 3850 7100 3150
-Connection ~ 7100 3150
+	6950 3850 6950 3150
 Wire Wire Line
-	7100 4150 7100 4850
-Connection ~ 7100 4850
-Wire Wire Line
-	7100 4850 7600 4850
+	6950 4150 6950 4850
 Text HLabel 8500 2600 0    50   Input ~ 0
 ACOutput+
 Text HLabel 8500 2750 0    50   Input ~ 0
@@ -328,9 +313,45 @@ Wire Wire Line
 Wire Wire Line
 	7600 3550 7600 4850
 Wire Wire Line
-	7100 3150 7800 3150
-Wire Wire Line
 	3450 2950 3450 3600
 Wire Wire Line
 	8650 2750 8650 3550
+$Comp
+L Device:C C1
+U 1 1 5E1E1F71
+P 6950 4000
+F 0 "C1" H 7065 4046 50  0000 L CNN
+F 1 "MKP 0.33uF" H 7065 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L33.0mm_W13.0mm_P27.50mm_MKS4" H 6988 3850 50  0001 C CNN
+F 3 "~" H 6950 4000 50  0001 C CNN
+	1    6950 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F0FFA5C
+P 7250 4000
+F 0 "C2" H 7365 4046 50  0000 L CNN
+F 1 "MKP 0.33uF" H 7365 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L33.0mm_W13.0mm_P27.50mm_MKS4" H 7288 3850 50  0001 C CNN
+F 3 "~" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3150
+Connection ~ 6950 4850
+Wire Wire Line
+	6950 3150 7250 3150
+Wire Wire Line
+	7250 3850 7250 3150
+Connection ~ 7250 3150
+Wire Wire Line
+	7250 3150 7800 3150
+Wire Wire Line
+	7250 4150 7250 4850
+Wire Wire Line
+	6950 4850 7250 4850
+Connection ~ 7250 4850
+Wire Wire Line
+	7250 4850 7600 4850
 $EndSCHEMATC
