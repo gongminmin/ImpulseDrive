@@ -20,7 +20,7 @@ U 1 1 5E11478B
 P 3450 2950
 F 0 "T1" H 3450 3331 50  0000 C CNN
 F 1 "BSH12-N406L 8:6400" H 3450 3240 50  0000 C CNN
-F 2 "Power:FlybackTransformer_BSH12-N406L" H 3450 2950 50  0001 C CNN
+F 2 "Power:Flyback_Transformer_BSH12-N406L" H 3450 2950 50  0001 C CNN
 F 3 "~" H 3450 2950 50  0001 C CNN
 	1    3450 2950
 	1    0    0    -1  
@@ -85,7 +85,7 @@ Wire Wire Line
 	8700 3150 8900 3150
 Text HLabel 2750 2500 0    50   Input ~ 0
 PowerIn+
-Text HLabel 2750 3350 0    50   Input ~ 0
+Text HLabel 2750 3400 0    50   Input ~ 0
 PowerIn-
 Wire Wire Line
 	2850 2500 2850 2900
@@ -93,7 +93,7 @@ Connection ~ 2850 2900
 Wire Wire Line
 	2850 2900 2950 2900
 Wire Wire Line
-	2850 3000 2850 3350
+	2850 3000 2850 3400
 Text HLabel 8800 2500 0    50   Input ~ 0
 Output+
 Text HLabel 8800 3400 0    50   Input ~ 0
@@ -188,7 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 2500 2850 2500
 Wire Wire Line
-	2750 3350 2850 3350
+	2750 3400 2850 3400
 $Comp
 L Device:R R1
 U 1 1 5EE46289
