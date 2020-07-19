@@ -310,8 +310,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 2450 7200 2450
 Connection ~ 6700 2450
-Wire Wire Line
-	3150 2450 5000 2450
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5E4C22E1
@@ -351,7 +349,7 @@ Wire Wire Line
 	3250 2300 3050 2300
 Connection ~ 3050 2300
 Wire Wire Line
-	3050 2300 3050 3600
+	3050 2300 3050 2850
 $Comp
 L power:+12V #PWR0101
 U 1 1 5E1DC302
@@ -578,4 +576,29 @@ Wire Wire Line
 	4800 2900 4800 3300
 Wire Wire Line
 	4300 2900 4300 3300
+$Comp
+L Diode:1N4007 D1
+U 1 1 5F151C12
+P 3200 2650
+F 0 "D1" V 3154 2729 50  0000 L CNN
+F 1 "1N4007" V 3245 2729 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3200 2475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3200 2650 50  0001 C CNN
+	1    3200 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2850 3050 2850
+Connection ~ 3050 2850
+Wire Wire Line
+	3050 2850 3050 3600
+Wire Wire Line
+	3200 2800 3200 2850
+Wire Wire Line
+	3150 2450 3200 2450
+Wire Wire Line
+	3200 2500 3200 2450
+Connection ~ 3200 2450
+Wire Wire Line
+	3200 2450 5000 2450
 $EndSCHEMATC
