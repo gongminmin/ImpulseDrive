@@ -30,4 +30,8 @@ All these components are installed into a case. Here is a 3D model of it. It can
 
 ![Nozzle Case](Img/NozzleCase.jpg)
 
+This is a cardboard version of the assembled nozzle. The clear tube is a aquarium airline tube from the propellant injector to the nozzle.
+
+![Nozzle Case](Img/NozzlePhoto.jpg)
+
 **Status**: Work-in-progress, 40%.
