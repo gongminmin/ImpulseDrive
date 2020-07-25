@@ -21,7 +21,7 @@ Wire Wire Line
 Text HLabel 2950 3350 0    50   Input ~ 0
 Sensor3V
 $Comp
-L Connector:Screw_Terminal_01x03 J1
+L Connector:Conn_01x03_Male J1
 U 1 1 5DF30AB6
 P 1850 3500
 F 0 "J1" H 2000 3400 50  0000 C CNN
@@ -29,7 +29,7 @@ F 1 "From Capacitor Bank" H 2100 3500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1850 3500 50  0001 C CNN
 F 3 "~" H 1850 3500 50  0001 C CNN
 	1    1850 3500
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L Isolator:VTL5C U2

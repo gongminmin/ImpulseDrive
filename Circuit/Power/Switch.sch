@@ -27,8 +27,6 @@ F 3 "~" H 4450 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 1800 5000 1750
-Text HLabel 6750 4200 0    50   Input ~ 0
-CapacitorPower+
 Wire Wire Line
 	4600 3600 4550 3600
 $Comp
@@ -216,8 +214,6 @@ Wire Wire Line
 	5000 3600 5200 3600
 Wire Wire Line
 	3150 3600 3050 3600
-Text HLabel 6750 4300 0    50   Input ~ 0
-CapacitorPower-
 Wire Wire Line
 	6300 2900 6500 2900
 Wire Wire Line
@@ -382,41 +378,6 @@ F 3 "~" H 3650 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3650 4400 5100 4400
-Wire Wire Line
-	3550 4300 3550 4450
-Wire Wire Line
-	3550 4300 3950 4300
-Wire Wire Line
-	3450 4400 3650 4400
-Connection ~ 3650 4400
-Wire Wire Line
-	3450 4300 3550 4300
-Connection ~ 3550 4300
-$Comp
-L Connector:Screw_Terminal_01x02 J6
-U 1 1 5E54BA63
-P 6900 4650
-F 0 "J6" V 7100 4550 50  0000 L CNN
-F 1 "To Capacitor" V 7000 4350 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6900 4650 50  0001 C CNN
-F 3 "~" H 6900 4650 50  0001 C CNN
-	1    6900 4650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6900 3600 6900 4200
-Wire Wire Line
-	6750 4200 6900 4200
-Connection ~ 6900 4200
-Wire Wire Line
-	6900 4200 6900 4450
-Wire Wire Line
-	6750 4300 6800 4300
-Wire Wire Line
-	6800 4300 6800 4400
-Connection ~ 6800 4400
-Wire Wire Line
 	3950 4300 5650 4300
 Wire Wire Line
 	5650 3600 5650 4300
@@ -432,8 +393,6 @@ F 3 "~" H 5200 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 5100 4400
-Wire Wire Line
-	5100 4400 6800 4400
 Wire Wire Line
 	5200 3600 5200 4100
 Wire Wire Line
@@ -517,11 +476,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 1750 5750 1850
 Wire Wire Line
-	3650 4450 3650 4400
-Wire Wire Line
 	5100 4450 5100 4400
-Wire Wire Line
-	6800 4450 6800 4400
 $Comp
 L Device:R R2
 U 1 1 5E0D50A6
@@ -601,4 +556,49 @@ Wire Wire Line
 Connection ~ 3200 2450
 Wire Wire Line
 	3200 2450 5000 2450
+Wire Wire Line
+	3550 4300 3550 4450
+Wire Wire Line
+	3450 4300 3550 4300
+Wire Wire Line
+	3450 4400 3650 4400
+Connection ~ 3550 4300
+Wire Wire Line
+	3550 4300 3950 4300
+Wire Wire Line
+	3650 4450 3650 4400
+Connection ~ 3650 4400
+Wire Wire Line
+	3650 4400 5100 4400
+Text HLabel 6750 4300 0    50   Input ~ 0
+CapacitorPower-
+Wire Wire Line
+	6750 4300 6800 4300
+Text HLabel 6750 4200 0    50   Input ~ 0
+CapacitorPower+
+Connection ~ 6900 4200
+Wire Wire Line
+	6900 4200 6900 4450
+Wire Wire Line
+	6900 3600 6900 4200
+Wire Wire Line
+	6750 4200 6900 4200
+Wire Wire Line
+	5100 4400 6800 4400
+Wire Wire Line
+	6800 4300 6800 4400
+Connection ~ 6800 4400
+Wire Wire Line
+	6800 4400 6800 4450
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5E54BA63
+P 6900 4650
+F 0 "J6" V 7100 4550 50  0000 L CNN
+F 1 "To Capacitor" V 7000 4350 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6900 4650 50  0001 C CNN
+F 3 "~" H 6900 4650 50  0001 C CNN
+	1    6900 4650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

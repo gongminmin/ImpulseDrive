@@ -193,12 +193,12 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5DF30AB6
-P 8550 2350
-F 0 "J2" H 8700 2250 50  0000 C CNN
-F 1 "68V out" H 8800 2350 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8550 2350 50  0001 C CNN
-F 3 "~" H 8550 2350 50  0001 C CNN
-	1    8550 2350
+P 8550 2200
+F 0 "J2" H 8700 2100 50  0000 C CNN
+F 1 "68V out" H 8800 2200 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8550 2200 50  0001 C CNN
+F 3 "~" H 8550 2200 50  0001 C CNN
+	1    8550 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -554,13 +554,7 @@ Connection ~ 5850 3900
 Wire Wire Line
 	5200 3900 4850 3900
 Wire Wire Line
-	8350 2350 8300 2350
-Wire Wire Line
-	8350 2450 8300 2450
-Wire Wire Line
-	8300 2450 8300 3750
-Wire Wire Line
-	8300 1050 8300 2350
+	8300 1050 8300 2200
 Connection ~ 7900 900 
 Wire Wire Line
 	7900 900  8300 900 
@@ -779,12 +773,12 @@ Wire Wire Line
 $Comp
 L Device:R R21
 U 1 1 5DCFF331
-P 9500 5750
-F 0 "R21" H 9570 5796 50  0000 L CNN
-F 1 "3.3K" H 9570 5705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 5750 50  0001 C CNN
-F 3 "~" H 9500 5750 50  0001 C CNN
-	1    9500 5750
+P 9500 6150
+F 0 "R21" H 9570 6196 50  0000 L CNN
+F 1 "3.3K" H 9570 6105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 6150 50  0001 C CNN
+F 3 "~" H 9500 6150 50  0001 C CNN
+	1    9500 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -836,16 +830,16 @@ Wire Wire Line
 $Comp
 L Device:LED D8
 U 1 1 5DD0097D
-P 9500 6150
-F 0 "D8" V 9539 6033 50  0000 R CNN
-F 1 "LED" V 9448 6033 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm_FlatTop" H 9500 6150 50  0001 C CNN
-F 3 "~" H 9500 6150 50  0001 C CNN
-	1    9500 6150
+P 9500 5750
+F 0 "D8" V 9539 5633 50  0000 R CNN
+F 1 "LED" V 9448 5633 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 9500 5750 50  0001 C CNN
+F 3 "~" H 9500 5750 50  0001 C CNN
+	1    9500 5750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9300 2300 9300 2500
+	9300 2300 9300 2400
 Wire Wire Line
 	6100 5700 6100 6000
 Wire Wire Line
@@ -861,4 +855,16 @@ F 3 "~" H 9950 2400 50  0001 C CNN
 	1    9950 2400
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	8100 2400 9300 2400
+Connection ~ 8100 2400
+Connection ~ 9300 2400
+Wire Wire Line
+	9300 2400 9300 2500
+Wire Wire Line
+	8350 2200 8300 2200
+Wire Wire Line
+	8300 2300 8350 2300
+Wire Wire Line
+	8300 2300 8300 3750
 $EndSCHEMATC
