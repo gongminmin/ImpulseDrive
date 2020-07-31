@@ -6,23 +6,23 @@ To make MPD thruster practical enough, we need to solve [drawbacks of MPD thrust
 
 ### Power Source
 
-To ionize the propellant, the power voltage needs to be around 10kV. To generate large enough Lorentz force, the electric current need at least 40A. However, a 400kW power source is not easy to get.
+To ionize the propellant, the power voltage needs to be very high. To generate large enough Lorentz force, the electric current need to be very high. However, a power source with both high voltage and high current is not practical.
 
-To solve this, we can borrow a concept from welding machines. A starter provides 10kV high frequency AC to ionize some part of the medium. An ion path is created from one electrode to another during the ionization phase. This path closes a high voltage capacitor bank circuit, which then pumps a high current to the medium to generate much more ion. One bonus is that AC is much easier to ionize medium than DC, it reduces the power requirement of the starter.
+To solve this, we borrow a concept from a welding machine. In its design, a starter provides 10kV high frequency AC to ionize some of the medium particles. An ion path is created from one electrode to another during the ionization phase. This path closes a low voltage capacitor bank circuit, which then pumps a high current to the medium to generate much more ion. One bonus is that AC is much easier to ionize medium than DC, it reduces the voltage requirement of the starter.
 
-In this way, we need a power source to provide extreme voltage but low current, and a power source to provide high current but relatively low voltage. The power requirement is reduced much.
+In this way, we need a power source to provide high voltage and low current, and a power source to provide high current and low voltage. The power requirement is reduced much.
 
 ### Parallel or Series
 
-Now we have 2 power sources, one extreme voltage AC from starter and one high current DC from capacitor bank. But how to connect them together? We have 2 choices, parallel and series.
+Now we have 2 power sources, one high voltage AC from starter and one high current DC from capacitor bank. But how to connect them together? We have 2 choices, parallel and series.
 
-The first way is put starter and capacitor bank in parallel. However, to prevent the capacitor bank be damaged by the extreme voltage, and to prevent the starter to be damaged by the high current, they need some kinds of isolation.
+The first way is put starter and capacitor bank in parallel. However, to prevent the capacitor bank be damaged by the high voltage, and to prevent the starter to be damaged by the high current, they need some kinds of isolation.
 
 One straight forward thought is put a RC filter or LC filter between capacitor bank and the nozzle, and a unpolarized capacitor between starter and nozzle. DC can go through RC filter or LC filter, but AC is blocked. Meanwhile AC can go through the unpolarized capacitor, but DC is blocked.
 
 However, RC filter doesn't work for our scenario, because it limits the DC current from capacitor bank. LC filter is OK, but to survive under high current, the inductor must be a huge one. It'll become super expensive and super heavy.
 
-The other choice is connecting them in series. There are 2 issues to do this. First, the high current needs to go through starter. Second, the extreme AC can't go through polarized capacitor.
+The other choice is connecting them in series. There are 2 issues to do this. First, the high current needs to go through starter. Second, the high AC can't go through polarized capacitor.
 
 To solve the first issue, we need an isolation transformer. The primary coil is wrapped by thin wire, and secondary coil is wrapped by very thick wire. They have same turns. In this way, the voltage from primary side can be transformed to secondary coil with the same voltage. Meanwhile high current can go through its secondary coil without damaging the coil or starter.
 
@@ -86,7 +86,7 @@ See also [Starter Subsystem](StarterSubsystem.md)
 
 ### Capacitor Bank
 
-The 12V AC from power subsystem is converted to high voltage DC, and charge a bunch of capacitors.
+The 12V AC from power subsystem is converted to high voltage DC, and charge a bunch of capacitors. It can be discharged in a very short time peroid to generate a high current.
 
 See also [Capacitor Bank Subsystem](CapacitorBankSubsystem.md)
 
