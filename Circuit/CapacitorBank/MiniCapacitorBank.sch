@@ -38,28 +38,6 @@ F 3 "~" H 5850 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4007 D1
-U 1 1 5DDB37A0
-P 5400 900
-F 0 "D1" H 5450 700 50  0000 R CNN
-F 1 "1N4007" H 5550 800 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5400 725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5400 900 50  0001 C CNN
-	1    5400 900 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4007 D2
-U 1 1 5DDC68C8
-P 5350 3900
-F 0 "D2" H 5400 4100 50  0000 R CNN
-F 1 "1N4007" H 5500 4000 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5350 3725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5350 3900 50  0001 C CNN
-	1    5350 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5DCFC303
 P 7650 1650
@@ -118,9 +96,9 @@ F 3 "~" H 6500 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 900  4850 2250
+	5150 900  5150 2250
 Wire Wire Line
-	4850 2450 4850 3900
+	5150 2450 5150 3900
 Wire Wire Line
 	6500 900  6500 1500
 Wire Wire Line
@@ -156,8 +134,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 2400 6500 2400
 Wire Wire Line
-	5250 900  4850 900 
-Wire Wire Line
 	7050 900  6500 900 
 Connection ~ 7050 900 
 Wire Wire Line
@@ -188,8 +164,6 @@ Text HLabel 8500 1050 2    50   Input ~ 0
 PowerOut+
 Connection ~ 7650 3900
 Connection ~ 7650 900 
-Wire Wire Line
-	5550 900  5850 900 
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5DF30AB6
@@ -364,195 +338,191 @@ Wire Wire Line
 $Comp
 L Diode:1N4007 D3
 U 1 1 5E0E7B3A
-P 2750 2050
-F 0 "D3" H 2750 1834 50  0000 C CNN
-F 1 "1N4148" H 2750 1925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2750 1875 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2750 2050 50  0001 C CNN
-	1    2750 2050
+P 3050 2050
+F 0 "D3" H 3050 1834 50  0000 C CNN
+F 1 "1N4148" H 3050 1925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3050 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3050 2050 50  0001 C CNN
+	1    3050 2050
 	0    1    1    0   
 $EndComp
 $Comp
 L Diode:1N4148 D4
 U 1 1 5E0E6F15
-P 3150 2050
-F 0 "D4" H 3150 1834 50  0000 C CNN
-F 1 "1N4148" H 3150 1925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3150 1875 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3150 2050 50  0001 C CNN
-	1    3150 2050
+P 3450 2050
+F 0 "D4" H 3450 1834 50  0000 C CNN
+F 1 "1N4148" H 3450 1925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3450 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3450 2050 50  0001 C CNN
+	1    3450 2050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5E28804E
-P 2550 1850
-F 0 "C5" V 2298 1850 50  0000 C CNN
-F 1 "1nF" V 2389 1850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2588 1700 50  0001 C CNN
-F 3 "~" H 2550 1850 50  0001 C CNN
-	1    2550 1850
+P 2850 1850
+F 0 "C5" V 2598 1850 50  0000 C CNN
+F 1 "1nF" V 2689 1850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2888 1700 50  0001 C CNN
+F 3 "~" H 2850 1850 50  0001 C CNN
+	1    2850 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5E30B272
-P 2950 2250
-F 0 "C6" V 2698 2250 50  0000 C CNN
-F 1 "1nF" V 2789 2250 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2988 2100 50  0001 C CNN
-F 3 "~" H 2950 2250 50  0001 C CNN
-	1    2950 2250
+P 3250 2250
+F 0 "C6" V 2998 2250 50  0000 C CNN
+F 1 "1nF" V 3089 2250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3288 2100 50  0001 C CNN
+F 3 "~" H 3250 2250 50  0001 C CNN
+	1    3250 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 5EF9099D
-P 4200 2250
-F 0 "C8" V 3948 2250 50  0000 C CNN
-F 1 "1nF" V 4039 2250 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4238 2100 50  0001 C CNN
-F 3 "~" H 4200 2250 50  0001 C CNN
-	1    4200 2250
+P 4500 2250
+F 0 "C8" V 4248 2250 50  0000 C CNN
+F 1 "1nF" V 4339 2250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4538 2100 50  0001 C CNN
+F 3 "~" H 4500 2250 50  0001 C CNN
+	1    4500 2250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2750 1900 2750 1850
-Connection ~ 2750 1850
+	3050 1900 3050 1850
+Connection ~ 3050 1850
 Wire Wire Line
-	2750 2200 2750 2250
+	3050 2200 3050 2250
 Wire Wire Line
-	3150 1900 3150 1850
+	3450 1900 3450 1850
 Wire Wire Line
-	3150 2200 3150 2250
+	3450 2200 3450 2250
 Wire Wire Line
-	3150 2250 3100 2250
+	3450 2250 3400 2250
 $Comp
 L Diode:1N4148 D6
 U 1 1 5EF90991
-P 4400 2050
-F 0 "D6" H 4400 1834 50  0000 C CNN
-F 1 "1N4148" H 4400 1925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4400 1875 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4400 2050 50  0001 C CNN
-	1    4400 2050
+P 4700 2050
+F 0 "D6" H 4700 1834 50  0000 C CNN
+F 1 "1N4148" H 4700 1925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4700 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4700 2050 50  0001 C CNN
+	1    4700 2050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4000 1900 4000 1850
+	4300 1900 4300 1850
 Wire Wire Line
-	4000 2200 4000 2250
+	4300 2200 4300 2250
 Wire Wire Line
-	4400 1850 4400 1900
+	4700 1850 4700 1900
 Wire Wire Line
-	4400 2200 4400 2250
+	4700 2200 4700 2250
 Wire Wire Line
-	2750 1850 3150 1850
+	3050 1850 3450 1850
 Wire Wire Line
-	4050 2250 4000 2250
+	4350 2250 4300 2250
 Wire Wire Line
-	4000 1850 4400 1850
+	4300 1850 4700 1850
 Wire Wire Line
-	2700 1850 2750 1850
+	3000 1850 3050 1850
 $Comp
 L Device:C C7
 U 1 1 5EF8C262
-P 3800 1850
-F 0 "C7" V 3548 1850 50  0000 C CNN
-F 1 "1nF" V 3639 1850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3838 1700 50  0001 C CNN
-F 3 "~" H 3800 1850 50  0001 C CNN
-	1    3800 1850
+P 4100 1850
+F 0 "C7" V 3848 1850 50  0000 C CNN
+F 1 "1nF" V 3939 1850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4138 1700 50  0001 C CNN
+F 3 "~" H 4100 1850 50  0001 C CNN
+	1    4100 1850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3950 1850 4000 1850
-Connection ~ 4000 1850
-Text HLabel 1250 1750 0    50   Input ~ 0
+	4250 1850 4300 1850
+Connection ~ 4300 1850
+Text HLabel 1550 1750 0    50   Input ~ 0
 ACPowerIn+
-Text HLabel 1250 1900 0    50   Input ~ 0
+Text HLabel 1550 1900 0    50   Input ~ 0
 ACPowerIn-
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5ED54BE3
-P 1250 2250
-F 0 "J1" H 1330 2242 50  0000 L CNN
-F 1 "AC Power In" H 1330 2151 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1250 2250 50  0001 C CNN
-F 3 "~" H 1250 2250 50  0001 C CNN
-	1    1250 2250
+P 1550 2250
+F 0 "J1" H 1630 2242 50  0000 L CNN
+F 1 "AC Power In" H 1630 2151 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1550 2250 50  0001 C CNN
+F 3 "~" H 1550 2250 50  0001 C CNN
+	1    1550 2250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1750 2150 1450 2150
+	2050 2150 1750 2150
 Wire Wire Line
-	1450 2250 1600 2250
+	1750 2250 1900 2250
 Wire Wire Line
-	1250 1900 1600 1900
+	1550 1900 1900 1900
 Wire Wire Line
-	1600 1900 1600 2250
-Connection ~ 1600 2250
+	1900 1900 1900 2250
+Connection ~ 1900 2250
 Wire Wire Line
-	1250 1750 1750 1750
+	1550 1750 2050 1750
 Wire Wire Line
-	3650 1850 3150 1850
-Connection ~ 3150 1850
+	3950 1850 3450 1850
+Connection ~ 3450 1850
 Wire Wire Line
-	3150 2250 4000 2250
-Connection ~ 3150 2250
-Connection ~ 4000 2250
+	3450 2250 4300 2250
+Connection ~ 3450 2250
+Connection ~ 4300 2250
 Wire Wire Line
-	4400 2250 4850 2250
+	4700 2250 5150 2250
 Wire Wire Line
-	4350 2250 4400 2250
-Connection ~ 4400 2250
+	4650 2250 4700 2250
+Connection ~ 4700 2250
 $Comp
 L Device:R R13
 U 1 1 5EFDA9AD
-P 2100 1850
-F 0 "R13" V 1893 1850 50  0000 C CNN
-F 1 "220" V 1984 1850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2030 1850 50  0001 C CNN
-F 3 "~" H 2100 1850 50  0001 C CNN
-	1    2100 1850
+P 2400 1850
+F 0 "R13" V 2193 1850 50  0000 C CNN
+F 1 "220" V 2284 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 1850 50  0001 C CNN
+F 3 "~" H 2400 1850 50  0001 C CNN
+	1    2400 1850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2400 1850 2250 1850
+	2700 1850 2550 1850
 $Comp
 L Diode:1N4148 D5
 U 1 1 5EF90987
-P 4000 2050
-F 0 "D5" H 4000 1834 50  0000 C CNN
-F 1 "1N4148" H 4000 1925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4000 1875 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4000 2050 50  0001 C CNN
-	1    4000 2050
+P 4300 2050
+F 0 "D5" H 4300 1834 50  0000 C CNN
+F 1 "1N4148" H 4300 1925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4300 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4300 2050 50  0001 C CNN
+	1    4300 2050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1600 2250 2750 2250
+	1900 2250 3050 2250
 Wire Wire Line
-	1750 1750 1750 1850
+	2050 1750 2050 1850
 Wire Wire Line
-	1950 1850 1750 1850
-Connection ~ 1750 1850
+	2250 1850 2050 1850
+Connection ~ 2050 1850
 Wire Wire Line
-	1750 1850 1750 2150
+	2050 1850 2050 2150
 Wire Wire Line
-	2800 2250 2750 2250
-Connection ~ 2750 2250
+	3100 2250 3050 2250
+Connection ~ 3050 2250
 Wire Wire Line
-	1600 2450 1600 2250
+	1900 2450 1900 2250
 Wire Wire Line
-	1600 2450 4850 2450
+	1900 2450 5150 2450
 Wire Wire Line
 	5850 3900 6500 3900
-Wire Wire Line
-	5850 3900 5500 3900
 Connection ~ 5850 3900
-Wire Wire Line
-	5200 3900 4850 3900
 Wire Wire Line
 	8300 1050 8300 2200
 Connection ~ 7900 900 
@@ -867,4 +837,8 @@ Wire Wire Line
 	8300 2300 8350 2300
 Wire Wire Line
 	8300 2300 8300 3750
+Wire Wire Line
+	5150 3900 5850 3900
+Wire Wire Line
+	5150 900  5850 900 
 $EndSCHEMATC
