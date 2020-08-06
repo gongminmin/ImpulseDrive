@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Switch-cache
+LIBS:Relay-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Power Module"
 Date "2020-01-07"
 Rev "1"
@@ -71,7 +71,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 4600 5450 4600
 $Comp
-L Device:CP C?
+L Device:C C?
 U 1 1 5F54C315
 P 4900 3400
 AR Path="/5F2A59FD/5F54C315" Ref="C?"  Part="1" 
@@ -79,43 +79,13 @@ AR Path="/5F2AD5A5/5F54C315" Ref="C?"  Part="1"
 AR Path="/5F2B04BD/5F54C315" Ref="C?"  Part="1" 
 AR Path="/5F54C315" Ref="C1"  Part="1" 
 F 0 "C1" V 4645 3400 50  0000 C CNN
-F 1 "100uF" V 4736 3400 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4938 3250 50  0001 C CNN
+F 1 "0.1uF" V 4736 3400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4938 3250 50  0001 C CNN
 F 3 "~" H 4900 3400 50  0001 C CNN
 	1    4900 3400
 	0    1    1    0   
 $EndComp
 Connection ~ 3950 4600
-$Comp
-L Diode:1N4007 D?
-U 1 1 5F548E12
-P 5450 4150
-AR Path="/5F2A59FD/5F548E12" Ref="D?"  Part="1" 
-AR Path="/5F2AD5A5/5F548E12" Ref="D?"  Part="1" 
-AR Path="/5F2B04BD/5F548E12" Ref="D?"  Part="1" 
-AR Path="/5F548E12" Ref="D2"  Part="1" 
-F 0 "D2" V 5404 4229 50  0000 L CNN
-F 1 "1N4007" V 5495 4229 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5450 3975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5450 4150 50  0001 C CNN
-	1    5450 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4007 D?
-U 1 1 5F54763F
-P 3950 4150
-AR Path="/5F2A59FD/5F54763F" Ref="D?"  Part="1" 
-AR Path="/5F2AD5A5/5F54763F" Ref="D?"  Part="1" 
-AR Path="/5F2B04BD/5F54763F" Ref="D?"  Part="1" 
-AR Path="/5F54763F" Ref="D1"  Part="1" 
-F 0 "D1" V 3904 4229 50  0000 L CNN
-F 1 "1N4007" V 3995 4229 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3950 3975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3950 4150 50  0001 C CNN
-	1    3950 4150
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5E0F4C5B
@@ -315,4 +285,26 @@ Wire Wire Line
 Connection ~ 5450 4600
 Wire Wire Line
 	5450 4300 5450 4600
+$Comp
+L Diode:1N4148 D2
+U 1 1 5F2B15F1
+P 5450 4150
+F 0 "D2" V 5404 4229 50  0000 L CNN
+F 1 "1N4148" V 5495 4229 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5450 3975 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5F2B4159
+P 3950 4150
+F 0 "D1" V 3904 4229 50  0000 L CNN
+F 1 "1N4148" V 3995 4229 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3950 3975 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
