@@ -1,11 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:Relay-cache
+LIBS:ACRelay-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
-Title "Power Module"
+Sheet 1 1
+Title "AC Relay"
 Date "2020-01-07"
 Rev "1"
 Comp ""
@@ -197,8 +197,8 @@ P 5200 2550
 AR Path="/5F2A59FD/5E1D4E24" Ref="U?"  Part="1" 
 AR Path="/5F2AD5A5/5E1D4E24" Ref="U?"  Part="1" 
 AR Path="/5F2B04BD/5E1D4E24" Ref="U?"  Part="1" 
-AR Path="/5E1D4E24" Ref="U2"  Part="1" 
-F 0 "U2" V 5154 2738 50  0000 L CNN
+AR Path="/5E1D4E24" Ref="U1"  Part="1" 
+F 0 "U1" V 5154 2738 50  0000 L CNN
 F 1 "PC817" V 5245 2738 50  0000 L CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 5000 2350 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5200 2550 50  0001 L CNN
