@@ -355,7 +355,7 @@ F 1 "2CL2FM" V 7495 2671 50  0000 R CNN
 F 2 "Diode_THT:D_P600_R-6_P20.00mm_Horizontal" H 7450 2750 50  0001 C CNN
 F 3 "~" H 7450 2750 50  0001 C CNN
 	1    7450 2750
-	0    -1   1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:D D1
