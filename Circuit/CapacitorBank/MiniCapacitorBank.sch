@@ -303,13 +303,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 900  9300 900 
 Wire Wire Line
-	9750 2400 9600 2400
-Wire Wire Line
-	9600 2400 9600 2800
-Wire Wire Line
-	9600 2800 9300 2800
-Connection ~ 9300 2800
-Wire Wire Line
 	9300 3150 9700 3150
 Wire Wire Line
 	9700 3150 9700 2500
@@ -317,20 +310,12 @@ Wire Wire Line
 	9700 2500 9750 2500
 Connection ~ 9300 3150
 Wire Wire Line
-	9750 2300 9600 2300
-Wire Wire Line
-	9600 2300 9600 2000
-Wire Wire Line
-	9600 2000 9300 2000
+	9750 2400 9700 2400
 Connection ~ 9300 2000
 Text HLabel 9050 2000 0    50   Input ~ 0
 Sensor9V
 Wire Wire Line
 	9050 2000 9300 2000
-Text HLabel 9050 2800 0    50   Input ~ 0
-Sensor3V
-Wire Wire Line
-	9050 2800 9300 2800
 Text HLabel 9050 3150 0    50   Input ~ 0
 Sensor0V
 Wire Wire Line
@@ -736,12 +721,12 @@ $EndComp
 Wire Wire Line
 	9300 2300 9300 2400
 $Comp
-L Connector:Conn_01x03_Male J3
+L Connector:Conn_01x02_Male J3
 U 1 1 5EF2DD62
 P 9950 2400
 F 0 "J3" H 9950 2600 50  0000 C CNN
 F 1 "To Voltage Sensing" H 9950 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9950 2400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 2400 50  0001 C CNN
 F 3 "~" H 9950 2400 50  0001 C CNN
 	1    9950 2400
 	-1   0    0    -1  
@@ -826,4 +811,8 @@ F 3 "~" H 9500 4750 50  0001 C CNN
 	1    9500 4750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9700 2400 9700 2000
+Wire Wire Line
+	9300 2000 9700 2000
 $EndSCHEMATC

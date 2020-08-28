@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title "MPD"
 Date "2020-01-07"
 Rev "1"
@@ -21,9 +21,9 @@ F0 "Control" 50
 F1 "Control/Control.sch" 50
 F2 "ControlSignal" I L 4000 3300 50 
 F3 "ControlPower+" I L 4000 3200 50 
-F4 "CapacitorSignal1" I R 5600 3200 50 
-F5 "CapacitorSignal2" I R 5600 3300 50 
-F6 "ControlPower-" I L 4000 3400 50 
+F4 "ControlPower-" I L 4000 3400 50 
+F5 "CapacitorSignal" I R 5600 3200 50 
+F6 "CapacitorGND" I R 5600 3300 50 
 $EndSheet
 $Sheet
 S 8450 3300 1100 1050
@@ -59,28 +59,6 @@ Wire Wire Line
 Wire Wire Line
 	1700 4050 1550 4050
 Wire Wire Line
-	3750 3200 4000 3200
-Wire Wire Line
-	3650 3400 4000 3400
-Wire Wire Line
-	3750 3200 3750 3800
-$Sheet
-S 6150 3000 1600 1700
-U 5E106C20
-F0 "CapacitorBank" 50
-F1 "CapacitorBank/CapacitorBank.sch" 50
-F2 "ControlPower+" I L 6150 3800 50 
-F3 "PowerOut+" I R 7750 3500 50 
-F4 "PowerOut-" I R 7750 3600 50 
-F5 "ControlSignal1" I L 6150 3200 50 
-F6 "ControlSignal2" I L 6150 3300 50 
-F7 "ACPowerIn+" I L 6150 4400 50 
-F8 "ACPowerIn-" I L 6150 4500 50 
-F9 "ControlPower-" I L 6150 3900 50 
-$EndSheet
-Wire Wire Line
-	6150 3800 3750 3800
-Wire Wire Line
 	8650 5200 8650 5250
 Wire Wire Line
 	8650 4650 8650 4700
@@ -106,23 +84,13 @@ Wire Wire Line
 Wire Wire Line
 	1550 4050 1550 5150
 Wire Wire Line
-	3750 3200 3400 3200
-Connection ~ 3750 3200
-Wire Wire Line
 	3400 3300 4000 3300
-Wire Wire Line
-	3650 3400 3400 3400
-Connection ~ 3650 3400
 Wire Wire Line
 	6150 2300 1550 2300
 Wire Wire Line
 	6150 2400 1450 2400
 Wire Wire Line
 	1550 5150 8050 5150
-Wire Wire Line
-	3650 3900 6150 3900
-Wire Wire Line
-	3650 3400 3650 3900
 Wire Wire Line
 	1450 4150 1450 5250
 Wire Wire Line
@@ -171,4 +139,20 @@ Wire Wire Line
 Connection ~ 8050 4650
 Wire Wire Line
 	8650 4650 8050 4650
+$Sheet
+S 6150 3000 1600 1700
+U 5E106C20
+F0 "CapacitorBank" 50
+F1 "CapacitorBank/CapacitorBank.sch" 50
+F2 "PowerOut+" I R 7750 3500 50 
+F3 "PowerOut-" I R 7750 3600 50 
+F4 "ACPowerIn+" I L 6150 4400 50 
+F5 "ACPowerIn-" I L 6150 4500 50 
+F6 "ControlSignal" I L 6150 3200 50 
+F7 "ControlGND" I L 6150 3300 50 
+$EndSheet
+Wire Wire Line
+	3400 3200 4000 3200
+Wire Wire Line
+	3400 3400 4000 3400
 $EndSCHEMATC
