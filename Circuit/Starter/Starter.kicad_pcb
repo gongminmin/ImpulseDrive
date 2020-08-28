@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 8)
     (tracks 36)
     (zones 0)
     (modules 18)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 2)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 2)
     (trace_clearance 0.2)
@@ -960,6 +960,10 @@
     )
   )
 
+  (gr_circle (center 248.92 154.94) (end 251.46 154.94) (layer Edge.Cuts) (width 0.1))
+  (gr_circle (center 48.26 154.94) (end 45.72 154.94) (layer Edge.Cuts) (width 0.1))
+  (gr_circle (center 248.92 38.1) (end 251.46 38.1) (layer Edge.Cuts) (width 0.1))
+  (gr_circle (center 48.26 38.1) (end 50.8 38.1) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 40.64 30.48) (end 40.64 162.56) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 256.54 30.48) (end 40.64 30.48) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 256.54 162.56) (end 256.54 30.48) (layer Edge.Cuts) (width 0.1))
