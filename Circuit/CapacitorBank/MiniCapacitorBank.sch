@@ -544,7 +544,7 @@ L Device:R R14
 U 1 1 5F0AE0DE
 P 6350 4800
 F 0 "R14" H 6420 4846 50  0000 L CNN
-F 1 "1K" H 6420 4755 50  0000 L CNN
+F 1 "510" H 6420 4755 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 4800 50  0001 C CNN
 F 3 "~" H 6350 4800 50  0001 C CNN
 	1    6350 4800
@@ -552,17 +552,6 @@ F 3 "~" H 6350 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 5050 6350 5050
-$Comp
-L Device:R R15
-U 1 1 5F0AFBBB
-P 6100 5550
-F 0 "R15" H 6170 5596 50  0000 L CNN
-F 1 "1K" H 6170 5505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 5550 50  0001 C CNN
-F 3 "~" H 6100 5550 50  0001 C CNN
-	1    6100 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F0B41C2
@@ -576,8 +565,6 @@ F 3 "~" H 5800 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 4500 5600 4500
-Wire Wire Line
-	5400 6200 6350 6200
 $Comp
 L Isolator:PC817 U2
 U 1 1 5F0AC6C9
@@ -589,16 +576,11 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 6100 50  00
 	1    6800 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 6000 6500 6000
-Connection ~ 6350 6200
-Wire Wire Line
-	6350 6200 6500 6200
 $Comp
-L Device:R R16
+L Device:R R15
 U 1 1 5F0D7955
 P 7450 5050
-F 0 "R16" V 7243 5050 50  0000 C CNN
+F 0 "R15" V 7243 5050 50  0000 C CNN
 F 1 "3.3K" V 7334 5050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 5050 50  0001 C CNN
 F 3 "~" H 7450 5050 50  0001 C CNN
@@ -610,10 +592,10 @@ Wire Wire Line
 Wire Wire Line
 	7750 5050 7600 5050
 $Comp
-L Device:R R17
+L Device:R R16
 U 1 1 5F0E4F94
 P 7450 6000
-F 0 "R17" V 7243 6000 50  0000 C CNN
+F 0 "R16" V 7243 6000 50  0000 C CNN
 F 1 "3.3K" V 7334 6000 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 6000 50  0001 C CNN
 F 3 "~" H 7450 6000 50  0001 C CNN
@@ -624,14 +606,6 @@ Wire Wire Line
 	6350 4950 6350 5050
 Wire Wire Line
 	6350 4500 6350 4650
-Wire Wire Line
-	5400 5550 5400 6200
-Wire Wire Line
-	5400 5150 5400 4500
-Wire Wire Line
-	6500 5250 6350 5250
-Wire Wire Line
-	6350 5250 6350 6200
 Wire Wire Line
 	7100 5050 7300 5050
 Wire Wire Line
@@ -647,17 +621,6 @@ F 1 "BT138-800" H 8028 4905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8100 4875 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 7900 4950 50  0001 L CNN
 	1    7900 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery BT1
-U 1 1 5F0ADA7A
-P 5400 5350
-F 0 "BT1" H 5508 5396 50  0000 L CNN
-F 1 "12V Battery" H 5508 5305 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" V 5400 5410 50  0001 C CNN
-F 3 "~" V 5400 5410 50  0001 C CNN
-	1    5400 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -680,11 +643,6 @@ $EndComp
 Connection ~ 7900 6200
 Wire Wire Line
 	7100 6200 7900 6200
-Wire Wire Line
-	6000 4500 6100 4500
-Connection ~ 6100 4500
-Wire Wire Line
-	6100 4500 6350 4500
 Connection ~ 9500 5450
 Wire Wire Line
 	9500 5600 9500 5450
@@ -741,17 +699,6 @@ Wire Wire Line
 Wire Wire Line
 	9150 5450 9150 5800
 $Comp
-L Device:R R21
-U 1 1 5DCFF331
-P 9500 6150
-F 0 "R21" H 9570 6196 50  0000 L CNN
-F 1 "3.3K" H 9570 6105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 6150 50  0001 C CNN
-F 3 "~" H 9500 6150 50  0001 C CNN
-	1    9500 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D7
 U 1 1 5DCFD755
 P 9500 5150
@@ -763,36 +710,14 @@ F 3 "~" H 9500 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R19
-U 1 1 5DCFECC7
-P 9500 4750
-F 0 "R19" H 9570 4796 50  0000 L CNN
-F 1 "3.3K" H 9570 4705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 4750 50  0001 C CNN
-F 3 "~" H 9500 4750 50  0001 C CNN
-	1    9500 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
+L Device:R R17
 U 1 1 5E01DB84
 P 9150 4950
-F 0 "R18" H 9220 4996 50  0000 L CNN
+F 0 "R17" H 9220 4996 50  0000 L CNN
 F 1 "20K" H 9220 4905 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 4950 50  0001 C CNN
 F 3 "~" H 9150 4950 50  0001 C CNN
 	1    9150 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R20
-U 1 1 5E022706
-P 9150 5950
-F 0 "R20" H 9220 5996 50  0000 L CNN
-F 1 "20K" H 9220 5905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 5950 50  0001 C CNN
-F 3 "~" H 9150 5950 50  0001 C CNN
-	1    9150 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -810,10 +735,6 @@ F 3 "~" H 9500 5750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9300 2300 9300 2400
-Wire Wire Line
-	6100 5700 6100 6000
-Wire Wire Line
-	6100 4500 6100 5400
 $Comp
 L Connector:Conn_01x03_Male J3
 U 1 1 5EF2DD62
@@ -841,4 +762,68 @@ Wire Wire Line
 	5150 3900 5850 3900
 Wire Wire Line
 	5150 900  5850 900 
+Wire Wire Line
+	6000 4500 6350 4500
+Wire Wire Line
+	6100 5250 6100 6200
+Wire Wire Line
+	5400 6200 6100 6200
+Connection ~ 6100 6200
+Wire Wire Line
+	6100 5250 6500 5250
+Wire Wire Line
+	6100 6200 6500 6200
+Wire Wire Line
+	6350 5050 6350 6000
+Wire Wire Line
+	6350 6000 6500 6000
+Connection ~ 6350 5050
+$Comp
+L Device:Battery BT1
+U 1 1 5F0ADA7A
+P 5400 5350
+F 0 "BT1" H 5508 5396 50  0000 L CNN
+F 1 "12V Battery" H 5508 5305 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" V 5400 5410 50  0001 C CNN
+F 3 "~" V 5400 5410 50  0001 C CNN
+	1    5400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5150 5400 4500
+Wire Wire Line
+	5400 5550 5400 6200
+$Comp
+L Device:R R21
+U 1 1 5DCFF331
+P 9500 6150
+F 0 "R21" H 9570 6196 50  0000 L CNN
+F 1 "3.3K" H 9570 6105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 6150 50  0001 C CNN
+F 3 "~" H 9500 6150 50  0001 C CNN
+	1    9500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5E022706
+P 9150 5950
+F 0 "R20" H 9220 5996 50  0000 L CNN
+F 1 "20K" H 9220 5905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 5950 50  0001 C CNN
+F 3 "~" H 9150 5950 50  0001 C CNN
+	1    9150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5DCFECC7
+P 9500 4750
+F 0 "R19" H 9570 4796 50  0000 L CNN
+F 1 "3.3K" H 9570 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9430 4750 50  0001 C CNN
+F 3 "~" H 9500 4750 50  0001 C CNN
+	1    9500 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

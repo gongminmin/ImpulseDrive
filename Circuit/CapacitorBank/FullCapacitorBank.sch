@@ -489,24 +489,13 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4500 2600 50  0001 C CNN
 	1    4500 2600
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	3050 2300 3150 2300
-Wire Wire Line
-	3150 2300 3150 2400
-Wire Wire Line
-	3150 2500 3050 2500
-Wire Wire Line
-	3800 2400 3150 2400
-Connection ~ 3150 2400
-Wire Wire Line
-	3150 2400 3150 2500
 $Comp
-L CustomizedTransformer:Transformer_1P_2S_2 T1
+L CustomizedTransformer:Transformer_1P_SS_2 T1
 U 1 1 5E0D9319
 P 2650 2400
 F 0 "T1" H 2650 2950 50  0000 C CNN
 F 1 "6:75+75" H 2650 2850 50  0000 C CNN
-F 2 "Power:Transformer_Generic_EE25_8Pin" H 2650 2400 50  0001 C CNN
+F 2 "Power:Transformer_Generic_EE25_10Pin" H 2650 2400 50  0001 C CNN
 F 3 "~" H 2650 2400 50  0001 C CNN
 	1    2650 2400
 	1    0    0    -1  
@@ -585,11 +574,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2000 4100 2000
 Wire Wire Line
-	3050 2000 3450 2000
-Wire Wire Line
 	3750 2800 4100 2800
-Wire Wire Line
-	3050 2800 3450 2800
 Wire Wire Line
 	4500 2400 4950 2400
 Wire Wire Line
@@ -597,10 +582,10 @@ Wire Wire Line
 Wire Wire Line
 	4950 3000 4950 4200
 $Comp
-L Device:R R22
+L Device:R R21
 U 1 1 5DCFD35F
 P 6600 5400
-F 0 "R22" H 6670 5446 50  0000 L CNN
+F 0 "R21" H 6670 5446 50  0000 L CNN
 F 1 "43K/5W" H 6670 5355 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 5400 50  0001 C CNN
 F 3 "~" H 6600 5400 50  0001 C CNN
@@ -608,10 +593,10 @@ F 3 "~" H 6600 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R24
+L Device:R R23
 U 1 1 5DCFF331
 P 6600 6650
-F 0 "R24" H 6670 6696 50  0000 L CNN
+F 0 "R23" H 6670 6696 50  0000 L CNN
 F 1 "43K/5W" H 6670 6605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 6650 50  0001 C CNN
 F 3 "~" H 6600 6650 50  0001 C CNN
@@ -619,10 +604,10 @@ F 3 "~" H 6600 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R21
+L Device:R R20
 U 1 1 5DCFF0E0
 P 6100 5550
-F 0 "R21" H 6170 5596 50  0000 L CNN
+F 0 "R20" H 6170 5596 50  0000 L CNN
 F 1 "20K/10W" H 6170 5505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6030 5550 50  0001 C CNN
 F 3 "~" H 6100 5550 50  0001 C CNN
@@ -645,10 +630,10 @@ Connection ~ 6100 6000
 Wire Wire Line
 	6600 5250 6600 5200
 $Comp
-L Device:R R23
+L Device:R R22
 U 1 1 5DCFFBA1
 P 6100 6250
-F 0 "R23" H 6170 6296 50  0000 L CNN
+F 0 "R22" H 6170 6296 50  0000 L CNN
 F 1 "20K/10W" H 6170 6205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6030 6250 50  0001 C CNN
 F 3 "~" H 6100 6250 50  0001 C CNN
@@ -690,19 +675,19 @@ L Device:R R17
 U 1 1 5F0A3F45
 P 2650 5000
 F 0 "R17" H 2720 5046 50  0000 L CNN
-F 1 "1K" H 2720 4955 50  0000 L CNN
+F 1 "510" H 2720 4955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 5000 50  0001 C CNN
 F 3 "~" H 2650 5000 50  0001 C CNN
 	1    2650 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R19
+L Device:R R18
 U 1 1 5F0A48B7
 P 3800 5300
-F 0 "R19" V 3593 5300 50  0000 C CNN
+F 0 "R18" V 3593 5300 50  0000 C CNN
 F 1 "43K/5W" V 3684 5300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3730 5300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 5300 50  0001 C CNN
 F 3 "~" H 3800 5300 50  0001 C CNN
 	1    3800 5300
 	0    1    1    0   
@@ -714,12 +699,12 @@ Wire Wire Line
 Wire Wire Line
 	2650 4750 2650 4850
 $Comp
-L Device:R R20
+L Device:R R19
 U 1 1 5F0AA6F5
 P 3800 6100
-F 0 "R20" V 3593 6100 50  0000 C CNN
+F 0 "R19" V 3593 6100 50  0000 C CNN
 F 1 "43K/5W" V 3684 6100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3730 6100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 6100 50  0001 C CNN
 F 3 "~" H 3800 6100 50  0001 C CNN
 	1    3800 6100
 	0    1    1    0   
@@ -777,33 +762,10 @@ F 3 "~" H 2000 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 6100 4100 6100
-$Comp
-L Device:R R18
-U 1 1 5F0A5038
-P 2350 5850
-F 0 "R18" H 2420 5896 50  0000 L CNN
-F 1 "1K" H 2420 5805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2280 5850 50  0001 C CNN
-F 3 "~" H 2350 5850 50  0001 C CNN
-	1    2350 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2200 4750 2350 4750
+	2350 5500 2350 6300
 Wire Wire Line
-	2350 4750 2650 4750
-Connection ~ 2350 4750
-Wire Wire Line
-	2350 6100 2850 6100
-Wire Wire Line
-	2650 5500 2650 6300
-Wire Wire Line
-	2850 5500 2650 5500
-Wire Wire Line
-	2850 6300 2650 6300
-Connection ~ 2650 6300
-Wire Wire Line
-	1600 6300 2650 6300
+	1600 6300 2350 6300
 Wire Wire Line
 	4250 6300 4250 6150
 $Comp
@@ -860,12 +822,8 @@ F 3 "~" H 6600 5750 50  0001 C CNN
 $EndComp
 Connection ~ 6100 5200
 Wire Wire Line
-	6600 6800 6100 6800
-Connection ~ 6100 6800
-Wire Wire Line
-	6100 6400 6100 6800
-Wire Wire Line
-	5100 6300 5100 6800
+	6600 6850 6100 6850
+Connection ~ 6100 6850
 Wire Wire Line
 	8100 1200 8500 1200
 Wire Wire Line
@@ -887,11 +845,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 5200 5100 5200
 Wire Wire Line
-	6100 6800 5100 6800
-Wire Wire Line
-	2350 6000 2350 6100
-Wire Wire Line
-	2350 4750 2350 5700
+	6100 6850 5100 6850
 Wire Wire Line
 	8500 1200 8500 4550
 Connection ~ 8500 1200
@@ -904,4 +858,36 @@ Wire Wire Line
 	4950 4200 5650 4200
 Wire Wire Line
 	4950 1200 5650 1200
+Wire Wire Line
+	2200 4750 2650 4750
+Connection ~ 2350 6300
+Wire Wire Line
+	2350 6300 2850 6300
+Wire Wire Line
+	2350 5500 2850 5500
+Wire Wire Line
+	2650 5300 2650 6100
+Wire Wire Line
+	2650 6100 2850 6100
+Connection ~ 2650 5300
+Wire Wire Line
+	6100 6400 6100 6850
+Wire Wire Line
+	6600 6850 6600 6800
+Wire Wire Line
+	5100 6300 5100 6850
+Wire Wire Line
+	3050 2200 3150 2200
+Wire Wire Line
+	3150 2200 3150 2000
+Wire Wire Line
+	3150 2000 3450 2000
+Wire Wire Line
+	3050 2400 3800 2400
+Wire Wire Line
+	3050 2600 3150 2600
+Wire Wire Line
+	3150 2600 3150 2800
+Wire Wire Line
+	3150 2800 3450 2800
 $EndSCHEMATC

@@ -6,4 +6,10 @@ K transformer coil magnet
 F ~
 $ENDCMP
 #
+$CMP Transformer_1P_SS_2
+D Transformer, single primary, split secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
 #End Doc Library
