@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 85)
     (zones 0)
     (modules 22)
@@ -71,7 +71,7 @@
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (excludeedgelayer true)
-      (linewidth 0.100000)
+      (linewidth 0.250000)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -88,9 +88,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerbers/"))
   )
 
   (net 0 "")
@@ -1073,6 +1073,9 @@
     )
   )
 
+  (gr_text "M. Gong" (at 81.28 50.8) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_circle (center 63.5 52.07) (end 63.5 50.8) (layer Edge.Cuts) (width 0.05))
   (gr_circle (center 63.5 74.93) (end 64.77 74.93) (layer Edge.Cuts) (width 0.05))
   (gr_circle (center 99.06 74.93) (end 100.33 74.93) (layer Edge.Cuts) (width 0.05))

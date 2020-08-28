@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 36)
     (zones 0)
     (modules 18)
@@ -69,7 +69,7 @@
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (excludeedgelayer false)
-      (linewidth 0.100000)
+      (linewidth 0.250000)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -960,6 +960,9 @@
     )
   )
 
+  (gr_text "M. Gong" (at 199.39 36.83) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_circle (center 248.92 154.94) (end 251.46 154.94) (layer Edge.Cuts) (width 0.1))
   (gr_circle (center 48.26 154.94) (end 45.72 154.94) (layer Edge.Cuts) (width 0.1))
   (gr_circle (center 248.92 38.1) (end 251.46 38.1) (layer Edge.Cuts) (width 0.1))
