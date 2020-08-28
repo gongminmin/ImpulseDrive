@@ -538,19 +538,6 @@ $EndComp
 Wire Wire Line
 	6500 5050 6350 5050
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5F0B41C2
-P 5800 4500
-F 0 "SW1" H 5800 4785 50  0000 C CNN
-F 1 "SW_Push" H 5800 4694 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 4700 50  0001 C CNN
-F 3 "~" H 5800 4700 50  0001 C CNN
-	1    5800 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 4500 5600 4500
-$Comp
 L Isolator:PC817 U2
 U 1 1 5F0AC6C9
 P 6800 6100
@@ -752,9 +739,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 5250 6100 6200
 Wire Wire Line
-	5400 6200 6100 6200
-Connection ~ 6100 6200
-Wire Wire Line
 	6100 5250 6500 5250
 Wire Wire Line
 	6100 6200 6500 6200
@@ -763,21 +747,6 @@ Wire Wire Line
 Wire Wire Line
 	6350 6000 6500 6000
 Connection ~ 6350 5050
-$Comp
-L Device:Battery BT1
-U 1 1 5F0ADA7A
-P 5400 5350
-F 0 "BT1" H 5508 5396 50  0000 L CNN
-F 1 "12V Battery" H 5508 5305 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" V 5400 5410 50  0001 C CNN
-F 3 "~" V 5400 5410 50  0001 C CNN
-	1    5400 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 5150 5400 4500
-Wire Wire Line
-	5400 5550 5400 6200
 $Comp
 L Device:R R21
 U 1 1 5DCFF331
@@ -815,4 +784,22 @@ Wire Wire Line
 	9700 2400 9700 2000
 Wire Wire Line
 	9300 2000 9700 2000
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5F49902D
+P 5600 5150
+F 0 "J4" H 5600 5350 50  0000 C CNN
+F 1 "Discharge Signal" H 5600 5450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 5150 50  0001 C CNN
+F 3 "~" H 5600 5150 50  0001 C CNN
+	1    5600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5150 6000 5150
+Wire Wire Line
+	6000 5150 6000 4500
+Wire Wire Line
+	5800 5250 6100 5250
+Connection ~ 6100 5250
 $EndSCHEMATC

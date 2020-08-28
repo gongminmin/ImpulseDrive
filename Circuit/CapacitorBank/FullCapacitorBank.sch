@@ -718,39 +718,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 4550 4250 5050
 Wire Wire Line
-	1600 4750 1600 5250
-Wire Wire Line
-	1600 5650 1600 6300
-Wire Wire Line
-	1600 4750 1800 4750
-$Comp
-L Device:Battery BT1
-U 1 1 5F0A6EF6
-P 1600 5450
-F 0 "BT1" H 1708 5496 50  0000 L CNN
-F 1 "12V Battery" H 1708 5405 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" V 1600 5510 50  0001 C CNN
-F 3 "~" V 1600 5510 50  0001 C CNN
-	1    1600 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5F0C1113
-P 2000 4750
-F 0 "SW1" H 2000 5035 50  0000 C CNN
-F 1 "SW_Push" H 2000 4944 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 4950 50  0001 C CNN
-F 3 "~" H 2000 4950 50  0001 C CNN
-	1    2000 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3950 6100 4100 6100
 Wire Wire Line
 	2350 5500 2350 6300
-Wire Wire Line
-	1600 6300 2350 6300
 Wire Wire Line
 	4250 6300 4250 6150
 $Comp
@@ -844,9 +814,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1200 5650 1200
 Wire Wire Line
-	2200 4750 2650 4750
-Connection ~ 2350 6300
-Wire Wire Line
 	2350 6300 2850 6300
 Wire Wire Line
 	2350 5500 2850 5500
@@ -879,4 +846,24 @@ Wire Wire Line
 	10500 2800 10500 2400
 Wire Wire Line
 	10100 2400 10500 2400
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5F4D9605
+P 2050 5400
+F 0 "J5" H 2000 5550 50  0000 L CNN
+F 1 "To Voltage Sensing" H 1700 5650 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5400 50  0001 C CNN
+F 3 "~" H 2050 5400 50  0001 C CNN
+	1    2050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5500 2350 5500
+Connection ~ 2350 5500
+Wire Wire Line
+	2250 5400 2350 5400
+Wire Wire Line
+	2350 5400 2350 4750
+Wire Wire Line
+	2350 4750 2650 4750
 $EndSCHEMATC
