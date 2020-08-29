@@ -51,7 +51,7 @@ U 1 1 5F3E2816
 P 5500 2500
 F 0 "U1" H 5500 2867 50  0000 C CNN
 F 1 "LM393" H 5500 2776 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5500 2500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5500 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 5500 2500 50  0001 C CNN
 	1    5500 2500
 	1    0    0    -1  
@@ -84,7 +84,7 @@ U 1 1 5F3E7866
 P 5500 3800
 F 0 "U2" H 5500 4167 50  0000 C CNN
 F 1 "LM393" H 5500 4076 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5500 3800 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5500 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 5500 3800 50  0001 C CNN
 	1    5500 3800
 	1    0    0    -1  
