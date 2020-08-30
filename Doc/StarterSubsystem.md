@@ -36,6 +36,16 @@ TODO: Assembled subsystem photo
 
 **Status**: Experiment-in-progress, 30%.
 
+## Calculations
+
+The LC circuit is composed of C1 (10nF), C2, and the primary coil of T2 (5.7uH). The frequency is,
+
+`f = 1 / (2 * PI * sqrt(L * C)) = 1 / (2 * PI * sqrt(Lt * C1 / 2)) = 1 / (2 * PI * sqrt(0.0000057 * 0.00000001 / 2)) = 943.2 kHz`
+
+The impedance of the L is,
+
+`X = 2 * PI * f * L = 2 * PI * 943200 * 0.0000057 = 33.8 Ω`
+
 ## Alternative Design
 
 Due to the spark gap, this module is very noisy, and looks dangerous. An improvement is borrowing the design of a solid-state Tesla coil (SSTC), dual resonant solid-state Tesla coil (DRSSTC) to be exact.

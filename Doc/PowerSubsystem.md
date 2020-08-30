@@ -40,7 +40,7 @@ The resonant frequency of ZVS driver is detemined by its LC circuit.
 
 `f = 1 / (2 * PI * sqrt(L * C))`
 
-L is the primary coil of T1. It's measured as 27uH. And C here is 0.66uF. Put them into the equation, we have,
+L is the primary coil of T1. It's measured as 28uH. And C here is 0.66uF. Put them into the equation, we have,
 
 `f = 1 / (2 * PI * sqrt(0.000028 * 0.00000066)) = 37.0 kHz`
 
