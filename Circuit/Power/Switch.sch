@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title "Power Module"
+Title "Switch Module"
 Date "2020-01-07"
 Rev "1"
 Comp ""
@@ -14,152 +14,146 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4800 5550 0    50   Input ~ 0
+Text HLabel 4800 5200 0    50   Input ~ 0
 PowerAC-In
-Text HLabel 4800 5450 0    50   Input ~ 0
+Text HLabel 4800 5100 0    50   Input ~ 0
 PowerAC+In
-Text HLabel 5650 5700 0    50   Input ~ 0
+Text HLabel 5650 5350 0    50   Input ~ 0
 StarterPower+
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5E1F764E
-P 2950 6150
-F 0 "J5" V 3050 6050 50  0000 L CNN
-F 1 "DC In" V 3150 6000 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2950 6150 50  0001 C CNN
-F 3 "~" H 2950 6150 50  0001 C CNN
-	1    2950 6150
+P 2950 5800
+F 0 "J5" V 3050 5700 50  0000 L CNN
+F 1 "DC In" V 3150 5650 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2950 5800 50  0001 C CNN
+F 3 "~" H 2950 5800 50  0001 C CNN
+	1    2950 5800
 	0    -1   1    0   
 $EndComp
-Text HLabel 3600 5800 0    50   Input ~ 0
+Text HLabel 3600 5450 0    50   Input ~ 0
 CoilPower+
-Text HLabel 3600 5700 0    50   Input ~ 0
+Text HLabel 3600 5350 0    50   Input ~ 0
 CoilPower-
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5F2D8CE4
-P 4900 6150
-F 0 "J2" V 5100 6050 50  0000 L CNN
-F 1 "Power AC In" V 5000 5900 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4900 6150 50  0001 C CNN
-F 3 "~" H 4900 6150 50  0001 C CNN
-	1    4900 6150
+P 4900 5800
+F 0 "J2" V 5100 5700 50  0000 L CNN
+F 1 "Power AC In" V 5000 5550 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4900 5800 50  0001 C CNN
+F 3 "~" H 4900 5800 50  0001 C CNN
+	1    4900 5800
 	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 5F2E6375
-P 5800 6150
-F 0 "J3" V 6000 6050 50  0000 L CNN
-F 1 "To Starter" V 5900 5900 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5800 6150 50  0001 C CNN
-F 3 "~" H 5800 6150 50  0001 C CNN
-	1    5800 6150
+P 5800 5800
+F 0 "J3" V 6000 5700 50  0000 L CNN
+F 1 "To Starter" V 5900 5550 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5800 5800 50  0001 C CNN
+F 3 "~" H 5800 5800 50  0001 C CNN
+	1    5800 5800
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4800 5550 4900 5550
+	4800 5200 4900 5200
 Wire Wire Line
-	2850 5550 2950 5550
-Connection ~ 6050 1150
+	2850 5200 2950 5200
+Connection ~ 6050 1600
 Wire Wire Line
-	6050 900  6050 1150
+	6050 1350 6050 1600
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 5F2EECBB
-P 6050 700
-F 0 "J1" V 6112 512 50  0000 R CNN
-F 1 "From Control" V 6203 512 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 700 50  0001 C CNN
-F 3 "~" H 6050 700 50  0001 C CNN
-	1    6050 700 
+P 6050 1150
+F 0 "J1" V 6112 962 50  0000 R CNN
+F 1 "From Control" V 6203 962 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 1150 50  0001 C CNN
+F 3 "~" H 6050 1150 50  0001 C CNN
+	1    6050 1150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5950 900  5950 1000
+	5950 1350 5950 1450
 Wire Wire Line
-	6150 900  6150 1000
-Text HLabel 8300 1000 2    50   Input ~ 0
+	6150 1350 6150 1450
+Text HLabel 8300 1450 2    50   Input ~ 0
 ControlPower+
-Text HLabel 2250 1000 0    50   Input ~ 0
+Text HLabel 2250 1450 0    50   Input ~ 0
 ControlPower-
-Text HLabel 6100 1250 2    50   Input ~ 0
+Text HLabel 6100 1700 2    50   Input ~ 0
 ControlSignal
-Wire Wire Line
-	7950 1000 8300 1000
-Connection ~ 7950 1000
 $Comp
 L Diode:1N4007 D5
 U 1 1 5F151C12
-P 3750 5300
-F 0 "D5" V 3704 5379 50  0000 L CNN
-F 1 "1N4007" V 3795 5379 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3750 5125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3750 5300 50  0001 C CNN
-	1    3750 5300
+P 3750 4950
+F 0 "D5" V 3704 5029 50  0000 L CNN
+F 1 "1N4007" V 3795 5029 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3750 4775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3750 4950 50  0001 C CNN
+	1    3750 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3750 5000 3650 5000
 Wire Wire Line
-	3750 5000 3750 5150
+	3750 4650 3750 4800
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5F2D8CE6
-P 3650 6150
-F 0 "J6" V 3750 6050 50  0000 L CNN
-F 1 "To Coil" V 3850 6000 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3650 6150 50  0001 C CNN
-F 3 "~" H 3650 6150 50  0001 C CNN
-	1    3650 6150
+P 3650 5800
+F 0 "J6" V 3750 5700 50  0000 L CNN
+F 1 "To Coil" V 3850 5650 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3650 5800 50  0001 C CNN
+F 3 "~" H 3650 5800 50  0001 C CNN
+	1    3650 5800
 	0    -1   1    0   
 $EndComp
-Text HLabel 2850 5550 0    50   Input ~ 0
+Text HLabel 2850 5200 0    50   Input ~ 0
 PowerDC+In
-Text HLabel 2850 5450 0    50   Input ~ 0
+Text HLabel 2850 5100 0    50   Input ~ 0
 PowerDC-In
-Wire Wire Line
-	5750 1150 6050 1150
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5F2D8CE7
-P 8000 6150
-F 0 "J4" V 8200 6050 50  0000 L CNN
-F 1 "To Capacitor" V 8100 5850 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8000 6150 50  0001 C CNN
-F 3 "~" H 8000 6150 50  0001 C CNN
-	1    8000 6150
+P 8000 5800
+F 0 "J4" V 8200 5700 50  0000 L CNN
+F 1 "To Capacitor" V 8100 5500 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8000 5800 50  0001 C CNN
+F 3 "~" H 8000 5800 50  0001 C CNN
+	1    8000 5800
 	0    -1   1    0   
 $EndComp
-Text HLabel 7850 5700 0    50   Input ~ 0
+Text HLabel 7850 5350 0    50   Input ~ 0
 CapacitorPower+
-Text HLabel 7850 5800 0    50   Input ~ 0
+Text HLabel 7850 5450 0    50   Input ~ 0
 CapacitorPower-
-Text HLabel 5650 5800 0    50   Input ~ 0
+Text HLabel 5650 5450 0    50   Input ~ 0
 StarterPower-
 Wire Wire Line
-	5650 5800 5800 5800
+	5650 5450 5800 5450
 Wire Wire Line
-	3050 5450 3050 5950
+	3050 5100 3050 5600
 Wire Wire Line
-	2950 5550 2950 5950
+	2950 5200 2950 5600
 Wire Wire Line
-	4900 5550 4900 5950
+	4900 5200 4900 5600
 Wire Wire Line
-	8000 5550 8000 5800
-Connection ~ 8100 5700
+	8000 5200 8000 5450
+Connection ~ 8100 5350
 Wire Wire Line
-	8100 5700 8100 5950
+	8100 5350 8100 5600
 Wire Wire Line
-	7850 5800 8000 5800
-Connection ~ 8000 5800
+	7850 5450 8000 5450
+Connection ~ 8000 5450
 Wire Wire Line
-	8000 5800 8000 5950
-Connection ~ 5750 1150
+	8000 5450 8000 5600
 Wire Wire Line
-	6100 1250 6050 1250
+	6100 1700 6050 1700
 Wire Wire Line
-	6050 1250 6050 1150
+	6050 1700 6050 1600
 Wire Wire Line
 	3300 2650 3300 2600
 Wire Wire Line
@@ -728,107 +722,119 @@ Wire Wire Line
 Wire Wire Line
 	8100 3150 8100 3350
 Wire Wire Line
-	6150 1000 7950 1000
-Wire Wire Line
-	5800 5450 8000 5450
-Connection ~ 5800 5450
-Wire Wire Line
-	3350 4750 3350 5450
-Wire Wire Line
-	5800 4750 5800 5450
-Wire Wire Line
-	8000 4750 8000 5450
-Wire Wire Line
-	3450 4350 3450 5450
-Wire Wire Line
-	8100 4350 8100 5700
-Wire Wire Line
-	3450 2650 3450 4350
-Connection ~ 5900 4350
-Wire Wire Line
-	5900 4050 5900 4350
+	5800 5100 8000 5100
+Connection ~ 5800 5100
 Connection ~ 8100 4350
 Wire Wire Line
 	8100 4050 8100 4350
 Wire Wire Line
-	3300 1150 3300 2000
+	6050 1600 7200 1600
 Wire Wire Line
-	5750 1150 5750 2000
+	7850 5350 8100 5350
 Wire Wire Line
-	7950 1000 7950 2000
+	5800 5200 5800 5450
+Connection ~ 5800 5450
 Wire Wire Line
-	6050 1150 7200 1150
+	5800 5450 5800 5600
 Wire Wire Line
-	3300 1150 5750 1150
-Connection ~ 5000 1000
+	5650 5350 5900 5350
+Connection ~ 5900 5350
 Wire Wire Line
-	5000 1000 5000 1950
+	5900 5350 5900 5600
 Wire Wire Line
-	5000 1000 5950 1000
+	8000 5200 5800 5200
+Connection ~ 5800 5200
 Wire Wire Line
-	7200 1150 7200 1950
+	5000 5100 5000 5600
 Wire Wire Line
-	2250 1000 2550 1000
-Connection ~ 2550 1000
+	4800 5100 5000 5100
+Connection ~ 4900 5200
 Wire Wire Line
-	2550 1000 2550 1950
+	4900 5200 5800 5200
+Connection ~ 5000 5100
 Wire Wire Line
-	2550 1000 5000 1000
+	5000 5100 5800 5100
 Wire Wire Line
-	7850 5700 8100 5700
+	2850 5100 3050 5100
+Connection ~ 2950 5200
 Wire Wire Line
-	5900 4350 5900 5700
+	2950 5200 3650 5200
+Connection ~ 3050 5100
 Wire Wire Line
-	5800 5550 5800 5800
-Connection ~ 5800 5800
+	3050 5100 3350 5100
 Wire Wire Line
-	5800 5800 5800 5950
+	3600 5450 3650 5450
 Wire Wire Line
-	5650 5700 5900 5700
-Connection ~ 5900 5700
+	3650 5450 3650 5600
 Wire Wire Line
-	5900 5700 5900 5950
+	3450 5100 3750 5100
 Wire Wire Line
-	8000 5550 5800 5550
-Connection ~ 5800 5550
+	3650 5200 3650 5350
 Wire Wire Line
-	5000 5450 5000 5950
+	3750 5100 3750 5350
 Wire Wire Line
-	4800 5450 5000 5450
-Connection ~ 4900 5550
+	3650 5450 3650 5350
+Connection ~ 3650 5450
+Connection ~ 3750 5350
 Wire Wire Line
-	4900 5550 5800 5550
-Connection ~ 5000 5450
+	3750 5350 3750 5600
 Wire Wire Line
-	5000 5450 5800 5450
+	3600 5350 3650 5350
+Connection ~ 3750 5100
 Wire Wire Line
-	2850 5450 3050 5450
-Connection ~ 2950 5550
+	3650 4650 3650 5000
+Connection ~ 3650 5200
 Wire Wire Line
-	2950 5550 3650 5550
-Connection ~ 3050 5450
+	2250 1450 2550 1450
+Connection ~ 2550 1450
 Wire Wire Line
-	3050 5450 3350 5450
+	2550 1450 2550 1950
 Wire Wire Line
-	3600 5800 3650 5800
+	7200 1600 7200 1950
 Wire Wire Line
-	3650 5800 3650 5950
+	2550 1450 5000 1450
 Wire Wire Line
-	3450 5450 3750 5450
+	5000 1450 5950 1450
+Connection ~ 5000 1450
 Wire Wire Line
-	3650 5550 3650 5700
+	5000 1450 5000 1950
 Wire Wire Line
-	3750 5450 3750 5700
+	6150 1450 7950 1450
 Wire Wire Line
-	3650 5800 3650 5700
-Connection ~ 3650 5800
-Connection ~ 3750 5700
+	7950 1450 8300 1450
+Connection ~ 7950 1450
 Wire Wire Line
-	3750 5700 3750 5950
+	7950 1450 7950 2000
 Wire Wire Line
-	3600 5700 3750 5700
-Connection ~ 3750 5450
+	3300 1600 5750 1600
 Wire Wire Line
-	3650 5000 3650 5550
-Connection ~ 3650 5550
+	5750 1600 6050 1600
+Connection ~ 5750 1600
+Wire Wire Line
+	5750 1600 5750 2000
+Wire Wire Line
+	3300 1600 3300 2000
+Wire Wire Line
+	5800 4750 5800 5100
+Wire Wire Line
+	8000 4750 8000 5100
+Wire Wire Line
+	5900 4350 5900 5350
+Wire Wire Line
+	8100 4350 8100 5350
+Connection ~ 5900 4350
+Wire Wire Line
+	5900 4050 5900 4350
+Wire Wire Line
+	3350 4750 3350 5100
+Connection ~ 3650 5000
+Wire Wire Line
+	3650 5000 3650 5200
+Connection ~ 3650 5350
+Wire Wire Line
+	3650 5350 3750 5350
+Wire Wire Line
+	3450 4350 3450 5100
+Wire Wire Line
+	3450 2650 3450 4350
 $EndSCHEMATC
