@@ -538,52 +538,26 @@ $EndComp
 Wire Wire Line
 	6500 5050 6350 5050
 $Comp
-L Isolator:PC817 U2
-U 1 1 5F0AC6C9
-P 6800 6100
-F 0 "U2" H 6800 6425 50  0000 C CNN
-F 1 "PC817" H 6800 6334 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 6600 5900 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 6100 50  0001 L CNN
-	1    6800 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R15
 U 1 1 5F0D7955
-P 7450 5050
-F 0 "R15" V 7243 5050 50  0000 C CNN
-F 1 "3.3K" V 7334 5050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 5050 50  0001 C CNN
-F 3 "~" H 7450 5050 50  0001 C CNN
-	1    7450 5050
+P 7450 4850
+F 0 "R15" V 7243 4850 50  0000 C CNN
+F 1 "3.3K" V 7334 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 4850 50  0001 C CNN
+F 3 "~" H 7450 4850 50  0001 C CNN
+	1    7450 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	7900 5250 7900 5100
 Wire Wire Line
-	7750 5050 7600 5050
-$Comp
-L Device:R R16
-U 1 1 5F0E4F94
-P 7450 6000
-F 0 "R16" V 7243 6000 50  0000 C CNN
-F 1 "3.3K" V 7334 6000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 6000 50  0001 C CNN
-F 3 "~" H 7450 6000 50  0001 C CNN
-	1    7450 6000
-	0    1    1    0   
-$EndComp
+	7750 4850 7600 4850
 Wire Wire Line
 	6350 4950 6350 5050
 Wire Wire Line
 	6350 4500 6350 4650
 Wire Wire Line
-	7100 5050 7300 5050
-Wire Wire Line
 	7100 5250 7900 5250
-Wire Wire Line
-	7100 6000 7300 6000
 $Comp
 L Triac_Thyristor:BT138-800 Q1
 U 1 1 5F0D4792
@@ -593,28 +567,8 @@ F 1 "BT138-800" H 8028 4905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8100 4875 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 7900 4950 50  0001 L CNN
 	1    7900 4950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7600 6000 7750 6000
-Wire Wire Line
-	7900 5650 7900 5750
-Wire Wire Line
-	7900 6050 7900 6200
-$Comp
-L Triac_Thyristor:BT138-800 Q2
-U 1 1 5F0E5444
-P 7900 5900
-F 0 "Q2" H 8028 5854 50  0000 L CNN
-F 1 "BT138-800" H 8028 5945 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8100 5825 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 7900 5900 50  0001 L CNN
-	1    7900 5900
-	1    0    0    -1  
-$EndComp
-Connection ~ 7900 6200
-Wire Wire Line
-	7100 6200 7900 6200
 Connection ~ 9500 5450
 Wire Wire Line
 	9500 5600 9500 5450
@@ -633,8 +587,6 @@ Wire Wire Line
 	7650 2400 8100 2400
 Wire Wire Line
 	7900 5650 8300 5650
-Wire Wire Line
-	7900 6200 8750 6200
 Wire Wire Line
 	7900 5250 8750 5250
 Wire Wire Line
@@ -658,11 +610,7 @@ Connection ~ 9150 4450
 Wire Wire Line
 	9150 4450 9150 4800
 Wire Wire Line
-	8750 6200 8750 6450
-Wire Wire Line
 	9500 6300 9500 6450
-Wire Wire Line
-	8750 6450 9150 6450
 Wire Wire Line
 	9150 6450 9500 6450
 Connection ~ 9150 6450
@@ -736,17 +684,6 @@ Wire Wire Line
 	5150 900  5850 900 
 Wire Wire Line
 	6000 4500 6350 4500
-Wire Wire Line
-	6100 5250 6100 6200
-Wire Wire Line
-	6100 5250 6500 5250
-Wire Wire Line
-	6100 6200 6500 6200
-Wire Wire Line
-	6350 5050 6350 6000
-Wire Wire Line
-	6350 6000 6500 6000
-Connection ~ 6350 5050
 $Comp
 L Device:R R21
 U 1 1 5DCFF331
@@ -800,6 +737,73 @@ Wire Wire Line
 Wire Wire Line
 	6000 5150 6000 4500
 Wire Wire Line
-	5800 5250 6100 5250
-Connection ~ 6100 5250
+	7300 4850 7200 4850
+Wire Wire Line
+	7200 4850 7200 5050
+Wire Wire Line
+	7200 5050 7100 5050
+Wire Wire Line
+	6350 5850 6500 5850
+Wire Wire Line
+	6500 5650 6450 5650
+Wire Wire Line
+	6450 5650 6450 5250
+Wire Wire Line
+	5800 5250 6450 5250
+Wire Wire Line
+	6450 5250 6500 5250
+Connection ~ 6450 5250
+$Comp
+L Device:R R16
+U 1 1 5F0E4F94
+P 7450 6050
+F 0 "R16" V 7243 6050 50  0000 C CNN
+F 1 "3.3K" V 7334 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 6050 50  0001 C CNN
+F 3 "~" H 7450 6050 50  0001 C CNN
+	1    7450 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Triac_Thyristor:BT138-800 Q2
+U 1 1 5F0E5444
+P 7900 5950
+F 0 "Q2" H 8028 5904 50  0000 L CNN
+F 1 "BT138-800" H 8028 5995 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8100 5875 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 7900 5950 50  0001 L CNN
+	1    7900 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 6050 7750 6050
+Wire Wire Line
+	7300 6050 7200 6050
+Wire Wire Line
+	7900 5650 7900 5800
+Connection ~ 7900 5650
+Wire Wire Line
+	7900 6450 9150 6450
+$Comp
+L Isolator:PC817 U2
+U 1 1 5F0AC6C9
+P 6800 5750
+F 0 "U2" H 6800 6075 50  0000 C CNN
+F 1 "PC817" H 6800 5984 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6600 5550 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5750 50  0001 L CNN
+	1    6800 5750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6350 5850 6350 5050
+Connection ~ 6350 5050
+Wire Wire Line
+	7100 5650 7900 5650
+Wire Wire Line
+	7100 5850 7200 5850
+Wire Wire Line
+	7200 5850 7200 6050
+Wire Wire Line
+	7900 6100 7900 6450
 $EndSCHEMATC

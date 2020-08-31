@@ -653,7 +653,7 @@ F 1 "PC817" H 3150 6434 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 2950 6000 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3150 6200 50  0001 L CNN
 	1    3150 6200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R17
@@ -669,12 +669,12 @@ $EndComp
 $Comp
 L Device:R R18
 U 1 1 5F0A48B7
-P 3800 5300
-F 0 "R18" V 3593 5300 50  0000 C CNN
-F 1 "43K/5W" V 3684 5300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 5300 50  0001 C CNN
-F 3 "~" H 3800 5300 50  0001 C CNN
-	1    3800 5300
+P 3800 5100
+F 0 "R18" V 3593 5100 50  0000 C CNN
+F 1 "43K/5W" V 3684 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 5100 50  0001 C CNN
+F 3 "~" H 3800 5100 50  0001 C CNN
+	1    3800 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -686,18 +686,14 @@ Wire Wire Line
 $Comp
 L Device:R R19
 U 1 1 5F0AA6F5
-P 3800 6100
-F 0 "R19" V 3593 6100 50  0000 C CNN
-F 1 "43K/5W" V 3684 6100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 6100 50  0001 C CNN
-F 3 "~" H 3800 6100 50  0001 C CNN
-	1    3800 6100
+P 3800 6650
+F 0 "R19" V 3593 6650 50  0000 C CNN
+F 1 "43K/5W" V 3684 6650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 6650 50  0001 C CNN
+F 3 "~" H 3800 6650 50  0001 C CNN
+	1    3800 6650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3450 6100 3650 6100
-Wire Wire Line
-	3450 5300 3650 5300
 $Comp
 L Triac_Thyristor:BT138-800 Q1
 U 1 1 5F0ABE81
@@ -707,10 +703,10 @@ F 1 "BT138-800" H 4378 5155 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4450 5125 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 4250 5200 50  0001 L CNN
 	1    4250 5200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3950 5300 4100 5300
+	3950 5100 4100 5100
 Wire Wire Line
 	3450 5500 4250 5500
 Wire Wire Line
@@ -718,34 +714,25 @@ Wire Wire Line
 Wire Wire Line
 	4250 4550 4250 5050
 Wire Wire Line
-	3950 6100 4100 6100
+	3950 6650 4100 6650
 Wire Wire Line
-	2350 5500 2350 6300
-Wire Wire Line
-	4250 6300 4250 6150
+	4250 6850 4250 6700
 $Comp
 L Triac_Thyristor:BT138-800 Q2
 U 1 1 5F0C179E
-P 4250 6000
-F 0 "Q2" H 4378 6046 50  0000 L CNN
-F 1 "BT138-800" H 4378 5955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4450 5925 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 4250 6000 50  0001 L CNN
-	1    4250 6000
+P 4250 6550
+F 0 "Q2" H 4378 6596 50  0000 L CNN
+F 1 "BT138-800" H 4378 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4450 6475 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 4250 6550 50  0001 L CNN
+	1    4250 6550
 	1    0    0    -1  
 $EndComp
 Connection ~ 4250 5500
 Wire Wire Line
-	4250 5850 4250 5750
-Wire Wire Line
 	7250 2700 8100 2700
 Wire Wire Line
 	4250 5500 5100 5500
-Wire Wire Line
-	3450 6300 4250 6300
-Connection ~ 4250 6300
-Wire Wire Line
-	4250 6300 5100 6300
 Wire Wire Line
 	9050 4200 9050 4850
 Wire Wire Line
@@ -785,8 +772,6 @@ Wire Wire Line
 	4250 4550 8500 4550
 Wire Wire Line
 	9050 4850 5550 4850
-Wire Wire Line
-	5550 4850 5550 5750
 Connection ~ 9050 4850
 Wire Wire Line
 	5950 2700 5950 6000
@@ -796,11 +781,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 6000 6100 6000
 Wire Wire Line
-	5550 5750 4250 5750
-Wire Wire Line
 	6100 5200 5100 5200
-Wire Wire Line
-	6100 6850 5100 6850
 Wire Wire Line
 	8500 1200 8500 4550
 Connection ~ 8500 1200
@@ -814,20 +795,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 1200 5650 1200
 Wire Wire Line
-	2350 6300 2850 6300
-Wire Wire Line
-	2350 5500 2850 5500
-Wire Wire Line
-	2650 5300 2650 6100
-Wire Wire Line
-	2650 6100 2850 6100
-Connection ~ 2650 5300
-Wire Wire Line
 	6100 6400 6100 6850
 Wire Wire Line
 	6600 6850 6600 6800
-Wire Wire Line
-	5100 6300 5100 6850
 Wire Wire Line
 	3050 2200 3150 2200
 Wire Wire Line
@@ -858,12 +828,46 @@ F 3 "~" H 2050 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5500 2350 5500
-Connection ~ 2350 5500
-Wire Wire Line
 	2250 5400 2350 5400
 Wire Wire Line
 	2350 5400 2350 4750
 Wire Wire Line
 	2350 4750 2650 4750
+Wire Wire Line
+	3450 5300 3550 5300
+Wire Wire Line
+	3550 5300 3550 5100
+Wire Wire Line
+	3550 5100 3650 5100
+Wire Wire Line
+	2250 5500 2750 5500
+Wire Wire Line
+	2650 5300 2650 6300
+Wire Wire Line
+	2650 6300 2850 6300
+Connection ~ 2650 5300
+Wire Wire Line
+	2850 6100 2750 6100
+Wire Wire Line
+	2750 6100 2750 5500
+Connection ~ 2750 5500
+Wire Wire Line
+	2750 5500 2850 5500
+Wire Wire Line
+	3650 6650 3550 6650
+Wire Wire Line
+	3550 6650 3550 6300
+Wire Wire Line
+	3550 6300 3450 6300
+Wire Wire Line
+	3450 6100 4250 6100
+Connection ~ 4250 6100
+Wire Wire Line
+	4250 6100 4250 6400
+Wire Wire Line
+	4250 6850 6100 6850
+Wire Wire Line
+	4250 6100 5550 6100
+Wire Wire Line
+	5550 4850 5550 6100
 $EndSCHEMATC
