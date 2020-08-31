@@ -695,13 +695,13 @@ F 3 "~" H 3800 6650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Triac_Thyristor:BT138-800 Q1
+L Device:Q_TRIAC_A1A2G Q1
 U 1 1 5F0ABE81
 P 4250 5200
 F 0 "Q1" H 4378 5246 50  0000 L CNN
-F 1 "BT138-800" H 4378 5155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4450 5125 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 4250 5200 50  0001 L CNN
+F 1 "BTA208X-1000C" H 4378 5155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 4450 5125 50  0001 L CIN
+F 3 "" H 4250 5200 50  0001 L CNN
 	1    4250 5200
 	1    0    0    1   
 $EndComp
@@ -718,13 +718,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 6850 4250 6700
 $Comp
-L Triac_Thyristor:BT138-800 Q2
+L Device:Q_TRIAC_A1A2G Q2
 U 1 1 5F0C179E
 P 4250 6550
 F 0 "Q2" H 4378 6596 50  0000 L CNN
-F 1 "BT138-800" H 4378 6505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4450 6475 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 4250 6550 50  0001 L CNN
+F 1 "BTA208X-1000C" H 4378 6505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 4450 6475 50  0001 L CIN
+F 3 "" H 4250 6550 50  0001 L CNN
 	1    4250 6550
 	1    0    0    -1  
 $EndComp
