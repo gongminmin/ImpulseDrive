@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Control Tester"
+Date "2020-08-31"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
