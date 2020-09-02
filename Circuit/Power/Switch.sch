@@ -31,10 +31,6 @@ F 3 "~" H 2950 5800 50  0001 C CNN
 	1    2950 5800
 	0    -1   1    0   
 $EndComp
-Text HLabel 3600 5450 0    50   Input ~ 0
-CoilPower+
-Text HLabel 3600 5350 0    50   Input ~ 0
-CoilPower-
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5F2D8CE4
@@ -96,8 +92,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3750 4950 50  0001 C CNN
 	1    3750 4950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 5000 3650 5000
 Wire Wire Line
 	3750 4650 3750 4800
 $Comp
@@ -769,21 +763,11 @@ Wire Wire Line
 Wire Wire Line
 	3450 5100 3750 5100
 Wire Wire Line
-	3650 5200 3650 5350
-Wire Wire Line
 	3750 5100 3750 5350
-Wire Wire Line
-	3650 5450 3650 5350
-Connection ~ 3650 5450
 Connection ~ 3750 5350
 Wire Wire Line
 	3750 5350 3750 5600
-Wire Wire Line
-	3600 5350 3650 5350
 Connection ~ 3750 5100
-Wire Wire Line
-	3650 4650 3650 5000
-Connection ~ 3650 5200
 Wire Wire Line
 	2250 1450 2550 1450
 Connection ~ 2550 1450
@@ -827,14 +811,22 @@ Wire Wire Line
 	5900 4050 5900 4350
 Wire Wire Line
 	3350 4750 3350 5100
-Connection ~ 3650 5000
-Wire Wire Line
-	3650 5000 3650 5200
-Connection ~ 3650 5350
-Wire Wire Line
-	3650 5350 3750 5350
 Wire Wire Line
 	3450 4350 3450 5100
 Wire Wire Line
 	3450 2650 3450 4350
+Wire Wire Line
+	3650 4650 3650 5200
+Wire Wire Line
+	3750 4650 3650 4650
+Text HLabel 3600 5450 0    50   Input ~ 0
+CoilPower+
+Text HLabel 3600 5350 0    50   Input ~ 0
+CoilPower-
+Wire Wire Line
+	3600 5350 3750 5350
+Wire Wire Line
+	3650 5200 3650 5450
+Connection ~ 3650 5200
+Connection ~ 3650 5450
 $EndSCHEMATC

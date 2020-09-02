@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:VoltageSensingTester-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -29,7 +30,7 @@ L Device:Battery BT1
 U 1 1 5F4D9F7B
 P 2300 2800
 F 0 "BT1" H 2408 2846 50  0000 L CNN
-F 1 "Battery" H 2408 2755 50  0000 L CNN
+F 1 "12V Battery" H 2408 2755 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 2300 2860 50  0001 C CNN
 F 3 "~" V 2300 2860 50  0001 C CNN
 	1    2300 2800
@@ -146,7 +147,7 @@ L Device:Battery BT2
 U 1 1 5F4E51EF
 P 6900 2750
 F 0 "BT2" H 7008 2796 50  0000 L CNN
-F 1 "Battery" H 7008 2705 50  0000 L CNN
+F 1 "12V Battery" H 7008 2705 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 6900 2810 50  0001 C CNN
 F 3 "~" V 6900 2810 50  0001 C CNN
 	1    6900 2750
