@@ -303,23 +303,20 @@ Wire Wire Line
 Wire Wire Line
 	8300 900  9300 900 
 Wire Wire Line
-	9300 3150 9700 3150
+	9300 2800 9700 2800
 Wire Wire Line
-	9700 3150 9700 2500
+	9700 2450 9750 2450
 Wire Wire Line
-	9700 2500 9750 2500
-Connection ~ 9300 3150
-Wire Wire Line
-	9750 2400 9700 2400
+	9750 2350 9700 2350
 Connection ~ 9300 2000
 Text HLabel 9050 2000 0    50   Input ~ 0
-Sensor9V
+Sensor6V
 Wire Wire Line
 	9050 2000 9300 2000
-Text HLabel 9050 3150 0    50   Input ~ 0
+Text HLabel 9050 2800 0    50   Input ~ 0
 Sensor0V
 Wire Wire Line
-	9050 3150 9300 3150
+	9050 2800 9300 2800
 $Comp
 L Diode:1N4007 D3
 U 1 1 5E0E7B3A
@@ -524,17 +521,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5150 50  00
 	1    6800 5150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R14
-U 1 1 5F0AE0DE
-P 6350 4800
-F 0 "R14" H 6420 4846 50  0000 L CNN
-F 1 "510" H 6420 4755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 4800 50  0001 C CNN
-F 3 "~" H 6350 4800 50  0001 C CNN
-	1    6350 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 5050 6350 5050
 $Comp
@@ -658,12 +644,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5EF2DD62
-P 9950 2400
-F 0 "J3" H 9950 2600 50  0000 C CNN
-F 1 "To Voltage Sensing" H 9950 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 2400 50  0001 C CNN
-F 3 "~" H 9950 2400 50  0001 C CNN
-	1    9950 2400
+P 9950 2350
+F 0 "J3" H 9950 2550 50  0000 C CNN
+F 1 "To Voltage Sensing" H 9950 2650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 2350 50  0001 C CNN
+F 3 "~" H 9950 2350 50  0001 C CNN
+	1    9950 2350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -717,8 +703,6 @@ F 3 "~" H 9500 4750 50  0001 C CNN
 	1    9500 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9700 2400 9700 2000
 Wire Wire Line
 	9300 2000 9700 2000
 $Comp
@@ -806,4 +790,20 @@ Wire Wire Line
 	7200 5850 7200 6050
 Wire Wire Line
 	7900 6100 7900 6450
+Connection ~ 9300 2800
+Wire Wire Line
+	9700 2350 9700 2000
+Wire Wire Line
+	9700 2450 9700 2800
+$Comp
+L Device:R R14
+U 1 1 5F0AE0DE
+P 6350 4800
+F 0 "R14" H 6420 4846 50  0000 L CNN
+F 1 "510" H 6420 4755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 4800 50  0001 C CNN
+F 3 "~" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

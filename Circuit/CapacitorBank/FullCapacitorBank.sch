@@ -350,35 +350,21 @@ F 3 "~" H 10100 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10100 600  9050 600 
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5EF4A18D
-P 10750 2800
-F 0 "J4" H 10700 2950 50  0000 L CNN
-F 1 "To Voltage Sensing" H 10400 3050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10750 2800 50  0001 C CNN
-F 3 "~" H 10750 2800 50  0001 C CNN
-	1    10750 2800
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	10550 2800 10500 2800
+	10550 2650 10500 2650
 Connection ~ 10100 2400
 Wire Wire Line
-	10100 3400 10500 3400
+	10100 3050 10500 3050
 Wire Wire Line
-	10500 3400 10500 2900
-Wire Wire Line
-	10500 2900 10550 2900
-Connection ~ 10100 3400
+	10500 2750 10550 2750
 Text HLabel 9900 2400 0    50   Input ~ 0
-Sensor9V
+Sensor6V
 Wire Wire Line
 	9900 2400 10100 2400
-Text HLabel 9900 3400 0    50   Input ~ 0
+Text HLabel 9900 3050 0    50   Input ~ 0
 Sensor0V
 Wire Wire Line
-	9900 3400 10100 3400
+	9900 3050 10100 3050
 $Comp
 L Device:R R12
 U 1 1 5EF202C1
@@ -813,8 +799,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 2800 3450 2800
 Wire Wire Line
-	10500 2800 10500 2400
-Wire Wire Line
 	10100 2400 10500 2400
 $Comp
 L Connector:Conn_01x02_Male J5
@@ -870,4 +854,20 @@ Wire Wire Line
 	4250 6100 5550 6100
 Wire Wire Line
 	5550 4850 5550 6100
+Connection ~ 10100 3050
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5EF4A18D
+P 10750 2650
+F 0 "J4" H 10700 2800 50  0000 L CNN
+F 1 "To Voltage Sensing" H 10400 2900 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10750 2650 50  0001 C CNN
+F 3 "~" H 10750 2650 50  0001 C CNN
+	1    10750 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2650 10500 2400
+Wire Wire Line
+	10500 2750 10500 3050
 $EndSCHEMATC

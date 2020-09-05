@@ -103,7 +103,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 2400 2550 2250
 Wire Wire Line
-	2550 2250 3300 2250
+	2550 2250 2700 2250
 Wire Wire Line
 	4350 2850 4200 2850
 Wire Wire Line
@@ -162,4 +162,17 @@ F 3 "~" H 3450 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 2950 4050 2950
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F531CB8
+P 2900 2250
+F 0 "SW1" H 2900 2535 50  0000 C CNN
+F 1 "SW_Push" H 2900 2444 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 2450 50  0001 C CNN
+F 3 "~" H 2900 2450 50  0001 C CNN
+	1    2900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2250 3300 2250
 $EndSCHEMATC

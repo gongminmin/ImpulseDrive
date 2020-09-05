@@ -39,7 +39,7 @@ S 4800 1150 1450 800
 U 5EEF04C5
 F0 "VoltageSensing" 50
 F1 "VoltageSensing.sch" 50
-F2 "Sensor9V" I R 6250 1450 50 
+F2 "Sensor6V" I R 6250 1450 50 
 F3 "Sensor0V" I R 6250 1550 50 
 F4 "ControlGND" I L 4800 1600 50 
 F5 "ControlSignal" I L 4800 1500 50 
@@ -53,7 +53,7 @@ F0 "MiniCapacitorBank" 50
 F1 "MiniCapacitorBank.sch" 50
 F2 "PowerOut+" I R 6250 3150 50 
 F3 "PowerOut-" I R 6250 3250 50 
-F4 "Sensor9V" I R 6250 2600 50 
+F4 "Sensor6V" I R 6250 2600 50 
 F6 "Sensor0V" I R 6250 2700 50 
 F7 "ACPowerIn+" I L 4800 3150 50 
 F8 "ACPowerIn-" I L 4800 3250 50 
