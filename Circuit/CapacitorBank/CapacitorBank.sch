@@ -22,14 +22,10 @@ Wire Wire Line
 	4350 3150 4800 3150
 Wire Wire Line
 	4350 3250 4800 3250
-Text HLabel 4200 1500 0    50   Input ~ 0
+Text HLabel 4350 1500 0    50   Input ~ 0
 ControlSignal
-Text HLabel 4200 1600 0    50   Input ~ 0
+Text HLabel 4350 1600 0    50   Input ~ 0
 ControlGND
-Wire Wire Line
-	4200 1500 4800 1500
-Wire Wire Line
-	4200 1600 4800 1600
 Text HLabel 6650 3150 2    50   Input ~ 0
 PowerOut+
 Text HLabel 6650 3250 2    50   Input ~ 0
@@ -54,9 +50,11 @@ F1 "MiniCapacitorBank.sch" 50
 F2 "PowerOut+" I R 6250 3150 50 
 F3 "PowerOut-" I R 6250 3250 50 
 F4 "Sensor6V" I R 6250 2600 50 
-F6 "Sensor0V" I R 6250 2700 50 
-F7 "ACPowerIn+" I L 4800 3150 50 
-F8 "ACPowerIn-" I L 4800 3250 50 
+F5 "Sensor0V" I R 6250 2700 50 
+F6 "ACPowerIn+" I L 4800 3150 50 
+F7 "ACPowerIn-" I L 4800 3250 50 
+F8 "DischargeGND" I L 4800 2600 50 
+F9 "DischargeSignal" I L 4800 2700 50 
 $EndSheet
 Wire Wire Line
 	6250 2600 6650 2600
@@ -72,4 +70,16 @@ Wire Wire Line
 	6250 3250 6650 3250
 Wire Wire Line
 	6550 1550 6250 1550
+Text HLabel 4350 2600 0    50   Input ~ 0
+DischargeSignal
+Wire Wire Line
+	4800 2600 4350 2600
+Text HLabel 4350 2700 0    50   Input ~ 0
+DischargeGND
+Wire Wire Line
+	4800 2700 4350 2700
+Wire Wire Line
+	4350 1500 4800 1500
+Wire Wire Line
+	4800 1600 4350 1600
 $EndSCHEMATC

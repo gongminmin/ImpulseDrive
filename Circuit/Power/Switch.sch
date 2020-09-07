@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Power-cache
+LIBS:Switch-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 1
 Title "Switch Module"
 Date "2020-01-07"
 Rev "1"
@@ -57,30 +57,12 @@ Wire Wire Line
 	4800 5200 4900 5200
 Wire Wire Line
 	2850 5200 2950 5200
-Connection ~ 6050 1600
-Wire Wire Line
-	6050 1350 6050 1600
-$Comp
-L Connector:Conn_01x03_Male J1
-U 1 1 5F2EECBB
-P 6050 1150
-F 0 "J1" V 6112 962 50  0000 R CNN
-F 1 "From Control" V 6203 962 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 1150 50  0001 C CNN
-F 3 "~" H 6050 1150 50  0001 C CNN
-	1    6050 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5950 1350 5950 1450
-Wire Wire Line
-	6150 1350 6150 1450
-Text HLabel 8300 1450 2    50   Input ~ 0
-ControlPower+
-Text HLabel 2250 1450 0    50   Input ~ 0
-ControlPower-
-Text HLabel 6100 1700 2    50   Input ~ 0
-ControlSignal
+Text HLabel 7850 1600 0    50   Input ~ 0
+CapacitorSignal
+Text HLabel 3200 1450 0    50   Input ~ 0
+CoilSignal
+Text HLabel 3000 1800 0    50   Input ~ 0
+SignalGND
 $Comp
 L Diode:1N4007 D5
 U 1 1 5F151C12
@@ -145,10 +127,6 @@ Connection ~ 8000 5450
 Wire Wire Line
 	8000 5450 8000 5600
 Wire Wire Line
-	6100 1700 6050 1700
-Wire Wire Line
-	6050 1700 6050 1600
-Wire Wire Line
 	3300 2650 3300 2600
 Wire Wire Line
 	3450 2650 3300 2650
@@ -183,27 +161,6 @@ F 2 "Package_DIP:DIP-4_W7.62mm" H 3000 2100 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3200 2300 50  0001 L CNN
 	1    3200 2300
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2900 1950 3100 1950
-Wire Wire Line
-	3100 1950 3100 2000
-Wire Wire Line
-	2600 1950 2550 1950
-$Comp
-L Device:R R?
-U 1 1 5F2E6374
-P 2750 1950
-AR Path="/5F2A59FD/5F2E6374" Ref="R?"  Part="1" 
-AR Path="/5F2AD5A5/5F2E6374" Ref="R?"  Part="1" 
-AR Path="/5F2B04BD/5F2E6374" Ref="R?"  Part="1" 
-AR Path="/5F2E6374" Ref="R3"  Part="1" 
-F 0 "R3" V 2650 1900 50  0000 L CNN
-F 1 "1K" V 2550 1900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 1950 50  0001 C CNN
-F 3 "~" H 2750 1950 50  0001 C CNN
-	1    2750 1950
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3100 3850 3050 3850
@@ -412,42 +369,6 @@ F 3 "~" H 5550 4250 50  0001 C CNN
 	1    5550 4250
 	0    1    1    0   
 $EndComp
-$Comp
-L Isolator:PC817 U?
-U 1 1 5F2EECBC
-P 5650 2300
-AR Path="/5F2A59FD/5F2EECBC" Ref="U?"  Part="1" 
-AR Path="/5F2AD5A5/5F2EECBC" Ref="U?"  Part="1" 
-AR Path="/5F2B04BD/5F2EECBC" Ref="U?"  Part="1" 
-AR Path="/5F2EECBC" Ref="U1"  Part="1" 
-F 0 "U1" V 5604 2488 50  0000 L CNN
-F 1 "PC817" V 5695 2488 50  0000 L CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 5450 2100 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5650 2300 50  0001 L CNN
-	1    5650 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 1950 5550 1950
-Wire Wire Line
-	5550 1950 5550 2000
-Wire Wire Line
-	5050 1950 5000 1950
-$Comp
-L Device:R R?
-U 1 1 5F2FD951
-P 5200 1950
-AR Path="/5F2A59FD/5F2FD951" Ref="R?"  Part="1" 
-AR Path="/5F2AD5A5/5F2FD951" Ref="R?"  Part="1" 
-AR Path="/5F2B04BD/5F2FD951" Ref="R?"  Part="1" 
-AR Path="/5F2FD951" Ref="R1"  Part="1" 
-F 0 "R1" V 5100 1900 50  0000 L CNN
-F 1 "1K" V 5000 1900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5130 1950 50  0001 C CNN
-F 3 "~" H 5200 1950 50  0001 C CNN
-	1    5200 1950
-	0    -1   -1   0   
-$EndComp
 Connection ~ 5550 3850
 Connection ~ 5550 3500
 Wire Wire Line
@@ -547,27 +468,6 @@ Wire Wire Line
 	7750 3500 7750 3850
 Connection ~ 7750 3500
 Connection ~ 7750 3850
-$Comp
-L Device:R R?
-U 1 1 5E0DC36B
-P 7400 1950
-AR Path="/5F2A59FD/5E0DC36B" Ref="R?"  Part="1" 
-AR Path="/5F2AD5A5/5E0DC36B" Ref="R?"  Part="1" 
-AR Path="/5F2B04BD/5E0DC36B" Ref="R?"  Part="1" 
-AR Path="/5E0DC36B" Ref="R2"  Part="1" 
-F 0 "R2" V 7300 1900 50  0000 L CNN
-F 1 "1K" V 7200 1900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 1950 50  0001 C CNN
-F 3 "~" H 7400 1950 50  0001 C CNN
-	1    7400 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7250 1950 7200 1950
-Wire Wire Line
-	7750 1950 7750 2000
-Wire Wire Line
-	7550 1950 7750 1950
 $Comp
 L Isolator:PC817 U?
 U 1 1 5E1D4E24
@@ -722,8 +622,6 @@ Connection ~ 8100 4350
 Wire Wire Line
 	8100 4050 8100 4350
 Wire Wire Line
-	6050 1600 7200 1600
-Wire Wire Line
 	7850 5350 8100 5350
 Wire Wire Line
 	5800 5200 5800 5450
@@ -769,36 +667,6 @@ Wire Wire Line
 	3750 5350 3750 5600
 Connection ~ 3750 5100
 Wire Wire Line
-	2250 1450 2550 1450
-Connection ~ 2550 1450
-Wire Wire Line
-	2550 1450 2550 1950
-Wire Wire Line
-	7200 1600 7200 1950
-Wire Wire Line
-	2550 1450 5000 1450
-Wire Wire Line
-	5000 1450 5950 1450
-Connection ~ 5000 1450
-Wire Wire Line
-	5000 1450 5000 1950
-Wire Wire Line
-	6150 1450 7950 1450
-Wire Wire Line
-	7950 1450 8300 1450
-Connection ~ 7950 1450
-Wire Wire Line
-	7950 1450 7950 2000
-Wire Wire Line
-	3300 1600 5750 1600
-Wire Wire Line
-	5750 1600 6050 1600
-Connection ~ 5750 1600
-Wire Wire Line
-	5750 1600 5750 2000
-Wire Wire Line
-	3300 1600 3300 2000
-Wire Wire Line
 	5800 4750 5800 5100
 Wire Wire Line
 	8000 4750 8000 5100
@@ -829,4 +697,78 @@ Wire Wire Line
 	3650 5200 3650 5450
 Connection ~ 3650 5200
 Connection ~ 3650 5450
+$Comp
+L Isolator:PC817 U?
+U 1 1 5F2EECBC
+P 5650 2300
+AR Path="/5F2A59FD/5F2EECBC" Ref="U?"  Part="1" 
+AR Path="/5F2AD5A5/5F2EECBC" Ref="U?"  Part="1" 
+AR Path="/5F2B04BD/5F2EECBC" Ref="U?"  Part="1" 
+AR Path="/5F2EECBC" Ref="U1"  Part="1" 
+F 0 "U1" V 5604 2488 50  0000 L CNN
+F 1 "PC817" V 5695 2488 50  0000 L CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5450 2100 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5650 2300 50  0001 L CNN
+	1    5650 2300
+	0    1    1    0   
+$EndComp
+Text HLabel 5650 1600 0    50   Input ~ 0
+StarterSignal
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5F2EECBB
+P 5750 1100
+F 0 "J1" V 5550 1150 50  0000 R CNN
+F 1 "From Control" V 5650 1350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5750 1100 50  0001 C CNN
+F 3 "~" H 5750 1100 50  0001 C CNN
+	1    5750 1100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3100 1800 5550 1800
+Wire Wire Line
+	5550 1800 5550 2000
+Wire Wire Line
+	3100 1800 3100 2000
+Wire Wire Line
+	5550 1800 5950 1800
+Wire Wire Line
+	7750 1800 7750 2000
+Connection ~ 5550 1800
+Wire Wire Line
+	5650 1300 5650 1450
+Wire Wire Line
+	5650 1450 3300 1450
+Wire Wire Line
+	3300 1450 3300 2000
+Wire Wire Line
+	5750 1300 5750 1600
+Wire Wire Line
+	5850 1300 5850 1450
+Wire Wire Line
+	5850 1450 7950 1450
+Wire Wire Line
+	7950 1450 7950 1600
+Wire Wire Line
+	5950 1300 5950 1800
+Connection ~ 5950 1800
+Wire Wire Line
+	5950 1800 7750 1800
+Wire Wire Line
+	3200 1450 3300 1450
+Connection ~ 3300 1450
+Wire Wire Line
+	5650 1600 5750 1600
+Connection ~ 5750 1600
+Wire Wire Line
+	5750 1600 5750 2000
+Wire Wire Line
+	7850 1600 7950 1600
+Connection ~ 7950 1600
+Wire Wire Line
+	7950 1600 7950 2000
+Connection ~ 3100 1800
+Wire Wire Line
+	3000 1800 3100 1800
 $EndSCHEMATC

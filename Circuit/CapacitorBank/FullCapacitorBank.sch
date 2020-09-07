@@ -554,57 +554,21 @@ Wire Wire Line
 	4950 3000 4950 4200
 $Comp
 L Device:R R21
-U 1 1 5DCFD35F
-P 6600 5400
-F 0 "R21" H 6670 5446 50  0000 L CNN
-F 1 "43K/5W" H 6670 5355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 5400 50  0001 C CNN
-F 3 "~" H 6600 5400 50  0001 C CNN
-	1    6600 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R23
-U 1 1 5DCFF331
-P 6600 6650
-F 0 "R23" H 6670 6696 50  0000 L CNN
-F 1 "43K/5W" H 6670 6605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 6650 50  0001 C CNN
-F 3 "~" H 6600 6650 50  0001 C CNN
-	1    6600 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R20
 U 1 1 5DCFF0E0
 P 6100 5550
-F 0 "R20" H 6170 5596 50  0000 L CNN
+F 0 "R21" H 6170 5596 50  0000 L CNN
 F 1 "20K/10W" H 6170 5505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6030 5550 50  0001 C CNN
 F 3 "~" H 6100 5550 50  0001 C CNN
 	1    6100 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D8
-U 1 1 5DD0097D
-P 6600 6250
-F 0 "D8" V 6639 6133 50  0000 R CNN
-F 1 "LED" V 6548 6133 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6600 6250 50  0001 C CNN
-F 3 "~" H 6600 6250 50  0001 C CNN
-	1    6600 6250
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6600 6000
 Connection ~ 6100 6000
-Wire Wire Line
-	6600 5250 6600 5200
 $Comp
-L Device:R R22
+L Device:R R23
 U 1 1 5DCFFBA1
 P 6100 6250
-F 0 "R22" H 6170 6296 50  0000 L CNN
+F 0 "R23" H 6170 6296 50  0000 L CNN
 F 1 "20K/10W" H 6170 6205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 6030 6250 50  0001 C CNN
 F 3 "~" H 6100 6250 50  0001 C CNN
@@ -612,13 +576,7 @@ F 3 "~" H 6100 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 6100 6600 6000
-Wire Wire Line
-	6600 5900 6600 6000
-Wire Wire Line
 	6100 5700 6100 6000
-Wire Wire Line
-	6100 6000 6600 6000
 $Comp
 L Isolator:PC817 U1
 U 1 1 5F0A279E
@@ -644,36 +602,30 @@ $EndComp
 $Comp
 L Device:R R17
 U 1 1 5F0A3F45
-P 2650 5000
-F 0 "R17" H 2720 5046 50  0000 L CNN
-F 1 "510" H 2720 4955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 5000 50  0001 C CNN
-F 3 "~" H 2650 5000 50  0001 C CNN
-	1    2650 5000
-	1    0    0    -1  
+P 2500 5300
+F 0 "R17" V 2300 5250 50  0000 L CNN
+F 1 "1K" V 2400 5250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2430 5300 50  0001 C CNN
+F 3 "~" H 2500 5300 50  0001 C CNN
+	1    2500 5300
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R18
+L Device:R R19
 U 1 1 5F0A48B7
 P 3800 5100
-F 0 "R18" V 3593 5100 50  0000 C CNN
+F 0 "R19" V 3593 5100 50  0000 C CNN
 F 1 "43K/5W" V 3684 5100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 5100 50  0001 C CNN
 F 3 "~" H 3800 5100 50  0001 C CNN
 	1    3800 5100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2850 5300 2650 5300
-Wire Wire Line
-	2650 5300 2650 5150
-Wire Wire Line
-	2650 4750 2650 4850
 $Comp
-L Device:R R19
+L Device:R R20
 U 1 1 5F0AA6F5
 P 3800 6650
-F 0 "R19" V 3593 6650 50  0000 C CNN
+F 0 "R20" V 3593 6650 50  0000 C CNN
 F 1 "43K/5W" V 3684 6650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 3730 6650 50  0001 C CNN
 F 3 "~" H 3800 6650 50  0001 C CNN
@@ -732,27 +684,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 5200 6100 5400
 Wire Wire Line
-	6600 5550 6600 5600
-Wire Wire Line
-	6600 6400 6600 6500
-Wire Wire Line
-	6100 5200 6600 5200
-$Comp
-L Device:LED D7
-U 1 1 5DCFD755
-P 6600 5750
-F 0 "D7" V 6639 5633 50  0000 R CNN
-F 1 "LED" V 6548 5633 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6600 5750 50  0001 C CNN
-F 3 "~" H 6600 5750 50  0001 C CNN
-	1    6600 5750
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6100 5200
-Wire Wire Line
-	6600 6850 6100 6850
-Connection ~ 6100 6850
-Wire Wire Line
 	8100 1200 8500 1200
 Wire Wire Line
 	4250 4550 8500 4550
@@ -783,8 +714,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 6400 6100 6850
 Wire Wire Line
-	6600 6850 6600 6800
-Wire Wire Line
 	3050 2200 3150 2200
 Wire Wire Line
 	3150 2200 3150 2000
@@ -803,20 +732,16 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5F4D9605
-P 2050 5400
-F 0 "J5" H 2000 5550 50  0000 L CNN
-F 1 "To Voltage Sensing" H 1700 5650 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5400 50  0001 C CNN
-F 3 "~" H 2050 5400 50  0001 C CNN
-	1    2050 5400
+P 1850 5400
+F 0 "J5" H 1700 5400 50  0000 L CNN
+F 1 "Discharge" H 1450 5300 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 5400 50  0001 C CNN
+F 3 "~" H 1850 5400 50  0001 C CNN
+	1    1850 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5400 2350 5400
-Wire Wire Line
-	2350 5400 2350 4750
-Wire Wire Line
-	2350 4750 2650 4750
+	2050 5400 2150 5400
 Wire Wire Line
 	3450 5300 3550 5300
 Wire Wire Line
@@ -824,17 +749,11 @@ Wire Wire Line
 Wire Wire Line
 	3550 5100 3650 5100
 Wire Wire Line
-	2250 5500 2750 5500
-Wire Wire Line
-	2650 5300 2650 6300
-Wire Wire Line
 	2650 6300 2850 6300
-Connection ~ 2650 5300
 Wire Wire Line
 	2850 6100 2750 6100
 Wire Wire Line
-	2750 6100 2750 5500
-Connection ~ 2750 5500
+	2750 6100 2750 5800
 Wire Wire Line
 	2750 5500 2850 5500
 Wire Wire Line
@@ -870,4 +789,108 @@ Wire Wire Line
 	10500 2650 10500 2400
 Wire Wire Line
 	10500 2750 10500 3050
+$Comp
+L Device:R R18
+U 1 1 5F5FEC48
+P 2500 6300
+F 0 "R18" V 2300 6250 50  0000 L CNN
+F 1 "1K" V 2400 6250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2430 6300 50  0001 C CNN
+F 3 "~" H 2500 6300 50  0001 C CNN
+	1    2500 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 5300 2850 5300
+Wire Wire Line
+	2350 5300 2150 5300
+Wire Wire Line
+	2150 5300 2150 5400
+Wire Wire Line
+	2050 5500 2750 5500
+Connection ~ 2750 5500
+Wire Wire Line
+	2150 5400 2150 6300
+Wire Wire Line
+	2150 6300 2350 6300
+Connection ~ 2150 5400
+Wire Wire Line
+	6600 6850 6600 6800
+Connection ~ 6100 6850
+Wire Wire Line
+	6600 6850 6100 6850
+$Comp
+L Device:LED D7
+U 1 1 5DCFD755
+P 6600 5750
+F 0 "D7" V 6639 5633 50  0000 R CNN
+F 1 "LED" V 6548 5633 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6600 5750 50  0001 C CNN
+F 3 "~" H 6600 5750 50  0001 C CNN
+	1    6600 5750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6100 5200
+Wire Wire Line
+	6100 5200 6600 5200
+Wire Wire Line
+	6600 6400 6600 6500
+Wire Wire Line
+	6600 5550 6600 5600
+Wire Wire Line
+	6100 6000 6600 6000
+Wire Wire Line
+	6600 5250 6600 5200
+Wire Wire Line
+	6600 5900 6600 6000
+Wire Wire Line
+	6600 6100 6600 6000
+Connection ~ 6600 6000
+$Comp
+L Device:LED D8
+U 1 1 5DD0097D
+P 6600 6250
+F 0 "D8" V 6639 6133 50  0000 R CNN
+F 1 "LED" V 6548 6133 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6600 6250 50  0001 C CNN
+F 3 "~" H 6600 6250 50  0001 C CNN
+	1    6600 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5DCFF331
+P 6600 6650
+F 0 "R24" H 6670 6696 50  0000 L CNN
+F 1 "43K/5W" H 6670 6605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 6650 50  0001 C CNN
+F 3 "~" H 6600 6650 50  0001 C CNN
+	1    6600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5DCFD35F
+P 6600 5400
+F 0 "R22" H 6670 5446 50  0000 L CNN
+F 1 "43K/5W" H 6670 5355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P27.94mm" V 6530 5400 50  0001 C CNN
+F 3 "~" H 6600 5400 50  0001 C CNN
+	1    6600 5400
+	1    0    0    -1  
+$EndComp
+Text HLabel 2000 5150 0    50   Input ~ 0
+DischargeSignal
+Wire Wire Line
+	2150 5300 2150 5150
+Wire Wire Line
+	2150 5150 2000 5150
+Connection ~ 2150 5300
+Text HLabel 2000 5800 0    50   Input ~ 0
+DischargeGND
+Wire Wire Line
+	2000 5800 2750 5800
+Connection ~ 2750 5800
+Wire Wire Line
+	2750 5800 2750 5500
 $EndSCHEMATC

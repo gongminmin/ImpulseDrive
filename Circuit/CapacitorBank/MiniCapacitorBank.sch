@@ -521,13 +521,11 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5150 50  00
 	1    6800 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 5050 6350 5050
 $Comp
-L Device:R R15
+L Device:R R16
 U 1 1 5F0D7955
 P 7450 4850
-F 0 "R15" V 7243 4850 50  0000 C CNN
+F 0 "R16" V 7243 4850 50  0000 C CNN
 F 1 "3.3K" V 7334 4850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 4850 50  0001 C CNN
 F 3 "~" H 7450 4850 50  0001 C CNN
@@ -538,10 +536,6 @@ Wire Wire Line
 	7900 5250 7900 5100
 Wire Wire Line
 	7750 4850 7600 4850
-Wire Wire Line
-	6350 4950 6350 5050
-Wire Wire Line
-	6350 4500 6350 4650
 Wire Wire Line
 	7100 5250 7900 5250
 $Comp
@@ -616,10 +610,10 @@ F 3 "~" H 9500 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R17
+L Device:R R18
 U 1 1 5E01DB84
 P 9150 4950
-F 0 "R17" H 9220 4996 50  0000 L CNN
+F 0 "R18" H 9220 4996 50  0000 L CNN
 F 1 "20K" H 9220 4905 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 4950 50  0001 C CNN
 F 3 "~" H 9150 4950 50  0001 C CNN
@@ -668,8 +662,6 @@ Wire Wire Line
 	5150 3900 5850 3900
 Wire Wire Line
 	5150 900  5850 900 
-Wire Wire Line
-	6000 4500 6350 4500
 $Comp
 L Device:R R21
 U 1 1 5DCFF331
@@ -708,18 +700,16 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5F49902D
-P 5600 5150
-F 0 "J4" H 5600 5350 50  0000 C CNN
-F 1 "Discharge Signal" H 5600 5450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 5150 50  0001 C CNN
-F 3 "~" H 5600 5150 50  0001 C CNN
-	1    5600 5150
+P 5300 5150
+F 0 "J4" H 5150 5150 50  0000 C CNN
+F 1 "Discharge" H 5100 5050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5300 5150 50  0001 C CNN
+F 3 "~" H 5300 5150 50  0001 C CNN
+	1    5300 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 5150 6000 5150
-Wire Wire Line
-	6000 5150 6000 4500
+	5500 5150 5700 5150
 Wire Wire Line
 	7300 4850 7200 4850
 Wire Wire Line
@@ -727,21 +717,16 @@ Wire Wire Line
 Wire Wire Line
 	7200 5050 7100 5050
 Wire Wire Line
-	6350 5850 6500 5850
-Wire Wire Line
 	6500 5650 6450 5650
 Wire Wire Line
-	6450 5650 6450 5250
-Wire Wire Line
-	5800 5250 6450 5250
+	6450 5650 6450 5500
 Wire Wire Line
 	6450 5250 6500 5250
-Connection ~ 6450 5250
 $Comp
-L Device:R R16
+L Device:R R17
 U 1 1 5F0E4F94
 P 7450 6050
-F 0 "R16" V 7243 6050 50  0000 C CNN
+F 0 "R17" V 7243 6050 50  0000 C CNN
 F 1 "3.3K" V 7334 6050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 6050 50  0001 C CNN
 F 3 "~" H 7450 6050 50  0001 C CNN
@@ -780,9 +765,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5750 50  00
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6350 5850 6350 5050
-Connection ~ 6350 5050
-Wire Wire Line
 	7100 5650 7900 5650
 Wire Wire Line
 	7100 5850 7200 5850
@@ -798,12 +780,53 @@ Wire Wire Line
 $Comp
 L Device:R R14
 U 1 1 5F0AE0DE
-P 6350 4800
-F 0 "R14" H 6420 4846 50  0000 L CNN
-F 1 "510" H 6420 4755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 4800 50  0001 C CNN
-F 3 "~" H 6350 4800 50  0001 C CNN
-	1    6350 4800
-	1    0    0    -1  
+P 5950 5050
+F 0 "R14" V 6150 5000 50  0000 L CNN
+F 1 "1K" V 6050 5000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 5050 50  0001 C CNN
+F 3 "~" H 5950 5050 50  0001 C CNN
+	1    5950 5050
+	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:R R15
+U 1 1 5F592E44
+P 5950 5850
+F 0 "R15" V 6150 5800 50  0000 L CNN
+F 1 "1K" V 6050 5800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 5850 50  0001 C CNN
+F 3 "~" H 5950 5850 50  0001 C CNN
+	1    5950 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 5050 6500 5050
+Wire Wire Line
+	6100 5850 6500 5850
+Wire Wire Line
+	5800 5850 5700 5850
+Wire Wire Line
+	5700 5850 5700 5150
+Wire Wire Line
+	5700 5050 5800 5050
+Connection ~ 5700 5150
+Wire Wire Line
+	5700 5150 5700 5050
+Wire Wire Line
+	5500 5250 6450 5250
+Connection ~ 6450 5250
+Text HLabel 5600 5500 0    50   Input ~ 0
+DischargeGND
+Text HLabel 5600 4600 0    50   Input ~ 0
+DischargeSignal
+Wire Wire Line
+	5700 5050 5700 4600
+Connection ~ 5700 5050
+Wire Wire Line
+	5700 4600 5600 4600
+Wire Wire Line
+	5600 5500 6450 5500
+Connection ~ 6450 5500
+Wire Wire Line
+	6450 5500 6450 5250
 $EndSCHEMATC

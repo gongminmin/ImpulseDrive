@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4000 3000 1600 600 
-U 5E0FF92E
-F0 "Control" 50
-F1 "Control/Control.sch" 50
-F2 "ControlSignal" I L 4000 3300 50 
-F3 "ControlPower+" I L 4000 3200 50 
-F4 "ControlPower-" I L 4000 3400 50 
-F5 "CapacitorSignal" I R 5600 3200 50 
-F6 "CapacitorGND" I R 5600 3300 50 
-$EndSheet
-$Sheet
 S 8450 3300 1100 1050
 U 5E16C480
 F0 "Nozzle" 50
@@ -40,15 +29,16 @@ S 1700 3000 1700 1700
 U 5E1058DB
 F0 "Power" 50
 F1 "Power/Power.sch" 50
-F2 "ControlSignal" I R 3400 3300 50 
-F3 "CapacitorPower+" I R 3400 4400 50 
-F4 "CapacitorPower-" I R 3400 4500 50 
-F5 "StarterPower+" I L 1700 3200 50 
-F6 "StarterPower-" I L 1700 3300 50 
-F7 "CoilPower-" I L 1700 4150 50 
-F8 "CoilPower+" I L 1700 4050 50 
-F9 "ControlPower+" I R 3400 3200 50 
-F10 "ControlPower-" I R 3400 3400 50 
+F2 "CapacitorPower+" I R 3400 4400 50 
+F3 "CapacitorPower-" I R 3400 4500 50 
+F4 "StarterPower+" I L 1700 3200 50 
+F5 "StarterPower-" I L 1700 3300 50 
+F6 "CoilPower-" I L 1700 4150 50 
+F7 "CoilPower+" I L 1700 4050 50 
+F8 "CapacitorSignal" I R 3400 3400 50 
+F9 "StarterSignal" I R 3400 3300 50 
+F10 "CoilSignal" I R 3400 3200 50 
+F11 "SignalGND" I R 3400 3500 50 
 $EndSheet
 Wire Wire Line
 	1550 3200 1700 3200
@@ -150,9 +140,31 @@ F4 "ACPowerIn+" I L 6150 4400 50
 F5 "ACPowerIn-" I L 6150 4500 50 
 F6 "ControlSignal" I L 6150 3200 50 
 F7 "ControlGND" I L 6150 3300 50 
+F8 "DischargeSignal" I L 6150 3500 50 
+F9 "DischargeGND" I L 6150 3600 50 
 $EndSheet
 Wire Wire Line
 	3400 3200 4000 3200
 Wire Wire Line
 	3400 3400 4000 3400
+$Sheet
+S 4000 3000 1600 800 
+U 5E0FF92E
+F0 "Control" 50
+F1 "Control/Control.sch" 50
+F2 "CapacitorSignal" I L 4000 3400 50 
+F3 "VoltageSensingSignal" I R 5600 3200 50 
+F4 "VoltageSensingGND" I R 5600 3300 50 
+F5 "CoilSignal" I L 4000 3200 50 
+F6 "StarterSignal" I L 4000 3300 50 
+F7 "SignalGND" I L 4000 3500 50 
+F8 "DischargeSignal" I R 5600 3500 50 
+F9 "DischargeGND" I R 5600 3600 50 
+$EndSheet
+Wire Wire Line
+	6150 3500 5600 3500
+Wire Wire Line
+	5600 3600 6150 3600
+Wire Wire Line
+	4000 3500 3400 3500
 $EndSCHEMATC
