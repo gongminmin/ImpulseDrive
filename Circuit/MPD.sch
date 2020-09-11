@@ -140,8 +140,6 @@ F4 "ACPowerIn+" I L 6150 4400 50
 F5 "ACPowerIn-" I L 6150 4500 50 
 F6 "ControlSignal" I L 6150 3200 50 
 F7 "ControlGND" I L 6150 3300 50 
-F8 "DischargeSignal" I L 6150 3500 50 
-F9 "DischargeGND" I L 6150 3600 50 
 $EndSheet
 Wire Wire Line
 	3400 3200 4000 3200
@@ -158,13 +156,7 @@ F4 "VoltageSensingGND" I R 5600 3300 50
 F5 "CoilSignal" I L 4000 3200 50 
 F6 "StarterSignal" I L 4000 3300 50 
 F7 "SignalGND" I L 4000 3500 50 
-F8 "DischargeSignal" I R 5600 3500 50 
-F9 "DischargeGND" I R 5600 3600 50 
 $EndSheet
-Wire Wire Line
-	6150 3500 5600 3500
-Wire Wire Line
-	5600 3600 6150 3600
 Wire Wire Line
 	4000 3500 3400 3500
 $EndSCHEMATC

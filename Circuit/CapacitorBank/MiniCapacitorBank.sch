@@ -19,7 +19,7 @@ L Device:R R2
 U 1 1 5DCFBD87
 P 5850 3100
 F 0 "R2" H 5920 3146 50  0000 L CNN
-F 1 "1M" H 5920 3055 50  0000 L CNN
+F 1 "68K" H 5920 3055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5780 3100 50  0001 C CNN
 F 3 "~" H 5850 3100 50  0001 C CNN
 	1    5850 3100
@@ -31,7 +31,7 @@ L Device:R R1
 U 1 1 5DCFB2B1
 P 5850 1650
 F 0 "R1" H 5920 1696 50  0000 L CNN
-F 1 "1M" H 5920 1605 50  0000 L CNN
+F 1 "68K" H 5920 1605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5780 1650 50  0001 C CNN
 F 3 "~" H 5850 1650 50  0001 C CNN
 	1    5850 1650
@@ -42,7 +42,7 @@ L Device:R R3
 U 1 1 5DCFC303
 P 7650 1650
 F 0 "R3" H 7720 1696 50  0000 L CNN
-F 1 "1M" H 7720 1605 50  0000 L CNN
+F 1 "68K" H 7720 1605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 1650 50  0001 C CNN
 F 3 "~" H 7650 1650 50  0001 C CNN
 	1    7650 1650
@@ -53,7 +53,7 @@ L Device:R R4
 U 1 1 5DCFCC83
 P 7650 3100
 F 0 "R4" H 7720 3146 50  0000 L CNN
-F 1 "1M" H 7720 3055 50  0000 L CNN
+F 1 "68K" H 7720 3055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 3100 50  0001 C CNN
 F 3 "~" H 7650 3100 50  0001 C CNN
 	1    7650 3100
@@ -180,8 +180,6 @@ Wire Wire Line
 Connection ~ 5850 900 
 Connection ~ 6500 900 
 Connection ~ 6500 3900
-Wire Wire Line
-	7650 900  7900 900 
 Connection ~ 8300 900 
 Connection ~ 8300 3900
 $Comp
@@ -425,89 +423,8 @@ Wire Wire Line
 Connection ~ 5850 3900
 Wire Wire Line
 	8300 1050 8300 2200
-Connection ~ 7900 900 
-Wire Wire Line
-	7900 900  8300 900 
-$Comp
-L Isolator:PC817 U1
-U 1 1 5F0ABF6B
-P 6800 5150
-F 0 "U1" H 6800 5475 50  0000 C CNN
-F 1 "PC817" H 6800 5384 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 6600 4950 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5150 50  0001 L CNN
-	1    6800 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5F0D7955
-P 7450 4850
-F 0 "R12" V 7243 4850 50  0000 C CNN
-F 1 "3.3K" V 7334 4850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 4850 50  0001 C CNN
-F 3 "~" H 7450 4850 50  0001 C CNN
-	1    7450 4850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7900 5250 7900 5100
-Wire Wire Line
-	7750 4850 7600 4850
-Wire Wire Line
-	7100 5250 7900 5250
-$Comp
-L Device:Q_TRIAC_A1A2G Q1
-U 1 1 5F0D4792
-P 7900 4950
-F 0 "Q1" H 8028 4996 50  0000 L CNN
-F 1 "BTA208X-1000C" H 8028 4905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 8100 4875 50  0001 L CIN
-F 3 "" H 7900 4950 50  0001 L CNN
-	1    7900 4950
-	1    0    0    1   
-$EndComp
-Connection ~ 7900 5250
-Wire Wire Line
-	7900 900  7900 4800
-Wire Wire Line
-	8300 3900 8300 5650
 Wire Wire Line
 	7650 3900 8300 3900
-Wire Wire Line
-	8100 5450 8100 2400
-Wire Wire Line
-	7650 2400 8100 2400
-Wire Wire Line
-	7900 5650 8300 5650
-Wire Wire Line
-	7900 5250 8750 5250
-Wire Wire Line
-	8750 4450 8750 5250
-Wire Wire Line
-	8100 5450 9150 5450
-Connection ~ 9150 5450
-Wire Wire Line
-	9150 5100 9150 5450
-Wire Wire Line
-	8750 4450 9150 4450
-Wire Wire Line
-	9150 4450 9150 4800
-Wire Wire Line
-	9150 6100 9150 6450
-Wire Wire Line
-	9150 5450 9150 5800
-$Comp
-L Device:R R14
-U 1 1 5E01DB84
-P 9150 4950
-F 0 "R14" H 9220 4996 50  0000 L CNN
-F 1 "20K" H 9220 4905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 4950 50  0001 C CNN
-F 3 "~" H 9150 4950 50  0001 C CNN
-	1    9150 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9300 2300 9300 2400
 $Comp
@@ -521,9 +438,6 @@ F 3 "~" H 9950 2350 50  0001 C CNN
 	1    9950 2350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 2400 9300 2400
-Connection ~ 8100 2400
 Connection ~ 9300 2400
 Wire Wire Line
 	9300 2400 9300 2500
@@ -537,151 +451,13 @@ Wire Wire Line
 	5150 3900 5850 3900
 Wire Wire Line
 	5150 900  5850 900 
-$Comp
-L Device:R R15
-U 1 1 5E022706
-P 9150 5950
-F 0 "R15" H 9220 5996 50  0000 L CNN
-F 1 "20K" H 9220 5905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 5950 50  0001 C CNN
-F 3 "~" H 9150 5950 50  0001 C CNN
-	1    9150 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9300 2000 9700 2000
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5F49902D
-P 5300 5150
-F 0 "J4" H 5150 5150 50  0000 C CNN
-F 1 "Discharge" H 5100 5050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5300 5150 50  0001 C CNN
-F 3 "~" H 5300 5150 50  0001 C CNN
-	1    5300 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 5150 5700 5150
-Wire Wire Line
-	7300 4850 7200 4850
-Wire Wire Line
-	7200 4850 7200 5050
-Wire Wire Line
-	7200 5050 7100 5050
-Wire Wire Line
-	6500 5650 6450 5650
-Wire Wire Line
-	6450 5650 6450 5500
-Wire Wire Line
-	6450 5250 6500 5250
-$Comp
-L Device:R R13
-U 1 1 5F0E4F94
-P 7450 6050
-F 0 "R13" V 7243 6050 50  0000 C CNN
-F 1 "3.3K" V 7334 6050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7380 6050 50  0001 C CNN
-F 3 "~" H 7450 6050 50  0001 C CNN
-	1    7450 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_TRIAC_A1A2G Q2
-U 1 1 5F0E5444
-P 7900 5950
-F 0 "Q2" H 8028 5904 50  0000 L CNN
-F 1 "BTA208X-1000C" H 8028 5995 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 8100 5875 50  0001 L CIN
-F 3 "" H 7900 5950 50  0001 L CNN
-	1    7900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 6050 7750 6050
-Wire Wire Line
-	7300 6050 7200 6050
-Wire Wire Line
-	7900 5650 7900 5800
-Connection ~ 7900 5650
-Wire Wire Line
-	7900 6450 9150 6450
-$Comp
-L Isolator:PC817 U2
-U 1 1 5F0AC6C9
-P 6800 5750
-F 0 "U2" H 6800 6075 50  0000 C CNN
-F 1 "PC817" H 6800 5984 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 6600 5550 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6800 5750 50  0001 L CNN
-	1    6800 5750
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7100 5650 7900 5650
-Wire Wire Line
-	7100 5850 7200 5850
-Wire Wire Line
-	7200 5850 7200 6050
-Wire Wire Line
-	7900 6100 7900 6450
 Connection ~ 9300 2800
 Wire Wire Line
 	9700 2350 9700 2000
 Wire Wire Line
 	9700 2450 9700 2800
-$Comp
-L Device:R R10
-U 1 1 5F0AE0DE
-P 5950 5050
-F 0 "R10" V 6150 5000 50  0000 L CNN
-F 1 "1K" V 6050 5000 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 5050 50  0001 C CNN
-F 3 "~" H 5950 5050 50  0001 C CNN
-	1    5950 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F592E44
-P 5950 5850
-F 0 "R11" V 6150 5800 50  0000 L CNN
-F 1 "1K" V 6050 5800 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 5850 50  0001 C CNN
-F 3 "~" H 5950 5850 50  0001 C CNN
-	1    5950 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6100 5050 6500 5050
-Wire Wire Line
-	6100 5850 6500 5850
-Wire Wire Line
-	5800 5850 5700 5850
-Wire Wire Line
-	5700 5850 5700 5150
-Wire Wire Line
-	5700 5050 5800 5050
-Connection ~ 5700 5150
-Wire Wire Line
-	5700 5150 5700 5050
-Wire Wire Line
-	5500 5250 6450 5250
-Connection ~ 6450 5250
-Text HLabel 5600 5500 0    50   Input ~ 0
-DischargeGND
-Text HLabel 5600 4600 0    50   Input ~ 0
-DischargeSignal
-Wire Wire Line
-	5700 5050 5700 4600
-Connection ~ 5700 5050
-Wire Wire Line
-	5700 4600 5600 4600
-Wire Wire Line
-	5600 5500 6450 5500
-Connection ~ 6450 5500
-Wire Wire Line
-	6450 5500 6450 5250
 $Comp
 L Device:R R5
 U 1 1 5F561F6F
@@ -712,4 +488,8 @@ Wire Wire Line
 	9300 2800 9300 2950
 Wire Wire Line
 	9300 3250 9300 3900
+Wire Wire Line
+	7650 900  8300 900 
+Wire Wire Line
+	7650 2400 9300 2400
 $EndSCHEMATC
