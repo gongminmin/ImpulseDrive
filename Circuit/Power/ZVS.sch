@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L Device:L L1
 U 1 1 5E1CFA42
-P 4150 2750
-F 0 "L1" V 4340 2750 50  0000 C CNN
-F 1 "100uH" V 4249 2750 50  0000 C CNN
-F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 4150 2750 50  0001 C CNN
-F 3 "~" H 4150 2750 50  0001 C CNN
-	1    4150 2750
+P 4150 2900
+F 0 "L1" V 4340 2900 50  0000 C CNN
+F 1 "100uH" V 4249 2900 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 4150 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -52,7 +52,7 @@ L Device:R R1
 U 1 1 5E1D0721
 P 4150 3500
 F 0 "R1" V 3943 3500 50  0000 C CNN
-F 1 "2W/470" V 4034 3500 50  0000 C CNN
+F 1 "470 2W" V 4034 3500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal" V 4080 3500 50  0001 C CNN
 F 3 "~" H 4150 3500 50  0001 C CNN
 	1    4150 3500
@@ -63,7 +63,7 @@ L Device:R R2
 U 1 1 5E1D0E43
 P 4150 4500
 F 0 "R2" V 3943 4500 50  0000 C CNN
-F 1 "2W/470" V 4034 4500 50  0000 C CNN
+F 1 "470 2W" V 4034 4500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal" V 4080 4500 50  0001 C CNN
 F 3 "~" H 4150 4500 50  0001 C CNN
 	1    4150 4500
@@ -111,9 +111,9 @@ Connection ~ 3700 3500
 Wire Wire Line
 	3700 3500 4000 3500
 Wire Wire Line
-	3700 3500 3700 2750
+	3700 3500 3700 2900
 Wire Wire Line
-	3700 2750 4000 2750
+	3700 2900 4000 2900
 Wire Wire Line
 	3450 3600 3450 4000
 Wire Wire Line
@@ -223,10 +223,6 @@ Wire Wire Line
 	6500 3150 6950 3150
 Connection ~ 6500 3150
 Wire Wire Line
-	4300 2750 7400 2750
-Wire Wire Line
-	7400 2750 7400 3350
-Wire Wire Line
 	6500 4300 6500 4000
 Wire Wire Line
 	4600 4000 5000 4000
@@ -259,21 +255,19 @@ Text HLabel 8500 2750 0    50   Input ~ 0
 ACOutput-
 Wire Wire Line
 	8500 2750 8650 2750
-Text HLabel 3300 2800 0    50   Input ~ 0
+Text HLabel 3300 2900 0    50   Input ~ 0
 DCInput+
-Text HLabel 3300 2950 0    50   Input ~ 0
+Text HLabel 3300 3050 0    50   Input ~ 0
 DCInput-
 Wire Wire Line
-	3300 2800 3550 2800
-Wire Wire Line
-	3550 2800 3550 3500
+	3300 2900 3550 2900
 Connection ~ 3550 3500
 Wire Wire Line
 	3550 3500 3700 3500
 Wire Wire Line
 	3300 3600 3450 3600
 Wire Wire Line
-	3300 2950 3450 2950
+	3300 3050 3450 3050
 Connection ~ 3450 3600
 Wire Wire Line
 	8950 3300 8800 3300
@@ -281,14 +275,12 @@ Wire Wire Line
 	8800 3300 8800 3150
 Wire Wire Line
 	8800 3400 8950 3400
-Wire Wire Line
-	7400 3350 7800 3350
 $Comp
-L Device:Transformer_SP_1S T1
+L Device:Transformer_1P_1S T1
 U 1 1 5ED4C2DF
 P 8200 3350
 F 0 "T1" H 8200 3731 50  0000 C CNN
-F 1 "5+5:10" H 8200 3640 50  0000 C CNN
+F 1 "10:10" H 8200 3640 50  0000 C CNN
 F 2 "Power:Transformer_Toroid_5Pin" H 8200 3350 50  0001 C CNN
 F 3 "" H 8200 3350 50  0001 C CNN
 	1    8200 3350
@@ -312,8 +304,6 @@ Wire Wire Line
 	7800 3550 7600 3550
 Wire Wire Line
 	7600 3550 7600 4850
-Wire Wire Line
-	3450 2950 3450 3600
 Wire Wire Line
 	8650 2750 8650 3550
 $Comp
@@ -354,4 +344,32 @@ Wire Wire Line
 Connection ~ 7250 4850
 Wire Wire Line
 	7250 4850 7600 4850
+Wire Wire Line
+	4300 2900 7250 2900
+$Comp
+L Device:L L2
+U 1 1 5F59CA90
+P 4150 5100
+F 0 "L2" V 4340 5100 50  0000 C CNN
+F 1 "100uH" V 4249 5100 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L26.7mm_W14.0mm_P10.16mm_Pulse_D" H 4150 5100 50  0001 C CNN
+F 3 "~" H 4150 5100 50  0001 C CNN
+	1    4150 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 4500 3700 5100
+Wire Wire Line
+	3700 5100 4000 5100
+Connection ~ 3700 4500
+Wire Wire Line
+	4300 5100 7250 5100
+Wire Wire Line
+	7250 5100 7250 4850
+Wire Wire Line
+	7250 2900 7250 3150
+Wire Wire Line
+	3450 3050 3450 3600
+Wire Wire Line
+	3550 2900 3550 3500
 $EndSCHEMATC
