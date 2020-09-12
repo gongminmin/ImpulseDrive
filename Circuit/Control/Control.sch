@@ -343,12 +343,10 @@ Wire Wire Line
 	5700 2800 5700 2950
 Wire Wire Line
 	5300 3850 5700 3850
-Connection ~ 5700 3850
 Wire Wire Line
 	5700 3700 5700 3850
 Wire Wire Line
 	6100 3300 6350 3300
-Connection ~ 6650 3850
 Wire Wire Line
 	6650 3050 6750 3050
 Wire Wire Line
@@ -445,11 +443,11 @@ Text HLabel 8050 3450 2    50   Input ~ 0
 SignalGND
 Wire Wire Line
 	8050 3450 7650 3450
-Wire Wire Line
-	6550 3850 6650 3850
-Wire Wire Line
-	5700 3850 6650 3850
 Connection ~ 7650 3450
 Wire Wire Line
 	7650 3450 7650 3850
+Wire Wire Line
+	6650 3850 5700 3850
+Connection ~ 6650 3850
+Connection ~ 5700 3850
 $EndSCHEMATC
