@@ -338,7 +338,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Starter.kicad_pro",
+    "filename": "OutputTransformer.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -417,16 +417,8 @@
   },
   "sheets": [
     [
-      "0309ba0e-ef28-4825-8de7-78ad050f496f",
+      "b398cfc1-4161-4b0c-89d4-7f2112a38a46",
       ""
-    ],
-    [
-      "00000000-0000-0000-0000-00005f69c4e7",
-      "Driver"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f6da910",
-      "OutputTransformer"
     ]
   ],
   "text_variables": {}

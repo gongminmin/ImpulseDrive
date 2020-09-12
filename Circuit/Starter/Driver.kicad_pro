@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.0,
+          "height": 2.4,
+          "width": 2.4
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -94,8 +94,6 @@
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
@@ -338,7 +336,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Starter.kicad_pro",
+    "filename": "Driver.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -417,16 +415,8 @@
   },
   "sheets": [
     [
-      "0309ba0e-ef28-4825-8de7-78ad050f496f",
+      "810eff7a-d3f6-494b-a68e-35832e27a772",
       ""
-    ],
-    [
-      "00000000-0000-0000-0000-00005f69c4e7",
-      "Driver"
-    ],
-    [
-      "00000000-0000-0000-0000-00005f6da910",
-      "OutputTransformer"
     ]
   ],
   "text_variables": {}
