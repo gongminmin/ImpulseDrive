@@ -47,7 +47,7 @@ Connection ~ 2200 2350
 Wire Wire Line
 	2200 2350 2600 2350
 $Sheet
-S 5300 1850 2000 1650
+S 5300 1850 2000 1750
 U 5F2BB872
 F0 "Switch" 50
 F1 "Switch.sch" 50
@@ -61,12 +61,15 @@ F8 "PowerDC-In" I L 5300 2900 50
 F9 "CapacitorPower+" I R 7300 2650 50 
 F10 "CapacitorPower-" I R 7300 2750 50 
 F11 "StarterPower-" I R 7300 2100 50 
-F12 "CapacitorSignal" I R 7300 3250 50 
+F12 "CapacitorSignal" I R 7300 3350 50 
 F13 "CoilSignal" I R 7300 3050 50 
-F14 "SignalGND" I R 7300 3350 50 
+F14 "SignalGND" I R 7300 3450 50 
 F15 "StarterSignal" I R 7300 3150 50 
+F16 "InjectorSignal" I R 7300 3250 50 
+F17 "InjectorPower-" I L 5300 3350 50 
+F18 "InjectorPower+" I L 5300 3250 50 
 $EndSheet
-Text HLabel 7900 3250 2    50   Input ~ 0
+Text HLabel 7900 3350 2    50   Input ~ 0
 CapacitorSignal
 Text HLabel 7900 3150 2    50   Input ~ 0
 StarterSignal
@@ -148,13 +151,25 @@ Wire Wire Line
 Wire Wire Line
 	7900 3150 7300 3150
 Wire Wire Line
-	7900 3250 7300 3250
+	7900 3350 7300 3350
 Wire Wire Line
 	2300 2800 5300 2800
 Wire Wire Line
 	2200 2900 5300 2900
-Text HLabel 7900 3350 2    50   Input ~ 0
+Text HLabel 7900 3450 2    50   Input ~ 0
 SignalGND
 Wire Wire Line
-	7900 3350 7300 3350
+	7900 3450 7300 3450
+Text HLabel 7900 3250 2    50   Input ~ 0
+InjectorSignal
+Wire Wire Line
+	7900 3250 7300 3250
+Text HLabel 4900 3250 0    50   Input ~ 0
+InjectorPower+
+Text HLabel 4900 3350 0    50   Input ~ 0
+InjectorPower-
+Wire Wire Line
+	5300 3250 4900 3250
+Wire Wire Line
+	5300 3350 4900 3350
 $EndSCHEMATC

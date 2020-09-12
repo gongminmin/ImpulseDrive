@@ -35,32 +35,31 @@ F4 "StarterPower+" I L 1700 3200 50
 F5 "StarterPower-" I L 1700 3300 50 
 F6 "CoilPower-" I L 1700 4150 50 
 F7 "CoilPower+" I L 1700 4050 50 
-F8 "CapacitorSignal" I R 3400 3400 50 
+F8 "CapacitorSignal" I R 3400 3500 50 
 F9 "StarterSignal" I R 3400 3300 50 
 F10 "CoilSignal" I R 3400 3200 50 
-F11 "SignalGND" I R 3400 3500 50 
+F11 "SignalGND" I R 3400 3600 50 
+F12 "InjectorSignal" I R 3400 3400 50 
+F13 "InjectorPower+" I L 1700 4400 50 
+F14 "InjectorPower-" I L 1700 4500 50 
 $EndSheet
 Wire Wire Line
 	1550 3200 1700 3200
 Wire Wire Line
 	1450 3300 1700 3300
 Wire Wire Line
-	1700 4150 1450 4150
+	9050 5200 9050 5250
 Wire Wire Line
-	1700 4050 1550 4050
-Wire Wire Line
-	8650 5200 8650 5250
-Wire Wire Line
-	8650 4650 8650 4700
+	9050 4650 9050 4700
 $Comp
 L Motor:Fan M1
 U 1 1 5ED70E12
-P 8650 5000
-F 0 "M1" H 8808 5096 50  0000 L CNN
-F 1 "Propellant Injector" H 8808 5005 50  0000 L CNN
-F 2 "" H 8650 5010 50  0001 C CNN
-F 3 "~" H 8650 5010 50  0001 C CNN
-	1    8650 5000
+P 9050 5000
+F 0 "M1" H 9208 5096 50  0000 L CNN
+F 1 "Propellant Injector" H 9208 5005 50  0000 L CNN
+F 2 "" H 9050 5010 50  0001 C CNN
+F 3 "~" H 9050 5010 50  0001 C CNN
+	1    9050 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -72,7 +71,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 2400 1450 3300
 Wire Wire Line
-	1550 4050 1550 5150
+	1300 4050 1300 5150
 Wire Wire Line
 	3400 3300 4000 3300
 Wire Wire Line
@@ -80,9 +79,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 2400 1450 2400
 Wire Wire Line
-	1550 5150 8050 5150
-Wire Wire Line
-	1450 4150 1450 5250
+	1200 4150 1200 5250
 Wire Wire Line
 	6150 4400 3400 4400
 Wire Wire Line
@@ -111,7 +108,6 @@ Wire Wire Line
 	8150 2300 7750 2300
 Wire Wire Line
 	7750 2400 8050 2400
-Connection ~ 8150 5250
 Wire Wire Line
 	8150 4150 8150 5250
 Wire Wire Line
@@ -119,16 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 4150 8450 4150
 Wire Wire Line
-	8150 5250 8650 5250
-Wire Wire Line
-	1450 5250 8150 5250
-Wire Wire Line
-	8050 4650 8050 5150
-Wire Wire Line
-	8050 4050 8050 4650
-Connection ~ 8050 4650
-Wire Wire Line
-	8650 4650 8050 4650
+	9050 4650 8450 4650
 $Sheet
 S 6150 3000 1600 1700
 U 5E106C20
@@ -150,13 +137,44 @@ S 4000 3000 1600 800
 U 5E0FF92E
 F0 "Control" 50
 F1 "Control/Control.sch" 50
-F2 "CapacitorSignal" I L 4000 3400 50 
+F2 "CapacitorSignal" I L 4000 3500 50 
 F3 "VoltageSensingSignal" I R 5600 3200 50 
 F4 "VoltageSensingGND" I R 5600 3300 50 
 F5 "CoilSignal" I L 4000 3200 50 
 F6 "StarterSignal" I L 4000 3300 50 
-F7 "SignalGND" I L 4000 3500 50 
+F7 "SignalGND" I L 4000 3600 50 
+F8 "InjectorSignal" I L 4000 3400 50 
 $EndSheet
 Wire Wire Line
 	4000 3500 3400 3500
+Wire Wire Line
+	4000 3600 3400 3600
+Wire Wire Line
+	1300 4050 1700 4050
+Wire Wire Line
+	1200 4150 1700 4150
+Wire Wire Line
+	1300 5150 8050 5150
+Wire Wire Line
+	1200 5250 8150 5250
+Wire Wire Line
+	8050 4050 8050 5150
+Wire Wire Line
+	1700 4400 1550 4400
+Wire Wire Line
+	1550 4400 1550 4900
+Wire Wire Line
+	1550 4900 8450 4900
+Wire Wire Line
+	8450 4900 8450 4650
+Wire Wire Line
+	1450 4500 1450 5000
+Wire Wire Line
+	1450 5000 8450 5000
+Wire Wire Line
+	8450 5000 8450 5250
+Wire Wire Line
+	8450 5250 9050 5250
+Wire Wire Line
+	1450 4500 1700 4500
 $EndSCHEMATC

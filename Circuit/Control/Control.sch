@@ -54,15 +54,13 @@ $EndComp
 Wire Wire Line
 	1500 3050 1500 3250
 Wire Wire Line
-	6100 3250 6100 3300
-Wire Wire Line
 	6100 2800 6100 2950
 Connection ~ 5300 3850
 Connection ~ 5300 1800
 Wire Wire Line
 	5300 1800 6650 1800
 Wire Wire Line
-	6650 3500 6650 3850
+	6650 3700 6650 3850
 $Comp
 L Device:R R4
 U 1 1 5F5649A7
@@ -77,12 +75,12 @@ $EndComp
 $Comp
 L Transistor_BJT:2N3904 Q1
 U 1 1 5F55B41E
-P 6550 3300
-F 0 "Q1" H 6740 3346 50  0000 L CNN
-F 1 "2N3904" H 6740 3255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6750 3225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6550 3300 50  0001 L CNN
-	1    6550 3300
+P 6550 3500
+F 0 "Q1" H 6740 3546 50  0000 L CNN
+F 1 "2N3904" H 6740 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6750 3425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6550 3500 50  0001 L CNN
+	1    6550 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -296,22 +294,11 @@ L Device:R R7
 U 1 1 5F56979F
 P 6650 2450
 F 0 "R7" H 6720 2496 50  0000 L CNN
-F 1 "680" H 6720 2405 50  0000 L CNN
+F 1 "1K" H 6720 2405 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6580 2450 50  0001 C CNN
 F 3 "~" H 6650 2450 50  0001 C CNN
 	1    6650 2450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5F5F9F21
-P 6900 3050
-F 0 "R8" V 6693 3050 50  0000 C CNN
-F 1 "330" V 6784 3050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6830 3050 50  0001 C CNN
-F 3 "~" H 6900 3050 50  0001 C CNN
-	1    6900 3050
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D1
@@ -346,26 +333,20 @@ Wire Wire Line
 Wire Wire Line
 	5700 3700 5700 3850
 Wire Wire Line
-	6100 3300 6350 3300
-Wire Wire Line
-	6650 3050 6750 3050
+	6100 3500 6350 3500
 Wire Wire Line
 	6650 2300 6650 1800
 Wire Wire Line
-	7200 2800 7200 2950
-Wire Wire Line
-	7650 3150 7650 3450
-Wire Wire Line
-	7700 3150 7650 3150
+	7700 3250 7650 3250
 $Comp
-L Connector:Conn_01x04_Male J2
+L Connector:Conn_01x05_Male J2
 U 1 1 5F56DA46
-P 7900 2950
-F 0 "J2" H 7872 2974 50  0000 R CNN
-F 1 "To Switch" H 7872 2883 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7900 2950 50  0001 C CNN
-F 3 "~" H 7900 2950 50  0001 C CNN
-	1    7900 2950
+P 7900 3050
+F 0 "J2" H 7872 3074 50  0000 R CNN
+F 1 "To Switch" H 7872 2983 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7900 3050 50  0001 C CNN
+F 3 "~" H 7900 3050 50  0001 C CNN
+	1    7900 3050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -394,14 +375,6 @@ F 3 "~" H 7350 2600 50  0001 C CNN
 	1    7350 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7200 2600 7200 2800
-Connection ~ 7200 2800
-Connection ~ 6650 3050
-Wire Wire Line
-	6650 3050 6650 3100
-Wire Wire Line
-	6650 2600 6650 3050
 Text HLabel 8050 2600 2    50   Input ~ 0
 CoilSignal
 Wire Wire Line
@@ -410,7 +383,7 @@ Connection ~ 7650 2600
 Text HLabel 8050 2700 2    50   Input ~ 0
 StarterSignal
 Wire Wire Line
-	6100 2800 7200 2800
+	6100 2800 7150 2800
 Wire Wire Line
 	6100 2800 5700 2800
 Connection ~ 6100 2800
@@ -422,32 +395,79 @@ Wire Wire Line
 Wire Wire Line
 	7500 2950 7550 2950
 Connection ~ 7550 2950
-Text HLabel 8050 3350 2    50   Input ~ 0
+Text HLabel 8050 3450 2    50   Input ~ 0
 CapacitorSignal
-Wire Wire Line
-	8050 3350 7550 3350
-Wire Wire Line
-	7550 3350 7550 3050
-Connection ~ 7550 3050
 Wire Wire Line
 	7500 2600 7650 2600
 Wire Wire Line
 	6650 3850 7650 3850
 Wire Wire Line
 	7550 2950 7700 2950
-Wire Wire Line
-	7550 3050 7700 3050
-Wire Wire Line
-	7050 3050 7550 3050
-Text HLabel 8050 3450 2    50   Input ~ 0
+Text HLabel 8050 3550 2    50   Input ~ 0
 SignalGND
 Wire Wire Line
-	8050 3450 7650 3450
-Connection ~ 7650 3450
-Wire Wire Line
-	7650 3450 7650 3850
+	8050 3550 7650 3550
 Wire Wire Line
 	6650 3850 5700 3850
 Connection ~ 6650 3850
 Connection ~ 5700 3850
+$Comp
+L Device:R R8
+U 1 1 5F5FB881
+P 7000 2450
+F 0 "R8" H 7070 2496 50  0000 L CNN
+F 1 "1K" H 7070 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6930 2450 50  0001 C CNN
+F 3 "~" H 7000 2450 50  0001 C CNN
+	1    7000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2600 7000 3050
+Wire Wire Line
+	7000 2300 7000 1800
+Wire Wire Line
+	7000 1800 6650 1800
+Connection ~ 6650 1800
+Wire Wire Line
+	7200 2600 7150 2600
+Wire Wire Line
+	7150 2600 7150 2800
+Connection ~ 7150 2800
+Wire Wire Line
+	7150 2800 7150 2950
+Wire Wire Line
+	7150 2950 7200 2950
+Wire Wire Line
+	7700 3050 7550 3050
+Wire Wire Line
+	6650 2600 6650 3150
+Wire Wire Line
+	6100 3250 6100 3500
+Connection ~ 6650 3150
+Wire Wire Line
+	6650 3150 6650 3300
+Text HLabel 8050 3350 2    50   Input ~ 0
+InjectorSignal
+Connection ~ 7650 3550
+Wire Wire Line
+	7650 3550 7650 3850
+Wire Wire Line
+	7450 3450 7450 3150
+Connection ~ 7450 3150
+Wire Wire Line
+	7450 3150 6650 3150
+Wire Wire Line
+	7450 3150 7700 3150
+Wire Wire Line
+	8050 3350 7550 3350
+Wire Wire Line
+	7550 3350 7550 3050
+Connection ~ 7550 3050
+Wire Wire Line
+	7550 3050 7000 3050
+Wire Wire Line
+	7650 3250 7650 3550
+Wire Wire Line
+	8050 3450 7450 3450
 $EndSCHEMATC
