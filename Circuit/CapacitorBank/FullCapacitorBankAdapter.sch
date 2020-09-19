@@ -970,4 +970,19 @@ F 3 "~" H 4362 850 50  0001 C CNN
 	1    4350 850 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Diode:1N4007 D7
+U 1 1 5F66C7A7
+P 5250 3250
+F 0 "D7" V 5204 3329 50  0000 L CNN
+F 1 "1N4007" V 5295 3329 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5250 3075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3100 5250 2750
+Wire Wire Line
+	5250 3400 5250 3750
 $EndSCHEMATC
