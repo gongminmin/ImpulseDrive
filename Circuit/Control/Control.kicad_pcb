@@ -1755,7 +1755,7 @@
   )
 
   (gr_text "M. Gong" (at 133.35 115.57) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_circle (center 149.86 129.54) (end 151.13 129.54) (layer Edge.Cuts) (width 0.05))
   (gr_circle (center 149.86 86.36) (end 151.13 86.36) (layer Edge.Cuts) (width 0.05))

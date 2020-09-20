@@ -281,7 +281,7 @@ U 1 1 5ED4C2DF
 P 8200 3350
 F 0 "T1" H 8200 3731 50  0000 C CNN
 F 1 "10:10" H 8200 3640 50  0000 C CNN
-F 2 "Power:Transformer_Toroid_5Pin" H 8200 3350 50  0001 C CNN
+F 2 "Power:Transformer_Toroid_4Pin" H 8200 3350 50  0001 C CNN
 F 3 "" H 8200 3350 50  0001 C CNN
 	1    8200 3350
 	1    0    0    -1  
