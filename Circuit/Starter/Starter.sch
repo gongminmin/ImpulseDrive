@@ -63,7 +63,7 @@ U 1 1 5E11806A
 P 9150 2750
 F 0 "J2" H 9230 2792 50  0000 L CNN
 F 1 "Output+" H 9230 2701 50  0000 L CNN
-F 2 "Connector:Banana_Jack_1Pin" H 9150 2750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 9150 2750 50  0001 C CNN
 F 3 "~" H 9150 2750 50  0001 C CNN
 	1    9150 2750
 	1    0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 5E11851C
 P 9150 3150
 F 0 "J3" H 9230 3192 50  0000 L CNN
 F 1 "Output-" H 9230 3101 50  0000 L CNN
-F 2 "Connector:Banana_Jack_1Pin" H 9150 3150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 9150 3150 50  0001 C CNN
 F 3 "~" H 9150 3150 50  0001 C CNN
 	1    9150 3150
 	1    0    0    -1  

@@ -875,7 +875,7 @@ U 1 1 5DDBD15F
 P 5550 2750
 F 0 "J2" H 5630 2792 50  0000 L CNN
 F 1 "Output+" H 5630 2701 50  0000 L CNN
-F 2 "Connector:Banana_Jack_1Pin" H 5550 2750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 5550 2750 50  0001 C CNN
 F 3 "~" H 5550 2750 50  0001 C CNN
 	1    5550 2750
 	1    0    0    -1  
@@ -886,7 +886,7 @@ U 1 1 5DDC610F
 P 5550 3750
 F 0 "J3" H 5630 3792 50  0000 L CNN
 F 1 "Output-" H 5630 3701 50  0000 L CNN
-F 2 "Connector:Banana_Jack_1Pin" H 5550 3750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 5550 3750 50  0001 C CNN
 F 3 "~" H 5550 3750 50  0001 C CNN
 	1    5550 3750
 	1    0    0    -1  
