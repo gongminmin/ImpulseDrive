@@ -822,7 +822,7 @@
     (fp_text reference T1 (at 13 -40.78) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 6:6:75+75 (at 13 -20) (layer F.Fab)
+    (fp_text value 6:8:75+75 (at 13 -20) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user 10 (at 10 -38.24) (layer F.SilkS)
