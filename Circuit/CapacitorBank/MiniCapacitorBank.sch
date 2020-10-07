@@ -98,8 +98,6 @@ $EndComp
 Wire Wire Line
 	5150 900  5150 2250
 Wire Wire Line
-	5150 2450 5150 3900
-Wire Wire Line
 	6500 900  6500 1500
 Wire Wire Line
 	7050 900  7050 1500
@@ -379,19 +377,6 @@ Wire Wire Line
 	4650 2250 4700 2250
 Connection ~ 4700 2250
 $Comp
-L Device:R R9
-U 1 1 5EFDA9AD
-P 2400 1850
-F 0 "R9" V 2193 1850 50  0000 C CNN
-F 1 "220" V 2284 1850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 1850 50  0001 C CNN
-F 3 "~" H 2400 1850 50  0001 C CNN
-	1    2400 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2700 1850 2550 1850
-$Comp
 L Diode:1N4148 D5
 U 1 1 5EF90987
 P 4300 2050
@@ -406,18 +391,12 @@ Wire Wire Line
 	1900 2250 3050 2250
 Wire Wire Line
 	2050 1750 2050 1850
-Wire Wire Line
-	2250 1850 2050 1850
 Connection ~ 2050 1850
 Wire Wire Line
 	2050 1850 2050 2150
 Wire Wire Line
 	3100 2250 3050 2250
 Connection ~ 3050 2250
-Wire Wire Line
-	1900 2450 1900 2250
-Wire Wire Line
-	1900 2450 5150 2450
 Wire Wire Line
 	5850 3900 6500 3900
 Connection ~ 5850 3900
@@ -492,4 +471,12 @@ Wire Wire Line
 	7650 900  8300 900 
 Wire Wire Line
 	7650 2400 9300 2400
+Wire Wire Line
+	5150 2550 1900 2550
+Wire Wire Line
+	5150 2550 5150 3900
+Wire Wire Line
+	1900 2250 1900 2550
+Wire Wire Line
+	2050 1850 2700 1850
 $EndSCHEMATC
