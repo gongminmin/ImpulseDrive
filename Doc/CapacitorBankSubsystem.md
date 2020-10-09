@@ -2,7 +2,7 @@
 
 As the name suggested, the capacitor bank store energy in multiple capacitors, and enable to discharge all energy into the nozzle in a very short time period. This subsystem has 4 modules.
 
-The high voltage capacitors are expensive. During the experiment, we first implement a mini version of some modules in this subsystem. The working voltage of the full size version is 848V, but the mini version's is 68V.
+The high voltage capacitors are expensive. During the experiment, we first implement a mini version of some modules in this subsystem. The working voltage of the full size version is 848V, but the mini version's is 50V.
 
 ## Converter
 
@@ -81,5 +81,13 @@ With the same equation, we can estimate the capacitor bank's charging time. The 
 `s = C * V / A = 0.00033 * 848 / 0.07 = 4.0`
 
 So, it takes at least 4 seconds to charge the capacitor bank.
+
+The energy stores in the mini capacitor bank is:
+
+`J = C * V * V = 0.00033 * 50 * 50 = 0.825 J`
+
+Meanwhile, the one in full capacitor bank is:
+
+`J = C * V * V = 0.00033 * 848 * 848 = 237.3 J`
 
 **Status**: Small-scale board done, need experiments with other components, 50%.
