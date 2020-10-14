@@ -28,9 +28,9 @@ The DC from power source and AC from ZVS driver are separated into multiple chan
 
 ![Power Switch Circuit](Img/PowerSwitchCircuit.png)
 
-Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as an AC solid state switch. The output to electromagnet coil is DC, just one MOSFET is enough.
+Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as an AC solid state switch. The output to propellant injector and electromagnet coil is DC, just one MOSFET is enough.
 
-The circuit is hand soldered on a prototyping board.
+The circuit is hand soldered on a prototyping board. Note that this one doesn't have a switch for propellant injector. Just assume it's always on.
 
 ![Power Switch Photo](Img/PowerSwitchPhoto.jpg)
 
