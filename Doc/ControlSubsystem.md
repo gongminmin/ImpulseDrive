@@ -8,7 +8,7 @@ The control subsystem behaves as a logic circuit. It receives a fully charged si
 
 First, a high logic signal lasts for **t1** turns on the propellant injector. After **t2**, coil and starter are turned on by a same high logic signal lasts for **t3**. The capacitor signal is inverse of coil or starter signal. The delay between propellant injector and starter is because the propellant needs some time to reach the nozzle.
 
-Three NE555 astable circuit are used in the control subsystem. When the input signal comes in, it triggers U1 and U3 at the same time. U3 outputs the propellant injector signal, where RV3 controls **t1**. U1 outputs a intermediate signal to U2, where RV1 controls the delay **t2**. Finally, U2 is triggered by the falling edge of U1's output. It then sends out the coil and starter signal, where RV2 controls **t3**. The signal is inverted by Q1 to form the capacitor signal.
+Three NE555 monostable circuit are used in the control subsystem. When the input signal comes in, it triggers U1 and U3 at the same time. U3 outputs the propellant injector signal, where RV3 controls **t1**. U1 outputs a intermediate signal to U2, where RV1 controls the delay **t2**. Finally, U2 is triggered by the falling edge of U1's output. It then sends out the coil and starter signal, where RV2 controls **t3**. The signal is inverted by Q1 to form the capacitor signal.
 
 ![Control Circuit](Img/ControlCircuit.png)
 
