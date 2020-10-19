@@ -25,7 +25,7 @@ F 3 "~" V 1750 5260 50  0001 C CNN
 	1    1750 5200
 	1    0    0    -1  
 $EndComp
-Text HLabel 1900 2100 0    50   Input ~ 0
+Text HLabel 1850 2100 0    50   Input ~ 0
 VoltageSensingSignal
 $Comp
 L power:+12V #PWR0101
@@ -122,17 +122,17 @@ Wire Wire Line
 	4450 1900 4650 1900
 Wire Wire Line
 	4450 1800 4450 1900
-Text HLabel 1900 3150 0    50   Input ~ 0
+Text HLabel 1850 3150 0    50   Input ~ 0
 VoltageSensingGND
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5DCDBBC2
-P 1600 2550
-F 0 "J1" H 1708 2831 50  0000 C CNN
-F 1 "Signal" H 1708 2740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 2550 50  0001 C CNN
-F 3 "~" H 1600 2550 50  0001 C CNN
-	1    1600 2550
+P 1550 2550
+F 0 "J1" H 1658 2831 50  0000 C CNN
+F 1 "Signal" H 1658 2740 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1550 2550 50  0001 C CNN
+F 3 "~" H 1550 2550 50  0001 C CNN
+	1    1550 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -142,12 +142,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 5DCE4195
-P 2550 3350
-F 0 "#PWR0104" H 2550 3100 50  0001 C CNN
-F 1 "GND" H 2555 3177 50  0000 C CNN
-F 2 "" H 2550 3350 50  0001 C CNN
-F 3 "" H 2550 3350 50  0001 C CNN
-	1    2550 3350
+P 2000 3350
+F 0 "#PWR0104" H 2000 3100 50  0001 C CNN
+F 1 "GND" H 2005 3177 50  0000 C CNN
+F 2 "" H 2000 3350 50  0001 C CNN
+F 3 "" H 2000 3350 50  0001 C CNN
+	1    2000 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -271,7 +271,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3850 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 3350 2550 3150
+	2000 3350 2000 3150
 Connection ~ 3850 3150
 $Comp
 L Device:C C1
@@ -286,7 +286,6 @@ F 3 "~" H 3150 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3150 3050 3150 3150
-Connection ~ 3150 3150
 Wire Wire Line
 	3850 2700 3850 3150
 Wire Wire Line
@@ -306,17 +305,6 @@ F 3 "" H 2900 950 50  0001 C CNN
 	1    2900 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5F0CBBA0
-P 2550 2600
-F 0 "SW1" V 2504 2748 50  0000 L CNN
-F 1 "Force on" V 2595 2748 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 2800 50  0001 C CNN
-F 3 "~" H 2550 2800 50  0001 C CNN
-	1    2550 2600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3150 3150 3850 3150
 Wire Wire Line
@@ -333,20 +321,15 @@ F 3 "~" H 2900 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 2550 2050 2550
-Connection ~ 2550 2100
-Connection ~ 2050 2100
+	1750 2550 2000 2550
 Wire Wire Line
 	2900 2100 2900 1750
 Wire Wire Line
-	1800 2650 2050 2650
-Connection ~ 2550 3150
+	1750 2650 2000 2650
 Wire Wire Line
-	2550 3150 3150 3150
+	1850 2100 2000 2100
 Wire Wire Line
-	1900 2100 2050 2100
-Wire Wire Line
-	1900 3150 2050 3150
+	1850 3150 2000 3150
 Wire Wire Line
 	2900 1100 2900 950 
 Wire Wire Line
@@ -359,12 +342,6 @@ Wire Wire Line
 Connection ~ 3850 1100
 Wire Wire Line
 	3850 1100 4450 1100
-Wire Wire Line
-	2050 3150 2550 3150
-Wire Wire Line
-	2550 2100 2050 2100
-Wire Wire Line
-	2550 2100 2900 2100
 Wire Wire Line
 	7150 4000 7150 3950
 Wire Wire Line
@@ -426,14 +403,14 @@ Wire Wire Line
 Wire Wire Line
 	7150 5900 7150 6000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5F5C9103
-P 5250 6200
-F 0 "#PWR?" H 5250 5950 50  0001 C CNN
-F 1 "GND" H 5255 6027 50  0000 C CNN
-F 2 "" H 5250 6200 50  0001 C CNN
-F 3 "" H 5250 6200 50  0001 C CNN
-	1    5250 6200
+P 5850 6200
+F 0 "#PWR0105" H 5850 5950 50  0001 C CNN
+F 1 "GND" H 5855 6027 50  0000 C CNN
+F 2 "" H 5850 6200 50  0001 C CNN
+F 3 "" H 5850 6200 50  0001 C CNN
+	1    5850 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -453,7 +430,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 6550 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 6200 5250 6000
+	5850 6200 5850 6000
 Connection ~ 6550 6000
 $Comp
 L Device:C C6
@@ -478,10 +455,10 @@ Wire Wire Line
 Wire Wire Line
 	6050 5350 6000 5350
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0106
 U 1 1 5F5C912D
 P 6000 3800
-F 0 "#PWR?" H 6000 3650 50  0001 C CNN
+F 0 "#PWR0106" H 6000 3650 50  0001 C CNN
 F 1 "+12V" H 6015 3973 50  0000 C CNN
 F 2 "" H 6000 3800 50  0001 C CNN
 F 3 "" H 6000 3800 50  0001 C CNN
@@ -492,8 +469,6 @@ Wire Wire Line
 	5850 6000 6550 6000
 Wire Wire Line
 	6550 6000 7150 6000
-Wire Wire Line
-	5250 6000 5850 6000
 Wire Wire Line
 	6000 3950 6000 3800
 Wire Wire Line
@@ -718,7 +693,7 @@ Wire Wire Line
 	7550 4950 8100 4950
 Connection ~ 7550 4950
 Wire Wire Line
-	2900 2100 2900 4950
+	2900 2100 2900 2500
 Text HLabel 10000 2650 2    50   Input ~ 0
 PropellantInjectorSignal
 $Comp
@@ -787,15 +762,10 @@ Wire Wire Line
 	5600 1100 6000 1100
 Wire Wire Line
 	5600 2100 6050 2100
-Connection ~ 2050 3150
 Wire Wire Line
-	2550 2400 2550 2100
+	2000 2650 2000 3150
 Wire Wire Line
-	2550 2800 2550 3150
-Wire Wire Line
-	2050 2650 2050 3150
-Wire Wire Line
-	2050 2100 2050 2550
+	2000 2100 2000 2550
 Wire Wire Line
 	2900 1100 2900 1450
 Wire Wire Line
@@ -815,4 +785,47 @@ F 3 "~" H 4450 2900 50  0001 C CNN
 	1    4450 2900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C8
+U 1 1 5F8E129D
+P 2500 2100
+F 0 "C8" V 2750 2050 50  0000 L CNN
+F 1 "0.01uF" V 2650 1950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2538 1950 50  0001 C CNN
+F 3 "~" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 3150 3150 3150
+Connection ~ 3150 3150
+Wire Wire Line
+	2900 2100 2650 2100
+$Comp
+L Device:R R14
+U 1 1 5F8F6E9A
+P 2500 2500
+F 0 "R14" V 2293 2500 50  0000 C CNN
+F 1 "4.7K" V 2384 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2430 2500 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 2500 2900 2500
+Connection ~ 2900 2500
+Wire Wire Line
+	2900 2500 2900 4950
+Wire Wire Line
+	2350 2500 2200 2500
+Wire Wire Line
+	2200 2500 2200 2100
+Wire Wire Line
+	2200 2100 2350 2100
+Connection ~ 2000 3150
+Wire Wire Line
+	2200 2100 2000 2100
+Connection ~ 2200 2100
+Connection ~ 2000 2100
 $EndSCHEMATC
