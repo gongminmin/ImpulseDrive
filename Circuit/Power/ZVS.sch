@@ -28,13 +28,13 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E1CE78D
-P 9150 3300
-F 0 "J2" H 9230 3342 50  0000 L CNN
-F 1 "12V AC out" H 9230 3251 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9150 3300 50  0001 C CNN
-F 3 "~" H 9150 3300 50  0001 C CNN
-	1    9150 3300
-	1    0    0    -1  
+P 8350 3400
+F 0 "J2" H 8430 3442 50  0000 L CNN
+F 1 "Output" H 8430 3351 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8350 3400 50  0001 C CNN
+F 3 "~" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:L L1
@@ -249,12 +249,12 @@ Wire Wire Line
 	6950 3850 6950 3150
 Wire Wire Line
 	6950 4150 6950 4850
-Text HLabel 8500 2600 0    50   Input ~ 0
-ACOutput+
-Text HLabel 8500 2750 0    50   Input ~ 0
-ACOutput-
+Text HLabel 7700 2600 0    50   Input ~ 0
+Output+
+Text HLabel 7700 2750 0    50   Input ~ 0
+Output-
 Wire Wire Line
-	8500 2750 8650 2750
+	7700 2750 7850 2750
 Text HLabel 3300 2900 0    50   Input ~ 0
 DCInput+
 Text HLabel 3300 3050 0    50   Input ~ 0
@@ -270,42 +270,25 @@ Wire Wire Line
 	3300 3050 3450 3050
 Connection ~ 3450 3600
 Wire Wire Line
-	8950 3300 8800 3300
+	8150 3300 8000 3300
 Wire Wire Line
-	8800 3300 8800 3150
+	8000 3300 8000 3150
 Wire Wire Line
-	8800 3400 8950 3400
-$Comp
-L Device:Transformer_1P_1S T1
-U 1 1 5ED4C2DF
-P 8200 3350
-F 0 "T1" H 8200 3731 50  0000 C CNN
-F 1 "10:10" H 8200 3640 50  0000 C CNN
-F 2 "Power:Transformer_Toroid_4Pin" H 8200 3350 50  0001 C CNN
-F 3 "" H 8200 3350 50  0001 C CNN
-	1    8200 3350
-	1    0    0    -1  
-$EndComp
+	8000 3400 8150 3400
 Wire Wire Line
-	8800 3400 8800 3550
+	8000 3400 8000 3550
+Connection ~ 7850 3550
 Wire Wire Line
-	8600 3550 8650 3550
-Connection ~ 8650 3550
+	7850 3550 8000 3550
 Wire Wire Line
-	8650 3550 8800 3550
+	8000 3150 8000 2600
+Connection ~ 8000 3150
 Wire Wire Line
-	8800 3150 8800 2600
-Connection ~ 8800 3150
-Wire Wire Line
-	8500 2600 8800 2600
-Wire Wire Line
-	8600 3150 8800 3150
-Wire Wire Line
-	7800 3550 7600 3550
+	7700 2600 8000 2600
 Wire Wire Line
 	7600 3550 7600 4850
 Wire Wire Line
-	8650 2750 8650 3550
+	7850 2750 7850 3550
 $Comp
 L Device:C C1
 U 1 1 5E1E1F71
@@ -335,8 +318,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 3850 7250 3150
 Connection ~ 7250 3150
-Wire Wire Line
-	7250 3150 7800 3150
 Wire Wire Line
 	7250 4150 7250 4850
 Wire Wire Line
@@ -372,4 +353,8 @@ Wire Wire Line
 	3450 3050 3450 3600
 Wire Wire Line
 	3550 2900 3550 3500
+Wire Wire Line
+	7600 3550 7850 3550
+Wire Wire Line
+	7250 3150 8000 3150
 $EndSCHEMATC

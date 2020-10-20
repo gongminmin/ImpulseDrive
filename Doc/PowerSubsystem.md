@@ -16,7 +16,7 @@ A ZVS driver is a circuit that can oscillate a large amount of DC power with ver
 
 ![ZVS Circuit](Img/ZvsCircuit.png)
 
-It's also a finished board that can be found online. The output of this board is connected to a 5+5:10 homemade toroid transformer. It doesn't change the voltage, but isolate the two sides. On the primary coil side, the ZVS can keep oscillating. Meanwhile on the secondary coil side, it pumps the power to the successor circuit. The transformer is made by wrapping 18 AWG wires on a FT240-61 ferrite core. Each of its coil has a inductance of 28uH.
+It's also a finished board that can be found online. To make it oscillate, the output must be connected to a inductor, such as the primary coil of a transformer. Here we choose the inductance at 28uH, the output voltage is between 18 to 20V. The dual inductor varity of ZVS driver doesn't need a center tapped primary coil. Make the circuit easier to connect.
 
 ![ZVS Photo](Img/ZvsPhoto.jpg)
 

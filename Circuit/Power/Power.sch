@@ -19,8 +19,8 @@ S 2600 1950 1400 700
 U 5ED64A66
 F0 "ZVS" 50
 F1 "ZVS.sch" 50
-F2 "ACOutput+" I R 4000 2250 50 
-F3 "ACOutput-" I R 4000 2350 50 
+F2 "Output+" I R 4000 2250 50 
+F3 "Output-" I R 4000 2350 50 
 F4 "DCInput+" I L 2600 2250 50 
 F5 "DCInput-" I L 2600 2350 50 
 $EndSheet
