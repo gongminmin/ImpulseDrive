@@ -16,7 +16,7 @@ A ZVS driver is a circuit that can oscillate a large amount of DC power with ver
 
 ![ZVS Circuit](Img/ZvsCircuit.png)
 
-It's also a finished board that can be found online. To make it oscillate, the output must be connected to a inductor, such as the primary coil of a transformer. Here we choose the inductance at 28uH, the output voltage is between 18 to 20V. The dual inductor varity of ZVS driver doesn't need a center tapped primary coil. Make the circuit easier to connect.
+It's also a finished board that can be found online. To make it oscillate, the output must be connected to a inductor, such as the primary coil of a transformer. Here we choose the inductance at 28uH, the output voltage is between 18 to 20V. The dual inductor ZVS driver doesn't need a center tapped primary coil. Make the circuit easier to connect.
 
 ![ZVS Photo](Img/ZvsPhoto.jpg)
 
@@ -24,11 +24,11 @@ It's also a finished board that can be found online. To make it oscillate, the o
 
 ## Power Switch
 
-The DC from power source and AC from ZVS driver are separated into multiple channels. One to capacitor bank, one to starter, and one to electromagnet coil. When the ControlSignal is low level, the capacitor bank channel is on, other two ones are switched off.
+The DC from power source and AC from ZVS driver are separated into multiple channels. One to capacitor bank, one to starter, one to electromagnet coil, and one to propellant injector. The 1-4 pins of J1 controls which ones are on through these solid state relays.
 
 ![Power Switch Circuit](Img/PowerSwitchCircuit.png)
 
-Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as an AC solid state switch. The output to propellant injector and electromagnet coil is DC, just one MOSFET is enough.
+Since the output to starter and capacitor bank are AC, a regular triac-based solid state relay also doesn't work here. Triac is not able to be turned off by cut off the signal. Instead, here we use 2 MOSFETs connected back-to-back to act as an AC solid state switch. The output to propellant injector or electromagnet coil is DC, just 1 MOSFET is enough for switching.
 
 The circuit is hand soldered on a prototyping board. Note that this one doesn't have a switch for propellant injector. Just assume it's always on.
 
