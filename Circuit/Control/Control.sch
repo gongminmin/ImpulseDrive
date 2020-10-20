@@ -193,71 +193,25 @@ Wire Wire Line
 	8050 2750 8300 2750
 Wire Wire Line
 	8600 1600 8600 1100
-Wire Wire Line
-	9650 2550 9600 2550
 $Comp
 L Connector:Conn_01x05_Male J2
 U 1 1 5F56DA46
-P 9850 2350
-F 0 "J2" H 9822 2374 50  0000 R CNN
-F 1 "To Switch" H 9822 2283 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9850 2350 50  0001 C CNN
-F 3 "~" H 9850 2350 50  0001 C CNN
-	1    9850 2350
+P 9850 2300
+F 0 "J2" H 9822 2324 50  0000 R CNN
+F 1 "To Switch" H 9822 2233 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9850 2300 50  0001 C CNN
+F 3 "~" H 9850 2300 50  0001 C CNN
+	1    9850 2300
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 1900 9600 2150
-Wire Wire Line
-	9650 2150 9600 2150
-$Comp
-L Device:R R10
-U 1 1 5F5EA564
-P 9300 2250
-F 0 "R10" V 9093 2250 50  0000 C CNN
-F 1 "1K" V 9184 2250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9230 2250 50  0001 C CNN
-F 3 "~" H 9300 2250 50  0001 C CNN
-	1    9300 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5F5EE5B5
-P 9300 1900
-F 0 "R9" V 9093 1900 50  0000 C CNN
-F 1 "1K" V 9184 1900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9230 1900 50  0001 C CNN
-F 3 "~" H 9300 1900 50  0001 C CNN
-	1    9300 1900
-	0    1    1    0   
-$EndComp
-Text HLabel 10000 1900 2    50   Input ~ 0
+Text HLabel 10000 1500 2    50   Input ~ 0
 CoilSignal
-Wire Wire Line
-	10000 1900 9600 1900
-Connection ~ 9600 1900
-Text HLabel 10000 2000 2    50   Input ~ 0
+Text HLabel 10000 1600 2    50   Input ~ 0
 StarterSignal
-Wire Wire Line
-	10000 2000 9500 2000
-Wire Wire Line
-	9500 2000 9500 2250
-Wire Wire Line
-	9450 2250 9500 2250
-Connection ~ 9500 2250
-Text HLabel 10000 2750 2    50   Input ~ 0
+Text HLabel 10000 1800 2    50   Input ~ 0
 CapacitorSignal
-Wire Wire Line
-	9450 1900 9600 1900
-Wire Wire Line
-	8600 3150 9600 3150
-Wire Wire Line
-	9500 2250 9650 2250
-Text HLabel 10000 2850 2    50   Input ~ 0
+Text HLabel 10000 1900 2    50   Input ~ 0
 SignalGND
-Wire Wire Line
-	10000 2850 9600 2850
 Connection ~ 8600 3150
 $Comp
 L Timer:NE555 U1
@@ -687,70 +641,20 @@ Wire Wire Line
 Connection ~ 4850 3150
 Wire Wire Line
 	4850 3150 5850 3150
-Wire Wire Line
-	9650 2450 9300 2450
-Wire Wire Line
-	7550 4950 8100 4950
 Connection ~ 7550 4950
 Wire Wire Line
 	2900 2100 2900 2500
-Text HLabel 10000 2650 2    50   Input ~ 0
+Text HLabel 10000 1700 2    50   Input ~ 0
 PropellantInjectorSignal
-$Comp
-L Device:R R13
-U 1 1 5F75424D
-P 8250 4950
-F 0 "R13" V 8043 4950 50  0000 C CNN
-F 1 "1K" V 8134 4950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8180 4950 50  0001 C CNN
-F 3 "~" H 8250 4950 50  0001 C CNN
-	1    8250 4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 1900 9100 1900
-Wire Wire Line
-	9100 1900 9100 2100
-Wire Wire Line
-	9100 2250 9150 2250
 Wire Wire Line
 	8050 2100 9100 2100
 Connection ~ 8050 2100
-Connection ~ 9100 2100
 Wire Wire Line
-	9100 2100 9100 2250
-Wire Wire Line
-	9300 2450 9300 2750
-Connection ~ 9600 2850
-Wire Wire Line
-	9600 2850 9600 3150
-Wire Wire Line
-	9600 2550 9600 2850
-Wire Wire Line
-	9300 2450 8600 2450
-Connection ~ 9300 2450
-Wire Wire Line
-	8600 2450 8600 2550
-Connection ~ 8600 2450
+	9100 2100 9100 2200
 Wire Wire Line
 	8050 2550 8050 2750
 Wire Wire Line
-	10000 2750 9300 2750
-Wire Wire Line
-	8600 1900 8600 2450
-Wire Wire Line
-	9500 2650 9500 2350
-Wire Wire Line
-	9500 2350 9650 2350
-Wire Wire Line
-	9500 2650 10000 2650
-Wire Wire Line
-	9500 2350 9100 2350
-Wire Wire Line
-	9100 2350 9100 4950
-Connection ~ 9500 2350
-Wire Wire Line
-	8400 4950 9100 4950
+	10000 1800 9400 1800
 Wire Wire Line
 	2900 4950 6050 4950
 Connection ~ 2900 1100
@@ -828,4 +732,56 @@ Wire Wire Line
 	2200 2100 2000 2100
 Connection ~ 2200 2100
 Connection ~ 2000 2100
+Wire Wire Line
+	7550 4950 9100 4950
+Wire Wire Line
+	9100 2200 9200 2200
+Wire Wire Line
+	9100 2100 9650 2100
+Connection ~ 9100 2100
+Wire Wire Line
+	9100 2300 9300 2300
+Wire Wire Line
+	9100 2300 9100 4950
+Wire Wire Line
+	8600 1900 8600 2400
+Wire Wire Line
+	9650 2400 9400 2400
+Connection ~ 8600 2400
+Wire Wire Line
+	8600 2400 8600 2550
+Wire Wire Line
+	9100 1500 9100 2100
+Wire Wire Line
+	9100 1500 10000 1500
+Wire Wire Line
+	9200 1600 9200 2200
+Wire Wire Line
+	9200 1600 10000 1600
+Connection ~ 9200 2200
+Wire Wire Line
+	9200 2200 9650 2200
+Wire Wire Line
+	9300 1700 10000 1700
+Wire Wire Line
+	9400 1800 9400 2400
+Connection ~ 9400 2400
+Wire Wire Line
+	8600 2400 9400 2400
+Wire Wire Line
+	9300 1700 9300 2300
+Connection ~ 9300 2300
+Wire Wire Line
+	9300 2300 9650 2300
+Wire Wire Line
+	9500 1900 9500 2500
+Wire Wire Line
+	9500 1900 10000 1900
+Wire Wire Line
+	9500 2500 9500 3150
+Wire Wire Line
+	8600 3150 9500 3150
+Connection ~ 9500 2500
+Wire Wire Line
+	9500 2500 9650 2500
 $EndSCHEMATC
