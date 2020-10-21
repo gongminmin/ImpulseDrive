@@ -14,162 +14,168 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2600 1950 1400 700 
-U 5ED64A66
-F0 "ZVS" 50
-F1 "ZVS.sch" 50
-F2 "Output+" I R 4000 2250 50 
-F3 "Output-" I R 4000 2350 50 
-F4 "DCInput+" I L 2600 2250 50 
-F5 "DCInput-" I L 2600 2350 50 
-$EndSheet
 Wire Wire Line
-	4000 2250 5300 2250
+	1850 2150 1850 1900
 Wire Wire Line
-	4000 2350 5300 2350
+	1850 2250 1850 2500
+Connection ~ 1350 2500
 Wire Wire Line
-	1850 2250 1850 2000
-Wire Wire Line
-	1850 2350 1850 2600
-Wire Wire Line
-	1850 2250 2300 2250
-Wire Wire Line
-	1850 2350 2200 2350
-Wire Wire Line
-	2300 2800 2300 2250
-Connection ~ 2300 2250
-Wire Wire Line
-	2300 2250 2600 2250
-Wire Wire Line
-	2200 2900 2200 2350
-Connection ~ 2200 2350
-Wire Wire Line
-	2200 2350 2600 2350
-$Sheet
-S 5300 1850 2000 1750
-U 5F2BB872
-F0 "Switch" 50
-F1 "Switch.sch" 50
-F2 "PowerAC-In" I L 5300 2350 50 
-F3 "PowerAC+In" I L 5300 2250 50 
-F4 "StarterPower+" I R 7300 2000 50 
-F5 "CoilPower+" I R 7300 2300 50 
-F6 "CoilPower-" I R 7300 2400 50 
-F7 "PowerDC+In" I L 5300 2800 50 
-F8 "PowerDC-In" I L 5300 2900 50 
-F9 "CapacitorPower+" I R 7300 2650 50 
-F10 "CapacitorPower-" I R 7300 2750 50 
-F11 "StarterPower-" I R 7300 2100 50 
-F12 "CapacitorSignal" I R 7300 3350 50 
-F13 "CoilSignal" I R 7300 3050 50 
-F14 "SignalGND" I R 7300 3450 50 
-F15 "StarterSignal" I R 7300 3150 50 
-F16 "InjectorSignal" I R 7300 3250 50 
-F17 "InjectorPower-" I L 5300 3350 50 
-F18 "InjectorPower+" I L 5300 3250 50 
-$EndSheet
-Text HLabel 7900 3350 2    50   Input ~ 0
-CapacitorSignal
-Text HLabel 7900 3150 2    50   Input ~ 0
-StarterSignal
-Text HLabel 7900 3050 2    50   Input ~ 0
-CoilSignal
-Wire Wire Line
-	7300 2400 7900 2400
-Wire Wire Line
-	7900 2300 7300 2300
-Text HLabel 7900 2400 2    50   Input ~ 0
-CoilPower-
-Text HLabel 7900 2300 2    50   Input ~ 0
-CoilPower+
-Wire Wire Line
-	7300 2750 7900 2750
-Wire Wire Line
-	7900 2650 7300 2650
-Text HLabel 7900 2750 2    50   Input ~ 0
-CapacitorPower-
-Text HLabel 7900 2650 2    50   Input ~ 0
-CapacitorPower+
-Wire Wire Line
-	7900 2100 7300 2100
-Text HLabel 7900 2100 2    50   Input ~ 0
-StarterPower-
-Wire Wire Line
-	7900 2000 7300 2000
-Text HLabel 7900 2000 2    50   Input ~ 0
-StarterPower+
-Connection ~ 1350 2600
-Wire Wire Line
-	1350 2700 1350 2600
+	1350 2600 1350 2500
 $Comp
 L power:GND #PWR?
 U 1 1 5ED57B24
-P 1350 2700
-F 0 "#PWR?" H 1350 2450 50  0001 C CNN
-F 1 "GND" H 1355 2527 50  0000 C CNN
-F 2 "" H 1350 2700 50  0001 C CNN
-F 3 "" H 1350 2700 50  0001 C CNN
-	1    1350 2700
+P 1350 2600
+F 0 "#PWR?" H 1350 2350 50  0001 C CNN
+F 1 "GND" H 1355 2427 50  0000 C CNN
+F 2 "" H 1350 2600 50  0001 C CNN
+F 3 "" H 1350 2600 50  0001 C CNN
+	1    1350 2600
 	1    0    0    -1  
 $EndComp
-Connection ~ 1350 2000
+Connection ~ 1350 1900
 Wire Wire Line
-	1350 1900 1350 2000
+	1350 1800 1350 1900
 $Comp
 L power:+12V #PWR?
 U 1 1 5ED57226
-P 1350 1900
-F 0 "#PWR?" H 1350 1750 50  0001 C CNN
-F 1 "+12V" H 1365 2073 50  0000 C CNN
-F 2 "" H 1350 1900 50  0001 C CNN
-F 3 "" H 1350 1900 50  0001 C CNN
-	1    1350 1900
+P 1350 1800
+F 0 "#PWR?" H 1350 1650 50  0001 C CNN
+F 1 "+12V" H 1365 1973 50  0000 C CNN
+F 2 "" H 1350 1800 50  0001 C CNN
+F 3 "" H 1350 1800 50  0001 C CNN
+	1    1350 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 2600 1850 2600
+	1350 2500 1850 2500
 Wire Wire Line
-	1350 2500 1350 2600
+	1350 2400 1350 2500
 Wire Wire Line
-	1350 2000 1850 2000
+	1350 1900 1850 1900
 Wire Wire Line
-	1350 2100 1350 2000
+	1350 2000 1350 1900
 $Comp
 L Device:Battery BT1
 U 1 1 5ED6C16A
-P 1350 2300
-F 0 "BT1" H 1458 2346 50  0000 L CNN
-F 1 "12V Battery" H 1458 2255 50  0000 L CNN
-F 2 "" V 1350 2360 50  0001 C CNN
-F 3 "~" V 1350 2360 50  0001 C CNN
-	1    1350 2300
+P 1350 2200
+F 0 "BT1" H 1458 2246 50  0000 L CNN
+F 1 "12V Battery" H 1458 2155 50  0000 L CNN
+F 2 "" V 1350 2260 50  0001 C CNN
+F 3 "~" V 1350 2260 50  0001 C CNN
+	1    1350 2200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 3050 7300 3050
+	5000 3150 5600 3150
 Wire Wire Line
-	7900 3150 7300 3150
+	5000 3050 5600 3050
 Wire Wire Line
-	7900 3350 7300 3350
+	3000 2850 2400 2850
 Wire Wire Line
-	2300 2800 5300 2800
+	3000 3050 2400 3050
 Wire Wire Line
-	2200 2900 5300 2900
-Text HLabel 7900 3450 2    50   Input ~ 0
+	3000 3150 2400 3150
+Wire Wire Line
+	3000 2950 2400 2950
+$Sheet
+S 3000 1700 2000 1750
+U 5F2BB872
+F0 "Switch" 50
+F1 "Switch.sch" 50
+F4 "StarterPower+" I R 5000 2000 50 
+F5 "CoilPower+" I R 5000 2300 50 
+F6 "CoilPower-" I R 5000 2400 50 
+F7 "PowerDC+In" I L 3000 2150 50 
+F8 "PowerDC-In" I L 3000 2250 50 
+F9 "CapacitorPower+" I R 5000 2650 50 
+F10 "CapacitorPower-" I R 5000 2750 50 
+F11 "StarterPower-" I R 5000 2100 50 
+F12 "CapacitorSignal" I L 3000 3050 50 
+F13 "CoilSignal" I L 3000 2750 50 
+F14 "SignalGND" I L 3000 3150 50 
+F15 "StarterSignal" I L 3000 2850 50 
+F16 "InjectorSignal" I L 3000 2950 50 
+F17 "InjectorPower-" I R 5000 3150 50 
+F18 "InjectorPower+" I R 5000 3050 50 
+$EndSheet
+Text HLabel 5600 3150 2    50   Input ~ 0
+InjectorPower-
+Text HLabel 5600 3050 2    50   Input ~ 0
+InjectorPower+
+Text HLabel 2400 2950 0    50   Input ~ 0
+InjectorSignal
+Text HLabel 2400 3150 0    50   Input ~ 0
 SignalGND
 Wire Wire Line
-	7900 3450 7300 3450
-Text HLabel 7900 3250 2    50   Input ~ 0
-InjectorSignal
+	3000 2750 2400 2750
+Text HLabel 8750 1500 2    50   Input ~ 0
+StarterPower+
 Wire Wire Line
-	7900 3250 7300 3250
-Text HLabel 4900 3250 0    50   Input ~ 0
-InjectorPower+
-Text HLabel 4900 3350 0    50   Input ~ 0
-InjectorPower-
+	8750 1500 8150 1500
+Text HLabel 8750 1600 2    50   Input ~ 0
+StarterPower-
 Wire Wire Line
-	5300 3250 4900 3250
+	8750 1600 8150 1600
+Text HLabel 8750 2650 2    50   Input ~ 0
+CapacitorPower+
+Text HLabel 8750 2750 2    50   Input ~ 0
+CapacitorPower-
 Wire Wire Line
-	5300 3350 4900 3350
+	8750 2650 8150 2650
+Wire Wire Line
+	8150 2750 8750 2750
+Text HLabel 5600 2300 2    50   Input ~ 0
+CoilPower+
+Text HLabel 5600 2400 2    50   Input ~ 0
+CoilPower-
+Wire Wire Line
+	5600 2300 5000 2300
+Wire Wire Line
+	5000 2400 5600 2400
+Text HLabel 2400 2750 0    50   Input ~ 0
+CoilSignal
+Text HLabel 2400 2850 0    50   Input ~ 0
+StarterSignal
+Text HLabel 2400 3050 0    50   Input ~ 0
+CapacitorSignal
+$Sheet
+S 6750 1200 1400 700 
+U 5ED64A66
+F0 "ZVS for Starter" 50
+F1 "ZVS.sch" 50
+F2 "Output+" I R 8150 1500 50 
+F3 "Output-" I R 8150 1600 50 
+F4 "DCInput+" I L 6750 1500 50 
+F5 "DCInput-" I L 6750 1600 50 
+$EndSheet
+Wire Wire Line
+	3000 2150 1850 2150
+Wire Wire Line
+	3000 2250 1850 2250
+Wire Wire Line
+	5000 2000 5900 2000
+Wire Wire Line
+	5900 2000 5900 1500
+Wire Wire Line
+	5900 1500 6750 1500
+Wire Wire Line
+	5000 2100 6000 2100
+Wire Wire Line
+	6000 2100 6000 1600
+Wire Wire Line
+	6000 1600 6750 1600
+$Sheet
+S 6750 2350 1400 700 
+U 5F908A46
+F0 "ZVS for Capacitor Bank" 50
+F1 "ZVS.sch" 50
+F2 "Output+" I R 8150 2650 50 
+F3 "Output-" I R 8150 2750 50 
+F4 "DCInput+" I L 6750 2650 50 
+F5 "DCInput-" I L 6750 2750 50 
+$EndSheet
+Wire Wire Line
+	5000 2650 6750 2650
+Wire Wire Line
+	6750 2750 5000 2750
 $EndSCHEMATC
