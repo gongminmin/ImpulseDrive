@@ -580,32 +580,28 @@ Wire Wire Line
 Wire Wire Line
 	8350 4900 8250 4900
 $Comp
-L Diode:1N4007 D6
+L Diode:1N4007 D1
 U 1 1 5F5EB976
 P 8350 4400
-F 0 "D6" V 8304 4479 50  0000 L CNN
+F 0 "D1" V 8304 4479 50  0000 L CNN
 F 1 "1N4007" V 8395 4479 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8350 4225 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8350 4400 50  0001 C CNN
 	1    8350 4400
 	0    1    1    0   
 $EndComp
-Text HLabel 8100 5000 0    50   Input ~ 0
+Text HLabel 7950 5000 0    50   Input ~ 0
 InjectorPower+
-Text HLabel 8100 4900 0    50   Input ~ 0
+Text HLabel 7950 4900 0    50   Input ~ 0
 InjectorPower-
 Wire Wire Line
 	8150 4750 8150 5000
 Connection ~ 8150 5000
 Wire Wire Line
-	8100 4900 8250 4900
-Wire Wire Line
 	8250 4900 8250 5150
 Connection ~ 8250 4900
 Wire Wire Line
 	8150 5000 8150 5150
-Wire Wire Line
-	8100 5000 8150 5000
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5F5EB981
@@ -622,19 +618,15 @@ Wire Wire Line
 Wire Wire Line
 	6950 4750 6950 5000
 Connection ~ 6950 5000
-Wire Wire Line
-	6900 4900 7050 4900
-Text HLabel 6900 4900 0    50   Input ~ 0
+Text HLabel 6750 4900 0    50   Input ~ 0
 CoilPower-
-Text HLabel 6900 5000 0    50   Input ~ 0
+Text HLabel 6750 5000 0    50   Input ~ 0
 CoilPower+
 Wire Wire Line
 	7050 4900 7050 5150
 Connection ~ 7050 4900
 Wire Wire Line
 	6950 5000 6950 5150
-Wire Wire Line
-	6900 5000 6950 5000
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5F2D8CE6
@@ -646,8 +638,6 @@ F 3 "~" H 6950 5350 50  0001 C CNN
 	1    6950 5350
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	7150 4900 7050 4900
 Connection ~ 6950 4750
 Connection ~ 7050 4200
 Connection ~ 8250 4200
@@ -759,27 +749,6 @@ Wire Wire Line
 	6900 1850 6900 2250
 Wire Wire Line
 	6950 4750 8150 4750
-$Comp
-L Diode:1N4007 D5
-U 1 1 5F151C12
-P 7150 4400
-F 0 "D5" V 7104 4479 50  0000 L CNN
-F 1 "1N4007" V 7195 4479 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7150 4225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7150 4400 50  0001 C CNN
-	1    7150 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7150 4550 7150 4900
-Wire Wire Line
-	7250 5000 7250 4150
-Wire Wire Line
-	7250 4150 7150 4150
-Wire Wire Line
-	7150 4150 7150 4250
-Wire Wire Line
-	7250 5000 6950 5000
 Wire Wire Line
 	8350 4900 8350 4550
 Wire Wire Line
@@ -790,4 +759,12 @@ Wire Wire Line
 	8450 4150 8450 5000
 Wire Wire Line
 	8150 5000 8450 5000
+Wire Wire Line
+	6750 4900 7050 4900
+Wire Wire Line
+	6750 5000 6950 5000
+Wire Wire Line
+	7950 4900 8250 4900
+Wire Wire Line
+	7950 5000 8150 5000
 $EndSCHEMATC
