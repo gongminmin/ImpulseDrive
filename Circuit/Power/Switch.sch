@@ -577,19 +577,6 @@ Connection ~ 6700 2050
 Connection ~ 6250 2050
 Wire Wire Line
 	6250 2050 6700 2050
-Wire Wire Line
-	8350 4900 8250 4900
-$Comp
-L Diode:1N4007 D1
-U 1 1 5F5EB976
-P 8350 4400
-F 0 "D1" V 8304 4479 50  0000 L CNN
-F 1 "1N4007" V 8395 4479 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8350 4225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8350 4400 50  0001 C CNN
-	1    8350 4400
-	0    1    1    0   
-$EndComp
 Text HLabel 7950 5000 0    50   Input ~ 0
 InjectorPower+
 Text HLabel 7950 4900 0    50   Input ~ 0
@@ -749,16 +736,6 @@ Wire Wire Line
 	6900 1850 6900 2250
 Wire Wire Line
 	6950 4750 8150 4750
-Wire Wire Line
-	8350 4900 8350 4550
-Wire Wire Line
-	8350 4250 8350 4150
-Wire Wire Line
-	8350 4150 8450 4150
-Wire Wire Line
-	8450 4150 8450 5000
-Wire Wire Line
-	8150 5000 8450 5000
 Wire Wire Line
 	6750 4900 7050 4900
 Wire Wire Line
