@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 14
 Title "MPD"
 Date "2020-01-07"
 Rev "1"
@@ -47,21 +47,6 @@ Wire Wire Line
 	1550 3200 1700 3200
 Wire Wire Line
 	1450 3300 1700 3300
-Wire Wire Line
-	9050 5200 9050 5250
-Wire Wire Line
-	9050 4650 9050 4700
-$Comp
-L Motor:Fan M1
-U 1 1 5ED70E12
-P 9050 5000
-F 0 "M1" H 9208 5096 50  0000 L CNN
-F 1 "Propellant Injector" H 9208 5005 50  0000 L CNN
-F 2 "" H 9050 5010 50  0001 C CNN
-F 3 "~" H 9050 5010 50  0001 C CNN
-	1    9050 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 3500 8050 2400
 Wire Wire Line
@@ -114,8 +99,6 @@ Wire Wire Line
 	8050 4050 8450 4050
 Wire Wire Line
 	8150 4150 8450 4150
-Wire Wire Line
-	9050 4650 8450 4650
 $Sheet
 S 6150 3000 1600 1700
 U 5E106C20
@@ -166,15 +149,17 @@ Wire Wire Line
 Wire Wire Line
 	1550 4900 8450 4900
 Wire Wire Line
-	8450 4900 8450 4650
-Wire Wire Line
 	1450 4500 1450 5000
 Wire Wire Line
 	1450 5000 8450 5000
 Wire Wire Line
-	8450 5000 8450 5250
-Wire Wire Line
-	8450 5250 9050 5250
-Wire Wire Line
 	1450 4500 1700 4500
+$Sheet
+S 8450 4700 800  500 
+U 5F94F5FA
+F0 "Propellant Injector" 50
+F1 "PropellantInjector/PropellantInjector.sch" 50
+F2 "InjectorPower+" I L 8450 4900 50 
+F3 "InjectorPower-" I L 8450 5000 50 
+$EndSheet
 $EndSCHEMATC

@@ -82,21 +82,21 @@ S 3000 1700 2000 1750
 U 5F2BB872
 F0 "Switch" 50
 F1 "Switch.sch" 50
-F4 "StarterPower+" I R 5000 2000 50 
-F5 "CoilPower+" I R 5000 2300 50 
-F6 "CoilPower-" I R 5000 2400 50 
-F7 "PowerDC+In" I L 3000 2150 50 
-F8 "PowerDC-In" I L 3000 2250 50 
-F9 "CapacitorPower+" I R 5000 2650 50 
-F10 "CapacitorPower-" I R 5000 2750 50 
-F11 "StarterPower-" I R 5000 2100 50 
-F12 "CapacitorSignal" I L 3000 3050 50 
-F13 "CoilSignal" I L 3000 2750 50 
-F14 "SignalGND" I L 3000 3150 50 
-F15 "StarterSignal" I L 3000 2850 50 
-F16 "InjectorSignal" I L 3000 2950 50 
-F17 "InjectorPower-" I R 5000 3150 50 
-F18 "InjectorPower+" I R 5000 3050 50 
+F2 "StarterPower+" I R 5000 2000 50 
+F3 "CoilPower+" I R 5000 2300 50 
+F4 "CoilPower-" I R 5000 2400 50 
+F5 "PowerDC+In" I L 3000 2150 50 
+F6 "PowerDC-In" I L 3000 2250 50 
+F7 "CapacitorPower+" I R 5000 2650 50 
+F8 "CapacitorPower-" I R 5000 2750 50 
+F9 "StarterPower-" I R 5000 2100 50 
+F10 "CapacitorSignal" I L 3000 3050 50 
+F11 "CoilSignal" I L 3000 2750 50 
+F12 "SignalGND" I L 3000 3150 50 
+F13 "StarterSignal" I L 3000 2850 50 
+F14 "InjectorSignal" I L 3000 2950 50 
+F15 "InjectorPower-" I R 5000 3150 50 
+F16 "InjectorPower+" I R 5000 3050 50 
 $EndSheet
 Text HLabel 5600 3150 2    50   Input ~ 0
 InjectorPower-
