@@ -48,14 +48,14 @@ $EndComp
 Wire Wire Line
 	2000 3950 2300 3950
 $Comp
-L Motor:Fan M1
+L Motor:Motor_DC M1
 U 1 1 5F951F4F
-P 3200 3800
-F 0 "M1" H 3358 3796 50  0000 L CNN
-F 1 "Motor_DC" H 3358 3705 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 3200 3710 50  0001 C CNN
-F 3 "~" H 3200 3710 50  0001 C CNN
-	1    3200 3800
+P 3200 3700
+F 0 "M1" H 3358 3696 50  0000 L CNN
+F 1 "Motor_DC" H 3358 3605 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 3200 3610 50  0001 C CNN
+F 3 "~" H 3200 3610 50  0001 C CNN
+	1    3200 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
