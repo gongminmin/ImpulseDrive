@@ -4,7 +4,7 @@ As the name suggested, the capacitor bank store energy in multiple capacitors, a
 
 ## Adapter
 
-The adapter module has 3 parts. The major part is a voltage converter. In the full capacitor bank, a transformer T1 is connected to ZVS driver in power subsystem. It transforms 18V AC to 300V. Then a 1-stage Cockcroft–Walton generator bring the voltage up to 848V DC (`2 * peak voltage = 2 * 300 * sqrt(2) = 848`). T1 is a homemade transformer based on EE42 core. Its primary coil is 6 turns with 24 AWG magnet wire, with ~27uH inductance. And its secondary coil is 50+50 turns with 32 AWG magnet wire. The outputs are used to charge and discharge the capacitor bank.
+The adapter module has 3 parts. The major part is a voltage converter. In the full capacitor bank, a transformer T1 is connected to ZVS driver in power subsystem. It transforms 18V AC to 300V. Then a 1-stage full-wave Cockcroft–Walton generator bring the voltage up to 840V DC (`3 * peak voltage = 3 * 198 * sqrt(2) = 840`). T1 is a homemade transformer based on EE42 core. Its primary coil is 6 turns with 24 AWG magnet wire, with ~27uH inductance. And its secondary coil is 50+50 turns with 32 AWG magnet wire. The outputs are used to charge and discharge the capacitor bank.
 
 The next part is a voltage sensing circuit. It takes a low voltage signal from linear divider, compare it with reference voltages. During the charging, LEDs will be lit up one by one. If the capacitor bank is full, the 4th LED is on, and an isolated signal is sent out to control subsystem. The voltage sensing circuit needs a power source, so we need a auxilliary coil on the transformer T1 to get a 18V AC. It's then rectified and regulated to a 12V DC.
 
@@ -20,7 +20,7 @@ The second module is the capacitor bank itself. The core component is 4 capacito
 
 The high voltage capacitors are expensive and dangerous. During the experiment, we first implement a mini version of this subsystem. It has a relatively low working voltage, 68V.
 
-The mini version has a small transformer by wrapping 24 AWG magnet wire on a T130-26 toroid iron powered core. The primary and secondary turns are 16:10. A 2-stage Cockcroft–Walton generator brings the voltage up to ~68V DC. Also, it has a much simpler linear divider. The voltage se*nsing part is the same, except it's running on 12V battery, and it's implementated on a separated PCB.
+The mini version has a small transformer by wrapping 24 AWG magnet wire on a T130-26 toroid iron powered core. The primary and secondary turns are 16:10. A 2-stage half-wave Cockcroft–Walton generator brings the voltage up to ~68V DC. Also, it has a much simpler linear divider. The voltage se*nsing part is the same, except it's running on 12V battery, and it's implementated on a separated PCB.
 
 The capacitors are the same 330uF, but their voltage ratings are 50V. They are installed on the adapter PCB.
 
