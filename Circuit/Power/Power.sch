@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Power Subsystem"
 Date "2020-01-07"
 Rev "1"
@@ -77,27 +77,6 @@ Wire Wire Line
 	3000 3150 2400 3150
 Wire Wire Line
 	3000 2950 2400 2950
-$Sheet
-S 3000 1700 2000 1750
-U 5F2BB872
-F0 "Switch" 50
-F1 "Switch.sch" 50
-F2 "StarterPower+" I R 5000 2000 50 
-F3 "CoilPower+" I R 5000 2300 50 
-F4 "CoilPower-" I R 5000 2400 50 
-F5 "PowerDC+In" I L 3000 2150 50 
-F6 "PowerDC-In" I L 3000 2250 50 
-F7 "CapacitorPower+" I R 5000 2650 50 
-F8 "CapacitorPower-" I R 5000 2750 50 
-F9 "StarterPower-" I R 5000 2100 50 
-F10 "CapacitorSignal" I L 3000 3050 50 
-F11 "CoilSignal" I L 3000 2750 50 
-F12 "SignalGND" I L 3000 3150 50 
-F13 "StarterSignal" I L 3000 2850 50 
-F14 "InjectorSignal" I L 3000 2950 50 
-F15 "InjectorPower-" I R 5000 3150 50 
-F16 "InjectorPower+" I R 5000 3050 50 
-$EndSheet
 Text HLabel 5600 3150 2    50   Input ~ 0
 InjectorPower-
 Text HLabel 5600 3050 2    50   Input ~ 0
@@ -106,8 +85,6 @@ Text HLabel 2400 2950 0    50   Input ~ 0
 InjectorSignal
 Text HLabel 2400 3150 0    50   Input ~ 0
 SignalGND
-Wire Wire Line
-	3000 2750 2400 2750
 Text HLabel 8750 1500 2    50   Input ~ 0
 StarterPower+
 Wire Wire Line
@@ -132,8 +109,6 @@ Wire Wire Line
 	5600 2300 5000 2300
 Wire Wire Line
 	5000 2400 5600 2400
-Text HLabel 2400 2750 0    50   Input ~ 0
-CoilSignal
 Text HLabel 2400 2850 0    50   Input ~ 0
 StarterSignal
 Text HLabel 2400 3050 0    50   Input ~ 0
@@ -178,4 +153,24 @@ Wire Wire Line
 	5000 2650 6750 2650
 Wire Wire Line
 	6750 2750 5000 2750
+$Sheet
+S 3000 1700 2000 1750
+U 5F2BB872
+F0 "Switch" 50
+F1 "Switch.sch" 50
+F2 "StarterPower+" I R 5000 2000 50 
+F3 "CoilPower+" I R 5000 2300 50 
+F4 "CoilPower-" I R 5000 2400 50 
+F5 "PowerDC+In" I L 3000 2150 50 
+F6 "PowerDC-In" I L 3000 2250 50 
+F7 "CapacitorPower+" I R 5000 2650 50 
+F8 "CapacitorPower-" I R 5000 2750 50 
+F9 "StarterPower-" I R 5000 2100 50 
+F10 "CapacitorSignal" I L 3000 3050 50 
+F12 "SignalGND" I L 3000 3150 50 
+F13 "StarterSignal" I L 3000 2850 50 
+F14 "InjectorSignal" I L 3000 2950 50 
+F15 "InjectorPower-" I R 5000 3150 50 
+F16 "InjectorPower+" I R 5000 3050 50 
+$EndSheet
 $EndSCHEMATC
