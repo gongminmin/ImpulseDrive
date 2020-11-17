@@ -31,9 +31,9 @@ F 3 "~" V 9300 3050 50  0001 C CNN
 	1    9300 3050
 	0    1    1    0   
 $EndComp
-Text HLabel 2000 3800 0    50   Input ~ 0
+Text HLabel 1300 3800 0    50   Input ~ 0
 CoilPower+
-Text HLabel 2000 4600 0    50   Input ~ 0
+Text HLabel 1300 4600 0    50   Input ~ 0
 CoilPower-
 $Comp
 L Connector:Screw_Terminal_01x01 J4
@@ -153,10 +153,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 2150 5650 2650
 $Comp
-L Diode:1N4007 D1
+L Diode:1N4007 D2
 U 1 1 5F94C4D9
 P 5400 3800
-F 0 "D1" H 5400 4016 50  0000 C CNN
+F 0 "D2" H 5400 4016 50  0000 C CNN
 F 1 "1N4007" H 5400 3925 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5400 3625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5400 3800 50  0001 C CNN
@@ -180,10 +180,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 3400 50  00
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
+L Device:R R3
 U 1 1 5FB28C71
 P 6600 2850
-F 0 "R2" H 6670 2896 50  0000 L CNN
+F 0 "R3" H 6670 2896 50  0000 L CNN
 F 1 "1K" H 6670 2805 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6530 2850 50  0001 C CNN
 F 3 "~" H 6600 2850 50  0001 C CNN
@@ -202,10 +202,10 @@ F 3 "~" H 6400 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R4
 U 1 1 5FB2B59B
 P 6400 4050
-F 0 "R3" H 6470 4096 50  0000 L CNN
+F 0 "R4" H 6470 4096 50  0000 L CNN
 F 1 "10K" H 6470 4005 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6330 4050 50  0001 C CNN
 F 3 "~" H 6400 4050 50  0001 C CNN
@@ -213,10 +213,10 @@ F 3 "~" H 6400 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R5
 U 1 1 5FB2BD05
 P 6150 4250
-F 0 "R4" V 5943 4250 50  0000 C CNN
+F 0 "R5" V 5943 4250 50  0000 C CNN
 F 1 "10K" V 6034 4250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 4250 50  0001 C CNN
 F 3 "~" H 6150 4250 50  0001 C CNN
@@ -279,9 +279,6 @@ F 3 "~" H 4150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 4600 3150 4600
-Connection ~ 2650 4600
-Wire Wire Line
 	3150 4600 3650 4600
 Connection ~ 3150 4600
 Wire Wire Line
@@ -291,7 +288,7 @@ Connection ~ 4150 4600
 Wire Wire Line
 	6600 3100 6600 3000
 Wire Wire Line
-	2000 4600 2300 4600
+	1300 4600 1600 4600
 Wire Wire Line
 	6000 4250 5950 4250
 Wire Wire Line
@@ -323,20 +320,20 @@ Wire Wire Line
 Wire Wire Line
 	4650 3800 4650 4050
 Wire Wire Line
-	2300 4250 2300 4600
+	1600 4250 1600 4600
 Wire Wire Line
-	2100 4250 2300 4250
+	1400 4250 1600 4250
 Wire Wire Line
-	2100 4150 2300 4150
+	1400 4150 1600 4150
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5EEC620C
-P 1900 4150
-F 0 "J1" H 2008 4431 50  0000 C CNN
-F 1 "Coil Power" H 2008 4340 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1900 4150 50  0001 C CNN
-F 3 "~" H 1900 4150 50  0001 C CNN
-	1    1900 4150
+P 1200 4150
+F 0 "J1" H 1308 4431 50  0000 C CNN
+F 1 "Coil Power" H 1308 4340 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1200 4150 50  0001 C CNN
+F 3 "~" H 1200 4150 50  0001 C CNN
+	1    1200 4150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -345,7 +342,7 @@ Connection ~ 6600 3800
 Wire Wire Line
 	6600 3800 6600 3700
 Wire Wire Line
-	2000 3800 2300 3800
+	1300 3800 1600 3800
 Wire Wire Line
 	6600 3800 6750 3800
 Wire Wire Line
@@ -373,18 +370,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 4350 4650 4600
 Wire Wire Line
-	2300 3800 2300 4150
-Connection ~ 2650 3800
-Wire Wire Line
 	6500 2600 6400 2600
 Wire Wire Line
 	6400 2600 6400 3100
-Connection ~ 2300 3800
-Connection ~ 2300 4600
-Wire Wire Line
-	2300 4600 2650 4600
-Wire Wire Line
-	2300 3800 2650 3800
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5FBB3568
@@ -407,10 +395,10 @@ Wire Wire Line
 	5550 3800 5650 3800
 Connection ~ 5650 3800
 $Comp
-L Device:R R1
+L Device:R R2
 U 1 1 5FB3046B
 P 5150 4200
-F 0 "R1" H 5220 4246 50  0000 L CNN
+F 0 "R2" H 5220 4246 50  0000 L CNN
 F 1 "5.1K" H 5220 4155 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 4200 50  0001 C CNN
 F 3 "~" H 5150 4200 50  0001 C CNN
@@ -454,4 +442,42 @@ F 3 "~" H 6412 4450 50  0001 C CNN
 	1    6400 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R1
+U 1 1 5FB38697
+P 1900 3800
+F 0 "R1" V 1693 3800 50  0000 C CNN
+F 1 "220" V 1784 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1830 3800 50  0001 C CNN
+F 3 "~" H 1900 3800 50  0001 C CNN
+	1    1900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3800 2650 3800
+Connection ~ 2650 3800
+Wire Wire Line
+	2200 3800 2050 3800
+Connection ~ 2650 4600
+$Comp
+L Diode:1N4148 D1
+U 1 1 5FB6488A
+P 2350 3800
+F 0 "D1" H 2350 3584 50  0000 C CNN
+F 1 "1N4148" H 2350 3675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2350 3625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2350 3800 50  0001 C CNN
+	1    2350 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 4600 2650 4600
+Connection ~ 1600 4600
+Wire Wire Line
+	1600 4150 1600 3800
+Wire Wire Line
+	2650 4600 3150 4600
+Wire Wire Line
+	1750 3800 1600 3800
+Connection ~ 1600 3800
 $EndSCHEMATC
