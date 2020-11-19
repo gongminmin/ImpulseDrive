@@ -14,23 +14,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4100 4900 0    50   Input ~ 0
+Text HLabel 4200 4900 0    50   Input ~ 0
 StarterPower-
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5F2E6375
-P 4250 5350
-F 0 "J2" V 4450 5250 50  0000 L CNN
-F 1 "To Starter" V 4350 5100 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4250 5350 50  0001 C CNN
-F 3 "~" H 4250 5350 50  0001 C CNN
-	1    4250 5350
-	0    -1   1    0   
+P 4450 5350
+F 0 "J2" V 4650 5250 50  0000 L CNN
+F 1 "To Starter" V 4550 5100 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4450 5350 50  0001 C CNN
+F 3 "~" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	0    1    1    0   
 $EndComp
-Text HLabel 4100 5000 0    50   Input ~ 0
+Text HLabel 4200 5000 0    50   Input ~ 0
 StarterPower+
 Wire Wire Line
-	4100 5000 4250 5000
+	4200 4900 4350 4900
 Wire Wire Line
 	4000 3700 4000 3900
 $Comp
@@ -50,8 +50,6 @@ F 3 "~" H 3800 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 3250 4200 3200
-Wire Wire Line
-	4350 3250 4200 3250
 Wire Wire Line
 	3600 3700 3650 3700
 Wire Wire Line
@@ -109,16 +107,7 @@ Connection ~ 4000 3700
 Wire Wire Line
 	3600 4200 3800 4200
 Wire Wire Line
-	4250 4750 4250 5000
-Connection ~ 4250 5000
-Wire Wire Line
-	4250 5000 4250 5150
-Wire Wire Line
-	4100 4900 4350 4900
-Connection ~ 4350 4900
-Wire Wire Line
-	4350 4900 4350 5150
-Connection ~ 4350 4200
+	4200 5000 4450 5000
 $Comp
 L Isolator:PC817 U?
 U 1 1 5F2EECBC
@@ -172,7 +161,7 @@ $EndComp
 Wire Wire Line
 	3000 4650 3000 5150
 Wire Wire Line
-	2900 4750 2900 5150
+	3100 4750 3100 5150
 Text HLabel 2800 4750 0    50   Input ~ 0
 PowerDC+In
 Text HLabel 2800 4650 0    50   Input ~ 0
@@ -180,18 +169,16 @@ PowerDC-In
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5E1F764E
-P 2900 5350
-F 0 "J4" V 3000 5250 50  0000 L CNN
-F 1 "DC In" V 3100 5200 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2900 5350 50  0001 C CNN
-F 3 "~" H 2900 5350 50  0001 C CNN
-	1    2900 5350
-	0    -1   1    0   
+P 3100 5350
+F 0 "J4" V 3200 5250 50  0000 L CNN
+F 1 "DC In" V 3300 5200 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3100 5350 50  0001 C CNN
+F 3 "~" H 3100 5350 50  0001 C CNN
+	1    3100 5350
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2800 4650 3000 4650
-Wire Wire Line
-	2800 4750 2900 4750
 Connection ~ 6000 4200
 Wire Wire Line
 	6400 3700 6400 3900
@@ -282,8 +269,6 @@ F 3 "~" H 6400 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 3250 6600 3250
-Wire Wire Line
 	6600 3250 6600 3200
 Connection ~ 4800 4200
 Wire Wire Line
@@ -306,8 +291,7 @@ F 3 "~" H 5400 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 4900 5550 4900
-Connection ~ 5550 4200
+	5400 5000 5650 5000
 Wire Wire Line
 	5200 3700 5200 3900
 $Comp
@@ -327,8 +311,6 @@ F 3 "~" H 5000 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 3250 5400 3200
-Wire Wire Line
-	5550 3250 5400 3250
 Wire Wire Line
 	4800 3700 4850 3700
 Wire Wire Line
@@ -386,29 +368,21 @@ Wire Wire Line
 Wire Wire Line
 	5400 4200 5550 4200
 Wire Wire Line
-	5450 5000 5450 5150
-Connection ~ 5450 5000
-Wire Wire Line
-	5300 5000 5450 5000
-Wire Wire Line
-	5550 4900 5550 5150
-Connection ~ 5550 4900
-Wire Wire Line
-	5450 4750 5450 5000
-Text HLabel 5300 5000 0    50   Input ~ 0
+	5400 4900 5550 4900
+Text HLabel 5400 5000 0    50   Input ~ 0
 CapacitorPower+
-Text HLabel 5300 4900 0    50   Input ~ 0
+Text HLabel 5400 4900 0    50   Input ~ 0
 CapacitorPower-
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 5F2D8CE7
-P 5450 5350
-F 0 "J3" V 5650 5250 50  0000 L CNN
-F 1 "To Capacitor" V 5550 5050 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5450 5350 50  0001 C CNN
-F 3 "~" H 5450 5350 50  0001 C CNN
-	1    5450 5350
-	0    -1   1    0   
+P 5650 5350
+F 0 "J3" V 5850 5250 50  0000 L CNN
+F 1 "To Capacitor" V 5750 5050 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5650 5350 50  0001 C CNN
+F 3 "~" H 5650 5350 50  0001 C CNN
+	1    5650 5350
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
@@ -438,41 +412,26 @@ Wire Wire Line
 Wire Wire Line
 	4000 2050 5200 2050
 Wire Wire Line
-	4250 4750 2900 4750
-Connection ~ 4250 4750
-Connection ~ 2900 4750
-Wire Wire Line
 	3600 4650 3000 4650
 Connection ~ 3600 4650
 Connection ~ 3000 4650
 Connection ~ 5200 2050
 Connection ~ 6250 2050
-Text HLabel 6450 5000 0    50   Input ~ 0
+Text HLabel 6550 5000 0    50   Input ~ 0
 InjectorPower+
-Text HLabel 6450 4900 0    50   Input ~ 0
+Text HLabel 6550 4900 0    50   Input ~ 0
 InjectorPower-
-Wire Wire Line
-	6650 4750 6650 5000
-Connection ~ 6650 5000
-Wire Wire Line
-	6750 4900 6750 5150
-Connection ~ 6750 4900
-Wire Wire Line
-	6650 5000 6650 5150
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5F5EB981
-P 6650 5350
-F 0 "J5" V 6750 5250 50  0000 L CNN
-F 1 "To Injector" V 6850 5200 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6650 5350 50  0001 C CNN
-F 3 "~" H 6650 5350 50  0001 C CNN
-	1    6650 5350
-	0    -1   1    0   
+P 6850 5350
+F 0 "J5" V 6950 5250 50  0000 L CNN
+F 1 "To Injector" V 7050 5200 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6850 5350 50  0001 C CNN
+F 3 "~" H 6850 5350 50  0001 C CNN
+	1    6850 5350
+	0    1    1    0   
 $EndComp
-Connection ~ 6750 4200
-Wire Wire Line
-	4350 4200 4350 4900
 Wire Wire Line
 	3600 4200 3600 4650
 Wire Wire Line
@@ -480,21 +439,11 @@ Wire Wire Line
 Wire Wire Line
 	4800 4200 4800 4650
 Wire Wire Line
-	5550 4200 5550 4900
-Wire Wire Line
-	6750 4200 6750 4900
-Wire Wire Line
 	3600 3700 3600 4200
 Wire Wire Line
 	6000 3700 6000 4200
 Wire Wire Line
 	4800 3700 4800 4200
-Wire Wire Line
-	6750 3250 6750 4200
-Wire Wire Line
-	4350 3250 4350 4200
-Wire Wire Line
-	5550 3250 5550 4200
 Wire Wire Line
 	6150 2150 5400 2150
 Wire Wire Line
@@ -557,54 +506,128 @@ Connection ~ 6250 1750
 Wire Wire Line
 	6250 1750 6250 2050
 Wire Wire Line
-	6450 4900 6750 4900
+	6550 5000 6850 5000
 Wire Wire Line
-	6450 5000 6650 5000
+	6550 4900 6750 4900
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5F2D8CE6
-P 7700 5350
-F 0 "J6" V 7800 5250 50  0000 L CNN
-F 1 "To Coil" V 7900 5200 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7700 5350 50  0001 C CNN
-F 3 "~" H 7700 5350 50  0001 C CNN
-	1    7700 5350
-	0    -1   1    0   
+P 7900 5350
+F 0 "J6" V 8000 5250 50  0000 L CNN
+F 1 "To Coil" V 8100 5200 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7900 5350 50  0001 C CNN
+F 3 "~" H 7900 5350 50  0001 C CNN
+	1    7900 5350
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7800 4900 7800 5150
-Connection ~ 7700 5000
-Wire Wire Line
-	7700 5000 7700 5150
-Wire Wire Line
-	7700 4750 7700 5000
-Wire Wire Line
-	7500 5000 7700 5000
-Wire Wire Line
-	7500 4900 7800 4900
-Text HLabel 7500 5000 0    50   Input ~ 0
+	7600 4900 7800 4900
+Text HLabel 7600 5000 0    50   Input ~ 0
 CoilPower+
-Text HLabel 7500 4900 0    50   Input ~ 0
+Text HLabel 7600 4900 0    50   Input ~ 0
 CoilPower-
 Wire Wire Line
 	6250 2050 6400 2050
 Wire Wire Line
-	7800 4900 7800 4650
-Connection ~ 7800 4900
-Wire Wire Line
 	3600 4650 4800 4650
 Wire Wire Line
-	4250 4750 5450 4750
-Wire Wire Line
 	6000 4650 7800 4650
-Wire Wire Line
-	6650 4750 7700 4750
-Wire Wire Line
-	6650 4750 5450 4750
-Connection ~ 6650 4750
-Connection ~ 5450 4750
 Wire Wire Line
 	6000 4650 4800 4650
 Connection ~ 6000 4650
 Connection ~ 4800 4650
+Wire Wire Line
+	5650 3250 5650 4750
+Wire Wire Line
+	5400 3250 5650 3250
+Connection ~ 5650 4750
+Wire Wire Line
+	5650 4750 5650 5000
+Wire Wire Line
+	5550 4200 5550 4900
+Connection ~ 5650 5000
+Wire Wire Line
+	5650 5000 5650 5150
+Connection ~ 5550 4900
+Wire Wire Line
+	5550 4900 5550 5150
+Wire Wire Line
+	6850 3250 6850 4750
+Connection ~ 6850 4750
+Wire Wire Line
+	6600 3250 6850 3250
+Wire Wire Line
+	5650 4750 6850 4750
+Wire Wire Line
+	6850 4750 6850 5000
+Connection ~ 6850 5000
+Wire Wire Line
+	6850 5000 6850 5150
+Wire Wire Line
+	6750 4200 6750 4900
+Connection ~ 6750 4900
+Wire Wire Line
+	6750 4900 6750 5150
+Wire Wire Line
+	4450 3250 4450 4750
+Connection ~ 4450 4750
+Wire Wire Line
+	4450 4750 5650 4750
+Wire Wire Line
+	4200 3250 4450 3250
+Wire Wire Line
+	4450 4750 4450 5000
+Wire Wire Line
+	4350 4200 4350 4900
+Connection ~ 4350 4900
+Wire Wire Line
+	4350 4900 4350 5150
+Connection ~ 4450 5000
+Wire Wire Line
+	4450 5000 4450 5150
+Wire Wire Line
+	7600 5000 7900 5000
+Wire Wire Line
+	7800 4650 7800 4900
+Wire Wire Line
+	7900 4750 7900 5000
+Wire Wire Line
+	6850 4750 7900 4750
+Connection ~ 7800 4900
+Wire Wire Line
+	7800 4900 7800 5150
+Connection ~ 7900 5000
+Wire Wire Line
+	7900 5000 7900 5150
+Connection ~ 3100 4750
+Wire Wire Line
+	3100 4750 4450 4750
+Wire Wire Line
+	2800 4750 3100 4750
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5FB64E73
+P 6950 1050
+F 0 "J7" V 6750 1100 50  0000 R CNN
+F 1 "To Coil Signal" V 6850 1300 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 1050 50  0001 C CNN
+F 3 "~" H 6950 1050 50  0001 C CNN
+	1    6950 1050
+	0    -1   1    0   
+$EndComp
+Text HLabel 5350 1350 0    50   Input ~ 0
+CoilSignal
+Wire Wire Line
+	5350 1350 5850 1350
+Wire Wire Line
+	5850 1350 5850 1250
+Wire Wire Line
+	5850 1350 6950 1350
+Wire Wire Line
+	6950 1350 6950 1250
+Connection ~ 5850 1350
+Wire Wire Line
+	6250 1750 7050 1750
+Wire Wire Line
+	7050 1750 7050 1250
 $EndSCHEMATC

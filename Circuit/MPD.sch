@@ -39,10 +39,11 @@ F6 "CoilPower-" I L 1700 4150 50
 F7 "CoilPower+" I L 1700 4050 50 
 F8 "CapacitorSignal" I R 3400 3500 50 
 F9 "StarterSignal" I R 3400 3300 50 
-F11 "SignalGND" I R 3400 3600 50 
-F12 "InjectorSignal" I R 3400 3400 50 
-F13 "InjectorPower+" I L 1700 4400 50 
-F14 "InjectorPower-" I L 1700 4500 50 
+F10 "SignalGND" I R 3400 3600 50 
+F11 "InjectorSignal" I R 3400 3400 50 
+F12 "InjectorPower+" I L 1700 4400 50 
+F13 "InjectorPower-" I L 1700 4500 50 
+F14 "CoilSignal" I R 3400 3200 50 
 $EndSheet
 Wire Wire Line
 	1550 3200 1700 3200
@@ -160,26 +161,29 @@ F2 "InjectorPower+" I L 8450 4900 50
 F3 "InjectorPower-" I L 8450 5000 50 
 $EndSheet
 Wire Wire Line
-	4000 3200 3750 3200
-Wire Wire Line
-	3750 3200 3750 2700
-Wire Wire Line
-	3750 2700 9700 2700
-Wire Wire Line
 	9700 2700 9700 4050
 Wire Wire Line
 	9700 4050 9550 4050
-Wire Wire Line
-	3850 3600 3850 2800
-Wire Wire Line
-	3850 2800 9800 2800
 Wire Wire Line
 	9800 2800 9800 4150
 Wire Wire Line
 	9800 4150 9550 4150
 Wire Wire Line
-	3400 3600 3850 3600
-Connection ~ 3850 3600
+	3400 3600 3600 3600
 Wire Wire Line
-	3850 3600 4000 3600
+	3500 2700 3500 3200
+Connection ~ 3500 3200
+Wire Wire Line
+	3500 3200 3400 3200
+Wire Wire Line
+	3500 3200 4000 3200
+Wire Wire Line
+	3500 2700 9700 2700
+Wire Wire Line
+	3600 2800 3600 3600
+Connection ~ 3600 3600
+Wire Wire Line
+	3600 3600 4000 3600
+Wire Wire Line
+	3600 2800 9800 2800
 $EndSCHEMATC

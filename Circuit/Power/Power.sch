@@ -167,10 +167,15 @@ F7 "CapacitorPower+" I R 5000 2650 50
 F8 "CapacitorPower-" I R 5000 2750 50 
 F9 "StarterPower-" I R 5000 2100 50 
 F10 "CapacitorSignal" I L 3000 3050 50 
-F12 "SignalGND" I L 3000 3150 50 
-F13 "StarterSignal" I L 3000 2850 50 
-F14 "InjectorSignal" I L 3000 2950 50 
-F15 "InjectorPower-" I R 5000 3150 50 
-F16 "InjectorPower+" I R 5000 3050 50 
+F11 "SignalGND" I L 3000 3150 50 
+F12 "StarterSignal" I L 3000 2850 50 
+F13 "InjectorSignal" I L 3000 2950 50 
+F14 "InjectorPower-" I R 5000 3150 50 
+F15 "InjectorPower+" I R 5000 3050 50 
+F16 "CoilSignal" I L 3000 2750 50 
 $EndSheet
+Text HLabel 2400 2750 0    50   Input ~ 0
+CoilSignal
+Wire Wire Line
+	3000 2750 2400 2750
 $EndSCHEMATC
