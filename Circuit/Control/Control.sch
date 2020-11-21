@@ -199,7 +199,7 @@ U 1 1 5F56DA46
 P 9850 2300
 F 0 "J2" H 9822 2324 50  0000 R CNN
 F 1 "To Switch" H 9822 2233 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9850 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 9850 2300 50  0001 C CNN
 F 3 "~" H 9850 2300 50  0001 C CNN
 	1    9850 2300
 	-1   0    0    -1  
