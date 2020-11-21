@@ -49,7 +49,7 @@ F 3 "~" H 3800 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4200 3250 4200 3200
+	4200 3450 4200 3400
 Wire Wire Line
 	3600 3700 3650 3700
 Wire Wire Line
@@ -59,49 +59,17 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5F4C3498
-P 4000 3450
+P 4450 3700
 AR Path="/5F2A59FD/5F4C3498" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5F4C3498" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5F4C3498" Ref="R?"  Part="1" 
 AR Path="/5F4C3498" Ref="R2"  Part="1" 
-F 0 "R2" H 4070 3496 50  0000 L CNN
-F 1 "10K" H 4070 3405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3930 3450 50  0001 C CNN
-F 3 "~" H 4000 3450 50  0001 C CNN
-	1    4000 3450
+F 0 "R2" H 4520 3746 50  0000 L CNN
+F 1 "10K" H 4520 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4380 3700 50  0001 C CNN
+F 3 "~" H 4450 3700 50  0001 C CNN
+	1    4450 3700
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 3200 4000 3300
-$Comp
-L Mechanical:Heatsink HS?
-U 1 1 5F2EECC1
-P 4000 4050
-AR Path="/5F2A59FD/5F2EECC1" Ref="HS?"  Part="1" 
-AR Path="/5F2AD5A5/5F2EECC1" Ref="HS?"  Part="1" 
-AR Path="/5F2B04BD/5F2EECC1" Ref="HS?"  Part="1" 
-AR Path="/5F2EECC1" Ref="HS1"  Part="1" 
-F 0 "HS1" H 4142 4171 50  0000 L CNN
-F 1 "Heatsink" H 4142 4080 50  0000 L CNN
-F 2 "Power:Heatsink_TO220_15x10mm" H 4012 4050 50  0001 C CNN
-F 3 "~" H 4012 4050 50  0001 C CNN
-	1    4000 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q?
-U 1 1 5F2EECBE
-P 4000 4100
-AR Path="/5F2A59FD/5F2EECBE" Ref="Q?"  Part="1" 
-AR Path="/5F2AD5A5/5F2EECBE" Ref="Q?"  Part="1" 
-AR Path="/5F2B04BD/5F2EECBE" Ref="Q?"  Part="1" 
-AR Path="/5F2EECBE" Ref="Q1"  Part="1" 
-F 0 "Q1" V 4251 4100 50  0000 C CNN
-F 1 "RFP30N06LE" V 4342 4100 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4200 4200 50  0001 C CNN
-F 3 "~" H 4000 4100 50  0001 C CNN
-	1    4000 4100
-	0    1    1    0   
 $EndComp
 Connection ~ 4000 3700
 Wire Wire Line
@@ -111,74 +79,72 @@ Wire Wire Line
 $Comp
 L Isolator:PC817 U?
 U 1 1 5F2EECBC
-P 4100 2900
+P 4100 3100
 AR Path="/5F2A59FD/5F2EECBC" Ref="U?"  Part="1" 
 AR Path="/5F2AD5A5/5F2EECBC" Ref="U?"  Part="1" 
 AR Path="/5F2B04BD/5F2EECBC" Ref="U?"  Part="1" 
 AR Path="/5F2EECBC" Ref="U1"  Part="1" 
-F 0 "U1" V 4054 3088 50  0000 L CNN
-F 1 "PC817" V 4145 3088 50  0000 L CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 3900 2700 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4100 2900 50  0001 L CNN
-	1    4100 2900
+F 0 "U1" V 4054 3288 50  0000 L CNN
+F 1 "PC817" V 4145 3288 50  0000 L CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3900 2900 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4100 3100 50  0001 L CNN
+	1    4100 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FA537CC
-P 4200 2400
+P 4200 2600
 AR Path="/5F2A59FD/5FA537CC" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5FA537CC" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5FA537CC" Ref="R?"  Part="1" 
 AR Path="/5FA537CC" Ref="R1"  Part="1" 
-F 0 "R1" H 4270 2446 50  0000 L CNN
-F 1 "1K" H 4270 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 2400 50  0001 C CNN
-F 3 "~" H 4200 2400 50  0001 C CNN
-	1    4200 2400
+F 0 "R1" H 4270 2646 50  0000 L CNN
+F 1 "1K" H 4270 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 2600 50  0001 C CNN
+F 3 "~" H 4200 2600 50  0001 C CNN
+	1    4200 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 2550 4200 2600
+	4200 2750 4200 2800
 Connection ~ 3600 4200
 Wire Wire Line
-	6600 2550 6600 2600
+	6600 2750 6600 2800
 $Comp
 L Device:R R?
 U 1 1 5FA54B2D
-P 6600 2400
+P 6600 2600
 AR Path="/5F2A59FD/5FA54B2D" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5FA54B2D" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5FA54B2D" Ref="R?"  Part="1" 
 AR Path="/5FA54B2D" Ref="R7"  Part="1" 
-F 0 "R7" H 6670 2446 50  0000 L CNN
-F 1 "1K" H 6670 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6530 2400 50  0001 C CNN
-F 3 "~" H 6600 2400 50  0001 C CNN
-	1    6600 2400
+F 0 "R7" H 6670 2646 50  0000 L CNN
+F 1 "1K" H 6670 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6530 2600 50  0001 C CNN
+F 3 "~" H 6600 2600 50  0001 C CNN
+	1    6600 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 4650 3000 5150
+	7900 4750 7900 4400
 Wire Wire Line
-	3100 4750 3100 5150
-Text HLabel 2800 4750 0    50   Input ~ 0
+	7800 4650 7800 4300
+Text HLabel 7600 4400 0    50   Input ~ 0
 PowerDC+In
-Text HLabel 2800 4650 0    50   Input ~ 0
+Text HLabel 7600 4300 0    50   Input ~ 0
 PowerDC-In
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5E1F764E
-P 3100 5350
-F 0 "J4" V 3200 5250 50  0000 L CNN
-F 1 "DC In" V 3300 5200 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3100 5350 50  0001 C CNN
-F 3 "~" H 3100 5350 50  0001 C CNN
-	1    3100 5350
-	0    1    1    0   
+P 7800 4050
+F 0 "J4" V 7900 3950 50  0000 L CNN
+F 1 "DC In" V 8000 3900 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7800 4050 50  0001 C CNN
+F 3 "~" H 7800 4050 50  0001 C CNN
+	1    7800 4050
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2800 4650 3000 4650
 Connection ~ 6000 4200
 Wire Wire Line
 	6400 3700 6400 3900
@@ -239,55 +205,53 @@ Wire Wire Line
 $Comp
 L Isolator:PC817 U?
 U 1 1 5F5EB99C
-P 6500 2900
+P 6500 3100
 AR Path="/5F2A59FD/5F5EB99C" Ref="U?"  Part="1" 
 AR Path="/5F2AD5A5/5F5EB99C" Ref="U?"  Part="1" 
 AR Path="/5F2B04BD/5F5EB99C" Ref="U?"  Part="1" 
 AR Path="/5F5EB99C" Ref="U3"  Part="1" 
-F 0 "U3" V 6454 3088 50  0000 L CNN
-F 1 "PC817" V 6545 3088 50  0000 L CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 6300 2700 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 2900 50  0001 L CNN
-	1    6500 2900
+F 0 "U3" V 6454 3288 50  0000 L CNN
+F 1 "PC817" V 6545 3288 50  0000 L CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6300 2900 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 3100 50  0001 L CNN
+	1    6500 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 3200 6400 3300
 $Comp
 L Device:R R?
 U 1 1 5F5EB991
-P 6400 3450
+P 6850 3700
 AR Path="/5F2A59FD/5F5EB991" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5F5EB991" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5F5EB991" Ref="R?"  Part="1" 
 AR Path="/5F5EB991" Ref="R8"  Part="1" 
-F 0 "R8" H 6470 3496 50  0000 L CNN
-F 1 "10K" H 6470 3405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6330 3450 50  0001 C CNN
-F 3 "~" H 6400 3450 50  0001 C CNN
-	1    6400 3450
+F 0 "R8" H 6920 3746 50  0000 L CNN
+F 1 "10K" H 6920 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6780 3700 50  0001 C CNN
+F 3 "~" H 6850 3700 50  0001 C CNN
+	1    6850 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 3250 6600 3200
+	6600 3450 6600 3400
 Connection ~ 4800 4200
 Wire Wire Line
-	5200 2050 5200 2600
+	5200 2250 5200 2800
 Wire Wire Line
-	5400 2550 5400 2600
+	5400 2750 5400 2800
 $Comp
 L Device:R R?
 U 1 1 5F957722
-P 5400 2400
+P 5400 2600
 AR Path="/5F2A59FD/5F957722" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5F957722" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5F957722" Ref="R?"  Part="1" 
 AR Path="/5F957722" Ref="R4"  Part="1" 
-F 0 "R4" H 5470 2446 50  0000 L CNN
-F 1 "1K" H 5470 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 2400 50  0001 C CNN
-F 3 "~" H 5400 2400 50  0001 C CNN
-	1    5400 2400
+F 0 "R4" H 5470 2646 50  0000 L CNN
+F 1 "1K" H 5470 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 2600 50  0001 C CNN
+F 3 "~" H 5400 2600 50  0001 C CNN
+	1    5400 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -310,13 +274,11 @@ F 3 "~" H 5000 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5400 3250 5400 3200
+	5400 3450 5400 3400
 Wire Wire Line
 	4800 3700 4850 3700
 Wire Wire Line
 	5200 3700 5150 3700
-Wire Wire Line
-	5200 3200 5200 3300
 $Comp
 L Mechanical:Heatsink HS?
 U 1 1 5F2FD959
@@ -350,16 +312,16 @@ $EndComp
 $Comp
 L Isolator:PC817 U?
 U 1 1 5E1D4E24
-P 5300 2900
+P 5300 3100
 AR Path="/5F2A59FD/5E1D4E24" Ref="U?"  Part="1" 
 AR Path="/5F2AD5A5/5E1D4E24" Ref="U?"  Part="1" 
 AR Path="/5F2B04BD/5E1D4E24" Ref="U?"  Part="1" 
 AR Path="/5E1D4E24" Ref="U2"  Part="1" 
-F 0 "U2" V 5254 3088 50  0000 L CNN
-F 1 "PC817" V 5345 3088 50  0000 L CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 5100 2700 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 2900 50  0001 L CNN
-	1    5300 2900
+F 0 "U2" V 5254 3288 50  0000 L CNN
+F 1 "PC817" V 5345 3288 50  0000 L CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5100 2900 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 3100 50  0001 L CNN
+	1    5300 3100
 	0    1    1    0   
 $EndComp
 Connection ~ 5200 3700
@@ -387,36 +349,26 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F2FD95C
-P 5200 3450
+P 5650 3700
 AR Path="/5F2A59FD/5F2FD95C" Ref="R?"  Part="1" 
 AR Path="/5F2AD5A5/5F2FD95C" Ref="R?"  Part="1" 
 AR Path="/5F2B04BD/5F2FD95C" Ref="R?"  Part="1" 
 AR Path="/5F2FD95C" Ref="R5"  Part="1" 
-F 0 "R5" H 5270 3496 50  0000 L CNN
-F 1 "10K" H 5270 3405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5130 3450 50  0001 C CNN
-F 3 "~" H 5200 3450 50  0001 C CNN
-	1    5200 3450
+F 0 "R5" H 5720 3746 50  0000 L CNN
+F 1 "10K" H 5720 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3700 50  0001 C CNN
+F 3 "~" H 5650 3700 50  0001 C CNN
+	1    5650 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 2600 6400 2050
+	6400 2800 6400 2250
 Wire Wire Line
-	6400 3600 6400 3700
+	4000 2800 4000 2250
 Wire Wire Line
-	4000 3600 4000 3700
-Wire Wire Line
-	5200 3600 5200 3700
-Wire Wire Line
-	4000 2600 4000 2050
-Wire Wire Line
-	4000 2050 5200 2050
-Wire Wire Line
-	3600 4650 3000 4650
-Connection ~ 3600 4650
-Connection ~ 3000 4650
-Connection ~ 5200 2050
-Connection ~ 6250 2050
+	4000 2250 5200 2250
+Connection ~ 5200 2250
+Connection ~ 6250 2250
 Text HLabel 6550 5000 0    50   Input ~ 0
 InjectorPower+
 Text HLabel 6550 4900 0    50   Input ~ 0
@@ -445,66 +397,66 @@ Wire Wire Line
 Wire Wire Line
 	4800 3700 4800 4200
 Wire Wire Line
-	6150 2150 5400 2150
+	6150 2350 5400 2350
 Wire Wire Line
-	5400 2150 5400 2250
+	5400 2350 5400 2450
 Wire Wire Line
-	5950 1950 4200 1950
+	5950 2150 4200 2150
 Wire Wire Line
-	4200 1950 4200 2250
+	4200 2150 4200 2450
 Wire Wire Line
-	6050 1950 6600 1950
+	6050 2150 6600 2150
 Wire Wire Line
-	6600 1950 6600 2250
+	6600 2150 6600 2450
 Wire Wire Line
-	5200 2050 6250 2050
+	5200 2250 6250 2250
 Wire Wire Line
-	6050 1550 6050 1950
+	6050 1750 6050 2150
 Wire Wire Line
-	5950 1450 5950 1950
+	5950 1650 5950 2150
 Wire Wire Line
-	6150 1650 6150 2150
-Connection ~ 6150 1650
-Connection ~ 5950 1450
-Text HLabel 5350 1650 0    50   Input ~ 0
+	6150 1850 6150 2350
+Connection ~ 6150 1850
+Connection ~ 5950 1650
+Text HLabel 5350 1850 0    50   Input ~ 0
 CapacitorSignal
-Text HLabel 5350 1750 0    50   Input ~ 0
+Text HLabel 5350 1950 0    50   Input ~ 0
 SignalGND
-Text HLabel 5350 1450 0    50   Input ~ 0
+Text HLabel 5350 1650 0    50   Input ~ 0
 StarterSignal
 $Comp
 L Connector:Conn_01x05_Male J1
 U 1 1 5F2EECBB
-P 6050 1050
-F 0 "J1" V 5850 1100 50  0000 R CNN
-F 1 "From Control" V 5950 1300 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6050 1050 50  0001 C CNN
-F 3 "~" H 6050 1050 50  0001 C CNN
-	1    6050 1050
+P 6050 1250
+F 0 "J1" V 5850 1300 50  0000 R CNN
+F 1 "From Control" V 5950 1500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6050 1250 50  0001 C CNN
+F 3 "~" H 6050 1250 50  0001 C CNN
+	1    6050 1250
 	0    -1   1    0   
 $EndComp
-Text HLabel 5350 1550 0    50   Input ~ 0
+Text HLabel 5350 1750 0    50   Input ~ 0
 InjectorSignal
 Wire Wire Line
-	6050 1250 6050 1550
+	6050 1450 6050 1750
 Wire Wire Line
-	6150 1250 6150 1650
+	6150 1450 6150 1850
 Wire Wire Line
-	5950 1250 5950 1450
+	5950 1450 5950 1650
 Wire Wire Line
-	6250 1250 6250 1750
+	6250 1450 6250 1950
 Wire Wire Line
-	5350 1450 5950 1450
+	5350 1650 5950 1650
 Wire Wire Line
-	5350 1550 6050 1550
-Connection ~ 6050 1550
+	5350 1750 6050 1750
+Connection ~ 6050 1750
 Wire Wire Line
-	5350 1650 6150 1650
+	5350 1850 6150 1850
 Wire Wire Line
-	5350 1750 6250 1750
-Connection ~ 6250 1750
+	5350 1950 6250 1950
+Connection ~ 6250 1950
 Wire Wire Line
-	6250 1750 6250 2050
+	6250 1950 6250 2250
 Wire Wire Line
 	6550 5000 6850 5000
 Wire Wire Line
@@ -527,7 +479,7 @@ CoilPower+
 Text HLabel 7600 4900 0    50   Input ~ 0
 CoilPower-
 Wire Wire Line
-	6250 2050 6400 2050
+	6250 2250 6400 2250
 Wire Wire Line
 	3600 4650 4800 4650
 Wire Wire Line
@@ -537,9 +489,9 @@ Wire Wire Line
 Connection ~ 6000 4650
 Connection ~ 4800 4650
 Wire Wire Line
-	5650 3250 5650 4750
+	5650 3450 5650 3550
 Wire Wire Line
-	5400 3250 5650 3250
+	5400 3450 5650 3450
 Connection ~ 5650 4750
 Wire Wire Line
 	5650 4750 5650 5000
@@ -552,10 +504,10 @@ Connection ~ 5550 4900
 Wire Wire Line
 	5550 4900 5550 5150
 Wire Wire Line
-	6850 3250 6850 4750
+	6850 3450 6850 3550
 Connection ~ 6850 4750
 Wire Wire Line
-	6600 3250 6850 3250
+	6600 3450 6850 3450
 Wire Wire Line
 	5650 4750 6850 4750
 Wire Wire Line
@@ -569,12 +521,12 @@ Connection ~ 6750 4900
 Wire Wire Line
 	6750 4900 6750 5150
 Wire Wire Line
-	4450 3250 4450 4750
+	4450 3450 4450 3550
 Connection ~ 4450 4750
 Wire Wire Line
 	4450 4750 5650 4750
 Wire Wire Line
-	4200 3250 4450 3250
+	4200 3450 4450 3450
 Wire Wire Line
 	4450 4750 4450 5000
 Wire Wire Line
@@ -599,35 +551,84 @@ Wire Wire Line
 Connection ~ 7900 5000
 Wire Wire Line
 	7900 5000 7900 5150
-Connection ~ 3100 4750
-Wire Wire Line
-	3100 4750 4450 4750
-Wire Wire Line
-	2800 4750 3100 4750
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5FB64E73
-P 6950 1050
-F 0 "J7" V 6750 1100 50  0000 R CNN
-F 1 "To Coil Signal" V 6850 1300 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 1050 50  0001 C CNN
-F 3 "~" H 6950 1050 50  0001 C CNN
-	1    6950 1050
+P 6950 1250
+F 0 "J7" V 6750 1300 50  0000 R CNN
+F 1 "To Coil Signal" V 6850 1500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 1250 50  0001 C CNN
+F 3 "~" H 6950 1250 50  0001 C CNN
+	1    6950 1250
 	0    -1   1    0   
 $EndComp
-Text HLabel 5350 1350 0    50   Input ~ 0
+Text HLabel 5350 1550 0    50   Input ~ 0
 CoilSignal
 Wire Wire Line
-	5350 1350 5850 1350
+	5350 1550 5850 1550
 Wire Wire Line
-	5850 1350 5850 1250
+	5850 1550 5850 1450
 Wire Wire Line
-	5850 1350 6950 1350
+	5850 1550 6950 1550
 Wire Wire Line
-	6950 1350 6950 1250
-Connection ~ 5850 1350
+	6950 1550 6950 1450
+Connection ~ 5850 1550
 Wire Wire Line
-	6250 1750 7050 1750
+	6250 1950 7050 1950
 Wire Wire Line
-	7050 1750 7050 1250
+	7050 1950 7050 1450
+Wire Wire Line
+	4000 3400 4000 3700
+Wire Wire Line
+	4450 3850 4450 4750
+Wire Wire Line
+	5650 3850 5650 4750
+Wire Wire Line
+	6850 3850 6850 4750
+Wire Wire Line
+	6400 3400 6400 3700
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F2EECBE
+P 4000 4100
+AR Path="/5F2A59FD/5F2EECBE" Ref="Q?"  Part="1" 
+AR Path="/5F2AD5A5/5F2EECBE" Ref="Q?"  Part="1" 
+AR Path="/5F2B04BD/5F2EECBE" Ref="Q?"  Part="1" 
+AR Path="/5F2EECBE" Ref="Q1"  Part="1" 
+F 0 "Q1" V 4251 4100 50  0000 C CNN
+F 1 "RFP30N06LE" V 4342 4100 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4200 4200 50  0001 C CNN
+F 3 "~" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:Heatsink HS?
+U 1 1 5F2EECC1
+P 4000 4050
+AR Path="/5F2A59FD/5F2EECC1" Ref="HS?"  Part="1" 
+AR Path="/5F2AD5A5/5F2EECC1" Ref="HS?"  Part="1" 
+AR Path="/5F2B04BD/5F2EECC1" Ref="HS?"  Part="1" 
+AR Path="/5F2EECC1" Ref="HS1"  Part="1" 
+F 0 "HS1" H 4142 4171 50  0000 L CNN
+F 1 "Heatsink" H 4142 4080 50  0000 L CNN
+F 2 "Power:Heatsink_TO220_15x10mm" H 4012 4050 50  0001 C CNN
+F 3 "~" H 4012 4050 50  0001 C CNN
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3400 5200 3700
+Connection ~ 7800 4650
+Connection ~ 7900 4750
+Wire Wire Line
+	7600 4300 7800 4300
+Connection ~ 7800 4300
+Wire Wire Line
+	7800 4300 7800 4250
+Wire Wire Line
+	7600 4400 7900 4400
+Connection ~ 7900 4400
+Wire Wire Line
+	7900 4400 7900 4250
 $EndSCHEMATC
