@@ -29,9 +29,9 @@ F 3 "~" V 3950 6350 50  0001 C CNN
 	1    3950 6350
 	0    1    1    0   
 $EndComp
-Text HLabel 2100 3000 0    50   Input ~ 0
+Text HLabel 3600 3000 0    50   Input ~ 0
 CoilPower+
-Text HLabel 2100 4400 0    50   Input ~ 0
+Text HLabel 3600 4400 0    50   Input ~ 0
 CoilPower-
 $Comp
 L Connector:Screw_Terminal_01x01 J4
@@ -80,97 +80,44 @@ Wire Wire Line
 $Comp
 L Device:CP C1
 U 1 1 5FB37B3C
-P 3500 3700
-F 0 "C1" H 3618 3746 50  0000 L CNN
-F 1 "2200uF" H 3618 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 3538 3550 50  0001 C CNN
-F 3 "~" H 3500 3700 50  0001 C CNN
-	1    3500 3700
+P 5000 3700
+F 0 "C1" H 5118 3746 50  0000 L CNN
+F 1 "4700uF" H 5118 3655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 5038 3550 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+	1    5000 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C2
 U 1 1 5FB38F78
-P 4000 3700
-F 0 "C2" H 4118 3746 50  0000 L CNN
-F 1 "2200uF" H 4118 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 4038 3550 50  0001 C CNN
-F 3 "~" H 4000 3700 50  0001 C CNN
-	1    4000 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C3
-U 1 1 5FB3948E
-P 4500 3700
-F 0 "C3" H 4618 3746 50  0000 L CNN
-F 1 "2200uF" H 4618 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 4538 3550 50  0001 C CNN
-F 3 "~" H 4500 3700 50  0001 C CNN
-	1    4500 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C4
-U 1 1 5FB39987
-P 5000 3700
-F 0 "C4" H 5118 3746 50  0000 L CNN
-F 1 "2200uF" H 5118 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 5038 3550 50  0001 C CNN
-F 3 "~" H 5000 3700 50  0001 C CNN
-	1    5000 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 4400 4500 4400
-Connection ~ 4000 4400
-Wire Wire Line
-	4500 4400 5000 4400
-Connection ~ 4500 4400
-Connection ~ 5000 4400
-Connection ~ 5500 4400
-Wire Wire Line
-	5000 4400 5500 4400
-$Comp
-L Device:CP C5
-U 1 1 5FB3D8EE
 P 5500 3700
-F 0 "C5" H 5618 3746 50  0000 L CNN
-F 1 "2200uF" H 5618 3655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 5538 3550 50  0001 C CNN
+F 0 "C2" H 5618 3746 50  0000 L CNN
+F 1 "4700uF" H 5618 3655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 5538 3550 50  0001 C CNN
 F 3 "~" H 5500 3700 50  0001 C CNN
 	1    5500 3700
 	1    0    0    -1  
 $EndComp
+Connection ~ 5500 4400
 Wire Wire Line
-	2400 3650 2200 3650
+	3900 3650 3700 3650
 Wire Wire Line
-	2400 3750 2200 3750
+	3900 3750 3700 3750
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5EEC620C
-P 2000 3650
-F 0 "J1" H 2108 3931 50  0000 C CNN
-F 1 "Coil Power" H 2108 3840 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2000 3650 50  0001 C CNN
-F 3 "~" H 2000 3650 50  0001 C CNN
-	1    2000 3650
+P 3500 3650
+F 0 "J1" H 3608 3931 50  0000 C CNN
+F 1 "Coil Power" H 3608 3840 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3500 3650 50  0001 C CNN
+F 3 "~" H 3500 3650 50  0001 C CNN
+	1    3500 3650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3000 4000 3000
-Connection ~ 4000 3000
-Wire Wire Line
-	4000 3000 4500 3000
-Connection ~ 4500 3000
-Wire Wire Line
-	4500 3000 5000 3000
-Connection ~ 5000 3000
-Wire Wire Line
 	5000 3000 5500 3000
 Connection ~ 5500 3000
-Wire Wire Line
-	5500 3000 6000 3000
 $Comp
 L Device:R R2
 U 1 1 5FB3046B
@@ -182,8 +129,6 @@ F 3 "~" H 6000 3700 50  0001 C CNN
 	1    6000 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 4400 6000 4400
 $Comp
 L Mechanical:Heatsink HS1
 U 1 1 5FB52033
@@ -198,32 +143,32 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5FB38697
-P 2750 3000
-F 0 "R1" V 2543 3000 50  0000 C CNN
-F 1 "220" V 2634 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 3000 50  0001 C CNN
-F 3 "~" H 2750 3000 50  0001 C CNN
-	1    2750 3000
+P 4250 3000
+F 0 "R1" V 4043 3000 50  0000 C CNN
+F 1 "220" V 4134 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4180 3000 50  0001 C CNN
+F 3 "~" H 4250 3000 50  0001 C CNN
+	1    4250 3000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3050 3000 2900 3000
+	4550 3000 4400 3000
 $Comp
 L Diode:1N4148 D1
 U 1 1 5FB6488A
-P 3200 3000
-F 0 "D1" H 3200 2784 50  0000 C CNN
-F 1 "1N4148" H 3200 2875 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3200 2825 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3200 3000 50  0001 C CNN
-	1    3200 3000
+P 4700 3000
+F 0 "D1" H 4700 2784 50  0000 C CNN
+F 1 "1N4148" H 4700 2875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4700 2825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4700 3000 50  0001 C CNN
+	1    4700 3000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3350 3000 3500 3000
-Text HLabel 6900 3950 0    50   Input ~ 0
+	4850 3000 5000 3000
+Text HLabel 6900 4000 0    50   Input ~ 0
 CoilSignal-
-Text HLabel 6900 3450 0    50   Input ~ 0
+Text HLabel 6900 3400 0    50   Input ~ 0
 CoilSignal+
 $Comp
 L Isolator:PC817 U1
@@ -289,18 +234,18 @@ Wire Wire Line
 Wire Wire Line
 	8200 3800 8350 3800
 Wire Wire Line
-	6900 3950 7100 3950
+	6900 4000 7100 4000
 Connection ~ 7100 3800
 Wire Wire Line
-	6900 3450 7100 3450
-Connection ~ 3500 4400
-Connection ~ 2400 4400
+	6900 3400 7100 3400
+Connection ~ 5000 4400
+Connection ~ 3900 4400
 Wire Wire Line
-	2400 4400 2100 4400
-Connection ~ 3500 3000
-Connection ~ 2400 3000
+	3900 4400 3600 4400
+Connection ~ 5000 3000
+Connection ~ 3900 3000
 Wire Wire Line
-	2400 3000 2100 3000
+	3900 3000 3600 3000
 Wire Wire Line
 	9050 4400 9050 4000
 Wire Wire Line
@@ -383,35 +328,20 @@ Wire Wire Line
 Wire Wire Line
 	6000 3850 6000 4400
 Wire Wire Line
-	5500 3850 5500 4400
-Wire Wire Line
 	5500 3000 5500 3550
 Wire Wire Line
-	5000 3000 5000 3550
+	5500 3850 5500 4400
 Wire Wire Line
 	5000 3850 5000 4400
 Wire Wire Line
-	4500 3850 4500 4400
+	5000 3000 5000 3550
 Wire Wire Line
-	4500 3000 4500 3550
+	3900 3000 3900 3650
 Wire Wire Line
-	4000 3000 4000 3550
-Wire Wire Line
-	4000 3850 4000 4400
-Wire Wire Line
-	3500 3850 3500 4400
-Wire Wire Line
-	3500 3000 3500 3550
-Wire Wire Line
-	2400 3000 2400 3650
-Wire Wire Line
-	2400 3750 2400 4400
+	3900 3750 3900 4400
 Connection ~ 6000 4400
-Connection ~ 6000 3000
 Wire Wire Line
 	8200 3600 8350 3600
-Wire Wire Line
-	8350 3600 8350 3500
 Wire Wire Line
 	8850 2550 9050 2550
 Wire Wire Line
@@ -423,36 +353,28 @@ Wire Wire Line
 Wire Wire Line
 	7100 3800 7100 3750
 Wire Wire Line
-	7100 3800 7100 3950
-Wire Wire Line
 	7000 3650 7100 3650
 Wire Wire Line
 	7100 3650 7100 3600
 Connection ~ 7100 3600
-Wire Wire Line
-	7100 3450 7100 3600
-Wire Wire Line
-	8350 3200 8350 3000
 Wire Wire Line
 	8350 3800 8750 3800
 Connection ~ 8350 3800
 $Comp
 L Device:R R4
 U 1 1 5FB6F54D
-P 8350 3350
-F 0 "R4" H 8420 3396 50  0000 L CNN
-F 1 "10K" H 8420 3305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8280 3350 50  0001 C CNN
-F 3 "~" H 8350 3350 50  0001 C CNN
-	1    8350 3350
+P 8350 3300
+F 0 "R4" H 8420 3346 50  0000 L CNN
+F 1 "10K" H 8420 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8280 3300 50  0001 C CNN
+F 3 "~" H 8350 3300 50  0001 C CNN
+	1    8350 3300
 	1    0    0    -1  
 $EndComp
 Connection ~ 8350 3000
 Connection ~ 8350 4400
 Wire Wire Line
 	8350 4400 9050 4400
-Wire Wire Line
-	6000 4400 8350 4400
 Wire Wire Line
 	8350 1050 8350 1550
 Wire Wire Line
@@ -461,8 +383,6 @@ Wire Wire Line
 	8350 3000 8550 3000
 Wire Wire Line
 	8350 1050 8550 1050
-Wire Wire Line
-	6000 3000 8350 3000
 Wire Wire Line
 	8550 1550 8350 1550
 Connection ~ 8350 1550
@@ -479,9 +399,26 @@ Connection ~ 8350 2550
 Wire Wire Line
 	8350 2550 8350 3000
 Wire Wire Line
-	2600 3000 2400 3000
+	4100 3000 3900 3000
 Wire Wire Line
-	3500 4400 2400 4400
+	5000 4400 3900 4400
 Wire Wire Line
-	3500 4400 4000 4400
+	5000 4400 5500 4400
+Wire Wire Line
+	7100 3800 7100 4000
+Wire Wire Line
+	7100 3400 7100 3600
+Wire Wire Line
+	8350 3150 8350 3000
+Wire Wire Line
+	8350 3450 8350 3600
+Wire Wire Line
+	5500 4400 6000 4400
+Wire Wire Line
+	5500 3000 6000 3000
+Wire Wire Line
+	6000 4400 8350 4400
+Wire Wire Line
+	8350 3000 6000 3000
+Connection ~ 6000 3000
 $EndSCHEMATC
