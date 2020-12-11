@@ -241,9 +241,9 @@ F 3 "~" H 1300 3000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 1300 2650 0    50   Input ~ 0
-ACPowerIn-
+PowerIn-
 Text HLabel 1300 2500 0    50   Input ~ 0
-ACPowerIn+
+PowerIn+
 Wire Wire Line
 	1800 2750 2050 2750
 $Comp

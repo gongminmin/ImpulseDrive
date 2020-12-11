@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title "MPD"
 Date "2020-01-07"
 Rev "1"
@@ -44,6 +44,8 @@ F11 "InjectorSignal" I R 3400 3400 50
 F12 "InjectorPower+" I L 1700 4400 50 
 F13 "InjectorPower-" I L 1700 4500 50 
 F14 "CoilSignal" I R 3400 3200 50 
+F15 "ControlPower+" I R 3400 3850 50 
+F16 "ControlPower-" I R 3400 3950 50 
 $EndSheet
 Wire Wire Line
 	1550 3200 1700 3200
@@ -88,8 +90,8 @@ F0 "Starter" 50
 F1 "Starter/Starter.sch" 50
 F2 "PowerIn+" I L 6150 2300 50 
 F3 "PowerIn-" I L 6150 2400 50 
-F4 "Output+" I R 7750 2300 50 
-F5 "Output-" I R 7750 2400 50 
+F4 "PowerOut+" I R 7750 2300 50 
+F5 "PowerOut-" I R 7750 2400 50 
 $EndSheet
 Wire Wire Line
 	8150 2300 7750 2300
@@ -108,15 +110,15 @@ F0 "CapacitorBank" 50
 F1 "CapacitorBank/CapacitorBank.sch" 50
 F2 "PowerOut+" I R 7750 3500 50 
 F3 "PowerOut-" I R 7750 3600 50 
-F4 "ACPowerIn+" I L 6150 4400 50 
-F5 "ACPowerIn-" I L 6150 4500 50 
+F4 "PowerIn+" I L 6150 4400 50 
+F5 "PowerIn-" I L 6150 4500 50 
 F6 "ControlSignal" I L 6150 3200 50 
 F7 "ControlGND" I L 6150 3300 50 
 $EndSheet
 Wire Wire Line
 	3400 3400 4000 3400
 $Sheet
-S 4000 3000 1600 800 
+S 4000 3000 1600 1100
 U 5E0FF92E
 F0 "Control" 50
 F1 "Control/Control.sch" 50
@@ -127,6 +129,8 @@ F5 "CoilSignal" I L 4000 3200 50
 F6 "StarterSignal" I L 4000 3300 50 
 F7 "SignalGND" I L 4000 3600 50 
 F8 "InjectorSignal" I L 4000 3400 50 
+F9 "Power+" I L 4000 3850 50 
+F10 "Power-" I L 4000 3950 50 
 $EndSheet
 Wire Wire Line
 	4000 3500 3400 3500
@@ -186,4 +190,8 @@ Wire Wire Line
 	3600 3600 4000 3600
 Wire Wire Line
 	3600 2800 9800 2800
+Wire Wire Line
+	3400 3850 4000 3850
+Wire Wire Line
+	3400 3950 4000 3950
 $EndSCHEMATC

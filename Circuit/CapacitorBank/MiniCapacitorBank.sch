@@ -152,9 +152,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 1700 1550 1700
 Text HLabel 1200 1700 0    50   Input ~ 0
-ACPowerIn-
+PowerIn-
 Text HLabel 1200 1550 0    50   Input ~ 0
-ACPowerIn+
+PowerIn+
 Connection ~ 4300 1850
 Wire Wire Line
 	4250 1850 4300 1850

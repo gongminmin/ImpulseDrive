@@ -110,7 +110,7 @@ U 1 1 5EEC620C
 P 2900 3700
 F 0 "J1" H 3008 3981 50  0000 C CNN
 F 1 "Coil Power" H 3008 3890 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2900 3700 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2900 3700 50  0001 C CNN
 F 3 "~" H 2900 3700 50  0001 C CNN
 	1    2900 3700
 	-1   0    0    -1  

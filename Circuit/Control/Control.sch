@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Battery BT1
-U 1 1 5EEDCD06
-P 1750 5200
-F 0 "BT1" H 1500 5250 50  0000 L CNN
-F 1 "12V Battery" H 1200 5150 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" V 1750 5260 50  0001 C CNN
-F 3 "~" V 1750 5260 50  0001 C CNN
-	1    1750 5200
-	1    0    0    -1  
-$EndComp
 Text HLabel 1850 2100 0    50   Input ~ 0
 VoltageSensingSignal
 $Comp
@@ -38,8 +27,6 @@ F 3 "" H 1750 4850 50  0001 C CNN
 	1    1750 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 5000 1750 4850
 $Comp
 L power:GND #PWR0103
 U 1 1 5F5C9933
@@ -51,8 +38,6 @@ F 3 "" H 1750 5600 50  0001 C CNN
 	1    1750 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 5400 1750 5600
 Wire Wire Line
 	8050 2100 8050 2250
 Wire Wire Line
@@ -645,7 +630,7 @@ Connection ~ 7550 4950
 Wire Wire Line
 	2900 2100 2900 2500
 Text HLabel 10000 1700 2    50   Input ~ 0
-PropellantInjectorSignal
+InjectorSignal
 Wire Wire Line
 	8050 2100 9100 2100
 Connection ~ 8050 2100
@@ -784,4 +769,33 @@ Wire Wire Line
 Connection ~ 9500 2500
 Wire Wire Line
 	9500 2500 9650 2500
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5FD37ED1
+P 1500 5150
+F 0 "J3" H 1418 5367 50  0000 C CNN
+F 1 "Power" H 1418 5276 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5150 1750 5150
+Wire Wire Line
+	1750 4850 1750 5150
+Wire Wire Line
+	1700 5250 1750 5250
+Wire Wire Line
+	1750 5250 1750 5600
+Text HLabel 1900 5150 2    50   Input ~ 0
+Power+
+Text HLabel 1900 5250 2    50   Input ~ 0
+Power-
+Wire Wire Line
+	1900 5150 1750 5150
+Connection ~ 1750 5150
+Wire Wire Line
+	1900 5250 1750 5250
+Connection ~ 1750 5250
 $EndSCHEMATC

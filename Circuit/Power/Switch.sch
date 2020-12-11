@@ -72,17 +72,6 @@ Text HLabel 7650 4450 0    50   Input ~ 0
 PowerDC+In
 Text HLabel 7650 4350 0    50   Input ~ 0
 PowerDC-In
-$Comp
-L Connector:Screw_Terminal_01x02 J6
-U 1 1 5E1F764E
-P 7900 4050
-F 0 "J6" V 8000 3950 50  0000 L CNN
-F 1 "DC In" V 8100 3900 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7900 4050 50  0001 C CNN
-F 3 "~" H 7900 4050 50  0001 C CNN
-	1    7900 4050
-	0    1    -1   0   
-$EndComp
 Connection ~ 6000 4200
 Connection ~ 6400 3700
 $Comp
@@ -246,10 +235,6 @@ Text HLabel 6600 4850 0    50   Input ~ 0
 InjectorPower+
 Text HLabel 6600 4750 0    50   Input ~ 0
 InjectorPower-
-Text HLabel 7650 4850 0    50   Input ~ 0
-CoilPower+
-Text HLabel 7650 4750 0    50   Input ~ 0
-CoilPower-
 Wire Wire Line
 	3600 4550 4800 4550
 Wire Wire Line
@@ -282,19 +267,6 @@ F 1 "RFP30N06LE" V 4342 4100 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4200 4200 50  0001 C CNN
 F 3 "~" H 4000 4100 50  0001 C CNN
 	1    4000 4100
-	0    1    1    0   
-$EndComp
-Connection ~ 7800 4550
-Connection ~ 7900 4650
-$Comp
-L Connector:Screw_Terminal_01x02 J5
-U 1 1 5F2D8CE6
-P 7900 5150
-F 0 "J5" V 8000 5050 50  0000 L CNN
-F 1 "To Coil" V 8100 4950 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7900 5150 50  0001 C CNN
-F 3 "~" H 7900 5150 50  0001 C CNN
-	1    7900 5150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -366,24 +338,6 @@ Wire Wire Line
 Connection ~ 6850 4850
 Wire Wire Line
 	6850 4850 6850 4950
-Wire Wire Line
-	7800 4550 7800 4750
-Wire Wire Line
-	7900 4650 7900 4850
-Wire Wire Line
-	7650 4750 7800 4750
-Connection ~ 7800 4750
-Wire Wire Line
-	7800 4750 7800 4950
-Wire Wire Line
-	7650 4850 7900 4850
-Connection ~ 7900 4850
-Wire Wire Line
-	7900 4850 7900 4950
-Wire Wire Line
-	7800 4250 7800 4350
-Wire Wire Line
-	7900 4250 7900 4450
 Wire Wire Line
 	7650 4350 7800 4350
 Connection ~ 7800 4350
@@ -519,10 +473,10 @@ Wire Wire Line
 Wire Wire Line
 	6250 2200 6400 2200
 $Comp
-L Connector:Conn_01x02_Male J7
+L Connector:Conn_01x02_Male J6
 U 1 1 5FB64E73
 P 6950 1200
-F 0 "J7" V 6750 1250 50  0000 R CNN
+F 0 "J6" V 6750 1250 50  0000 R CNN
 F 1 "To Coil Signal" V 6850 1450 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 1200 50  0001 C CNN
 F 3 "~" H 6950 1200 50  0001 C CNN
@@ -753,4 +707,19 @@ F 3 "~" H 6850 5150 50  0001 C CNN
 	1    6850 5150
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5E1F764E
+P 7900 4050
+F 0 "J5" V 8000 3950 50  0000 L CNN
+F 1 "DC In" V 8100 3900 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7900 4050 50  0001 C CNN
+F 3 "~" H 7900 4050 50  0001 C CNN
+	1    7900 4050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7800 4250 7800 4350
+Wire Wire Line
+	7900 4250 7900 4450
 $EndSCHEMATC

@@ -95,9 +95,9 @@ Wire Wire Line
 Wire Wire Line
 	2850 3000 2850 3400
 Text HLabel 8800 2500 0    50   Input ~ 0
-Output+
+PowerOut+
 Text HLabel 8800 3400 0    50   Input ~ 0
-Output-
+PowerOut-
 Wire Wire Line
 	8800 2500 8900 2500
 Wire Wire Line
