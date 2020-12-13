@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E1CDF5C
-P 3100 3600
-F 0 "J1" H 3018 3817 50  0000 C CNN
-F 1 "12V DC in" H 3018 3726 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3100 3600 50  0001 C CNN
-F 3 "~" H 3100 3600 50  0001 C CNN
-	1    3100 3600
+P 2550 3350
+F 0 "J1" H 2468 3567 50  0000 C CNN
+F 1 "12V DC in" H 2468 3476 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2550 3350 50  0001 C CNN
+F 3 "~" H 2550 3350 50  0001 C CNN
+	1    2550 3350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -92,7 +92,7 @@ F 3 "~" H 4600 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 3500 3550 3500
+	2750 3250 3000 3250
 Wire Wire Line
 	4300 3500 4600 3500
 Wire Wire Line
@@ -111,13 +111,11 @@ Connection ~ 3700 3500
 Wire Wire Line
 	3700 3500 4000 3500
 Wire Wire Line
-	3700 3500 3700 2900
+	3700 3500 3700 3250
 Wire Wire Line
 	3700 2900 4000 2900
 Wire Wire Line
-	3450 3600 3450 4000
-Wire Wire Line
-	3450 4000 4600 4000
+	2900 4000 3350 4000
 Connection ~ 4600 4000
 Wire Wire Line
 	4600 4000 4600 4100
@@ -255,20 +253,16 @@ Text HLabel 7700 2750 0    50   Input ~ 0
 Output-
 Wire Wire Line
 	7700 2750 7850 2750
-Text HLabel 3300 2900 0    50   Input ~ 0
+Text HLabel 2750 2900 0    50   Input ~ 0
 DCInput+
-Text HLabel 3300 3050 0    50   Input ~ 0
+Text HLabel 2750 3050 0    50   Input ~ 0
 DCInput-
 Wire Wire Line
-	3300 2900 3550 2900
-Connection ~ 3550 3500
+	2750 2900 3000 2900
 Wire Wire Line
-	3550 3500 3700 3500
+	2750 3350 2900 3350
 Wire Wire Line
-	3300 3600 3450 3600
-Wire Wire Line
-	3300 3050 3450 3050
-Connection ~ 3450 3600
+	2750 3050 2900 3050
 Wire Wire Line
 	8150 3300 8000 3300
 Wire Wire Line
@@ -350,11 +344,54 @@ Wire Wire Line
 Wire Wire Line
 	7250 2900 7250 3150
 Wire Wire Line
-	3450 3050 3450 3600
+	2900 3050 2900 3350
 Wire Wire Line
-	3550 2900 3550 3500
+	3000 2900 3000 3250
 Wire Wire Line
 	7600 3550 7850 3550
 Wire Wire Line
 	7250 3150 8000 3150
+$Comp
+L Device:R R5
+U 1 1 5FD5F619
+P 3350 3450
+F 0 "R5" H 3420 3496 50  0000 L CNN
+F 1 "2.2K" H 3420 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3280 3450 50  0001 C CNN
+F 3 "~" H 3350 3450 50  0001 C CNN
+	1    3350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FD612FF
+P 3350 3800
+F 0 "D3" V 3389 3683 50  0000 R CNN
+F 1 "LED" V 3298 3683 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 3350 3800 50  0001 C CNN
+F 3 "~" H 3350 3800 50  0001 C CNN
+	1    3350 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 3600 3350 3650
+Wire Wire Line
+	3350 3950 3350 4000
+Connection ~ 3350 4000
+Wire Wire Line
+	3350 3300 3350 3250
+Wire Wire Line
+	3350 3250 3700 3250
+Connection ~ 3700 3250
+Wire Wire Line
+	3700 3250 3700 2900
+Connection ~ 2900 3350
+Wire Wire Line
+	2900 3350 2900 4000
+Wire Wire Line
+	3350 3250 3000 3250
+Connection ~ 3350 3250
+Connection ~ 3000 3250
+Wire Wire Line
+	3350 4000 4600 4000
 $EndSCHEMATC
