@@ -682,82 +682,75 @@ Wire Wire Line
 	6850 4650 6850 5050
 Wire Wire Line
 	5650 4650 5650 5050
-Connection ~ 3600 4750
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5FD1D221
-P 1300 2900
-F 0 "J1" H 1218 3117 50  0000 C CNN
-F 1 "Main Power In" H 1218 3026 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1300 2900 50  0001 C CNN
-F 3 "~" H 1300 2900 50  0001 C CNN
-	1    1300 2900
+P 1050 2900
+F 0 "J1" H 968 3117 50  0000 C CNN
+F 1 "Main Power In" H 968 3026 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 2900 50  0001 C CNN
+F 3 "~" H 1050 2900 50  0001 C CNN
+	1    1050 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:CP C2
 U 1 1 5FD1E38B
-P 2650 2950
-F 0 "C2" H 2768 2996 50  0000 L CNN
-F 1 "2.2uF" H 2768 2905 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2688 2800 50  0001 C CNN
-F 3 "~" H 2650 2950 50  0001 C CNN
-	1    2650 2950
-	1    0    0    -1  
+P 2400 2950
+F 0 "C2" H 2518 2996 50  0000 L CNN
+F 1 "2.2uF" H 2518 2905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2438 2800 50  0001 C CNN
+F 3 "~" H 2400 2950 50  0001 C CNN
+	1    2400 2950
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:CP C1
 U 1 1 5FD20AC2
-P 2200 2950
-F 0 "C1" H 2318 2996 50  0000 L CNN
-F 1 "10uF" H 2318 2905 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2238 2800 50  0001 C CNN
-F 3 "~" H 2200 2950 50  0001 C CNN
-	1    2200 2950
-	1    0    0    -1  
+P 1950 2950
+F 0 "C1" H 2068 2996 50  0000 L CNN
+F 1 "10uF" H 2068 2905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1988 2800 50  0001 C CNN
+F 3 "~" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2600 2200 2800
+	1350 2900 1250 2900
 Wire Wire Line
-	1600 2600 1600 2900
+	1950 3100 1950 3300
 Wire Wire Line
-	1600 2900 1500 2900
+	2400 3300 2400 3100
 Wire Wire Line
-	2200 3100 2200 3300
+	1350 3300 1350 3000
 Wire Wire Line
-	2650 3300 2650 3100
-Wire Wire Line
-	1600 3300 1600 3000
-Wire Wire Line
-	1600 3000 1500 3000
-Wire Wire Line
-	2650 2600 2650 2800
-Connection ~ 2650 3300
-Connection ~ 2650 2600
+	1350 3000 1250 3000
+Connection ~ 2400 3300
+Connection ~ 2400 2550
 $Comp
 L Device:Fuse F1
 U 1 1 5FD3DDF6
-P 1900 2600
-F 0 "F1" V 1703 2600 50  0000 C CNN
-F 1 "Fuse" V 1794 2600 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 1830 2600 50  0001 C CNN
-F 3 "~" H 1900 2600 50  0001 C CNN
-	1    1900 2600
+P 1650 2550
+F 0 "F1" V 1453 2550 50  0000 C CNN
+F 1 "Fuse" V 1544 2550 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 1580 2550 50  0001 C CNN
+F 3 "~" H 1650 2550 50  0001 C CNN
+	1    1650 2550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 2600 1600 2600
-Text HLabel 1500 2600 0    50   Input ~ 0
+	1500 2550 1350 2550
+Text HLabel 1250 2550 0    50   Input ~ 0
 PowerIn+
-Text HLabel 1500 3300 0    50   Input ~ 0
+Text HLabel 1250 3300 0    50   Input ~ 0
 PowerIn-
 Wire Wire Line
-	1500 2600 1600 2600
+	1250 2550 1350 2550
 Wire Wire Line
-	1500 3300 1600 3300
-Connection ~ 1600 3300
+	1250 3300 1350 3300
+Connection ~ 1350 3300
 Wire Wire Line
-	2650 3300 3300 3300
+	2400 3300 2900 3300
 Text HLabel 1300 5050 0    50   Input ~ 0
 ControlPower-
 Text HLabel 1300 4650 0    50   Input ~ 0
@@ -776,8 +769,6 @@ Wire Wire Line
 Connection ~ 1650 4650
 Wire Wire Line
 	1650 4700 1650 4650
-Wire Wire Line
-	3000 3750 3150 3750
 Wire Wire Line
 	1650 5050 2000 5050
 $Comp
@@ -824,17 +815,17 @@ F 3 "~" H 1050 3900 50  0001 C CNN
 	1    1050 3900
 	-1   0    0    -1  
 $EndComp
-Connection ~ 2200 2600
+Connection ~ 1950 2550
 Wire Wire Line
-	2200 2600 2650 2600
-Connection ~ 2200 3300
+	1950 2550 2400 2550
+Connection ~ 1950 3300
 Wire Wire Line
-	1600 3300 2200 3300
+	1350 3300 1950 3300
 Wire Wire Line
-	2050 2600 2200 2600
-Connection ~ 1600 2600
+	1800 2550 1950 2550
+Connection ~ 1350 2550
 Wire Wire Line
-	2200 3300 2650 3300
+	1950 3300 2400 3300
 Wire Wire Line
 	1300 4150 1450 4150
 Wire Wire Line
@@ -853,10 +844,6 @@ Wire Wire Line
 Connection ~ 1450 4150
 Wire Wire Line
 	1450 4150 2000 4150
-Wire Wire Line
-	3000 5050 3300 5050
-Wire Wire Line
-	3150 4650 3000 4650
 $Comp
 L Device:CP C3
 U 1 1 5FD46988
@@ -868,11 +855,6 @@ F 3 "~" H 1650 4850 50  0001 C CNN
 	1    1650 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 4150 3300 4150
-Wire Wire Line
-	3150 4650 3150 3750
-Connection ~ 3300 4150
 Wire Wire Line
 	1250 4800 1450 4800
 Wire Wire Line
@@ -890,26 +872,78 @@ Wire Wire Line
 Wire Wire Line
 	1300 5050 1450 5050
 Wire Wire Line
-	3300 3300 3300 4150
-Wire Wire Line
-	3150 3750 3150 2600
-Wire Wire Line
-	2650 2600 3150 2600
-Connection ~ 3150 3750
-Connection ~ 3300 4750
-Wire Wire Line
-	3300 4750 3300 4150
-Wire Wire Line
-	3300 4750 3300 5050
-Connection ~ 3150 4650
-Wire Wire Line
-	3150 4650 4450 4650
-Wire Wire Line
-	3600 4750 3300 4750
+	2400 2550 2900 2550
 Wire Wire Line
 	3600 4750 4800 4750
 Wire Wire Line
 	4450 3700 4450 4650
 Wire Wire Line
 	4450 4650 5650 4650
+$Comp
+L Device:R R13
+U 1 1 5FD6C150
+P 2900 2750
+F 0 "R13" H 2830 2796 50  0000 R CNN
+F 1 "2.2K" H 2830 2705 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2830 2750 50  0001 C CNN
+F 3 "~" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5FD6E892
+P 2900 3100
+F 0 "D4" V 2950 2900 50  0000 L CNN
+F 1 "LED" V 2850 2850 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 2900 3100 50  0001 C CNN
+F 3 "~" H 2900 3100 50  0001 C CNN
+	1    2900 3100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2900 2950 2900 2900
+Wire Wire Line
+	1350 2550 1350 2900
+Wire Wire Line
+	1950 2550 1950 2800
+Wire Wire Line
+	2400 2550 2400 2800
+Wire Wire Line
+	2900 2550 2900 2600
+Wire Wire Line
+	2900 3250 2900 3300
+Connection ~ 2900 2550
+Wire Wire Line
+	2900 3300 3150 3300
+Wire Wire Line
+	3150 4150 3000 4150
+Connection ~ 2900 3300
+Wire Wire Line
+	3150 3300 3150 4150
+Wire Wire Line
+	3300 3750 3300 2550
+Wire Wire Line
+	3150 4150 3150 4750
+Wire Wire Line
+	3000 5050 3150 5050
+Connection ~ 3150 4150
+Connection ~ 3300 3750
+Wire Wire Line
+	3000 3750 3300 3750
+Wire Wire Line
+	2900 2550 3300 2550
+Wire Wire Line
+	3300 3750 3300 4650
+Wire Wire Line
+	4450 4650 3300 4650
+Connection ~ 3300 4650
+Wire Wire Line
+	3300 4650 3000 4650
+Wire Wire Line
+	3150 4750 3600 4750
+Connection ~ 3600 4750
+Connection ~ 3150 4750
+Wire Wire Line
+	3150 4750 3150 5050
 $EndSCHEMATC
