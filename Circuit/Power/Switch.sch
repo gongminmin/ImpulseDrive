@@ -733,7 +733,7 @@ U 1 1 5FD3DDF6
 P 1650 2550
 F 0 "F1" V 1453 2550 50  0000 C CNN
 F 1 "Fuse" V 1544 2550 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 1580 2550 50  0001 C CNN
+F 2 "Power:Fuseholder_Cylinder-5x20mm_ASI_PTF-76-10_Horizontal_Open" V 1580 2550 50  0001 C CNN
 F 3 "~" H 1650 2550 50  0001 C CNN
 	1    1650 2550
 	0    1    1    0   
