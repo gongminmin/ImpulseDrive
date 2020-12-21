@@ -794,11 +794,11 @@ F 3 "~" H 1050 4800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:CRE1S1212SC U5
+L Regulator_Switching:CRE1S1205SC U5
 U 1 1 5FD1F930
 P 2500 4850
 F 0 "U5" H 2500 5317 50  0000 C CNN
-F 1 "B1212S" H 2500 5226 50  0000 C CNN
+F 1 "B1205S" H 2500 5226 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_muRata_CRE1xxxxxxSC_THT" H 2500 4450 50  0001 C CNN
 F 3 "http://power.murata.com/datasheet?/data/power/ncl/kdc_cre1.pdf" H 2500 4350 50  0001 C CNN
 	1    2500 4850
@@ -849,7 +849,7 @@ L Device:CP C3
 U 1 1 5FD46988
 P 1650 4850
 F 0 "C3" H 1768 4896 50  0000 L CNN
-F 1 "2.2uF" H 1768 4805 50  0000 L CNN
+F 1 "10uF" H 1768 4805 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1688 4700 50  0001 C CNN
 F 3 "~" H 1650 4850 50  0001 C CNN
 	1    1650 4850
