@@ -186,7 +186,7 @@ L Device:R R3
 U 1 1 5FB5AC8D
 P 6750 3600
 F 0 "R3" V 6543 3600 50  0000 C CNN
-F 1 "1K" V 6634 3600 50  0000 C CNN
+F 1 "680" V 6634 3600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6680 3600 50  0001 C CNN
 F 3 "~" H 6750 3600 50  0001 C CNN
 	1    6750 3600
@@ -194,17 +194,6 @@ F 3 "~" H 6750 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 3600 7000 3600
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5FB5F5C4
-P 6200 3650
-F 0 "J2" H 6308 3831 50  0000 C CNN
-F 1 "CoilSignal" H 6308 3740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 3650 50  0001 C CNN
-F 3 "~" H 6200 3650 50  0001 C CNN
-	1    6200 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 3750 6400 3750
 $Comp
@@ -455,4 +444,15 @@ Wire Wire Line
 	8350 4250 8350 4550
 Wire Wire Line
 	9050 4000 9050 4550
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FB5F5C4
+P 6200 3650
+F 0 "J2" H 6308 3831 50  0000 C CNN
+F 1 "CoilSignal" H 6308 3740 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 3650 50  0001 C CNN
+F 3 "~" H 6200 3650 50  0001 C CNN
+	1    6200 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
