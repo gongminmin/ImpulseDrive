@@ -26,17 +26,6 @@ F 3 "~" H 3450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Transformer_1P_1S T2
-U 1 1 5E115770
-P 6250 2950
-F 0 "T2" H 6250 3331 50  0000 C CNN
-F 1 "20:20" H 6250 3240 50  0000 C CNN
-F 2 "Power:Air_Core_Transformer_1P_1S" H 6250 2950 50  0001 C CNN
-F 3 "~" H 6250 2950 50  0001 C CNN
-	1    6250 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E116D06
 P 2450 3000
@@ -60,29 +49,29 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x01 J2
 U 1 1 5E11806A
-P 9150 2750
-F 0 "J2" H 9230 2792 50  0000 L CNN
-F 1 "Output+" H 9230 2701 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 9150 2750 50  0001 C CNN
-F 3 "~" H 9150 2750 50  0001 C CNN
-	1    9150 2750
+P 7200 2750
+F 0 "J2" H 7280 2792 50  0000 L CNN
+F 1 "Output+" H 7280 2701 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 7200 2750 50  0001 C CNN
+F 3 "~" H 7200 2750 50  0001 C CNN
+	1    7200 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J3
 U 1 1 5E11851C
-P 9150 3150
-F 0 "J3" H 9230 3192 50  0000 L CNN
-F 1 "Output-" H 9230 3101 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 9150 3150 50  0001 C CNN
-F 3 "~" H 9150 3150 50  0001 C CNN
-	1    9150 3150
+P 7200 3150
+F 0 "J3" H 7280 3192 50  0000 L CNN
+F 1 "Output-" H 7280 3101 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6_ISO14580_Pad" H 7200 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 2750 8900 2750
+	6750 2750 6950 2750
 Wire Wire Line
-	8700 3150 8900 3150
+	6750 3150 6950 3150
 Text HLabel 2750 2500 0    50   Input ~ 0
 PowerIn+
 Text HLabel 2750 3400 0    50   Input ~ 0
@@ -94,20 +83,20 @@ Wire Wire Line
 	2850 2900 2950 2900
 Wire Wire Line
 	2850 3000 2850 3400
-Text HLabel 8800 2500 0    50   Input ~ 0
+Text HLabel 6850 2500 0    50   Input ~ 0
 PowerOut+
-Text HLabel 8800 3400 0    50   Input ~ 0
+Text HLabel 6850 3400 0    50   Input ~ 0
 PowerOut-
 Wire Wire Line
-	8800 2500 8900 2500
+	6850 2500 6950 2500
 Wire Wire Line
-	8900 2500 8900 2750
-Connection ~ 8900 2750
+	6950 2500 6950 2750
+Connection ~ 6950 2750
 Wire Wire Line
-	8900 2750 8950 2750
-Connection ~ 8900 3150
+	6950 2750 7000 2750
+Connection ~ 6950 3150
 Wire Wire Line
-	8900 3150 8950 3150
+	6950 3150 7000 3150
 $Comp
 L Device:C C1
 U 1 1 5E314EF1
@@ -154,37 +143,27 @@ Wire Wire Line
 Wire Wire Line
 	5700 2500 5700 2750
 Wire Wire Line
-	5700 2750 5850 2750
-Wire Wire Line
 	5700 3400 5700 3150
 Wire Wire Line
-	8800 3400 8900 3400
+	6850 3400 6950 3400
 Wire Wire Line
-	8900 3150 8900 3400
+	6950 3150 6950 3400
 $Comp
-L Device:Transformer_1P_1S T3
+L Device:Transformer_1P_1S T2
 U 1 1 5E36FDA0
-P 8300 2950
-F 0 "T3" H 8300 3331 50  0000 C CNN
-F 1 "20:20" H 8300 3240 50  0000 C CNN
-F 2 "Power:Air_Core_Transformer_1P_1S" H 8300 2950 50  0001 C CNN
-F 3 "~" H 8300 2950 50  0001 C CNN
-	1    8300 2950
+P 6350 2950
+F 0 "T2" H 6350 3331 50  0000 C CNN
+F 1 "20:20" H 6350 3240 50  0000 C CNN
+F 2 "Power:Air_Core_Transformer_1P_1S" H 6350 2950 50  0001 C CNN
+F 3 "~" H 6350 2950 50  0001 C CNN
+	1    6350 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6650 2750 6750 2750
-Wire Wire Line
-	6650 3150 6750 3150
-Wire Wire Line
-	7800 3150 7900 3150
 Connection ~ 2850 3000
 Wire Wire Line
 	2850 3000 2950 3000
 Wire Wire Line
 	2650 3000 2850 3000
-Wire Wire Line
-	5850 3150 5700 3150
 Wire Wire Line
 	2750 2500 2850 2500
 Wire Wire Line
@@ -217,19 +196,15 @@ Wire Wire Line
 	4750 2500 5000 2500
 Wire Wire Line
 	4750 3300 4750 3400
-Wire Wire Line
-	6750 2750 6750 2500
-Wire Wire Line
-	6750 3150 6750 3400
 $Comp
 L Device:R R4
 U 1 1 5EE60399
-P 7300 3700
-F 0 "R4" V 7093 3700 50  0000 C CNN
-F 1 "1Ω/10W" V 7184 3700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0922_L20.0mm_D9.0mm_P30.48mm_Horizontal" V 7230 3700 50  0001 C CNN
-F 3 "~" H 7300 3700 50  0001 C CNN
-	1    7300 3700
+P 5350 3400
+F 0 "R4" V 5143 3400 50  0000 C CNN
+F 1 "1Ω/10W" V 5234 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0922_L20.0mm_D9.0mm_P30.48mm_Horizontal" V 5280 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5350 3400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -284,96 +259,14 @@ Wire Wire Line
 	4500 2950 4500 3000
 Wire Wire Line
 	4750 3400 4500 3400
-Connection ~ 4750 3400
 Connection ~ 4500 3400
+Connection ~ 4750 3400
 Wire Wire Line
-	4750 3400 5700 3400
+	5700 2750 5950 2750
 Wire Wire Line
-	7150 2500 7150 2600
+	5700 3150 5950 3150
 Wire Wire Line
-	6750 2500 7150 2500
+	5500 3400 5700 3400
 Wire Wire Line
-	7450 2500 7450 2600
-Wire Wire Line
-	7450 2500 7150 2500
-Connection ~ 7150 2500
-Wire Wire Line
-	7150 2900 7150 2950
-Wire Wire Line
-	7450 2900 7450 2950
-Wire Wire Line
-	7150 3300 7150 3400
-Wire Wire Line
-	6750 3400 7150 3400
-Wire Wire Line
-	7450 3300 7450 3400
-Wire Wire Line
-	7450 3400 7150 3400
-Connection ~ 7150 3400
-Wire Wire Line
-	7150 2950 6850 2950
-Wire Wire Line
-	6850 3700 7150 3700
-Connection ~ 7150 2950
-Wire Wire Line
-	7150 2950 7150 3000
-Wire Wire Line
-	7450 2950 7800 2950
-Connection ~ 7450 2950
-Wire Wire Line
-	7450 2950 7450 3000
-Wire Wire Line
-	7800 2950 7800 2750
-$Comp
-L Device:D D4
-U 1 1 5F0436E5
-P 7450 3150
-F 0 "D4" V 7404 3071 50  0000 R CNN
-F 1 "2CL2FM" V 7495 3071 50  0000 R CNN
-F 2 "Power:Diode_2CL_Horizontal" H 7450 3150 50  0001 C CNN
-F 3 "~" H 7450 3150 50  0001 C CNN
-	1    7450 3150
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5F043CAE
-P 7150 3150
-F 0 "D2" V 7104 3071 50  0000 R CNN
-F 1 "2CL2FM" V 7195 3071 50  0000 R CNN
-F 2 "Power:Diode_2CL_Horizontal" H 7150 3150 50  0001 C CNN
-F 3 "~" H 7150 3150 50  0001 C CNN
-	1    7150 3150
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:D D3
-U 1 1 5F046B1B
-P 7450 2750
-F 0 "D3" V 7404 2671 50  0000 R CNN
-F 1 "2CL2FM" V 7495 2671 50  0000 R CNN
-F 2 "Power:Diode_2CL_Horizontal" H 7450 2750 50  0001 C CNN
-F 3 "~" H 7450 2750 50  0001 C CNN
-	1    7450 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D D1
-U 1 1 5F0498BA
-P 7150 2750
-F 0 "D1" V 7104 2671 50  0000 R CNN
-F 1 "2CL2FM" V 7195 2671 50  0000 R CNN
-F 2 "Power:Diode_2CL_Horizontal" H 7150 2750 50  0001 C CNN
-F 3 "~" H 7150 2750 50  0001 C CNN
-	1    7150 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 2950 6850 3700
-Wire Wire Line
-	7450 3700 7800 3700
-Wire Wire Line
-	7800 3150 7800 3700
-Wire Wire Line
-	7800 2750 7900 2750
+	4750 3400 5200 3400
 $EndSCHEMATC
