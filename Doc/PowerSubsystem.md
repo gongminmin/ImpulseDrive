@@ -16,13 +16,11 @@ The first module is a 12V DC power source. Currently an ATX power supply unit fr
 
 ## Switch Module
 
-The DC from main power source needs to be separated into multiple channels. One to capacitor bank, one to starter, one to electromagnet coil, and one to propellant injector. The 1-4 pins of J1 controls which ones are on through these solid state relays (SSRs) on switch module.
+The DC from main power source needs to be separated into multiple channels. One to capacitor bank, one to starter, one to electromagnet coil, and one to propellant injector. The 1-4 pins of J1 controls which ones are on through these solid state relays (SSRs) on switch module. Note that currently the electromagnet coil switch is on it's own circuit. Here we just passthrough the signal. This module is basically a 3-channel SSR, using a MOSFET to do the switching.
 
 ![Power Switch Circuit](Img/PowerSwitchCircuit.png)
 
-This module is a 4-channel SSR, using a MOSFET to do the switching. For electromagnet coil and propellant injector ports, flyback diodes are connected because the output is connected to coils.
-
-The circuit is hand soldered on a prototyping board. Note that this one doesn't have a switch for propellant injector. Just assume it's always on. This photo will be updated soon.
+Also, this circuit provides a 12V power to electromagnet coil, and a 5V power to control board. (This photo will be updated soon).
 
 ![Power Switch Photo](Img/PowerSwitchPhoto.jpg)
 

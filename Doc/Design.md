@@ -22,11 +22,11 @@ One straight forward thought is put a RC filter or LC filter between capacitor b
 
 However, RC filter doesn't work for our scenario, because it limits the DC current from capacitor bank. LC filter is OK, but to survive under high current, the inductor must be a huge one. It'll become super expensive and super heavy.
 
-The other choice is connecting them in series. There are 2 issues to do this. First, the high current needs to go through starter. Second, the high AC can't go through polarized capacitor.
+The other choice is connecting them in series. There are 2 issues to do this. First, the high current needs to go through starter. Second, the high AC can damage polarized capacitors.
 
 To solve the first issue, we need an isolation transformer. The primary coil is wrapped by thin wire, and secondary coil is wrapped by very thick wire. They have same turns. In this way, the voltage from primary side can be transformed to secondary coil with the same voltage. Meanwhile high current can go through its secondary coil without damaging the coil or starter.
 
-The nature of the second issue is because AC keeps changing its direction, but polarized capacitor can't handle voltage with an inverted direction. We can solve it by using unpolarized capacitor, but normally the unpolarized capacitor is much smaller than the polarized ones. Or we can connect 2 polarized capacitors back to back to construct a unpolarized capacitor. This connection reduces both the voltage and the capacity of capacitors to half. It means we need much more capacitors to achieve the capacity we want. A much simpler way to solve this issue is just rectifies the AC from starter to pulsed DC. The current direction is not changing in this case, it can be connected to capacitor bank in series.
+The nature of the second issue is because AC keeps changing its direction, but polarized capacitor can't handle voltage with an inverted direction. It's not actually a problem. The voltage in the capacitor bank acts as a bias to the AC. Or, the AC doesn't charge the capacitor bank.
 
 ### Propellant
 
@@ -68,7 +68,7 @@ The system is composed of several subsystems.
 
 ### Power
 
-The power subsystem converts 12V DC to 2-way 12V AC. One for starter, and one for charging capacitor bank.
+The power subsystem converts 12V DC to low voltage high frequency AC. One for starter, and one for charging capacitor bank.
 
 See also [Power Subsystem](PowerSubsystem.md)
 
@@ -80,13 +80,13 @@ See also [Control Subsystem](ControlSubsystem.md)
 
 ### Starter
 
-The starter transformed 12V AC to 10kV high frequency pulsed DC to ionize the propellant. It's very similar to a spark gap Tesla coil.
+The starter transformed the AC from low voltage to ~10kV to ionize the propellant. It's very similar to a spark gap Tesla coil.
 
 See also [Starter Subsystem](StarterSubsystem.md)
 
 ### Capacitor Bank
 
-The 12V AC from power subsystem is converted to high voltage DC, and charge a bunch of capacitors. It can be discharged in a very short time peroid to generate a high current.
+The low voltage AC from power subsystem is transformed to high voltage DC, and charge a bunch of capacitors. It can be discharged in a very short time peroid to generate a high current.
 
 See also [Capacitor Bank Subsystem](CapacitorBankSubsystem.md)
 

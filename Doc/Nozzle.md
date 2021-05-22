@@ -34,4 +34,16 @@ This is a cardboard version of the assembled nozzle. The clear tube is a aquariu
 
 ![Nozzle Case](Img/NozzlePhoto.jpg)
 
+## Circuit
+
+Other than the nozzle itself, the electromagnet coils need high current to work. A low voltage capacitor bank is introduced here. It's charged from power module to 12V, and triggered by control model to discharge its energy to coils.
+
+![Nozzle Circuit](Img/NozzleCircuit.png)
+
 **Status**: Work-in-progress, 40%.
+
+## Alternative Design
+
+The huge and heavy electromagnet can be replaced by multiple small ones. With the same current, they can provide same magnet field with much lighter in weight.
+
+A better design of the case can be more compact and more robust. But it must use 3D printing to construct.

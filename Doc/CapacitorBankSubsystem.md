@@ -68,10 +68,10 @@ So, it takes at least 4 seconds to charge the capacitor bank.
 
 The energy stores in the mini capacitor bank is:
 
-`J = C * V * V = 0.00033 * 68 * 68 = 1.5 J`
+`J = 0.5 * C * V * V = 0.5 * 0.00033 * 68 * 68 = 0.75 J`
 
 Meanwhile, the one in full capacitor bank is:
 
-`J = C * V * V = 0.00033 * 848 * 848 = 237.3 J`
+`J = 0.5 * C * V * V = 0.5 * 0.00033 * 848 * 848 = 118.65 J`
 
 **Status**: Small-scale board done, need experiments with other components, 50%.
