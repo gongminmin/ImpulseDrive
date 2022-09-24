@@ -4,3 +4,5 @@ fp-info-cache
 *-cache.lib
 *.bck
 Gerbers
+*.kicad_prl
+*-backups
